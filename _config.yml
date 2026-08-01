@@ -1,11 +1,3 @@
 title: KSA Guide
-baseurl: ""
-url: "https://ksa-guide.com"
-
-collections:
-  posts:
-    output: true
-    permalink: /posts/:name/
-
-markdown: kramdown
-theme: minima
+url: https://dreamy-taffy-fe6159.netlify.app
+permalink: /posts/:title/
