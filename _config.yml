@@ -1,6 +1,11 @@
-theme: minima
+title: KSA Guide
+baseurl: ""
+url: "https://ksa-guide.com"
 
 collections:
   posts:
     output: true
-    permalink: /posts/:title/
+    permalink: /posts/:name/
+
+markdown: kramdown
+theme: minima
