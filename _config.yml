@@ -1,4 +1,6 @@
 theme: minima
 
-include:
-    - visa-2026.md
+collections:
+  posts:
+    output: true
+    permalink: /posts/:title/
