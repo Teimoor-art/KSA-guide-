@@ -1,0 +1,3778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>KSA Guide | Discover Saudi Arabia</title>
+
+<meta name="description"
+content="KSA Guide - Discover Saudi Arabia, destinations, cities, travel, culture, lifestyle, jobs, visa information and useful Saudi guides.">
+
+<meta name="keywords"
+content="Saudi Arabia, KSA Guide, Riyadh, Jeddah, AlUla, Aseer, Saudi tourism, Saudi travel, Saudi jobs, Saudi visa">
+
+<meta name="author" content="KSA Guide">
+
+<meta property="og:title" content="KSA Guide | Discover Saudi Arabia">
+<meta property="og:description" content="Your premium guide to Saudi Arabia.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ksa-guide.com">
+
+<meta name="theme-color" content="#06150f">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================================================
+   KSA GUIDE PREMIUM WEBSITE
+   ========================================================= */
+
+:root{
+
+    --green:#087b4b;
+    --green2:#00a86b;
+    --dark:#03100b;
+    --dark2:#061b12;
+    --dark3:#0a2619;
+
+    --gold:#e6bd68;
+    --gold2:#f4d58e;
+
+    --white:#ffffff;
+    --text:#d9e5df;
+    --muted:#8fa49b;
+
+    --glass:rgba(255,255,255,.055);
+    --border:rgba(255,255,255,.12);
+
+    --shadow:
+    0 30px 80px rgba(0,0,0,.45);
+
+    --radius:24px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:"DM Sans",Arial,sans-serif;
+
+    background:
+    radial-gradient(
+        circle at 15% 10%,
+        rgba(0,168,107,.12),
+        transparent 28%
+    ),
+    radial-gradient(
+        circle at 90% 35%,
+        rgba(230,189,104,.08),
+        transparent 25%
+    ),
+    var(--dark);
+
+    color:var(--white);
+
+    overflow-x:hidden;
+}
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    width:500px;
+    height:500px;
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(
+        circle,
+        rgba(0,168,107,.06),
+        transparent 70%
+    );
+
+    top:-250px;
+    right:-250px;
+
+    pointer-events:none;
+
+    z-index:-1;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+button,
+input{
+    font-family:inherit;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#020b07;
+}
+
+::-webkit-scrollbar-thumb{
+    background:var(--green);
+    border-radius:20px;
+}
+
+
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+.container{
+
+    width:min(1200px,92%);
+
+    margin:auto;
+}
+
+section{
+    padding:110px 0;
+}
+
+.gold{
+    color:var(--gold);
+}
+
+.section-label{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:var(--gold);
+
+    font-size:12px;
+
+    font-weight:800;
+
+    letter-spacing:1.5px;
+
+    text-transform:uppercase;
+
+    margin-bottom:15px;
+}
+
+.section-label::before{
+
+    content:"";
+
+    width:7px;
+    height:7px;
+
+    background:var(--gold);
+
+    border-radius:50%;
+
+    box-shadow:0 0 14px var(--gold);
+}
+
+.section-title{
+
+    font-family:"Playfair Display",serif;
+
+    font-size:clamp(38px,5vw,62px);
+
+    line-height:1.02;
+
+    letter-spacing:-2px;
+}
+
+.section-description{
+
+    color:var(--muted);
+
+    max-width:520px;
+
+    line-height:1.8;
+
+    margin-top:20px;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.header{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    z-index:9999;
+
+    background:rgba(3,16,11,.72);
+
+    backdrop-filter:blur(20px);
+
+    border-bottom:1px solid rgba(255,255,255,.07);
+
+    transition:.3s;
+}
+
+.header.scrolled{
+
+    background:rgba(3,16,11,.94);
+
+    box-shadow:
+    0 15px 50px rgba(0,0,0,.3);
+}
+
+.navbar{
+
+    height:78px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:11px;
+
+    font-weight:800;
+
+    font-size:21px;
+}
+
+.logo-box{
+
+    width:43px;
+    height:43px;
+
+    display:grid;
+    place-items:center;
+
+    border-radius:13px;
+
+    background:
+    linear-gradient(
+        145deg,
+        var(--green2),
+        var(--green)
+    );
+
+    border:1px solid rgba(230,189,104,.5);
+
+    box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.2),
+    0 8px 25px rgba(0,168,107,.2);
+
+    font-size:21px;
+}
+
+.logo span{
+    color:var(--gold);
+}
+
+.nav-links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:30px;
+}
+
+.nav-links a{
+
+    color:#c7d5cf;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+    position:relative;
+}
+
+.nav-links a:hover{
+    color:var(--gold);
+}
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:0;
+    height:2px;
+
+    background:var(--gold);
+
+    bottom:-9px;
+    left:0;
+
+    transition:.25s;
+}
+
+.nav-links a:hover::after{
+    width:100%;
+}
+
+.nav-cta{
+
+    padding:12px 19px;
+
+    border-radius:30px;
+
+    background:
+    linear-gradient(
+        135deg,
+        var(--green2),
+        var(--green)
+    );
+
+    color:white!important;
+
+    box-shadow:
+    0 10px 25px rgba(0,168,107,.18);
+}
+
+.nav-cta::after{
+    display:none;
+}
+
+.menu-btn{
+
+    display:none;
+
+    border:0;
+
+    background:none;
+
+    color:white;
+
+    font-size:27px;
+
+    cursor:pointer;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero{
+
+    min-height:850px;
+
+    display:flex;
+
+    align-items:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding-top:120px;
+
+    background:
+
+    linear-gradient(
+        90deg,
+        rgba(3,16,11,1) 0%,
+        rgba(3,16,11,.91) 32%,
+        rgba(3,16,11,.40) 70%,
+        rgba(3,16,11,.78) 100%
+    ),
+
+    url("https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=2200&q=90");
+
+    background-size:cover;
+
+    background-position:center;
+}
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    radial-gradient(
+        circle at 80% 30%,
+        rgba(0,168,107,.20),
+        transparent 25%
+    );
+
+    pointer-events:none;
+}
+
+.hero-grid{
+
+    display:grid;
+
+    grid-template-columns:1.05fr .95fr;
+
+    gap:40px;
+
+    align-items:center;
+
+    position:relative;
+
+    z-index:2;
+}
+
+.hero-content{
+
+    max-width:720px;
+}
+
+.hero-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:9px;
+
+    padding:9px 15px;
+
+    border-radius:50px;
+
+    border:1px solid rgba(230,189,104,.45);
+
+    background:rgba(230,189,104,.08);
+
+    color:var(--gold2);
+
+    font-size:11px;
+
+    font-weight:800;
+
+    letter-spacing:1px;
+
+    margin-bottom:25px;
+}
+
+.hero-badge span{
+
+    width:7px;
+    height:7px;
+
+    background:var(--gold);
+
+    border-radius:50%;
+
+    box-shadow:0 0 12px var(--gold);
+}
+
+.hero h1{
+
+    font-family:"Playfair Display",serif;
+
+    font-size:clamp(55px,7vw,92px);
+
+    line-height:.95;
+
+    letter-spacing:-5px;
+
+    margin-bottom:27px;
+}
+
+.hero h1 .gold{
+    display:block;
+}
+
+.hero-text{
+
+    color:#c2d0ca;
+
+    max-width:600px;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+    margin-bottom:32px;
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:13px;
+
+    flex-wrap:wrap;
+}
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:9px;
+
+    padding:15px 22px;
+
+    border-radius:13px;
+
+    font-size:13px;
+
+    font-weight:800;
+
+    border:1px solid transparent;
+
+    transition:.3s;
+
+    cursor:pointer;
+}
+
+.btn-primary{
+
+    background:
+    linear-gradient(
+        135deg,
+        var(--green2),
+        var(--green)
+    );
+
+    box-shadow:
+    0 15px 35px rgba(0,168,107,.18);
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 20px 45px rgba(0,168,107,.28);
+}
+
+.btn-outline{
+
+    border-color:rgba(255,255,255,.2);
+
+    background:rgba(255,255,255,.045);
+
+    backdrop-filter:blur(10px);
+}
+
+.btn-outline:hover{
+
+    border-color:var(--gold);
+
+    color:var(--gold);
+}
+
+
+/* HERO SEARCH */
+
+.hero-search{
+
+    margin-top:35px;
+
+    width:min(650px,100%);
+
+    display:flex;
+
+    padding:7px;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    background:rgba(0,0,0,.28);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:16px;
+}
+
+.hero-search input{
+
+    flex:1;
+
+    border:0;
+    outline:0;
+
+    background:transparent;
+
+    color:white;
+
+    padding:13px 15px;
+
+    font-size:13px;
+}
+
+.hero-search input::placeholder{
+    color:#83968d;
+}
+
+.hero-search button{
+
+    border:0;
+
+    padding:0 23px;
+
+    border-radius:10px;
+
+    background:var(--gold);
+
+    color:#10150f;
+
+    font-weight:800;
+
+    cursor:pointer;
+}
+
+
+/* =========================================================
+   HERO 3D CARD
+   ========================================================= */
+
+.hero-visual{
+
+    perspective:1000px;
+
+    display:flex;
+
+    justify-content:center;
+}
+
+.hero-card{
+
+    width:min(430px,100%);
+
+    min-height:510px;
+
+    border-radius:32px;
+
+    padding:25px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:
+
+    linear-gradient(
+        145deg,
+        rgba(255,255,255,.13),
+        rgba(255,255,255,.025)
+    );
+
+    border:1px solid rgba(255,255,255,.18);
+
+    backdrop-filter:blur(18px);
+
+    box-shadow:
+    0 40px 100px rgba(0,0,0,.5),
+    inset 0 1px 0 rgba(255,255,255,.15);
+
+    transform:
+    rotateY(-8deg)
+    rotateX(4deg);
+
+    transition:.5s;
+}
+
+.hero-card:hover{
+
+    transform:
+    rotateY(0deg)
+    rotateX(0deg)
+    translateY(-8px);
+}
+
+.hero-card-image{
+
+    height:350px;
+
+    border-radius:22px;
+
+    background:
+
+    linear-gradient(
+        to top,
+        rgba(3,16,11,.9),
+        transparent 55%
+    ),
+
+    url("https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=1000&q=85");
+
+    background-size:cover;
+
+    background-position:center;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.hero-card-location{
+
+    position:absolute;
+
+    bottom:18px;
+    left:18px;
+}
+
+.hero-card-location small{
+
+    color:var(--gold);
+
+    font-weight:800;
+
+    font-size:10px;
+
+    letter-spacing:1px;
+}
+
+.hero-card-location h3{
+
+    font-family:"Playfair Display",serif;
+
+    font-size:31px;
+
+    margin-top:3px;
+}
+
+.hero-card-bottom{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:20px;
+}
+
+.hero-card-bottom p{
+
+    color:#9db0a7;
+
+    font-size:12px;
+}
+
+.rating{
+
+    padding:9px 12px;
+
+    border-radius:10px;
+
+    background:rgba(230,189,104,.10);
+
+    color:var(--gold);
+
+    font-weight:800;
+
+    font-size:12px;
+}
+
+
+/* =========================================================
+   FLOATING CONTACT
+   ========================================================= */
+
+.floating-contact{
+
+    position:fixed;
+
+    right:20px;
+    bottom:20px;
+
+    z-index:9000;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+}
+
+.float-btn{
+
+    width:53px;
+    height:53px;
+
+    border-radius:50%;
+
+    display:grid;
+
+    place-items:center;
+
+    color:white;
+
+    font-size:21px;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
+
+    transition:.3s;
+}
+
+.float-btn:hover{
+
+    transform:scale(1.1);
+
+}
+
+.whatsapp{
+    background:#16b957;
+}
+
+.phone{
+    background:#087b4b;
+}
+
+.email{
+    background:#bd8b32;
+}
+
+
+/* =========================================================
+   DESTINATIONS
+   ========================================================= */
+
+.destinations{
+
+    background:
+
+    radial-gradient(
+        circle at 50% 0,
+        rgba(0,168,107,.12),
+        transparent 35%
+    ),
+
+    var(--dark2);
+}
+
+.section-head{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:end;
+
+    gap:40px;
+
+    margin-bottom:45px;
+}
+
+.destination-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap:18px;
+}
+
+.destination-card{
+
+    min-height:390px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+    border:1px solid var(--border);
+
+    background:#092218;
+
+    transition:.45s;
+
+    transform-style:preserve-3d;
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.25);
+}
+
+.destination-card:hover{
+
+    transform:
+    translateY(-12px)
+    rotateX(2deg);
+
+    border-color:
+    rgba(230,189,104,.45);
+
+    box-shadow:
+    0 35px 70px rgba(0,0,0,.4);
+}
+
+.destination-image{
+
+    position:absolute;
+
+    inset:0;
+
+    background-size:cover;
+
+    background-position:center;
+
+    transition:.5s;
+}
+
+.destination-card:hover
+.destination-image{
+    transform:scale(1.08);
+}
+
+.riyadh{
+    background-image:
+    linear-gradient(
+        to top,
+        rgba(3,16,11,.96),
+        transparent 60%
+    ),
+    url("https://images.unsplash.com/photo-1578895101408-1a36b834405b?auto=format&fit=crop&w=900&q=85");
+}
+
+.alula{
+    background-image:
+    linear-gradient(
+        to top,
+        rgba(3,16,11,.96),
+        transparent 60%
+    ),
+    url("https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=900&q=85");
+}
+
+.jeddah{
+    background-image:
+    linear-gradient(
+        to top,
+        rgba(3,16,11,.96),
+        transparent 60%
+    ),
+    url("https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=900&q=85");
+}
+
+.aseer{
+    background-image:
+    linear-gradient(
+        to top,
+        rgba(3,16,11,.96),
+        transparent 60%
+    ),
+    url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=85");
+}
+
+.destination-info{
+
+    position:absolute;
+
+    left:0;
+    right:0;
+    bottom:0;
+
+    padding:25px;
+
+    z-index:2;
+}
+
+.destination-info small{
+
+    color:var(--gold);
+
+    font-size:10px;
+
+    font-weight:800;
+
+    letter-spacing:1px;
+}
+
+.destination-info h3{
+
+    font-family:"Playfair Display",serif;
+
+    font-size:30px;
+
+    margin:5px 0 5px;
+}
+
+.destination-info p{
+
+    color:#b8c8c0;
+
+    font-size:12px;
+
+    line-height:1.6;
+}
+
+.arrow{
+
+    position:absolute;
+
+    right:20px;
+    bottom:24px;
+
+    width:42px;
+    height:42px;
+
+    display:grid;
+    place-items:center;
+
+    border-radius:50%;
+
+    border:1px solid var(--green2);
+
+    color:var(--green2);
+
+    background:rgba(0,0,0,.3);
+
+    font-size:18px;
+}
+
+
+/* =========================================================
+   CATEGORIES
+   ========================================================= */
+
+.categories{
+
+    background:#06170f;
+}
+
+.category-layout{
+
+    display:grid;
+
+    grid-template-columns:300px 1fr;
+
+    gap:50px;
+}
+
+.category-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:15px;
+}
+
+.category-card{
+
+    min-height:190px;
+
+    padding:26px;
+
+    border-radius:20px;
+
+    border:1px solid var(--border);
+
+    background:
+
+    linear-gradient(
+        145deg,
+        rgba(255,255,255,.06),
+        rgba(255,255,255,.02)
+    );
+
+    transition:.35s;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.category-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:120px;
+    height:120px;
+
+    background:
+    radial-gradient(
+        circle,
+        rgba(0,168,107,.18),
+        transparent 70%
+    );
+
+    top:-50px;
+    right:-40px;
+}
+
+.category-card:hover{
+
+    transform:translateY(-7px);
+
+    border-color:
+    rgba(0,168,107,.5);
+
+    background:
+    linear-gradient(
+        145deg,
+        rgba(0,168,107,.12),
+        rgba(255,255,255,.025)
+    );
+}
+
+.category-icon{
+
+    width:50px;
+    height:50px;
+
+    display:grid;
+
+    place-items:center;
+
+    border-radius:15px;
+
+    background:
+    rgba(0,168,107,.15);
+
+    border:1px solid rgba(0,168,107,.25);
+
+    font-size:22px;
+
+    margin-bottom:20px;
+}
+
+.category-card h3{
+    font-size:17px;
+    margin-bottom:8px;
+}
+
+.category-card p{
+
+    color:var(--muted);
+
+    font-size:12px;
+
+    line-height:1.7;
+}
+
+
+/* =========================================================
+   FEATURED ALULA
+   ========================================================= */
+
+.feature{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:#020c08;
+}
+
+.feature-box{
+
+    min-height:470px;
+
+    border-radius:30px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    display:flex;
+
+    align-items:end;
+
+    padding:50px;
+
+    background:
+
+    linear-gradient(
+        90deg,
+        rgba(3,16,11,.95),
+        rgba(3,16,11,.25),
+        rgba(3,16,11,.75)
+    ),
+
+    url("https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1800&q=90");
+
+    background-size:cover;
+
+    background-position:center;
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow);
+}
+
+.feature-content{
+
+    max-width:650px;
+
+    position:relative;
+
+    z-index:2;
+}
+
+.feature-content h2{
+
+    font-family:"Playfair Display",serif;
+
+    font-size:clamp(45px,6vw,75px);
+
+    line-height:1;
+
+    margin:10px 0 15px;
+}
+
+.feature-content p{
+
+    color:#c5d1cb;
+
+    line-height:1.7;
+
+    max-width:580px;
+
+    margin-bottom:25px;
+}
+
+
+/* =========================================================
+   SAUDI BASICS
+   ========================================================= */
+
+.basics{
+
+    background:
+
+    linear-gradient(
+        180deg,
+        #06170f,
+        #03100b
+    );
+}
+
+.basic-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap:15px;
+}
+
+.basic-card{
+
+    padding:28px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.035);
+
+    border:1px solid var(--border);
+
+    transition:.3s;
+}
+
+.basic-card:hover{
+
+    transform:translateY(-5px);
+
+    border-color:
+    rgba(230,189,104,.35);
+}
+
+.basic-icon{
+
+    font-size:25px;
+
+    margin-bottom:18px;
+}
+
+.basic-card h3{
+    font-size:16px;
+    margin-bottom:6px;
+}
+
+.basic-card p{
+
+    color:var(--muted);
+
+    font-size:12px;
+}
+
+
+/* =========================================================
+   3D STATS
+   ========================================================= */
+
+.stats{
+
+    padding:75px 0;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #064b31,
+        #062619
+    );
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.stats::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    radial-gradient(
+        circle at 20% 50%,
+        rgba(230,189,104,.12),
+        transparent 25%
+    );
+}
+
+.stats-grid{
+
+    position:relative;
+
+    z-index:2;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    text-align:center;
+}
+
+.stat{
+
+    padding:20px;
+
+    border-right:
+    1px solid rgba(255,255,255,.14);
+}
+
+.stat:last-child{
+    border-right:0;
+}
+
+.stat-number{
+
+    font-family:"Playfair Display",serif;
+
+    color:var(--gold);
+
+    font-size:42px;
+
+    font-weight:700;
+}
+
+.stat p{
+
+    color:#c4d5cd;
+
+    font-size:12px;
+
+    margin-top:4px;
+}
+
+
+/* =========================================================
+   WHY KSA
+   ========================================================= */
+
+.why{
+
+    background:#03100b;
+}
+
+.why-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:60px;
+
+    align-items:center;
+}
+
+.why-visual{
+
+    min-height:480px;
+
+    position:relative;
+
+    perspective:1000px;
+}
+
+.orbit{
+
+    position:absolute;
+
+    width:360px;
+    height:360px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(230,189,104,.25);
+
+    left:50%;
+    top:50%;
+
+    transform:
+    translate(-50%,-50%)
+    rotateX(65deg);
+
+    box-shadow:
+    0 0 70px rgba(0,168,107,.08);
+}
+
+.why-card{
+
+    position:absolute;
+
+    width:250px;
+
+    padding:25px;
+
+    border-radius:22px;
+
+    background:
+    linear-gradient(
+        145deg,
+        rgba(255,255,255,.10),
+        rgba(255,255,255,.03)
+    );
+
+    border:1px solid var(--border);
+
+    backdrop-filter:blur(15px);
+
+    box-shadow:
+    0 30px 70px rgba(0,0,0,.4);
+}
+
+.card-one{
+    top:40px;
+    left:20px;
+    transform:rotate(-7deg);
+}
+
+.card-two{
+    bottom:40px;
+    right:20px;
+    transform:rotate(7deg);
+}
+
+.why-card-icon{
+
+    width:46px;
+    height:46px;
+
+    display:grid;
+    place-items:center;
+
+    border-radius:13px;
+
+    background:rgba(0,168,107,.15);
+
+    margin-bottom:15px;
+}
+
+.why-card h3{
+    font-size:17px;
+    margin-bottom:6px;
+}
+
+.why-card p{
+
+    color:var(--muted);
+
+    font-size:12px;
+
+    line-height:1.7;
+}
+
+.check-list{
+
+    list-style:none;
+
+    margin-top:30px;
+}
+
+.check-list li{
+
+    display:flex;
+
+    gap:12px;
+
+    margin-bottom:16px;
+
+    color:#c8d5cf;
+
+    font-size:14px;
+}
+
+.check-list span{
+
+    width:23px;
+    height:23px;
+
+    display:grid;
+    place-items:center;
+
+    border-radius:50%;
+
+    background:rgba(0,168,107,.15);
+
+    color:var(--green2);
+
+    flex-shrink:0;
+}
+
+
+/* =========================================================
+   NEWSLETTER
+   ========================================================= */
+
+.newsletter{
+
+    padding:100px 0;
+
+    background:
+
+    linear-gradient(
+        rgba(3,16,11,.88),
+        rgba(3,16,11,.94)
+    ),
+
+    url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1800&q=85");
+
+    background-size:cover;
+
+    background-position:center;
+
+    text-align:center;
+}
+
+.newsletter-inner{
+
+    width:min(750px,92%);
+
+    margin:auto;
+}
+
+.newsletter h2{
+
+    font-family:"Playfair Display",serif;
+
+    font-size:clamp(38px,5vw,58px);
+
+    margin-bottom:15px;
+}
+
+.newsletter p{
+
+    color:var(--muted);
+
+    margin-bottom:30px;
+}
+
+.subscribe{
+
+    display:flex;
+
+    max-width:620px;
+
+    margin:auto;
+
+    padding:6px;
+
+    border-radius:15px;
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.14);
+
+    backdrop-filter:blur(15px);
+}
+
+.subscribe input{
+
+    flex:1;
+
+    background:transparent;
+
+    border:0;
+    outline:0;
+
+    color:white;
+
+    padding:14px;
+}
+
+.subscribe button{
+
+    border:0;
+
+    background:var(--gold);
+
+    color:#13170f;
+
+    padding:0 25px;
+
+    border-radius:10px;
+
+    font-weight:800;
+
+    cursor:pointer;
+}
+
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
+
+.contact{
+
+    background:#06170f;
+}
+
+.contact-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:25px;
+}
+
+.contact-card{
+
+    padding:35px;
+
+    border-radius:24px;
+
+    border:1px solid var(--border);
+
+    background:
+    linear-gradient(
+        145deg,
+        rgba(255,255,255,.06),
+        rgba(255,255,255,.025)
+    );
+
+    box-shadow:
+    0 25px 70px rgba(0,0,0,.2);
+}
+
+.contact-card h3{
+
+    font-family:"Playfair Display",serif;
+
+    font-size:31px;
+
+    margin-bottom:10px;
+}
+
+.contact-card > p{
+
+    color:var(--muted);
+
+    margin-bottom:25px;
+}
+
+.contact-links{
+
+    display:grid;
+
+    gap:12px;
+}
+
+.contact-link{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:17px;
+
+    border-radius:14px;
+
+    background:rgba(0,0,0,.2);
+
+    border:1px solid rgba(255,255,255,.07);
+
+    transition:.3s;
+}
+
+.contact-link:hover{
+
+    transform:translateX(5px);
+
+    border-color:
+    rgba(0,168,107,.4);
+}
+
+.contact-icon{
+
+    width:43px;
+    height:43px;
+
+    display:grid;
+
+    place-items:center;
+
+    border-radius:12px;
+
+    background:rgba(0,168,107,.14);
+
+    font-size:19px;
+}
+
+.contact-link strong{
+
+    display:block;
+
+    font-size:13px;
+}
+
+.contact-link small{
+
+    color:var(--muted);
+
+    font-size:11px;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer{
+
+    padding:65px 0 25px;
+
+    background:#020a06;
+
+    border-top:1px solid var(--border);
+}
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    1.8fr 1fr 1fr 1.3fr;
+
+    gap:40px;
+}
+
+.footer-brand p{
+
+    color:#73867d;
+
+    font-size:12px;
+
+    line-height:1.8;
+
+    max-width:330px;
+
+    margin-top:18px;
+}
+
+.footer-title{
+
+    color:var(--gold);
+
+    font-size:13px;
+
+    margin-bottom:18px;
+}
+
+.footer-links{
+
+    list-style:none;
+}
+
+.footer-links li{
+    margin-bottom:11px;
+}
+
+.footer-links a{
+
+    color:#83958d;
+
+    font-size:12px;
+
+    transition:.25s;
+}
+
+.footer-links a:hover{
+    color:white;
+}
+
+.footer-contact{
+
+    display:grid;
+
+    gap:12px;
+}
+
+.footer-contact a{
+
+    display:flex;
+
+    gap:9px;
+
+    align-items:center;
+
+    color:#9bad a3;
+
+    color:#a3b4ac;
+
+    font-size:12px;
+}
+
+.footer-bottom{
+
+    border-top:1px solid rgba(255,255,255,.07);
+
+    margin-top:45px;
+
+    padding-top:20px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+    color:#5d7067;
+
+    font-size:11px;
+}
+
+
+/* =========================================================
+   SOCIALS
+   ========================================================= */
+
+.socials{
+
+    display:flex;
+
+    gap:8px;
+
+    margin-top:20px;
+}
+
+.social{
+
+    width:34px;
+    height:34px;
+
+    display:grid;
+    place-items:center;
+
+    border-radius:10px;
+
+    border:1px solid rgba(255,255,255,.1);
+
+    color:#9caf a6;
+
+    color:#9caea6;
+
+    font-size:12px;
+
+    transition:.3s;
+}
+
+.social:hover{
+
+    background:var(--green);
+
+    color:white;
+
+    transform:translateY(-3px);
+}
+
+
+/* =========================================================
+   BACK TO TOP
+   ========================================================= */
+
+.back-top{
+
+    position:fixed;
+
+    right:20px;
+    bottom:150px;
+
+    width:42px;
+    height:42px;
+
+    display:grid;
+
+    place-items:center;
+
+    border-radius:12px;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    background:rgba(3,16,11,.8);
+
+    color:white;
+
+    cursor:pointer;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s;
+
+    z-index:8000;
+}
+
+.back-top.show{
+
+    opacity:1;
+
+    visibility:visible;
+}
+
+
+/* =========================================================
+   REVEAL ANIMATION
+   ========================================================= */
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(35px);
+
+    transition:
+    opacity .8s ease,
+    transform .8s ease;
+}
+
+.reveal.visible{
+
+    opacity:1;
+
+    transform:translateY(0);
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media(max-width:1000px){
+
+    .nav-links{
+
+        position:absolute;
+
+        top:78px;
+        left:0;
+        right:0;
+
+        display:none;
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        padding:25px;
+
+        background:rgba(3,16,11,.98);
+
+        border-bottom:1px solid var(--border);
+    }
+
+    .nav-links.open{
+        display:flex;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .hero-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .hero-visual{
+        display:none;
+    }
+
+    .destination-grid{
+
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+
+    .category-layout{
+
+        grid-template-columns:1fr;
+    }
+
+    .basic-grid{
+
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+
+    .why-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .why-visual{
+        min-height:400px;
+    }
+
+    .footer-grid{
+
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+}
+
+
+@media(max-width:650px){
+
+    section{
+        padding:75px 0;
+    }
+
+    .navbar{
+        height:70px;
+    }
+
+    .nav-links{
+        top:70px;
+    }
+
+    .hero{
+
+        min-height:760px;
+
+        padding-top:120px;
+
+        background-position:
+        60% center;
+    }
+
+    .hero h1{
+
+        font-size:55px;
+
+        letter-spacing:-3px;
+    }
+
+    .hero-text{
+        font-size:15px;
+    }
+
+    .hero-search{
+
+        flex-direction:column;
+
+        gap:7px;
+    }
+
+    .hero-search button{
+        height:48px;
+    }
+
+    .section-head{
+
+        display:block;
+    }
+
+    .section-head .section-description{
+        margin-top:15px;
+    }
+
+    .destination-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .destination-card{
+        min-height:350px;
+    }
+
+    .category-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .basic-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .feature-box{
+
+        min-height:500px;
+
+        padding:30px;
+
+        align-items:end;
+    }
+
+    .stats-grid{
+
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+
+    .stat{
+
+        border-right:0;
+
+        border-bottom:
+        1px solid rgba(255,255,255,.12);
+    }
+
+    .contact-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .subscribe{
+
+        flex-direction:column;
+
+        gap:7px;
+    }
+
+    .subscribe button{
+
+        height:48px;
+    }
+
+    .footer-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .footer-bottom{
+
+        flex-direction:column;
+    }
+
+    .floating-contact{
+
+        right:14px;
+        bottom:14px;
+    }
+
+    .float-btn{
+
+        width:48px;
+        height:48px;
+    }
+
+    .back-top{
+
+        right:15px;
+        bottom:180px;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media(prefers-reduced-motion:reduce){
+
+    *{
+        scroll-behavior:auto!important;
+        animation:none!important;
+        transition:none!important;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- ======================================================
+     HEADER
+     ====================================================== -->
+
+<header class="header" id="header">
+
+<div class="container navbar">
+
+<a href="#" class="logo">
+
+<div class="logo-box">🇸🇦</div>
+
+<div>
+KSA <span>Guide</span>
+</div>
+
+</a>
+
+
+<nav class="nav-links" id="navLinks">
+
+<a href="#home">Home</a>
+
+<a href="#destinations">Destinations</a>
+
+<a href="#guides">Guides</a>
+
+<a href="#cities">Cities</a>
+
+<a href="#about">About</a>
+
+<a href="#contact">Contact</a>
+
+<a
+href="https://wa.me/966501442697"
+target="_blank"
+class="nav-cta">
+
+WhatsApp
+
+</a>
+
+</nav>
+
+
+<button
+class="menu-btn"
+id="menuBtn"
+aria-label="Open menu">
+
+☰
+
+</button>
+
+</div>
+
+</header>
+
+
+
+<!-- ======================================================
+     HERO
+     ====================================================== -->
+
+<main>
+
+<section class="hero" id="home">
+
+<div class="container hero-grid">
+
+
+<div class="hero-content reveal">
+
+<div class="hero-badge">
+
+<span></span>
+
+YOUR GUIDE TO THE KINGDOM
+
+</div>
+
+
+<h1>
+
+Discover
+
+<span class="gold">
+Saudi Arabia.
+</span>
+
+</h1>
+
+
+<p class="hero-text">
+
+Explore Saudi Arabia through its cities, culture,
+landscapes, lifestyle and unforgettable destinations.
+KSA Guide helps you discover the Kingdom in a simple,
+modern and useful way.
+
+</p>
+
+
+<div class="hero-buttons">
+
+<a
+href="#destinations"
+class="btn btn-primary">
+
+✈ Explore Destinations →
+
+</a>
+
+
+<a
+href="#guides"
+class="btn btn-outline">
+
+▣ Browse Guides
+
+</a>
+
+</div>
+
+
+<div class="hero-search">
+
+<input
+type="search"
+id="searchInput"
+placeholder="Search Riyadh, AlUla, Jeddah, travel..."
+aria-label="Search">
+
+<button onclick="searchWebsite()">
+
+Search
+
+</button>
+
+</div>
+
+
+</div>
+
+
+<div class="hero-visual reveal">
+
+<div class="hero-card">
+
+<div class="hero-card-image">
+
+<div class="hero-card-location">
+
+<small>FEATURED CITY</small>
+
+<h3>Riyadh</h3>
+
+</div>
+
+</div>
+
+
+<div class="hero-card-bottom">
+
+<p>
+
+The heart of modern Saudi Arabia.
+
+</p>
+
+<div class="rating">
+
+★ KSA
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- ======================================================
+     DESTINATIONS
+     ====================================================== -->
+
+<section
+class="destinations"
+id="destinations">
+
+<div class="container">
+
+
+<div class="section-head reveal">
+
+<div>
+
+<div class="section-label">
+
+Explore The Kingdom
+
+</div>
+
+<h2 class="section-title">
+
+Places worth
+<span class="gold">discovering.</span>
+
+</h2>
+
+</div>
+
+
+<p class="section-description">
+
+From modern cities to ancient landscapes and
+the Red Sea coast, discover different sides
+of Saudi Arabia.
+
+</p>
+
+</div>
+
+
+<div class="destination-grid">
+
+
+<a href="#" class="destination-card reveal">
+
+<div class="destination-image riyadh"></div>
+
+<div class="destination-info">
+
+<small>CAPITAL CITY</small>
+
+<h3>Riyadh</h3>
+
+<p>
+Modern life, culture, entertainment and heritage.
+</p>
+
+</div>
+
+<div class="arrow">→</div>
+
+</a>
+
+
+<a href="#" class="destination-card reveal">
+
+<div class="destination-image alula"></div>
+
+<div class="destination-info">
+
+<small>HISTORY & NATURE</small>
+
+<h3>AlUla</h3>
+
+<p>
+Ancient heritage, dramatic rocks and desert landscapes.
+</p>
+
+</div>
+
+<div class="arrow">→</div>
+
+</a>
+
+
+<a href="#" class="destination-card reveal">
+
+<div class="destination-image jeddah"></div>
+
+<div class="destination-info">
+
+<small>RED SEA</small>
+
+<h3>Jeddah</h3>
+
+<p>
+Coastline, Al-Balad, food, shopping and city life.
+</p>
+
+</div>
+
+<div class="arrow">→</div>
+
+</a>
+
+
+<a href="#" class="destination-card reveal">
+
+<div class="destination-image aseer"></div>
+
+<div class="destination-info">
+
+<small>MOUNTAINS</small>
+
+<h3>Aseer</h3>
+
+<p>
+Mountains, nature, cool weather and local culture.
+</p>
+
+</div>
+
+<div class="arrow">→</div>
+
+</a>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ======================================================
+     GUIDES
+     ====================================================== -->
+
+<section
+class="categories"
+id="guides">
+
+<div class="container category-layout">
+
+
+<div class="reveal">
+
+<div class="section-label">
+
+KSA Guide
+
+</div>
+
+<h2 class="section-title">
+
+Everything
+
+<span class="gold">
+Saudi.
+</span>
+
+</h2>
+
+<p class="section-description">
+
+Useful categories for visitors, residents
+and anyone who wants to learn more about
+Saudi Arabia.
+
+</p>
+
+<br>
+
+<a
+href="#contact"
+class="btn btn-outline">
+
+Explore All Guides →
+
+</a>
+
+</div>
+
+
+<div class="category-grid">
+
+
+<a href="#" class="category-card reveal">
+
+<div class="category-icon">✈️</div>
+
+<h3>Travel & Tourism</h3>
+
+<p>
+Destination ideas, travel tips and places
+to explore across Saudi Arabia.
+</p>
+
+</a>
+
+
+<a href="#" class="category-card reveal">
+
+<div class="category-icon">🛂</div>
+
+<h3>Visa & Entry</h3>
+
+<p>
+Useful information and guides for planning
+your journey to Saudi Arabia.
+</p>
+
+</a>
+
+
+<a href="#" class="category-card reveal">
+
+<div class="category-icon">🏙️</div>
+
+<h3>Saudi Cities</h3>
+
+<p>
+Explore Riyadh, Jeddah, Dammam, AlUla,
+Abha and more.
+</p>
+
+</a>
+
+
+<a href="#" class="category-card reveal">
+
+<div class="category-icon">💼</div>
+
+<h3>Jobs & Work</h3>
+
+<p>
+Career and employment resources
+for Saudi Arabia.
+</p>
+
+</a>
+
+
+<a href="#" class="category-card reveal">
+
+<div class="category-icon">🏠</div>
+
+<h3>Life in Saudi</h3>
+
+<p>
+Everyday living, services, shopping,
+transport and more.
+</p>
+
+</a>
+
+
+<a href="#" class="category-card reveal">
+
+<div class="category-icon">🕌</div>
+
+<h3>Hajj & Umrah</h3>
+
+<p>
+Useful planning resources for visitors
+and pilgrims.
+</p>
+
+</a>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ======================================================
+     FEATURE
+     ====================================================== -->
+
+<section class="feature" id="cities">
+
+<div class="container">
+
+<div class="feature-box reveal">
+
+<div class="feature-content">
+
+<div class="section-label">
+
+Featured Destination
+
+</div>
+
+<h2>
+AlUla
+</h2>
+
+<h3 class="gold">
+
+Ancient stories. Modern experiences.
+
+</h3>
+
+<p>
+
+Explore the landscapes, heritage and experiences
+of AlUla. Discover ancient sites, dramatic
+rock formations and the surrounding desert
+environment.
+
+</p>
+
+<a href="#" class="btn btn-primary">
+
+Explore AlUla →
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ======================================================
+     BASICS
+     ====================================================== -->
+
+<section class="basics">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<div>
+
+<div class="section-label">
+
+Quick Information
+
+</div>
+
+<h2 class="section-title">
+
+Saudi <span class="gold">basics.</span>
+
+</h2>
+
+</div>
+
+<p class="section-description">
+
+Start with simple information before planning
+your next Saudi experience.
+
+</p>
+
+</div>
+
+
+<div class="basic-grid">
+
+
+<div class="basic-card reveal">
+
+<div class="basic-icon">🇸🇦</div>
+
+<h3>Saudi Arabia</h3>
+
+<p>
+Kingdom of Saudi Arabia
+</p>
+
+</div>
+
+
+<div class="basic-card reveal">
+
+<div class="basic-icon">📍</div>
+
+<h3>Riyadh</h3>
+
+<p>
+Capital of Saudi Arabia
+</p>
+
+</div>
+
+
+<div class="basic-card reveal">
+
+<div class="basic-icon">🌊</div>
+
+<h3>Red Sea</h3>
+
+<p>
+Coast, beaches and marine experiences
+</p>
+
+</div>
+
+
+<div class="basic-card reveal">
+
+<div class="basic-icon">🏜️</div>
+
+<h3>AlUla</h3>
+
+<p>
+Heritage, nature and desert landscapes
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ======================================================
+     STATS
+     ====================================================== -->
+
+<section class="stats">
+
+<div class="container">
+
+<div class="stats-grid">
+
+
+<div class="stat reveal">
+
+<div class="stat-number">🇸🇦</div>
+
+<p>The Kingdom</p>
+
+</div>
+
+
+<div class="stat reveal">
+
+<div class="stat-number">13</div>
+
+<p>Regions of Saudi Arabia</p>
+
+</div>
+
+
+<div class="stat reveal">
+
+<div class="stat-number">∞</div>
+
+<p>Places to Discover</p>
+
+</div>
+
+
+<div class="stat reveal">
+
+<div class="stat-number">01</div>
+
+<p>KSA Guide</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ======================================================
+     WHY KSA GUIDE
+     ====================================================== -->
+
+<section class="why" id="about">
+
+<div class="container why-grid">
+
+
+<div class="why-visual reveal">
+
+<div class="orbit"></div>
+
+
+<div class="why-card card-one">
+
+<div class="why-card-icon">
+
+🇸🇦
+
+</div>
+
+<h3>Made for Saudi</h3>
+
+<p>
+
+A modern guide focused on discovering
+the Kingdom.
+
+</p>
+
+</div>
+
+
+<div class="why-card card-two">
+
+<div class="why-card-icon">
+
+✨
+
+</div>
+
+<h3>Simple & Useful</h3>
+
+<p>
+
+Find destinations, guides and useful
+information in one place.
+
+</p>
+
+</div>
+
+
+</div>
+
+
+<div class="reveal">
+
+<div class="section-label">
+
+Why KSA Guide
+
+</div>
+
+<h2 class="section-title">
+
+Discover more.
+Experience <span class="gold">Saudi.</span>
+
+</h2>
+
+<p class="section-description">
+
+KSA Guide is designed to make exploring
+Saudi Arabia easier, more visual and more
+interesting.
+
+</p>
+
+
+<ul class="check-list">
+
+<li>
+<span>✓</span>
+Saudi destinations and cities
+</li>
+
+<li>
+<span>✓</span>
+Travel and lifestyle information
+</li>
+
+<li>
+<span>✓</span>
+Useful guides for visitors and residents
+</li>
+
+<li>
+<span>✓</span>
+Modern mobile-friendly experience
+</li>
+
+<li>
+<span>✓</span>
+Regularly expandable content
+</li>
+
+</ul>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- ======================================================
+     NEWSLETTER
+     ====================================================== -->
+
+<section class="newsletter">
+
+<div class="newsletter-inner reveal">
+
+<div class="section-label">
+
+Stay Connected
+
+</div>
+
+<h2>
+
+Discover more of <span class="gold">Saudi.</span>
+
+</h2>
+
+<p>
+
+Get new Saudi travel ideas, city guides
+and useful information.
+
+</p>
+
+
+<form
+class="subscribe"
+onsubmit="subscribeUser(event)">
+
+<input
+type="email"
+id="emailInput"
+placeholder="Enter your email address"
+required>
+
+<button type="submit">
+
+Subscribe
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+
+
+<!-- ======================================================
+     CONTACT
+     ====================================================== -->
+
+<section
+class="contact"
+id="contact">
+
+<div class="container">
+
+<div class="contact-grid">
+
+
+<div class="contact-card reveal">
+
+<div class="section-label">
+
+Get In Touch
+
+</div>
+
+<h3>
+
+Contact KSA Guide
+
+</h3>
+
+<p>
+
+Have a question, suggestion or business
+inquiry? Get in touch with us.
+
+</p>
+
+
+<div class="contact-links">
+
+
+<a
+class="contact-link"
+href="https://wa.me/966501442697"
+target="_blank">
+
+<div class="contact-icon">
+💬
+</div>
+
+<div>
+
+<strong>WhatsApp</strong>
+
+<small>
+0501442697
+</small>
+
+</div>
+
+</a>
+
+
+<a
+class="contact-link"
+href="tel:+966501442697">
+
+<div class="contact-icon">
+📞
+</div>
+
+<div>
+
+<strong>Call Us</strong>
+
+<small>
+0501442697
+</small>
+
+</div>
+
+</a>
+
+
+<a
+class="contact-link"
+href="mailto:ahmedtaimoori0012@gmail.com">
+
+<div class="contact-icon">
+📧
+</div>
+
+<div>
+
+<strong>Email</strong>
+
+<small>
+ahmedtaimoori0012@gmail.com
+</small>
+
+</div>
+
+</a>
+
+
+</div>
+
+</div>
+
+
+<div class="contact-card reveal">
+
+<div class="section-label">
+
+KSA Guide
+
+</div>
+
+<h3>
+
+Explore the Kingdom.
+
+</h3>
+
+<p>
+
+From Riyadh's modern skyline to AlUla's
+ancient landscapes, Saudi Arabia has
+something different around every corner.
+
+</p>
+
+
+<a
+href="https://wa.me/966501442697?text=Hello%20KSA%20Guide"
+target="_blank"
+class="btn btn-primary">
+
+💬 Chat on WhatsApp →
+
+</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+</main>
+
+
+
+<!-- ======================================================
+     FOOTER
+     ====================================================== -->
+
+<footer>
+
+<div class="container">
+
+
+<div class="footer-grid">
+
+
+<div class="footer-brand">
+
+<a href="#" class="logo">
+
+<div class="logo-box">🇸🇦</div>
+
+<div>
+KSA <span>Guide</span>
+</div>
+
+</a>
+
+
+<p>
+
+Your digital guide to Saudi Arabia —
+destinations, culture, cities, travel,
+lifestyle and useful information.
+
+</p>
+
+
+<div class="socials">
+
+<a href="#" class="social">f</a>
+
+<a href="#" class="social">X</a>
+
+<a href="#" class="social">◎</a>
+
+<a href="#" class="social">▶</a>
+
+</div>
+
+</div>
+
+
+<div>
+
+<div class="footer-title">
+Explore
+</div>
+
+<ul class="footer-links">
+
+<li><a href="#destinations">Destinations</a></li>
+
+<li><a href="#cities">Cities</a></li>
+
+<li><a href="#guides">Guides</a></li>
+
+<li><a href="#about">About</a></li>
+
+</ul>
+
+</div>
+
+
+<div>
+
+<div class="footer-title">
+Saudi
+</div>
+
+<ul class="footer-links">
+
+<li><a href="#">Riyadh</a></li>
+
+<li><a href="#">Jeddah</a></li>
+
+<li><a href="#">AlUla</a></li>
+
+<li><a href="#">Aseer</a></li>
+
+</ul>
+
+</div>
+
+
+<div>
+
+<div class="footer-title">
+Contact Us
+</div>
+
+
+<div class="footer-contact">
+
+
+<a href="tel:+966501442697">
+
+📞
+
+0501442697
+
+</a>
+
+
+<a href="mailto:ahmedtaimoori0012@gmail.com">
+
+📧
+
+ahmedtaimoori0012@gmail.com
+
+</a>
+
+
+<a
+href="https://wa.me/966501442697"
+target="_blank">
+
+💬
+
+WhatsApp Us
+
+</a>
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<div class="footer-bottom">
+
+<span>
+
+© 2026 KSA Guide. All rights reserved.
+
+</span>
+
+<span>
+
+Made for Saudi Arabia 🇸🇦
+
+</span>
+
+</div>
+
+
+</div>
+
+</footer>
+
+
+
+<!-- ======================================================
+     FLOATING CONTACT BUTTONS
+     ====================================================== -->
+
+<div class="floating-contact">
+
+
+<a
+href="mailto:ahmedtaimoori0012@gmail.com"
+class="float-btn email"
+aria-label="Email">
+
+✉
+
+</a>
+
+
+<a
+href="tel:+966501442697"
+class="float-btn phone"
+aria-label="Call">
+
+☎
+
+</a>
+
+
+<a
+href="https://wa.me/966501442697?text=Hello%20KSA%20Guide"
+target="_blank"
+class="float-btn whatsapp"
+aria-label="WhatsApp">
+
+💬
+
+</a>
+
+</div>
+
+
+
+<!-- BACK TO TOP -->
+
+<button
+class="back-top"
+id="backTop"
+onclick="window.scrollTo({top:0,behavior:'smooth'})"
+aria-label="Back to top">
+
+↑
+
+</button>
+
+
+
+<script>
+
+/* =========================================================
+   MOBILE MENU
+   ========================================================= */
+
+const menuBtn =
+document.getElementById("menuBtn");
+
+const navLinks =
+document.getElementById("navLinks");
+
+menuBtn.addEventListener("click",()=>{
+
+    navLinks.classList.toggle("open");
+
+});
+
+
+document
+.querySelectorAll(".nav-links a")
+.forEach(link=>{
+
+    link.addEventListener("click",()=>{
+
+        navLinks.classList.remove("open");
+
+    });
+
+});
+
+
+/* =========================================================
+   HEADER SCROLL
+   ========================================================= */
+
+const header =
+document.getElementById("header");
+
+const backTop =
+document.getElementById("backTop");
+
+window.addEventListener("scroll",()=>{
+
+    if(window.scrollY > 60){
+
+        header.classList.add("scrolled");
+
+        backTop.classList.add("show");
+
+    }else{
+
+        header.classList.remove("scrolled");
+
+        backTop.classList.remove("show");
+
+    }
+
+});
+
+
+/* =========================================================
+   SCROLL REVEAL
+   ========================================================= */
+
+const revealElements =
+document.querySelectorAll(".reveal");
+
+const revealObserver =
+new IntersectionObserver(
+(entries)=>{
+
+    entries.forEach(entry=>{
+
+        if(entry.isIntersecting){
+
+            entry.target
+            .classList
+            .add("visible");
+
+            revealObserver
+            .unobserve(entry.target);
+
+        }
+
+    });
+
+},
+{
+    threshold:.12
+});
+
+
+revealElements.forEach(el=>{
+
+    revealObserver.observe(el);
+
+});
+
+
+/* =========================================================
+   SEARCH
+   ========================================================= */
+
+function searchWebsite(){
+
+    const input =
+    document.getElementById("searchInput");
+
+    const value =
+    input.value.trim();
+
+    if(!value){
+
+        alert(
+        "Please enter a destination or topic to search."
+        );
+
+        input.focus();
+
+        return;
+    }
+
+    const query =
+    encodeURIComponent(value);
+
+    /*
+      This currently opens Google search.
+      Later it can be connected to your
+      own KSA Guide article search.
+    */
+
+    window.open(
+        "https://www.google.com/search?q=site%3Aksa-guide.com+" + query,
+        "_blank"
+    );
+
+}
+
+
+/* ENTER KEY SEARCH */
+
+document
+.getElementById("searchInput")
+.addEventListener("keydown",(event)=>{
+
+    if(event.key === "Enter"){
+
+        searchWebsite();
+
+    }
+
+});
+
+
+/* =========================================================
+   NEWSLETTER
+   ========================================================= */
+
+function subscribeUser(event){
+
+    event.preventDefault();
+
+    const email =
+    document.getElementById("emailInput").value;
+
+    alert(
+        "Thank you for subscribing to KSA Guide!\\n\\n" +
+        "Email: " + email
+    );
+
+    event.target.reset();
+
+}
+
+
+/* =========================================================
+   3D CARD TILT
+   ========================================================= */
+
+const cards =
+document.querySelectorAll(
+    ".destination-card"
+);
+
+
+cards.forEach(card=>{
+
+    card.addEventListener(
+    "mousemove",
+    (event)=>{
+
+        if(window.innerWidth < 800)
+        return;
+
+        const rect =
+        card.getBoundingClientRect();
+
+        const x =
+        event.clientX - rect.left;
+
+        const y =
+        event.clientY - rect.top;
+
+        const centerX =
+        rect.width / 2;
+
+        const centerY =
+        rect.height / 2;
+
+        const rotateX =
+        ((y-centerY)/centerY)*-4;
+
+        const rotateY =
+        ((x-centerX)/centerX)*4;
+
+        card.style.transform =
+        `perspective(900px)
+         rotateX(${rotateX}deg)
+         rotateY(${rotateY}deg)
+         translateY(-10px)`;
+
+    });
+
+
+    card.addEventListener(
+    "mouseleave",
+    ()=>{
+
+        card.style.transform="";
+
+    });
+
+});
+
+
+/* =========================================================
+   HERO CARD PARALLAX
+   ========================================================= */
+
+const heroCard =
+document.querySelector(".hero-card");
+
+
+document.addEventListener(
+"mousemove",
+(event)=>{
+
+    if(window.innerWidth < 900)
+    return;
+
+    const x =
+    (event.clientX /
+    window.innerWidth - .5);
+
+    const y =
+    (event.clientY /
+    window.innerHeight - .5);
+
+    heroCard.style.transform =
+    `rotateY(${x*8 - 8}deg)
+     rotateX(${y*-5 + 4}deg)`;
+
+});
+
+
+/* =========================================================
+   CONTACT CONSOLE MESSAGE
+   ========================================================= */
+
+console.log(
+"🇸🇦 KSA Guide loaded successfully."
+);
+
+console.log(
+"Contact: ahmedtaimoori0012@gmail.com"
+);
+
+console.log(
+"WhatsApp: 0501442697"
+);
+
+</script>
+
+
+</body>
+</html>
