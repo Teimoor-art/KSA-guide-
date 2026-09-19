@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KSA Guide Admin – Add New Post</title>
+<style>
+body { font-family: Inter, sans-serif; background: #0a0f0c; color: #f0f4f1; padding: 2rem; max-width: 900px; margin: 0 auto; }
+h1 { color: #C9A86A; }
+label { display: block; margin-top: 1.2rem; font-weight: 600; }
+input, select, textarea { width: 100%; padding: 0.8rem; margin-top: 0.4rem; border-radius: 10px; border: 1px solid #333; background: #151a17; color: white; }
+textarea { min-height: 150px; }
+button { background: #006C35; color: white; border: none; padding: 0.9rem 1.8rem; border-radius: 10px; margin-top: 1.5rem; cursor: pointer; font-weight: 600; margin-right: 0.8rem; }
+.preview { background: #151a17; border: 1px solid #C9A86A; border-radius: 16px; padding: 1.5rem; margin-top: 2rem; }
+pre { background: #111; padding: 1rem; border-radius: 10px; overflow-x: auto; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<h1>KSA Guide – Add New Post</h1>
+<p>Fill the form → Generate JSON → Copy → Paste at the end of posts.json on GitHub → Commit. Never edit index.html.</p>
+
+<label>Post ID (example: new-iqama-guide-2026)</label>
+<input type="text" id="id">
+
+<label>Title</label>
+<input type="text" id="title">
+
+<label>Category</label>
+<select id="category">
+  <option>Iqama</option>
+  <option>Absher</option>
+  <option>Visa</option>
+  <option>Driving</option>
+  <option>Employment</option>
+  <option>Business</option>
+  <option>Tourism</option>
+  <option>Hajj & Umrah</option>
+  <option>Daily Life</option>
+</select>
+
+<label>Date (YYYY-MM-DD)</label>
+<input type="date" id="date">
+
+<label>Excerpt (short description)</label>
+<textarea id="excerpt"></textarea>
+
+<label>Read Time (example: 6 min)</label>
+<input type="text" id="read" value="6 min">
+
+<label>Full Content</label>
+<textarea id="content" style="min-height:200px;"></textarea>
+
+<label>Fees (one row per line: Type | Fee | Note)</label>
+<textarea id="fees" placeholder="Iqama Renewal | 650 | Per year"></textarea>
+
+<label>Steps (one step per line)</label>
+<textarea id="steps" placeholder="Login to Absher&#10;Go to Iqama Services&#10;Pay via SADAD"></textarea>
+
+<button onclick="generate()">Generate JSON</button>
+<button onclick="copyJSON()">Copy JSON</button>
+<button onclick="downloadJSON()">Download posts.json piece</button>
+
+<div class="preview" id="preview" style="display:none;">
+  <h3>Card Preview</h3>
+  <div id="cardPreview"></div>
+  <h3 style="margin-top:1.5rem;">JSON Output</h3>
+  <pre id="jsonOutput"></pre>
+</div>
+
+<script>
+function generate() {
+  const feesRaw = document.getElementById('fees').value.trim().split('\n').filter(l => l.trim());
+  const fees = [["Type","Fee (SAR)","Note"]];
+  feesRaw.forEach(line => {
+    const parts = line.split('|').map(p => p.trim());
+    fees.push(parts);
+  });
+
+  const steps = document.getElementById('steps').value.trim().split('\n').filter(l => l.trim());
+
+  const post = {
+    id: document.getElementById('id').value.trim(),
+    title: document.getElementById('title').value.trim(),
+    date: document.getElementById('date').value,
+    category: document.getElementById('category').value,
+    excerpt: document.getElementById('excerpt').value.trim(),
+    read: document.getElementById('read').value.trim(),
+    fees: fees,
+    steps: steps,
+    content: document.getElementById('content').value.trim()
+  };
+
+  document.getElementById('jsonOutput').textContent = JSON.stringify(post, null, 2) + ',';
+  document.getElementById('cardPreview').innerHTML = `
+    <strong>${post.category}</strong><br>
+    <h3 style="margin:0.5rem 0;">${post.title}</h3>
+    <small>${post.date} • ${post.read}</small>
+    <p>${post.excerpt}</p>
+  `;
+  document.getElementById('preview').style.display = 'block';
+  window.generatedPost = post;
+}
+
+function copyJSON() {
+  if (!window.generatedPost) return alert('Generate first');
+  navigator.clipboard.writeText(JSON.stringify(window.generatedPost, null, 2) + ',');
+  alert('JSON copied! Paste it inside the posts.json array.');
+}
+
+function downloadJSON() {
+  if (!window.generatedPost) return alert('Generate first');
+  const blob = new Blob([JSON.stringify(window.generatedPost, null, 2) + ','], {type: 'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'new-post.json';
+  a.click();
+}
+</script>
+</body>
+</html>
