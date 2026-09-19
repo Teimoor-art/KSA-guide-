@@ -1,0 +1,456 @@
+[
+  {
+    "id": "iqama-renewal-2026",
+    "title": "Iqama Renewal 2026 – Complete Guide with Fees",
+    "date": "2026-09-10",
+    "category": "Iqama",
+    "excerpt": "Step-by-step Iqama renewal process via Absher and Muqeem with current fees.",
+    "read": "7 min",
+    "fees": [
+      ["Type", "Fee (SAR)", "Note"],
+      ["Iqama Renewal (Main)", "650", "Per year"],
+      ["Dependent Iqama", "500-650", "Per person / year"],
+      ["Medical Insurance", "Varies", "Mandatory"],
+      ["Work Permit (if applicable)", "800-9600", "MOL fee depending on category"]
+    ],
+    "steps": [
+      "Ensure medical insurance is active and valid.",
+      "Log into Absher Individuals or Muqeem.",
+      "Go to Iqama Services → Renew Iqama.",
+      "Pay fees via SADAD.",
+      "Wait for approval and print new Iqama."
+    ],
+    "content": "Iqama renewal is one of the most common procedures for expats in Saudi Arabia. In 2026 the process remains primarily digital through Absher and Muqeem. Make sure your passport has at least 6 months validity, medical insurance is active, and all traffic fines are cleared before starting. After payment via SADAD the new Iqama is usually issued within a few working days."
+  },
+  {
+    "id": "absher-login-guide-2026",
+    "title": "Absher Login & Registration Guide 2026",
+    "date": "2026-09-05",
+    "category": "Absher",
+    "excerpt": "How to create Absher account, login with Nafath, and fix common issues.",
+    "read": "6 min",
+    "fees": [
+      ["Service", "Fee (SAR)", "Note"],
+      ["Absher Account", "Free", "Registration is free"]
+    ],
+    "steps": [
+      "Visit absher.sa",
+      "Click Register / New User",
+      "Enter Iqama or Border Number",
+      "Verify via mobile OTP or Nafath",
+      "Set password and activate account"
+    ],
+    "content": "Absher is the main digital platform of the Ministry of Interior. All Iqama, traffic, family and appointment services are available here. New users can register using Iqama number. Existing users are strongly recommended to activate Nafath for passwordless login. Always use the official absher.sa domain only."
+  },
+  {
+    "id": "check-iqama-status-2026",
+    "title": "How to Check Iqama Status Online 2026",
+    "date": "2026-08-28",
+    "category": "Iqama",
+    "excerpt": "Check validity, expiry date and remaining days of your Iqama instantly.",
+    "read": "4 min",
+    "fees": [["Service", "Fee", "Note"], ["Check Status", "Free", "Via Absher or Muqeem"]],
+    "steps": [
+      "Login to Absher or Muqeem",
+      "Go to Iqama Services",
+      "Select Query Iqama Information",
+      "View expiry date and status"
+    ],
+    "content": "You can check your Iqama status anytime free of charge through Absher Individuals or the Muqeem portal. The system shows exact expiry date, remaining days, and any restrictions. It is recommended to check at least 60 days before expiry."
+  },
+  {
+    "id": "exit-reentry-visa-2026",
+    "title": "Exit Re-Entry Visa Guide 2026",
+    "date": "2026-08-20",
+    "category": "Visa",
+    "excerpt": "Single and Multiple Exit Re-Entry visa issuance, fees and rules.",
+    "read": "6 min",
+    "fees": [
+      ["Type", "Fee (SAR)", "Note"],
+      ["Single Exit Re-Entry (2 months)", "200", "Standard"],
+      ["Multiple Exit Re-Entry (3 months)", "500", ""],
+      ["Multiple (6 months)", "1000", ""],
+      ["Extension", "100", "Per month"]
+    ],
+    "steps": [
+      "Login to Absher or Muqeem",
+      "Select Exit Re-Entry Visa",
+      "Choose Single or Multiple",
+      "Pay via SADAD",
+      "Print or save the visa"
+    ],
+    "content": "Exit Re-Entry visa allows residents to leave and return to Saudi Arabia. Single visa is valid for one trip, Multiple allows several trips within the validity period. The visa must be used before Iqama expiry. Always check remaining validity carefully."
+  },
+  {
+    "id": "work-visa-2026",
+    "title": "Saudi Work Visa 2026 – Complete Process",
+    "date": "2026-08-15",
+    "category": "Visa",
+    "excerpt": "How to get work visa, required documents and MOL fees.",
+    "read": "9 min",
+    "fees": [
+      ["Item", "Fee (SAR)", "Note"],
+      ["Work Visa", "Varies", "Embassy fee"],
+      ["Work Permit (MOL)", "800 - 9600", "Depends on profession category"],
+      ["Iqama Issuance", "650+", "After arrival"]
+    ],
+    "steps": [
+      "Employer applies via Qiwa / MOL",
+      "Visa number issued",
+      "Apply at Saudi Embassy / Consulate",
+      "Medical check + biometrics",
+      "Enter KSA and complete Iqama"
+    ],
+    "content": "Saudi work visa process starts with the employer obtaining approval through Qiwa and Ministry of Human Resources. After visa issuance the candidate completes medical and embassy procedures. Upon arrival the Iqama must be issued within the allowed period."
+  },
+  {
+    "id": "tourist-visa-online-2026",
+    "title": "Saudi Tourist eVisa 2026 Guide",
+    "date": "2026-08-10",
+    "category": "Visa",
+    "excerpt": "How to apply for Saudi tourist eVisa online, fees and eligibility.",
+    "read": "5 min",
+    "fees": [
+      ["Type", "Fee (SAR)", "Note"],
+      ["Tourist eVisa", "535", "Including VAT (approx)"],
+      ["Insurance", "Included", "Usually covered"]
+    ],
+    "steps": [
+      "Visit visatosaudi.com or official portal",
+      "Fill application form",
+      "Upload passport photo and picture",
+      "Pay online",
+      "Receive eVisa by email"
+    ],
+    "content": "Saudi Arabia issues tourist eVisas to eligible nationalities. The process is fully online and usually takes a few minutes to a few days. The eVisa allows multiple entries within its validity. Always check the latest eligible countries list on the official website."
+  },
+  {
+    "id": "family-visit-visa-2026",
+    "title": "Family Visit Visa Saudi Arabia 2026",
+    "date": "2026-08-05",
+    "category": "Visa",
+    "excerpt": "How to invite family members on visit visa and required documents.",
+    "read": "6 min",
+    "fees": [
+      ["Type", "Fee (SAR)", "Note"],
+      ["Family Visit Visa", "Varies", "Embassy + service fees"]
+    ],
+    "steps": [
+      "Sponsor applies via Absher",
+      "Get approval",
+      "Family applies at embassy / VFS",
+      "Receive visa and travel"
+    ],
+    "content": "Residents can invite parents, spouse and children on family visit visa through Absher. Approval is required before the family applies at the Saudi mission. Duration is usually 30-90 days depending on approval."
+  },
+  {
+    "id": "driving-license-expats-2026",
+    "title": "Saudi Driving License for Expats 2026",
+    "date": "2026-07-28",
+    "category": "Driving",
+    "excerpt": "Convert foreign license or get new Saudi driving license.",
+    "read": "8 min",
+    "fees": [
+      ["Item", "Fee (SAR)", "Note"],
+      ["License Issuance", "40-100", "Approx"],
+      ["Theory Test", "Varies", ""],
+      ["Practical Test", "Varies", ""]
+    ],
+    "steps": [
+      "Get medical fitness certificate",
+      "Book theory test via Absher",
+      "Pass theory",
+      "Book practical test",
+      "Issue license after passing"
+    ],
+    "content": "Many nationalities can convert their foreign driving license after theory and practical tests. Some countries have reciprocity. The process is managed through Absher Traffic services and driving schools."
+  },
+  {
+    "id": "traffic-fines-guide-2026",
+    "title": "Traffic Fines & Violations Guide 2026",
+    "date": "2026-07-20",
+    "category": "Driving",
+    "excerpt": "How to check and pay traffic fines via Absher and SADAD.",
+    "read": "5 min",
+    "fees": [
+      ["Violation Type", "Fine Range (SAR)", "Note"],
+      ["Speeding", "150 - 2000", "Depends on excess"],
+      ["Red Light", "3000", "Serious"],
+      ["No Seatbelt", "150", ""],
+      ["Mobile Use", "150-500", ""]
+    ],
+    "steps": [
+      "Login Absher",
+      "Go to Traffic → My Violations",
+      "Select fine and pay via SADAD",
+      "Or pay through bank app"
+    ],
+    "content": "All traffic violations appear in Absher. Fines must be paid before Iqama renewal or exit re-entry in many cases. Payment is done through SADAD. Serious violations may require additional procedures."
+  },
+  {
+    "id": "end-of-service-benefits-2026",
+    "title": "End of Service Benefits Calculation 2026",
+    "date": "2026-07-15",
+    "category": "Employment",
+    "excerpt": "How to calculate EOSB according to Saudi Labour Law.",
+    "read": "7 min",
+    "fees": [["Service", "Fee", "Note"], ["Calculation", "Free", "Based on salary & years"]],
+    "steps": [
+      "Check contract type (definite / indefinite)",
+      "Calculate half month salary for first 5 years",
+      "Full month salary after 5 years",
+      "Request through Qiwa or company"
+    ],
+    "content": "End of Service Benefits (EOSB) are calculated based on the Saudi Labour Law. For the first five years the employee receives half a month’s wage for each year, and one month’s wage for each subsequent year. Always keep records of salary and service duration."
+  },
+  {
+    "id": "jobs-salary-guide-2026",
+    "title": "Jobs & Average Salary Guide in KSA 2026",
+    "date": "2026-07-10",
+    "category": "Employment",
+    "excerpt": "Average salaries for popular professions and job search tips.",
+    "read": "8 min",
+    "fees": [["Service", "Fee", "Note"], ["Job Search", "Free", "Qiwa, LinkedIn, Bayt"]],
+    "steps": [
+      "Update Qiwa profile",
+      "Search on LinkedIn and Bayt",
+      "Apply through company career pages",
+      "Prepare for interview"
+    ],
+    "content": "Salary levels vary widely by sector, experience and nationality. Engineering, IT, healthcare and oil & gas generally offer higher packages. Always negotiate housing, transport and medical insurance as part of the package."
+  },
+  {
+    "id": "gosi-registration-guide-2026",
+    "title": "GOSI Registration Guide for Expats 2026",
+    "date": "2026-07-05",
+    "category": "Employment",
+    "excerpt": "How GOSI works and contribution rates for employees.",
+    "read": "5 min",
+    "fees": [
+      ["Contribution", "Rate", "Note"],
+      ["Employee Share", "9.75%", "Approx of salary"],
+      ["Employer Share", "11.75%", "Approx"]
+    ],
+    "steps": [
+      "Employer registers the employee",
+      "Contributions deducted monthly",
+      "Check status on GOSI website"
+    ],
+    "content": "GOSI (General Organization for Social Insurance) provides pension and occupational hazard coverage. Both employer and employee contribute. Expats are covered for occupational hazards and can claim certain benefits upon final exit in some cases."
+  },
+  {
+    "id": "business-setup-guide-2026",
+    "title": "Business Setup in Saudi Arabia 2026",
+    "date": "2026-06-28",
+    "category": "Business",
+    "excerpt": "How to open a company via MISA and required licenses.",
+    "read": "10 min",
+    "fees": [
+      ["Item", "Fee (SAR)", "Note"],
+      ["MISA License", "2000+", "Depending on activity"],
+      ["Commercial Registration", "Varies", ""],
+      ["Chamber Membership", "Varies", ""]
+    ],
+    "steps": [
+      "Choose activity and legal form",
+      "Apply through MISA / Invest Saudi",
+      "Get foreign investment license",
+      "Issue Commercial Registration",
+      "Open bank account and start"
+    ],
+    "content": "Foreign investors can establish 100% foreign-owned companies in most sectors through the Ministry of Investment (MISA). The process is largely digital. Professional help is recommended for documentation and compliance."
+  },
+  {
+    "id": "premium-residency-2026",
+    "title": "Premium Residency (Iqama) 2026 Guide",
+    "date": "2026-06-20",
+    "category": "Iqama",
+    "excerpt": "Permanent and temporary Premium Residency options and benefits.",
+    "read": "7 min",
+    "fees": [
+      ["Type", "Fee (SAR)", "Note"],
+      ["Permanent Premium", "800,000", "One-time"],
+      ["Temporary (1 year)", "100,000", "Renewable"]
+    ],
+    "steps": [
+      "Check eligibility on premiumresidency.sa",
+      "Submit application online",
+      "Pay fees",
+      "Receive Premium Residency card"
+    ],
+    "content": "Premium Residency allows foreign nationals to live, work and own property in Saudi Arabia without a traditional sponsor. There are permanent and renewable temporary options. Benefits include ability to hire domestic workers and sponsor family."
+  },
+  {
+    "id": "bank-account-expats-2026",
+    "title": "How to Open Bank Account in KSA 2026",
+    "date": "2026-06-15",
+    "category": "Daily Life",
+    "excerpt": "Documents required and best banks for expats.",
+    "read": "6 min",
+    "fees": [["Service", "Fee", "Note"], ["Account Opening", "Usually Free", "Minimum balance may apply"]],
+    "steps": [
+      "Get Iqama first",
+      "Visit bank with passport + Iqama",
+      "Fill application and biometric",
+      "Receive debit card and IBAN"
+    ],
+    "content": "Most major banks (Al Rajhi, SNB, Riyad Bank, SAB, etc.) open accounts for residents. You need valid Iqama and passport. Some banks offer digital onboarding. Salary transfer account is usually required by employers."
+  },
+  {
+    "id": "health-insurance-expats-2026",
+    "title": "Health Insurance for Expats 2026",
+    "date": "2026-06-10",
+    "category": "Daily Life",
+    "excerpt": "Mandatory health insurance rules and how to check coverage.",
+    "read": "5 min",
+    "fees": [
+      ["Type", "Approx Annual Cost", "Note"],
+      ["Basic", "800-2000", "Varies by age & company"],
+      ["Enhanced", "2000+", "Better coverage"]
+    ],
+    "steps": [
+      "Employer usually provides insurance",
+      "Check status on CCHI website",
+      "Use network hospitals",
+      "Keep insurance card with you"
+    ],
+    "content": "Health insurance is mandatory for all residents. The employer is responsible for providing it. You can check your policy status on the Council of Cooperative Health Insurance (CCHI) website. Always carry the insurance card."
+  },
+  {
+    "id": "cost-of-living-2026",
+    "title": "Cost of Living in Saudi Arabia 2026",
+    "date": "2026-06-05",
+    "category": "Daily Life",
+    "excerpt": "Average monthly expenses in Riyadh, Jeddah and other cities.",
+    "read": "8 min",
+    "fees": [["Item", "Approx Monthly (SAR)", "Note"], ["1 Bedroom Rent", "2500-5000", "Riyadh/Jeddah"], ["Food", "800-1500", "Single"], ["Transport", "300-800", ""], ["Utilities", "200-400", ""]],
+    "steps": ["Track expenses", "Compare cities", "Negotiate housing package"],
+    "content": "Cost of living varies significantly between cities and lifestyle. Riyadh and Jeddah are more expensive. Many expats receive housing and transport allowance from employers which greatly reduces personal expenses."
+  },
+  {
+    "id": "hajj-guide-2026",
+    "title": "Hajj Guide for Expats 2026",
+    "date": "2026-05-28",
+    "category": "Hajj & Umrah",
+    "excerpt": "How residents can register for Hajj through official channels.",
+    "read": "7 min",
+    "fees": [
+      ["Package Type", "Approx Cost", "Note"],
+      ["Basic", "Varies", "Government quota"],
+      ["Private", "Higher", "Companies"]
+    ],
+    "steps": [
+      "Check eligibility and quota",
+      "Register via official Hajj portal or company",
+      "Pay package fees",
+      "Receive permit and travel"
+    ],
+    "content": "Saudi residents can perform Hajj through the official Ministry of Hajj system or authorized companies. Registration usually opens several months before Hajj. Only those who meet the conditions and obtain a permit are allowed."
+  },
+  {
+    "id": "umrah-visa-2026",
+    "title": "Umrah Visa & Permit Guide 2026",
+    "date": "2026-05-20",
+    "category": "Hajj & Umrah",
+    "excerpt": "How to get Umrah permit for residents and visitors.",
+    "read": "5 min",
+    "fees": [["Service", "Fee", "Note"], ["Umrah Permit", "Usually Free / Package", "Via Nusuk"]],
+    "steps": [
+      "Register on Nusuk platform",
+      "Book package or apply for permit",
+      "Receive digital permit",
+      "Perform Umrah"
+    ],
+    "content": "Umrah for residents is managed through the Nusuk platform. Visitors usually come on Umrah visa or tourist visa and then obtain the permit. Always use official channels only."
+  },
+  {
+    "id": "umrah-cost-2026",
+    "title": "Umrah Cost Guide 2026",
+    "date": "2026-05-15",
+    "category": "Hajj & Umrah",
+    "excerpt": "Average cost of Umrah packages from inside and outside KSA.",
+    "read": "6 min",
+    "fees": [
+      ["Type", "Approx Cost", "Note"],
+      ["Resident (self)", "Low", "Transport + hotels"],
+      ["Package from abroad", "2000-8000+", "Depends on hotel & duration"]
+    ],
+    "steps": ["Decide duration", "Book transport & hotel", "Get permit via Nusuk"],
+    "content": "Cost varies greatly depending on hotel category, distance from Haram, and season. Residents can perform Umrah relatively inexpensively. International packages include flights, visa and accommodation."
+  },
+  {
+    "id": "things-to-do-riyadh-2026",
+    "title": "Things to Do in Riyadh 2026",
+    "date": "2026-05-10",
+    "category": "Tourism",
+    "excerpt": "Top attractions, restaurants and experiences in Riyadh.",
+    "read": "7 min",
+    "fees": [["Attraction", "Entry", "Note"], ["Boulevard World", "Varies", ""], ["Diriyah", "Varies", ""], ["Edge of the World", "Tour based", ""]],
+    "steps": ["Plan weekend", "Book tickets online", "Use ride-hailing"],
+    "content": "Riyadh has transformed with many new entertainment destinations, historical sites like Diriyah, modern malls, and desert experiences such as Edge of the World. Always check current opening hours and booking requirements."
+  },
+  {
+    "id": "things-to-do-jeddah-2026",
+    "title": "Things to Do in Jeddah 2026",
+    "date": "2026-05-05",
+    "category": "Tourism",
+    "excerpt": "Corniche, historic Al-Balad, Red Sea and more.",
+    "read": "6 min",
+    "fees": [["Place", "Entry", "Note"], ["Al-Balad", "Free / Tours", ""], ["Corniche", "Free", ""], ["Red Sea activities", "Varies", ""]],
+    "steps": ["Visit Al-Balad", "Walk Corniche", "Try seafood restaurants"],
+    "content": "Jeddah offers a mix of history, sea and modern lifestyle. Historic Al-Balad is a UNESCO site. The Corniche is perfect for evening walks. Many water activities are available along the Red Sea coast."
+  },
+  {
+    "id": "alula-travel-guide-2026",
+    "title": "AlUla Travel Guide 2026",
+    "date": "2026-04-28",
+    "category": "Tourism",
+    "excerpt": "How to visit Hegra, Winter Park and other AlUla sites.",
+    "read": "8 min",
+    "fees": [
+      ["Site", "Entry Fee", "Note"],
+      ["Hegra", "Varies", "Book in advance"],
+      ["Other experiences", "Varies", "Via Experience AlUla"]
+    ],
+    "steps": [
+      "Book flights or drive",
+      "Reserve tickets on Experience AlUla",
+      "Stay in recommended hotels",
+      "Follow guided tours for Hegra"
+    ],
+    "content": "AlUla is one of Saudi Arabia’s premier tourism destinations. Hegra (Madain Saleh) is a UNESCO World Heritage site. Booking experiences in advance through the official Experience AlUla platform is highly recommended."
+  },
+  {
+    "id": "student-visa-2026",
+    "title": "Saudi Student Visa Guide 2026",
+    "date": "2026-04-20",
+    "category": "Visa",
+    "excerpt": "How to get student visa and residence for studies in KSA.",
+    "read": "6 min",
+    "fees": [["Item", "Fee", "Note"], ["Student Visa", "Varies", "Embassy"], ["Iqama", "Student rates", "Usually lower"]],
+    "steps": [
+      "Get acceptance from Saudi university",
+      "University initiates visa process",
+      "Apply at embassy",
+      "Enter and complete Iqama"
+    ],
+    "content": "Student visas are issued based on acceptance from recognized Saudi educational institutions. The university usually supports the process. After arrival the student Iqama is issued under the educational institution’s sponsorship."
+  },
+  {
+    "id": "visa-2026",
+    "title": "Complete Saudi Visa Types Overview 2026",
+    "date": "2026-04-15",
+    "category": "Visa",
+    "excerpt": "All major visa types: tourist, work, visit, transit and more.",
+    "read": "9 min",
+    "fees": [
+      ["Visa Type", "Approx Fee", "Note"],
+      ["Tourist eVisa", "535 SAR", ""],
+      ["Work Visa", "Varies", ""],
+      ["Visit Visa", "Varies", ""],
+      ["Transit", "Lower", ""]
+    ],
+    "steps": ["Identify correct visa type", "Check eligibility", "Apply through proper channel"],
+    "content": "Saudi Arabia offers multiple visa categories. Tourist eVisa is the easiest for eligible nationalities. Work and family visit visas require sponsor. Always use official websites or authorized centers only."
+  }
+]
