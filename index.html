@@ -4,1599 +4,808 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>KSA GUIDE | Your Complete Guide to Saudi Arabia</title>
-  <meta name="description" content="KSA GUIDE – Premium independent travel & information guide for Saudi Arabia. Discover destinations, culture, food, hotels, travel tips and city guides across the Kingdom." />
-  <meta name="keywords" content="Saudi Arabia travel, Riyadh, Jeddah, AlUla, Makkah, Madinah, KSA Guide, Saudi destinations, Saudi culture, Saudi food" />
+  <meta name="description" content="KSA GUIDE – Premium independent guide for expats & travelers in Saudi Arabia. Iqama, Absher, visas, destinations, culture, food & official links." />
+  <meta name="keywords" content="Iqama, Absher, Saudi Arabia guide, Riyadh, Jeddah, AlUla, dependent levy, exit re-entry, Qiwa, MISA" />
   <meta name="author" content="Teimoor Ahmed" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://ksa-guide.com/" />
-
-  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://ksa-guide.com/" />
   <meta property="og:title" content="KSA GUIDE | Your Complete Guide to Saudi Arabia" />
-  <meta property="og:description" content="Discover destinations, experiences, culture, food and practical travel information across the Kingdom of Saudi Arabia." />
+  <meta property="og:description" content="Iqama, Absher, destinations, culture & practical guides for life in the Kingdom." />
   <meta property="og:image" content="https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c4?w=1200" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:site_name" content="KSA GUIDE" />
-
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="KSA GUIDE | Your Complete Guide to Saudi Arabia" />
-  <meta name="twitter:description" content="Premium independent guide to life, travel and experiences in the Kingdom of Saudi Arabia." />
-  <meta name="twitter:image" content="https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c4?w=1200" />
-
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-
-  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            saudi: {
-              green: '#006C35',
-              gold: '#C9A86A',
-              beige: '#E8DCC6',
-              dark: '#050505',
-              card: '#121212',
-              soft: '#0A0A0A'
-            }
+            saudi: { green: '#006C35', gold: '#C9A86A', beige: '#E8DCC6', dark: '#050505', card: '#121212', soft: '#0A0A0A' }
           },
-          fontFamily: {
-            playfair: ['Playfair Display', 'serif'],
-            outfit: ['Outfit', 'sans-serif'],
-            inter: ['Inter', 'sans-serif']
-          },
-          boxShadow: {
-            'gold': '0 0 40px rgba(201, 168, 106, 0.15)',
-            'gold-lg': '0 0 60px rgba(201, 168, 106, 0.25)',
-            'glass': '0 8px 32px rgba(0,0,0,0.4)'
-          },
-          animation: {
-            'float': 'float 6s ease-in-out infinite',
-            'glow': 'glow 3s ease-in-out infinite alternate'
-          },
-          keyframes: {
-            float: {
-              '0%, 100%': { transform: 'translateY(0px)' },
-              '50%': { transform: 'translateY(-12px)' }
-            },
-            glow: {
-              '0%': { boxShadow: '0 0 20px rgba(201,168,106,0.2)' },
-              '100%': { boxShadow: '0 0 40px rgba(201,168,106,0.4)' }
-            }
-          }
+          fontFamily: { playfair: ['Playfair Display', 'serif'], outfit: ['Outfit', 'sans-serif'], inter: ['Inter', 'sans-serif'] },
+          boxShadow: { gold: '0 0 40px rgba(201,168,106,0.15)', 'gold-lg': '0 0 60px rgba(201,168,106,0.25)' }
         }
       }
     }
   </script>
-
   <style>
-    :root {
-      --saudi-green: #006C35;
-      --desert-gold: #C9A86A;
-      --beige-gold: #E8DCC6;
-    }
+    :root { --saudi-green: #006C35; --desert-gold: #C9A86A; --beige-gold: #E8DCC6; }
     html { scroll-behavior: smooth; }
-    body {
-      background: #050505;
-      color: #E8DCC6;
-      font-family: 'Outfit', 'Inter', sans-serif;
-      overflow-x: hidden;
-    }
+    body { background: #050505; color: #E8DCC6; font-family: 'Outfit', 'Inter', sans-serif; overflow-x: hidden; }
     .font-playfair { font-family: 'Playfair Display', serif; }
-    .glass {
-      background: rgba(18, 18, 18, 0.75);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border: 1px solid rgba(201, 168, 106, 0.12);
-    }
-    .glass-strong {
-      background: rgba(18, 18, 18, 0.9);
-      backdrop-filter: blur(24px);
-      border: 1px solid rgba(201, 168, 106, 0.18);
-    }
-    .gold-text {
-      background: linear-gradient(135deg, #E8DCC6 0%, #C9A86A 50%, #E8DCC6 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-    .hero-title {
-      font-size: clamp(3.5rem, 12vw, 9rem);
-      line-height: 0.9;
-      letter-spacing: -0.02em;
-    }
-    .mashrabiya {
-      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C9A86A' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    }
-    .card-hover {
-      transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
-    }
-    .card-hover:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.5), 0 0 30px rgba(201,168,106,0.15);
-      border-color: rgba(201,168,106,0.35);
-    }
-    .img-zoom {
-      transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
-    }
-    .card-hover:hover .img-zoom {
-      transform: scale(1.08);
-    }
-    .nav-link {
-      position: relative;
-      transition: color 0.3s ease;
-    }
-    .nav-link::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      width: 0;
-      height: 1.5px;
-      background: #C9A86A;
-      transition: width 0.3s ease;
-    }
-    .nav-link:hover::after,
-    .nav-link.active::after {
-      width: 100%;
-    }
-    .btn-gold {
-      background: linear-gradient(135deg, #C9A86A 0%, #B8954F 100%);
-      color: #050505;
-      font-weight: 600;
-      transition: all 0.3s ease;
-    }
-    .btn-gold:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 25px rgba(201,168,106,0.35);
-    }
-    .btn-outline {
-      border: 1.5px solid rgba(201,168,106,0.5);
-      color: #E8DCC6;
-      transition: all 0.3s ease;
-    }
-    .btn-outline:hover {
-      background: rgba(201,168,106,0.1);
-      border-color: #C9A86A;
-    }
-    .skyline {
-      background: linear-gradient(to top, #050505 0%, transparent 100%),
-                  url('https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c4?w=1920&q=80') center/cover no-repeat;
-    }
-    .section-pad { padding: 5rem 0; }
-    @media (min-width: 1024px) {
-      .section-pad { padding: 7rem 0; }
-    }
-    /* Cookie & Modal */
-    .cookie-banner {
-      transform: translateY(120%);
-      transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
-    }
+    .glass { background: rgba(18,18,18,0.78); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(201,168,106,0.12); }
+    .glass-strong { background: rgba(18,18,18,0.92); backdrop-filter: blur(24px); border: 1px solid rgba(201,168,106,0.18); }
+    .gold-text { background: linear-gradient(135deg,#E8DCC6 0%,#C9A86A 50%,#E8DCC6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .hero-title { font-size: clamp(3.2rem,11vw,8.5rem); line-height: 0.9; letter-spacing: -0.02em; }
+    .mashrabiya { background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C9A86A' fill-opacity='0.035'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+    .card-hover { transition: all 0.4s cubic-bezier(0.22,1,0.36,1); }
+    .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.5), 0 0 30px rgba(201,168,106,0.15); border-color: rgba(201,168,106,0.35); }
+    .img-zoom { transition: transform 0.7s cubic-bezier(0.22,1,0.36,1); }
+    .card-hover:hover .img-zoom { transform: scale(1.07); }
+    .nav-link { position: relative; transition: color 0.3s; }
+    .nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 1.5px; background: #C9A86A; transition: width 0.3s; }
+    .nav-link:hover::after, .nav-link.active::after { width: 100%; }
+    .btn-gold { background: linear-gradient(135deg,#C9A86A 0%,#B8954F 100%); color: #050505; font-weight: 600; transition: all 0.3s; }
+    .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(201,168,106,0.35); }
+    .btn-outline { border: 1.5px solid rgba(201,168,106,0.5); color: #E8DCC6; transition: all 0.3s; }
+    .btn-outline:hover { background: rgba(201,168,106,0.1); border-color: #C9A86A; }
+    .skyline { background: linear-gradient(to top,#050505 0%,transparent 55%), url('https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c4?w=1920&q=85') center/cover no-repeat; }
+    .section-pad { padding: 4.5rem 0; }
+    @media (min-width:1024px){ .section-pad { padding: 6.5rem 0; } }
+    .cookie-banner { transform: translateY(120%); transition: transform 0.5s cubic-bezier(0.22,1,0.36,1); }
     .cookie-banner.show { transform: translateY(0); }
-    .modal-overlay {
-      opacity: 0;
-      visibility: hidden;
-      transition: all 0.3s ease;
-    }
-    .modal-overlay.open {
-      opacity: 1;
-      visibility: visible;
-    }
-    .modal-box {
-      transform: scale(0.95) translateY(20px);
-      transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
-    }
-    .modal-overlay.open .modal-box {
-      transform: scale(1) translateY(0);
-    }
-    /* Mobile menu */
-    .mobile-menu {
-      transform: translateX(100%);
-      transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
-    }
+    .modal-overlay { opacity: 0; visibility: hidden; transition: all 0.3s; }
+    .modal-overlay.open { opacity: 1; visibility: visible; }
+    .modal-box { transform: scale(0.95) translateY(20px); transition: all 0.3s cubic-bezier(0.22,1,0.36,1); }
+    .modal-overlay.open .modal-box { transform: scale(1) translateY(0); }
+    .mobile-menu { transform: translateX(100%); transition: transform 0.4s cubic-bezier(0.22,1,0.36,1); }
     .mobile-menu.open { transform: translateX(0); }
-    /* Scroll reveal */
-    .reveal {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
-    }
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    /* Custom scrollbar */
+    .reveal { opacity: 0; transform: translateY(28px); transition: all 0.75s cubic-bezier(0.22,1,0.36,1); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
     ::-webkit-scrollbar { width: 8px; }
     ::-webkit-scrollbar-track { background: #0A0A0A; }
     ::-webkit-scrollbar-thumb { background: #C9A86A; border-radius: 4px; }
-    ::-webkit-scrollbar-thumb:hover { background: #E8DCC6; }
-    /* Focus states */
-    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
-      outline: 2px solid #C9A86A;
-      outline-offset: 3px;
-    }
-    /* Floating buttons */
-    .float-btn {
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
-      transition: all 0.3s ease;
-    }
-    .float-btn:hover { transform: scale(1.1); }
+    a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid #C9A86A; outline-offset: 3px; }
+    .float-btn { width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 24px rgba(0,0,0,0.4); transition: all 0.3s; }
+    .float-btn:hover { transform: scale(1.08); }
   </style>
 </head>
 <body class="mashrabiya">
 
-  <!-- ========== HEADER ========== -->
-  <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500">
-    <div class="glass-strong border-b border-saudi-gold/10">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between h-16 lg:h-20">
-          <!-- Logo -->
-          <a href="#home" class="flex flex-col leading-none group">
-            <span class="font-playfair text-2xl lg:text-3xl font-bold gold-text tracking-tight">KSA GUIDE</span>
-            <span class="text-[10px] tracking-[0.3em] text-saudi-gold/70 uppercase group-hover:text-saudi-gold transition">.COM</span>
-          </a>
-
-          <!-- Desktop Nav -->
-          <nav class="hidden xl:flex items-center gap-6 text-sm font-medium">
-            <a href="#home" class="nav-link text-saudi-beige/90 hover:text-saudi-gold">Home</a>
-            <a href="#destinations" class="nav-link text-saudi-beige/90 hover:text-saudi-gold">Destinations</a>
-            <a href="#things-to-do" class="nav-link text-saudi-beige/90 hover:text-saudi-gold">Things To Do</a>
-            <a href="#travel-guide" class="nav-link text-saudi-beige/90 hover:text-saudi-gold">Travel Guide</a>
-            <a href="#cities" class="nav-link text-saudi-beige/90 hover:text-saudi-gold">Saudi Cities</a>
-            <a href="#culture" class="nav-link text-saudi-beige/90 hover:text-saudi-gold">Culture</a>
-            <a href="#food" class="nav-link text-saudi-beige/90 hover:text-saudi-gold">Food</a>
-            <a href="#hotels" class="nav-link text-saudi-beige/90 hover:text-saudi-gold">Hotels</a>
-            <a href="#blog" class="nav-link text-saudi-beige/90 hover:text-saudi-gold">Blog</a>
-            <a href="#about" class="nav-link text-saudi-beige/90 hover:text-saudi-gold">About</a>
-            <a href="#contact" class="nav-link text-saudi-beige/90 hover:text-saudi-gold">Contact</a>
-          </nav>
-
-          <!-- Right Actions -->
-          <div class="flex items-center gap-3">
-            <!-- Search -->
-            <button id="search-toggle" class="p-2.5 rounded-full hover:bg-saudi-gold/10 transition" aria-label="Search">
-              <svg class="w-5 h-5 text-saudi-beige" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+<!-- HEADER -->
+<header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500">
+  <div class="glass-strong border-b border-saudi-gold/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 lg:h-20">
+        <a href="#home" class="flex flex-col leading-none group">
+          <span class="font-playfair text-2xl lg:text-3xl font-bold gold-text tracking-tight">KSA GUIDE</span>
+          <span class="text-[10px] tracking-[0.3em] text-saudi-gold/70 uppercase">.COM</span>
+        </a>
+        <nav class="hidden xl:flex items-center gap-5 text-sm font-medium">
+          <a href="#home" class="nav-link text-saudi-beige/90 hover:text-saudi-gold">Home</a>
+          <a href="#guides" class="nav-link text-saudi-beige/90 hover:text-saudi-gold">Guides</a>
+          <a href="#destinations" class="nav-link text-saudi-beige/90 hover:text-saudi-gold">Destinations</a>
+          <a href="#things-to-do" class="nav-link text-saudi-beige/90 hover:text-saudi-gold">Things To Do</a>
+          <a href="#cities" class="nav-link text-saudi-beige/90 hover:text-saudi-gold">Cities</a>
+          <a href="#culture" class="nav-link text-saudi-beige/90 hover:text-saudi-gold">Culture</a>
+          <a href="#food" class="nav-link text-saudi-beige/90 hover:text-saudi-gold">Food</a>
+          <a href="#hotels" class="nav-link text-saudi-beige/90 hover:text-saudi-gold">Hotels</a>
+          <a href="#blog" class="nav-link text-saudi-beige/90 hover:text-saudi-gold">Blog</a>
+          <a href="#about" class="nav-link text-saudi-beige/90 hover:text-saudi-gold">About</a>
+          <a href="#contact" class="nav-link text-saudi-beige/90 hover:text-saudi-gold">Contact</a>
+        </nav>
+        <div class="flex items-center gap-2 sm:gap-3">
+          <button id="search-toggle" class="p-2.5 rounded-full hover:bg-saudi-gold/10 transition" aria-label="Search">
+            <svg class="w-5 h-5 text-saudi-beige" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          </button>
+          <div class="relative hidden sm:block">
+            <button id="lang-btn" class="flex items-center gap-1.5 px-3 py-2 rounded-full text-sm text-saudi-beige/90 hover:bg-saudi-gold/10 transition">
+              <span id="current-lang">EN</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
             </button>
-
-            <!-- Language -->
-            <div class="relative hidden sm:block">
-              <button id="lang-btn" class="flex items-center gap-1.5 px-3 py-2 rounded-full text-sm text-saudi-beige/90 hover:bg-saudi-gold/10 transition">
-                <span id="current-lang">EN</span>
-                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-              </button>
-              <div id="lang-menu" class="hidden absolute right-0 mt-2 w-36 glass-strong rounded-2xl overflow-hidden shadow-gold z-50">
-                <button data-lang="en" class="w-full text-left px-4 py-2.5 text-sm hover:bg-saudi-gold/10 transition">English</button>
-                <button data-lang="ar" class="w-full text-left px-4 py-2.5 text-sm hover:bg-saudi-gold/10 transition">العربية</button>
-                <button data-lang="ur" class="w-full text-left px-4 py-2.5 text-sm hover:bg-saudi-gold/10 transition">اردو</button>
-                <button data-lang="hi" class="w-full text-left px-4 py-2.5 text-sm hover:bg-saudi-gold/10 transition">हिन्दी</button>
-              </div>
+            <div id="lang-menu" class="hidden absolute right-0 mt-2 w-36 glass-strong rounded-2xl overflow-hidden shadow-gold z-50">
+              <button data-lang="en" class="w-full text-left px-4 py-2.5 text-sm hover:bg-saudi-gold/10">English</button>
+              <button data-lang="ar" class="w-full text-left px-4 py-2.5 text-sm hover:bg-saudi-gold/10">العربية</button>
+              <button data-lang="ur" class="w-full text-left px-4 py-2.5 text-sm hover:bg-saudi-gold/10">اردو</button>
+              <button data-lang="hi" class="w-full text-left px-4 py-2.5 text-sm hover:bg-saudi-gold/10">हिन्दी</button>
             </div>
-
-            <!-- Location -->
-            <button id="location-btn" class="hidden md:flex items-center gap-1.5 px-3 py-2 rounded-full text-sm text-saudi-beige/90 hover:bg-saudi-gold/10 transition">
-              <span>📍</span>
-              <span id="current-location">Riyadh</span>
-            </button>
-
-            <!-- CTA -->
-            <a href="#destinations" class="hidden lg:inline-flex btn-gold px-5 py-2.5 rounded-full text-sm">Explore Saudi</a>
-
-            <!-- Mobile Menu Toggle -->
-            <button id="mobile-toggle" class="xl:hidden p-2.5 rounded-full hover:bg-saudi-gold/10 transition" aria-label="Menu">
-              <svg class="w-6 h-6 text-saudi-beige" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 6h16M4 12h16M4 18h16"/></svg>
-            </button>
           </div>
+          <button id="location-btn" class="hidden md:flex items-center gap-1.5 px-3 py-2 rounded-full text-sm text-saudi-beige/90 hover:bg-saudi-gold/10 transition">
+            <span>📍</span><span id="current-location">Riyadh</span>
+          </button>
+          <a href="#guides" class="hidden lg:inline-flex btn-gold px-5 py-2.5 rounded-full text-sm">Explore Guides</a>
+          <button id="mobile-toggle" class="xl:hidden p-2.5 rounded-full hover:bg-saudi-gold/10" aria-label="Menu">
+            <svg class="w-6 h-6 text-saudi-beige" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
         </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="mobile-menu fixed inset-y-0 right-0 w-full max-w-sm glass-strong z-50 xl:hidden">
-    <div class="flex flex-col h-full p-6">
-      <div class="flex justify-between items-center mb-10">
-        <span class="font-playfair text-2xl gold-text">KSA GUIDE</span>
-        <button id="mobile-close" class="p-2 rounded-full hover:bg-saudi-gold/10" aria-label="Close menu">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M6 18L18 6M6 6l12 12"/></svg>
-        </button>
-      </div>
-      <nav class="flex flex-col gap-1 text-lg font-medium">
-        <a href="#home" class="mobile-link py-3 border-b border-saudi-gold/10">Home</a>
-        <a href="#destinations" class="mobile-link py-3 border-b border-saudi-gold/10">Destinations</a>
-        <a href="#things-to-do" class="mobile-link py-3 border-b border-saudi-gold/10">Things To Do</a>
-        <a href="#travel-guide" class="mobile-link py-3 border-b border-saudi-gold/10">Travel Guide</a>
-        <a href="#cities" class="mobile-link py-3 border-b border-saudi-gold/10">Saudi Cities</a>
-        <a href="#culture" class="mobile-link py-3 border-b border-saudi-gold/10">Culture & Heritage</a>
-        <a href="#food" class="mobile-link py-3 border-b border-saudi-gold/10">Food</a>
-        <a href="#hotels" class="mobile-link py-3 border-b border-saudi-gold/10">Hotels</a>
-        <a href="#blog" class="mobile-link py-3 border-b border-saudi-gold/10">Blog</a>
-        <a href="#about" class="mobile-link py-3 border-b border-saudi-gold/10">About</a>
-        <a href="#contact" class="mobile-link py-3 border-b border-saudi-gold/10">Contact</a>
-      </nav>
-      <div class="mt-auto pt-8 space-y-3">
-        <button id="mobile-location" class="w-full flex items-center justify-center gap-2 py-3 rounded-2xl border border-saudi-gold/30 text-sm">📍 Choose Location</button>
-        <a href="#destinations" class="block w-full text-center btn-gold py-3.5 rounded-2xl">Explore Saudi</a>
       </div>
     </div>
   </div>
+</header>
 
-  <!-- Search Overlay -->
-  <div id="search-overlay" class="fixed inset-0 z-[60] bg-saudi-dark/95 backdrop-blur-xl opacity-0 invisible transition-all duration-300">
-    <div class="max-w-3xl mx-auto px-4 pt-28">
-      <div class="relative">
-        <input id="search-input" type="search" placeholder="Search destinations, cities, food, hotels, guides..." 
-               class="w-full bg-saudi-card border border-saudi-gold/20 rounded-2xl py-5 pl-14 pr-6 text-lg text-saudi-beige placeholder-saudi-beige/40 focus:outline-none focus:border-saudi-gold/50" />
-        <svg class="absolute left-5 top-1/2 -translate-y-1/2 w-6 h-6 text-saudi-gold/60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-        <button id="search-close" class="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full hover:bg-saudi-gold/10" aria-label="Close search">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M6 18L18 6M6 6l12 12"/></svg>
-        </button>
-      </div>
-      <div id="search-results" class="mt-6 space-y-2 max-h-[60vh] overflow-y-auto"></div>
+<!-- MOBILE MENU -->
+<div id="mobile-menu" class="mobile-menu fixed inset-y-0 right-0 w-full max-w-sm glass-strong z-50 xl:hidden">
+  <div class="flex flex-col h-full p-6">
+    <div class="flex justify-between items-center mb-8">
+      <span class="font-playfair text-2xl gold-text">KSA GUIDE</span>
+      <button id="mobile-close" class="p-2 rounded-full hover:bg-saudi-gold/10" aria-label="Close">✕</button>
+    </div>
+    <nav class="flex flex-col gap-1 text-lg font-medium">
+      <a href="#home" class="mobile-link py-3 border-b border-saudi-gold/10">Home</a>
+      <a href="#guides" class="mobile-link py-3 border-b border-saudi-gold/10">Guides (Iqama & more)</a>
+      <a href="#destinations" class="mobile-link py-3 border-b border-saudi-gold/10">Destinations</a>
+      <a href="#things-to-do" class="mobile-link py-3 border-b border-saudi-gold/10">Things To Do</a>
+      <a href="#cities" class="mobile-link py-3 border-b border-saudi-gold/10">Cities</a>
+      <a href="#culture" class="mobile-link py-3 border-b border-saudi-gold/10">Culture</a>
+      <a href="#food" class="mobile-link py-3 border-b border-saudi-gold/10">Food</a>
+      <a href="#hotels" class="mobile-link py-3 border-b border-saudi-gold/10">Hotels</a>
+      <a href="#blog" class="mobile-link py-3 border-b border-saudi-gold/10">Blog</a>
+      <a href="#about" class="mobile-link py-3 border-b border-saudi-gold/10">About</a>
+      <a href="#contact" class="mobile-link py-3 border-b border-saudi-gold/10">Contact</a>
+    </nav>
+    <div class="mt-auto pt-6 space-y-3">
+      <button id="mobile-location" class="w-full flex items-center justify-center gap-2 py-3 rounded-2xl border border-saudi-gold/30 text-sm">📍 Choose Location</button>
+      <a href="#guides" class="block w-full text-center btn-gold py-3.5 rounded-2xl">Explore Guides</a>
     </div>
   </div>
+</div>
 
-  <!-- ========== HERO ========== -->
-  <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
-    <div class="absolute inset-0 skyline"></div>
-    <div class="absolute inset-0 bg-gradient-to-b from-saudi-dark/70 via-saudi-dark/40 to-saudi-dark"></div>
-    
-    <!-- Gold bokeh lights -->
-    <div class="absolute bottom-20 left-1/4 w-3 h-3 rounded-full bg-saudi-gold/40 blur-sm animate-float"></div>
-    <div class="absolute bottom-32 right-1/3 w-2 h-2 rounded-full bg-saudi-gold/30 blur-sm animate-float" style="animation-delay:1s"></div>
-    <div class="absolute bottom-16 right-1/4 w-4 h-4 rounded-full bg-saudi-gold/25 blur-md animate-float" style="animation-delay:2s"></div>
+<!-- SEARCH OVERLAY -->
+<div id="search-overlay" class="fixed inset-0 z-[60] bg-saudi-dark/95 backdrop-blur-xl opacity-0 invisible transition-all duration-300">
+  <div class="max-w-3xl mx-auto px-4 pt-28">
+    <div class="relative">
+      <input id="search-input" type="search" placeholder="Search Iqama, Absher, Riyadh, AlUla, food, hotels..." class="w-full bg-saudi-card border border-saudi-gold/20 rounded-2xl py-5 pl-14 pr-6 text-lg text-saudi-beige placeholder-saudi-beige/40 focus:outline-none focus:border-saudi-gold/50" />
+      <svg class="absolute left-5 top-1/2 -translate-y-1/2 w-6 h-6 text-saudi-gold/60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+      <button id="search-close" class="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full hover:bg-saudi-gold/10" aria-label="Close">✕</button>
+    </div>
+    <div id="search-results" class="mt-6 space-y-2 max-h-[60vh] overflow-y-auto"></div>
+  </div>
+</div>
 
-    <div class="relative z-10 max-w-6xl mx-auto px-4 text-center pt-20">
-      <p class="text-saudi-gold tracking-[0.35em] text-xs sm:text-sm uppercase mb-6 font-medium">Kingdom of Saudi Arabia</p>
-      <h1 class="font-playfair hero-title font-bold gold-text mb-6">KSA GUIDE</h1>
-      <p class="text-lg sm:text-xl md:text-2xl text-saudi-beige/80 max-w-2xl mx-auto mb-10 font-light leading-relaxed">
-        Your complete guide to places, experiences, food, culture and travel across the Kingdom.
-      </p>
-      
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-        <a href="#destinations" class="btn-gold px-8 py-4 rounded-full text-base">Explore Destinations</a>
-        <a href="#travel-guide" class="btn-outline px-8 py-4 rounded-full text-base">Plan Your Trip</a>
+<!-- HERO -->
+<section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+  <div class="absolute inset-0 skyline"></div>
+  <div class="absolute inset-0 bg-gradient-to-b from-saudi-dark/75 via-saudi-dark/45 to-saudi-dark"></div>
+  <div class="absolute bottom-24 left-1/4 w-3 h-3 rounded-full bg-saudi-gold/40 blur-sm"></div>
+  <div class="absolute bottom-36 right-1/3 w-2 h-2 rounded-full bg-saudi-gold/30 blur-sm"></div>
+  <div class="relative z-10 max-w-6xl mx-auto px-4 text-center pt-24">
+    <p class="text-saudi-gold tracking-[0.35em] text-xs sm:text-sm uppercase mb-5 font-medium">Kingdom of Saudi Arabia</p>
+    <h1 class="font-playfair hero-title font-bold gold-text mb-5">KSA GUIDE</h1>
+    <p class="text-lg sm:text-xl md:text-2xl text-saudi-beige/80 max-w-2xl mx-auto mb-8 font-light leading-relaxed">
+      Your complete guide to Iqama, Absher, destinations, culture, food and life in the Kingdom.
+    </p>
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
+      <a href="#guides" class="btn-gold px-8 py-4 rounded-full text-base">Expat Guides</a>
+      <a href="#destinations" class="btn-outline px-8 py-4 rounded-full text-base">Explore Destinations</a>
+    </div>
+    <div class="max-w-xl mx-auto relative">
+      <input type="text" id="hero-search" placeholder="Search Iqama, Absher, cities, food..." class="w-full bg-saudi-card/85 border border-saudi-gold/20 rounded-2xl py-4 pl-12 pr-5 text-saudi-beige placeholder-saudi-beige/40 focus:outline-none focus:border-saudi-gold/50 backdrop-blur-md" />
+      <svg class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-saudi-gold/60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+    </div>
+    <div class="flex flex-wrap justify-center gap-3 mt-9">
+      <a href="#guides" class="px-4 py-2 rounded-full text-sm glass border border-saudi-gold/15 hover:border-saudi-gold/40 transition">Iqama & Absher</a>
+      <a href="#destinations" class="px-4 py-2 rounded-full text-sm glass border border-saudi-gold/15 hover:border-saudi-gold/40 transition">Destinations</a>
+      <a href="#food" class="px-4 py-2 rounded-full text-sm glass border border-saudi-gold/15 hover:border-saudi-gold/40 transition">Food</a>
+      <a href="#culture" class="px-4 py-2 rounded-full text-sm glass border border-saudi-gold/15 hover:border-saudi-gold/40 transition">Culture</a>
+      <a href="#hotels" class="px-4 py-2 rounded-full text-sm glass border border-saudi-gold/15 hover:border-saudi-gold/40 transition">Hotels</a>
+    </div>
+  </div>
+</section>
+
+<!-- OFFICIAL GUIDES (Iqama to all) -->
+<section id="guides" class="section-pad relative">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 reveal">
+      <p class="text-saudi-gold tracking-widest text-xs uppercase mb-3">Essential for Expats & Residents</p>
+      <h2 class="font-playfair text-4xl md:text-5xl font-bold gold-text mb-4">Official Guides & Links</h2>
+      <p class="text-saudi-beige/60 max-w-2xl mx-auto">Iqama, Absher, visas, fees and government platforms. Always verify the latest information on the official websites.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <!-- Absher -->
+      <div class="glass rounded-3xl p-6 card-hover reveal">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 rounded-2xl bg-saudi-green/20 flex items-center justify-center text-xl">📱</div>
+          <h3 class="font-playfair text-xl font-semibold text-saudi-beige">Absher</h3>
+        </div>
+        <p class="text-sm text-saudi-beige/65 mb-4">Official Ministry of Interior platform for citizens, residents and visitors. Iqama, traffic, passports, appointments and more.</p>
+        <a href="https://www.absher.sa/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sm text-saudi-gold hover:underline">Open Absher →</a>
       </div>
 
-      <!-- Hero Search -->
-      <div class="max-w-xl mx-auto relative">
-        <input type="text" id="hero-search" placeholder="Search destinations, attractions, cities, food, hotels..." 
-               class="w-full bg-saudi-card/80 border border-saudi-gold/20 rounded-2xl py-4 pl-12 pr-5 text-saudi-beige placeholder-saudi-beige/40 focus:outline-none focus:border-saudi-gold/50 backdrop-blur-md" />
-        <svg class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-saudi-gold/60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+      <!-- Iqama -->
+      <div class="glass rounded-3xl p-6 card-hover reveal">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 rounded-2xl bg-saudi-green/20 flex items-center justify-center text-xl">🪪</div>
+          <h3 class="font-playfair text-xl font-semibold text-saudi-beige">Iqama Renewal</h3>
+        </div>
+        <p class="text-sm text-saudi-beige/65 mb-3">Residence permit renewal. Typical base fee \~ SAR 650/year (employer usually pays). Always confirm current amount.</p>
+        <p class="text-xs text-saudi-gold/80 mb-3">Work permit levy: approx. SAR 700–800 / month (tier dependent)</p>
+        <a href="https://www.absher.sa/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sm text-saudi-gold hover:underline">Check on Absher →</a>
       </div>
 
-      <!-- Quick Categories -->
-      <div class="flex flex-wrap justify-center gap-3 mt-10">
-        <a href="#destinations" class="px-4 py-2 rounded-full text-sm glass border border-saudi-gold/15 hover:border-saudi-gold/40 transition">Destinations</a>
-        <a href="#things-to-do" class="px-4 py-2 rounded-full text-sm glass border border-saudi-gold/15 hover:border-saudi-gold/40 transition">Things To Do</a>
-        <a href="#food" class="px-4 py-2 rounded-full text-sm glass border border-saudi-gold/15 hover:border-saudi-gold/40 transition">Food</a>
-        <a href="#hotels" class="px-4 py-2 rounded-full text-sm glass border border-saudi-gold/15 hover:border-saudi-gold/40 transition">Hotels</a>
-        <a href="#culture" class="px-4 py-2 rounded-full text-sm glass border border-saudi-gold/15 hover:border-saudi-gold/40 transition">Culture</a>
-        <a href="#travel-guide" class="px-4 py-2 rounded-full text-sm glass border border-saudi-gold/15 hover:border-saudi-gold/40 transition">Travel Tips</a>
+      <!-- Dependent Levy -->
+      <div class="glass rounded-3xl p-6 card-hover reveal">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 rounded-2xl bg-saudi-green/20 flex items-center justify-center text-xl">👨‍👩‍👧</div>
+          <h3 class="font-playfair text-xl font-semibold text-saudi-beige">Dependent Levy</h3>
+        </div>
+        <p class="text-sm text-saudi-beige/65 mb-3">SAR 400 per dependent per month (SAR 4,800 / year per person). Paid via Absher / Muqeem.</p>
+        <p class="text-xs text-saudi-beige/50 mb-3">Verify exact amount before payment – fees can be updated.</p>
+        <a href="https://www.absher.sa/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sm text-saudi-gold hover:underline">Pay / Check Absher →</a>
+      </div>
+
+      <!-- Exit Re-Entry -->
+      <div class="glass rounded-3xl p-6 card-hover reveal">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 rounded-2xl bg-saudi-green/20 flex items-center justify-center text-xl">✈️</div>
+          <h3 class="font-playfair text-xl font-semibold text-saudi-beige">Exit / Re-Entry Visa</h3>
+        </div>
+        <p class="text-sm text-saudi-beige/65 mb-3">Single & multiple exit/re-entry visas issued through Absher / Muqeem. Common reference fees: around SAR 200 (single) / SAR 500 (multiple) – always verify live.</p>
+        <a href="https://www.absher.sa/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sm text-saudi-gold hover:underline">Issue on Absher →</a>
+      </div>
+
+      <!-- Qiwa -->
+      <div class="glass rounded-3xl p-6 card-hover reveal">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 rounded-2xl bg-saudi-green/20 flex items-center justify-center text-xl">💼</div>
+          <h3 class="font-playfair text-xl font-semibold text-saudi-beige">Qiwa</h3>
+        </div>
+        <p class="text-sm text-saudi-beige/65 mb-4">Ministry of Human Resources platform for work contracts, Saudization, work permits and labor services.</p>
+        <a href="https://qiwa.sa/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sm text-saudi-gold hover:underline">Open Qiwa →</a>
+      </div>
+
+      <!-- MISA / Visit Saudi -->
+      <div class="glass rounded-3xl p-6 card-hover reveal">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 rounded-2xl bg-saudi-green/20 flex items-center justify-center text-xl">🏛️</div>
+          <h3 class="font-playfair text-xl font-semibold text-saudi-beige">MISA & Visit Saudi</h3>
+        </div>
+        <p class="text-sm text-saudi-beige/65 mb-3">Investment (MISA) and official tourism / eVisa information.</p>
+        <div class="flex flex-wrap gap-3">
+          <a href="https://misa.gov.sa/" target="_blank" rel="noopener" class="text-sm text-saudi-gold hover:underline">MISA →</a>
+          <a href="https://www.visitsaudi.com/" target="_blank" rel="noopener" class="text-sm text-saudi-gold hover:underline">Visit Saudi →</a>
+        </div>
       </div>
     </div>
 
-    <!-- Scroll indicator -->
-    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-      <svg class="w-6 h-6 text-saudi-gold/60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
-    </div>
-  </section>
-
-  <!-- ========== FEATURED DESTINATIONS ========== -->
-  <section id="destinations" class="section-pad relative">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-14 reveal">
-        <p class="text-saudi-gold tracking-widest text-xs uppercase mb-3">Explore the Kingdom</p>
-        <h2 class="font-playfair text-4xl md:text-5xl font-bold gold-text mb-4">Featured Destinations</h2>
-        <p class="text-saudi-beige/60 max-w-xl mx-auto">From the modern skyline of Riyadh to the ancient wonders of AlUla — discover Saudi Arabia’s most captivating places.</p>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        <!-- Destination Cards -->
-        <article class="card-hover glass rounded-3xl overflow-hidden group reveal" data-city="riyadh">
-          <div class="relative h-56 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c4?w=600&q=80" alt="Riyadh skyline at night" class="w-full h-full object-cover img-zoom" loading="lazy" />
-            <div class="absolute inset-0 bg-gradient-to-t from-saudi-dark/90 to-transparent"></div>
-            <span class="absolute bottom-4 left-4 text-xs tracking-wider text-saudi-gold uppercase">Capital</span>
-          </div>
-          <div class="p-5">
-            <h3 class="font-playfair text-xl font-semibold text-saudi-beige mb-1">Riyadh</h3>
-            <p class="text-sm text-saudi-beige/60 mb-3 line-clamp-2">Modern metropolis of towers, culture and desert edges.</p>
-            <p class="text-xs text-saudi-gold/80 mb-4">Best time: Oct – Apr</p>
-            <a href="#cities" class="text-sm text-saudi-gold hover:underline">Explore →</a>
-          </div>
-        </article>
-
-        <article class="card-hover glass rounded-3xl overflow-hidden group reveal" data-city="jeddah">
-          <div class="relative h-56 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&q=80" alt="Jeddah Red Sea waterfront" class="w-full h-full object-cover img-zoom" loading="lazy" />
-            <div class="absolute inset-0 bg-gradient-to-t from-saudi-dark/90 to-transparent"></div>
-            <span class="absolute bottom-4 left-4 text-xs tracking-wider text-saudi-gold uppercase">Gateway</span>
-          </div>
-          <div class="p-5">
-            <h3 class="font-playfair text-xl font-semibold text-saudi-beige mb-1">Jeddah</h3>
-            <p class="text-sm text-saudi-beige/60 mb-3 line-clamp-2">Historic Red Sea port city with vibrant corniche and Al-Balad.</p>
-            <p class="text-xs text-saudi-gold/80 mb-4">Best time: Nov – Mar</p>
-            <a href="#cities" class="text-sm text-saudi-gold hover:underline">Explore →</a>
-          </div>
-        </article>
-
-        <article class="card-hover glass rounded-3xl overflow-hidden group reveal" data-city="alula">
-          <div class="relative h-56 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=600&q=80" alt="AlUla rock formations" class="w-full h-full object-cover img-zoom" loading="lazy" />
-            <div class="absolute inset-0 bg-gradient-to-t from-saudi-dark/90 to-transparent"></div>
-            <span class="absolute bottom-4 left-4 text-xs tracking-wider text-saudi-gold uppercase">Heritage</span>
-          </div>
-          <div class="p-5">
-            <h3 class="font-playfair text-xl font-semibold text-saudi-beige mb-1">AlUla</h3>
-            <p class="text-sm text-saudi-beige/60 mb-3 line-clamp-2">Ancient oasis of Hegra, canyons and luxury desert experiences.</p>
-            <p class="text-xs text-saudi-gold/80 mb-4">Best time: Oct – Apr</p>
-            <a href="#cities" class="text-sm text-saudi-gold hover:underline">Explore →</a>
-          </div>
-        </article>
-
-        <article class="card-hover glass rounded-3xl overflow-hidden group reveal" data-city="makkah">
-          <div class="relative h-56 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=600&q=80" alt="Makkah Holy Mosque" class="w-full h-full object-cover img-zoom" loading="lazy" />
-            <div class="absolute inset-0 bg-gradient-to-t from-saudi-dark/90 to-transparent"></div>
-            <span class="absolute bottom-4 left-4 text-xs tracking-wider text-saudi-gold uppercase">Sacred</span>
-          </div>
-          <div class="p-5">
-            <h3 class="font-playfair text-xl font-semibold text-saudi-beige mb-1">Makkah</h3>
-            <p class="text-sm text-saudi-beige/60 mb-3 line-clamp-2">The holiest city in Islam and spiritual heart of the Kingdom.</p>
-            <p class="text-xs text-saudi-gold/80 mb-4">Year-round (pilgrimage seasons)</p>
-            <a href="#cities" class="text-sm text-saudi-gold hover:underline">Explore →</a>
-          </div>
-        </article>
-
-        <article class="card-hover glass rounded-3xl overflow-hidden group reveal" data-city="madinah">
-          <div class="relative h-56 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1542816417-0983c9c9ad53?w=600&q=80" alt="Madinah Prophet's Mosque" class="w-full h-full object-cover img-zoom" loading="lazy" />
-            <div class="absolute inset-0 bg-gradient-to-t from-saudi-dark/90 to-transparent"></div>
-            <span class="absolute bottom-4 left-4 text-xs tracking-wider text-saudi-gold uppercase">Sacred</span>
-          </div>
-          <div class="p-5">
-            <h3 class="font-playfair text-xl font-semibold text-saudi-beige mb-1">Madinah</h3>
-            <p class="text-sm text-saudi-beige/60 mb-3 line-clamp-2">City of the Prophet ﷺ — serenity, history and devotion.</p>
-            <p class="text-xs text-saudi-gold/80 mb-4">Year-round</p>
-            <a href="#cities" class="text-sm text-saudi-gold hover:underline">Explore →</a>
-          </div>
-        </article>
-
-        <article class="card-hover glass rounded-3xl overflow-hidden group reveal" data-city="abha">
-          <div class="relative h-56 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Abha mountains" class="w-full h-full object-cover img-zoom" loading="lazy" />
-            <div class="absolute inset-0 bg-gradient-to-t from-saudi-dark/90 to-transparent"></div>
-            <span class="absolute bottom-4 left-4 text-xs tracking-wider text-saudi-gold uppercase">Mountains</span>
-          </div>
-          <div class="p-5">
-            <h3 class="font-playfair text-xl font-semibold text-saudi-beige mb-1">Abha</h3>
-            <p class="text-sm text-saudi-beige/60 mb-3 line-clamp-2">Cool mountain retreat of Asir with green valleys and art.</p>
-            <p class="text-xs text-saudi-gold/80 mb-4">Best time: Year-round</p>
-            <a href="#cities" class="text-sm text-saudi-gold hover:underline">Explore →</a>
-          </div>
-        </article>
-
-        <article class="card-hover glass rounded-3xl overflow-hidden group reveal" data-city="taif">
-          <div class="relative h-56 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=600&q=80" alt="Taif rose gardens" class="w-full h-full object-cover img-zoom" loading="lazy" />
-            <div class="absolute inset-0 bg-gradient-to-t from-saudi-dark/90 to-transparent"></div>
-            <span class="absolute bottom-4 left-4 text-xs tracking-wider text-saudi-gold uppercase">Roses</span>
-          </div>
-          <div class="p-5">
-            <h3 class="font-playfair text-xl font-semibold text-saudi-beige mb-1">Taif</h3>
-            <p class="text-sm text-saudi-beige/60 mb-3 line-clamp-2">City of roses, mild climate and mountain scenery near Makkah.</p>
-            <p class="text-xs text-saudi-gold/80 mb-4">Best time: Mar – May (rose season)</p>
-            <a href="#cities" class="text-sm text-saudi-gold hover:underline">Explore →</a>
-          </div>
-        </article>
-
-        <article class="card-hover glass rounded-3xl overflow-hidden group reveal" data-city="dammam">
-          <div class="relative h-56 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=600&q=80" alt="Dammam corniche" class="w-full h-full object-cover img-zoom" loading="lazy" />
-            <div class="absolute inset-0 bg-gradient-to-t from-saudi-dark/90 to-transparent"></div>
-            <span class="absolute bottom-4 left-4 text-xs tracking-wider text-saudi-gold uppercase">Eastern</span>
-          </div>
-          <div class="p-5">
-            <h3 class="font-playfair text-xl font-semibold text-saudi-beige mb-1">Dammam</h3>
-            <p class="text-sm text-saudi-beige/60 mb-3 line-clamp-2">Eastern Province hub with corniche, islands and Gulf views.</p>
-            <p class="text-xs text-saudi-gold/80 mb-4">Best time: Nov – Mar</p>
-            <a href="#cities" class="text-sm text-saudi-gold hover:underline">Explore →</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== EXPLORE SAUDI CATEGORIES ========== -->
-  <section class="section-pad bg-saudi-soft/50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-14 reveal">
-        <p class="text-saudi-gold tracking-widest text-xs uppercase mb-3">Experiences</p>
-        <h2 class="font-playfair text-4xl md:text-5xl font-bold gold-text mb-4">Explore Saudi</h2>
-        <p class="text-saudi-beige/60 max-w-xl mx-auto">Choose your path through the Kingdom’s landscapes, heritage and modern lifestyle.</p>
-      </div>
-
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
-        <a href="#things-to-do" class="card-hover glass rounded-2xl p-6 text-center group reveal">
-          <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-saudi-green/20 flex items-center justify-center text-2xl">🏜️</div>
-          <h3 class="font-medium text-saudi-beige group-hover:text-saudi-gold transition">Desert Adventures</h3>
-        </a>
-        <a href="#things-to-do" class="card-hover glass rounded-2xl p-6 text-center group reveal">
-          <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-saudi-green/20 flex items-center justify-center text-2xl">🏖️</div>
-          <h3 class="font-medium text-saudi-beige group-hover:text-saudi-gold transition">Beaches</h3>
-        </a>
-        <a href="#things-to-do" class="card-hover glass rounded-2xl p-6 text-center group reveal">
-          <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-saudi-green/20 flex items-center justify-center text-2xl">⛰️</div>
-          <h3 class="font-medium text-saudi-beige group-hover:text-saudi-gold transition">Mountains</h3>
-        </a>
-        <a href="#culture" class="card-hover glass rounded-2xl p-6 text-center group reveal">
-          <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-saudi-green/20 flex items-center justify-center text-2xl">🏛️</div>
-          <h3 class="font-medium text-saudi-beige group-hover:text-saudi-gold transition">Historical Places</h3>
-        </a>
-        <a href="#hotels" class="card-hover glass rounded-2xl p-6 text-center group reveal">
-          <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-saudi-green/20 flex items-center justify-center text-2xl">✨</div>
-          <h3 class="font-medium text-saudi-beige group-hover:text-saudi-gold transition">Luxury Travel</h3>
-        </a>
-        <a href="#things-to-do" class="card-hover glass rounded-2xl p-6 text-center group reveal">
-          <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-saudi-green/20 flex items-center justify-center text-2xl">👨‍👩‍👧</div>
-          <h3 class="font-medium text-saudi-beige group-hover:text-saudi-gold transition">Family Activities</h3>
-        </a>
-        <a href="#things-to-do" class="card-hover glass rounded-2xl p-6 text-center group reveal">
-          <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-saudi-green/20 flex items-center justify-center text-2xl">🛒</div>
-          <h3 class="font-medium text-saudi-beige group-hover:text-saudi-gold transition">Shopping</h3>
-        </a>
-        <a href="#food" class="card-hover glass rounded-2xl p-6 text-center group reveal">
-          <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-saudi-green/20 flex items-center justify-center text-2xl">🍽️</div>
-          <h3 class="font-medium text-saudi-beige group-hover:text-saudi-gold transition">Food & Restaurants</h3>
-        </a>
-        <a href="#culture" class="card-hover glass rounded-2xl p-6 text-center group reveal">
-          <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-saudi-green/20 flex items-center justify-center text-2xl">🎭</div>
-          <h3 class="font-medium text-saudi-beige group-hover:text-saudi-gold transition">Cultural Experiences</h3>
-        </a>
-        <a href="#travel-guide" class="card-hover glass rounded-2xl p-6 text-center group reveal">
-          <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-saudi-green/20 flex items-center justify-center text-2xl">🕌</div>
-          <h3 class="font-medium text-saudi-beige group-hover:text-saudi-gold transition">Religious Tourism</h3>
-        </a>
-        <a href="#things-to-do" class="card-hover glass rounded-2xl p-6 text-center group reveal">
-          <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-saudi-green/20 flex items-center justify-center text-2xl">🎢</div>
-          <h3 class="font-medium text-saudi-beige group-hover:text-saudi-gold transition">Entertainment</h3>
-        </a>
-        <a href="#things-to-do" class="card-hover glass rounded-2xl p-6 text-center group reveal">
-          <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-saudi-green/20 flex items-center justify-center text-2xl">📸</div>
-          <h3 class="font-medium text-saudi-beige group-hover:text-saudi-gold transition">Photography</h3>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== POPULAR EXPERIENCES ========== -->
-  <section id="things-to-do" class="section-pad">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-14 reveal">
-        <p class="text-saudi-gold tracking-widest text-xs uppercase mb-3">Must-See</p>
-        <h2 class="font-playfair text-4xl md:text-5xl font-bold gold-text mb-4">Popular Experiences</h2>
-        <p class="text-saudi-beige/60 max-w-xl mx-auto">Iconic places and authentic moments that define a journey through Saudi Arabia.</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <article class="card-hover glass rounded-3xl overflow-hidden reveal">
-          <div class="relative h-52 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=600&q=80" alt="AlUla Old Town" class="w-full h-full object-cover img-zoom" loading="lazy" />
-          </div>
-          <div class="p-6">
-            <p class="text-xs text-saudi-gold uppercase tracking-wider mb-1">AlUla</p>
-            <h3 class="font-playfair text-xl font-semibold text-saudi-beige mb-2">AlUla Old Town</h3>
-            <p class="text-sm text-saudi-beige/60 mb-4">Wander through restored mud-brick streets and heritage houses of the ancient oasis.</p>
-            <a href="#blog" class="text-sm text-saudi-gold hover:underline">Read Guide →</a>
-          </div>
-        </article>
-
-        <article class="card-hover glass rounded-3xl overflow-hidden reveal">
-          <div class="relative h-52 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Hegra archaeological site" class="w-full h-full object-cover img-zoom" loading="lazy" />
-          </div>
-          <div class="p-6">
-            <p class="text-xs text-saudi-gold uppercase tracking-wider mb-1">AlUla</p>
-            <h3 class="font-playfair text-xl font-semibold text-saudi-beige mb-2">Hegra (Mada’in Salih)</h3>
-            <p class="text-sm text-saudi-beige/60 mb-4">UNESCO World Heritage site of Nabataean tombs carved into dramatic sandstone cliffs.</p>
-            <a href="#blog" class="text-sm text-saudi-gold hover:underline">Read Guide →</a>
-          </div>
-        </article>
-
-        <article class="card-hover glass rounded-3xl overflow-hidden reveal">
-          <div class="relative h-52 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c4?w=600&q=80" alt="Diriyah" class="w-full h-full object-cover img-zoom" loading="lazy" />
-          </div>
-          <div class="p-6">
-            <p class="text-xs text-saudi-gold uppercase tracking-wider mb-1">Riyadh</p>
-            <h3 class="font-playfair text-xl font-semibold text-saudi-beige mb-2">Diriyah</h3>
-            <p class="text-sm text-saudi-beige/60 mb-4">Birthplace of the Saudi state — At-Turaif UNESCO site and vibrant cultural district.</p>
-            <a href="#blog" class="text-sm text-saudi-gold hover:underline">Read Guide →</a>
-          </div>
-        </article>
-
-        <article class="card-hover glass rounded-3xl overflow-hidden reveal">
-          <div class="relative h-52 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=600&q=80" alt="Edge of the World" class="w-full h-full object-cover img-zoom" loading="lazy" />
-          </div>
-          <div class="p-6">
-            <p class="text-xs text-saudi-gold uppercase tracking-wider mb-1">Near Riyadh</p>
-            <h3 class="font-playfair text-xl font-semibold text-saudi-beige mb-2">Edge of the World</h3>
-            <p class="text-sm text-saudi-beige/60 mb-4">Dramatic cliff escarpment offering panoramic desert views at sunset.</p>
-            <a href="#blog" class="text-sm text-saudi-gold hover:underline">Read Guide →</a>
-          </div>
-        </article>
-
-        <article class="card-hover glass rounded-3xl overflow-hidden reveal">
-          <div class="relative h-52 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&q=80" alt="Red Sea coast" class="w-full h-full object-cover img-zoom" loading="lazy" />
-          </div>
-          <div class="p-6">
-            <p class="text-xs text-saudi-gold uppercase tracking-wider mb-1">Western Coast</p>
-            <h3 class="font-playfair text-xl font-semibold text-saudi-beige mb-2">Red Sea</h3>
-            <p class="text-sm text-saudi-beige/60 mb-4">Crystal waters, coral reefs and emerging luxury destinations along the western shore.</p>
-            <a href="#blog" class="text-sm text-saudi-gold hover:underline">Read Guide →</a>
-          </div>
-        </article>
-
-        <article class="card-hover glass rounded-3xl overflow-hidden reveal">
-          <div class="relative h-52 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c4?w=600&q=80" alt="Kingdom Centre Tower" class="w-full h-full object-cover img-zoom" loading="lazy" />
-          </div>
-          <div class="p-6">
-            <p class="text-xs text-saudi-gold uppercase tracking-wider mb-1">Riyadh</p>
-            <h3 class="font-playfair text-xl font-semibold text-saudi-beige mb-2">Kingdom Centre</h3>
-            <p class="text-sm text-saudi-beige/60 mb-4">Iconic skyscraper with sky bridge offering sweeping views of the capital.</p>
-            <a href="#blog" class="text-sm text-saudi-gold hover:underline">Read Guide →</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== SAUDI JOURNEY ROUTE ========== -->
-  <section class="section-pad bg-saudi-soft/40">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-14 reveal">
-        <p class="text-saudi-gold tracking-widest text-xs uppercase mb-3">Suggested Route</p>
-        <h2 class="font-playfair text-4xl md:text-5xl font-bold gold-text mb-4">Saudi Journey</h2>
-        <p class="text-saudi-beige/60 max-w-xl mx-auto">A curated path through the Kingdom’s most inspiring destinations.</p>
-      </div>
-
-      <div class="flex flex-col lg:flex-row items-center justify-between gap-4 lg:gap-2">
-        <div class="glass rounded-2xl p-5 text-center flex-1 card-hover reveal">
-          <p class="text-saudi-gold text-xs tracking-wider mb-1">01</p>
-          <h3 class="font-playfair text-lg font-semibold">Riyadh</h3>
-          <p class="text-xs text-saudi-beige/50 mt-1">Capital & culture</p>
-        </div>
-        <div class="hidden lg:block text-saudi-gold/40 text-2xl">→</div>
-        <div class="glass rounded-2xl p-5 text-center flex-1 card-hover reveal">
-          <p class="text-saudi-gold text-xs tracking-wider mb-1">02</p>
-          <h3 class="font-playfair text-lg font-semibold">AlUla</h3>
-          <p class="text-xs text-saudi-beige/50 mt-1">Heritage & desert</p>
-        </div>
-        <div class="hidden lg:block text-saudi-gold/40 text-2xl">→</div>
-        <div class="glass rounded-2xl p-5 text-center flex-1 card-hover reveal">
-          <p class="text-saudi-gold text-xs tracking-wider mb-1">03</p>
-          <h3 class="font-playfair text-lg font-semibold">Jeddah</h3>
-          <p class="text-xs text-saudi-beige/50 mt-1">Red Sea & history</p>
-        </div>
-        <div class="hidden lg:block text-saudi-gold/40 text-2xl">→</div>
-        <div class="glass rounded-2xl p-5 text-center flex-1 card-hover reveal">
-          <p class="text-saudi-gold text-xs tracking-wider mb-1">04</p>
-          <h3 class="font-playfair text-lg font-semibold">Abha</h3>
-          <p class="text-xs text-saudi-beige/50 mt-1">Mountains & nature</p>
-        </div>
-        <div class="hidden lg:block text-saudi-gold/40 text-2xl">→</div>
-        <div class="glass rounded-2xl p-5 text-center flex-1 card-hover reveal">
-          <p class="text-saudi-gold text-xs tracking-wider mb-1">05</p>
-          <h3 class="font-playfair text-lg font-semibold">Red Sea</h3>
-          <p class="text-xs text-saudi-beige/50 mt-1">Coast & luxury</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== CITIES ========== -->
-  <section id="cities" class="section-pad">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-14 reveal">
-        <p class="text-saudi-gold tracking-widest text-xs uppercase mb-3">City Guides</p>
-        <h2 class="font-playfair text-4xl md:text-5xl font-bold gold-text mb-4">Saudi Cities</h2>
-        <p class="text-saudi-beige/60 max-w-xl mx-auto">In-depth guides to the major cities and regions of the Kingdom.</p>
-      </div>
-
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        <a href="#destinations" class="glass rounded-2xl p-5 card-hover text-center reveal">
-          <h3 class="font-playfair text-lg font-semibold text-saudi-beige">Riyadh</h3>
-          <p class="text-xs text-saudi-beige/50 mt-1">Capital</p>
-        </a>
-        <a href="#destinations" class="glass rounded-2xl p-5 card-hover text-center reveal">
-          <h3 class="font-playfair text-lg font-semibold text-saudi-beige">Jeddah</h3>
-          <p class="text-xs text-saudi-beige/50 mt-1">Red Sea</p>
-        </a>
-        <a href="#destinations" class="glass rounded-2xl p-5 card-hover text-center reveal">
-          <h3 class="font-playfair text-lg font-semibold text-saudi-beige">AlUla</h3>
-          <p class="text-xs text-saudi-beige/50 mt-1">Heritage</p>
-        </a>
-        <a href="#destinations" class="glass rounded-2xl p-5 card-hover text-center reveal">
-          <h3 class="font-playfair text-lg font-semibold text-saudi-beige">Makkah</h3>
-          <p class="text-xs text-saudi-beige/50 mt-1">Holy City</p>
-        </a>
-        <a href="#destinations" class="glass rounded-2xl p-5 card-hover text-center reveal">
-          <h3 class="font-playfair text-lg font-semibold text-saudi-beige">Madinah</h3>
-          <p class="text-xs text-saudi-beige/50 mt-1">Holy City</p>
-        </a>
-        <a href="#destinations" class="glass rounded-2xl p-5 card-hover text-center reveal">
-          <h3 class="font-playfair text-lg font-semibold text-saudi-beige">Abha</h3>
-          <p class="text-xs text-saudi-beige/50 mt-1">Mountains</p>
-        </a>
-        <a href="#destinations" class="glass rounded-2xl p-5 card-hover text-center reveal">
-          <h3 class="font-playfair text-lg font-semibold text-saudi-beige">Taif</h3>
-          <p class="text-xs text-saudi-beige/50 mt-1">Roses</p>
-        </a>
-        <a href="#destinations" class="glass rounded-2xl p-5 card-hover text-center reveal">
-          <h3 class="font-playfair text-lg font-semibold text-saudi-beige">Dammam</h3>
-          <p class="text-xs text-saudi-beige/50 mt-1">Eastern</p>
-        </a>
-        <a href="#destinations" class="glass rounded-2xl p-5 card-hover text-center reveal">
-          <h3 class="font-playfair text-lg font-semibold text-saudi-beige">Al Khobar</h3>
-          <p class="text-xs text-saudi-beige/50 mt-1">Gulf Coast</p>
-        </a>
-        <a href="#destinations" class="glass rounded-2xl p-5 card-hover text-center reveal">
-          <h3 class="font-playfair text-lg font-semibold text-saudi-beige">Tabuk</h3>
-          <p class="text-xs text-saudi-beige/50 mt-1">Northwest</p>
-        </a>
-        <a href="#destinations" class="glass rounded-2xl p-5 card-hover text-center reveal">
-          <h3 class="font-playfair text-lg font-semibold text-saudi-beige">NEOM</h3>
-          <p class="text-xs text-saudi-beige/50 mt-1">Future</p>
-        </a>
-        <a href="#destinations" class="glass rounded-2xl p-5 card-hover text-center reveal">
-          <h3 class="font-playfair text-lg font-semibold text-saudi-beige">Diriyah</h3>
-          <p class="text-xs text-saudi-beige/50 mt-1">Heritage</p>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== TRAVEL GUIDE ========== -->
-  <section id="travel-guide" class="section-pad bg-saudi-soft/40">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-14 reveal">
-        <p class="text-saudi-gold tracking-widest text-xs uppercase mb-3">Practical Information</p>
-        <h2 class="font-playfair text-4xl md:text-5xl font-bold gold-text mb-4">Travel Guide</h2>
-        <p class="text-saudi-beige/60 max-w-xl mx-auto">Essential information to plan your journey. Always verify official sources before travel.</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-        <div class="glass rounded-2xl p-6 card-hover reveal">
-          <h3 class="font-playfair text-lg font-semibold text-saudi-beige mb-2">Visa Information</h3>
-          <p class="text-sm text-saudi-beige/60 mb-3">Tourist eVisa, Umrah, family visit and other entry options. Rules change — check official portals.</p>
-          <p class="text-xs text-saudi-gold/70">Verify: visitsaudi.com / moi.gov.sa</p>
-        </div>
-        <div class="glass rounded-2xl p-6 card-hover reveal">
-          <h3 class="font-playfair text-lg font-semibold text-saudi-beige mb-2">Entry Requirements</h3>
-          <p class="text-sm text-saudi-beige/60 mb-3">Passport validity, health requirements and immigration procedures at Saudi airports.</p>
-          <p class="text-xs text-saudi-gold/70">Official sources recommended</p>
-        </div>
-        <div class="glass rounded-2xl p-6 card-hover reveal">
-          <h3 class="font-playfair text-lg font-semibold text-saudi-beige mb-2">Airports</h3>
-          <p class="text-sm text-saudi-beige/60 mb-3">King Khalid (RUH), King Abdulaziz (JED), King Fahd (DMM) and other international gateways.</p>
-        </div>
-        <div class="glass rounded-2xl p-6 card-hover reveal">
-          <h3 class="font-playfair text-lg font-semibold text-saudi-beige mb-2">Transportation</h3>
-          <p class="text-sm text-saudi-beige/60 mb-3">Domestic flights, SAPTCO buses, ride-hailing apps, car rental and intercity options.</p>
-        </div>
-        <div class="glass rounded-2xl p-6 card-hover reveal">
-          <h3 class="font-playfair text-lg font-semibold text-saudi-beige mb-2">SIM & Internet</h3>
-          <p class="text-sm text-saudi-beige/60 mb-3">STC, Mobily and Zain tourist SIMs available at airports and stores.</p>
-        </div>
-        <div class="glass rounded-2xl p-6 card-hover reveal">
-          <h3 class="font-playfair text-lg font-semibold text-saudi-beige mb-2">Currency & Payments</h3>
-          <p class="text-sm text-saudi-beige/60 mb-3">Saudi Riyal (SAR). Cards widely accepted; cash useful in markets and small shops.</p>
-        </div>
-        <div class="glass rounded-2xl p-6 card-hover reveal">
-          <h3 class="font-playfair text-lg font-semibold text-saudi-beige mb-2">Weather & Best Time</h3>
-          <p class="text-sm text-saudi-beige/60 mb-3">Cooler season October–April is ideal for most regions. Summers are hot inland.</p>
-        </div>
-        <div class="glass rounded-2xl p-6 card-hover reveal">
-          <h3 class="font-playfair text-lg font-semibold text-saudi-beige mb-2">Local Customs & Dress</h3>
-          <p class="text-sm text-saudi-beige/60 mb-3">Modest clothing recommended. Respect local traditions, especially in religious sites.</p>
-        </div>
-        <div class="glass rounded-2xl p-6 card-hover reveal">
-          <h3 class="font-playfair text-lg font-semibold text-saudi-beige mb-2">Emergency Numbers</h3>
-          <p class="text-sm text-saudi-beige/60 mb-3">Police 999 · Ambulance 997 · Civil Defense 998 · Traffic 993</p>
-        </div>
-      </div>
-
-      <p class="text-center text-xs text-saudi-beige/40 mt-10 max-w-2xl mx-auto">
-        Information may change. KSA GUIDE is an independent information website and is not affiliated with MOI, Absher, MISA or any Saudi government entity. Always verify with official sources: moi.gov.sa · absher.sa · visitsaudi.com · qiwa.sa
+    <div class="mt-10 glass rounded-2xl p-5 text-center reveal">
+      <p class="text-sm text-saudi-beige/70">
+        <strong class="text-saudi-beige">Important:</strong> KSA GUIDE is an independent information website. 
+        We are <strong>not affiliated</strong> with MOI, Absher, Qiwa, MISA or any government entity. 
+        Always verify fees, rules and procedures on the official portals: 
+        <a href="https://www.absher.sa/" target="_blank" class="text-saudi-gold underline">absher.sa</a> · 
+        <a href="https://www.moi.gov.sa/" target="_blank" class="text-saudi-gold underline">moi.gov.sa</a> · 
+        <a href="https://qiwa.sa/" target="_blank" class="text-saudi-gold underline">qiwa.sa</a> · 
+        <a href="https://www.visitsaudi.com/" target="_blank" class="text-saudi-gold underline">visitsaudi.com</a>
       </p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ========== CULTURE ========== -->
-  <section id="culture" class="section-pad">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-14 reveal">
-        <p class="text-saudi-gold tracking-widest text-xs uppercase mb-3">Heritage</p>
-        <h2 class="font-playfair text-4xl md:text-5xl font-bold gold-text mb-4">Culture & Heritage</h2>
-        <p class="text-saudi-beige/60 max-w-xl mx-auto">Saudi hospitality, traditions, architecture and living culture across the regions.</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="glass rounded-3xl p-7 card-hover reveal">
-          <h3 class="font-playfair text-xl font-semibold text-saudi-beige mb-3">Saudi Hospitality</h3>
-          <p class="text-sm text-saudi-beige/60 leading-relaxed">Warm welcomes, Arabic coffee and dates are the heart of Saudi hospitality. Guests are treated with generosity and respect.</p>
-        </div>
-        <div class="glass rounded-3xl p-7 card-hover reveal">
-          <h3 class="font-playfair text-xl font-semibold text-saudi-beige mb-3">Traditional Clothing</h3>
-          <p class="text-sm text-saudi-beige/60 leading-relaxed">Thobe for men and abaya for women remain elegant everyday attire, with regional variations in style and fabric.</p>
-        </div>
-        <div class="glass rounded-3xl p-7 card-hover reveal">
-          <h3 class="font-playfair text-xl font-semibold text-saudi-beige mb-3">Saudi Coffee & Dates</h3>
-          <p class="text-sm text-saudi-beige/60 leading-relaxed">Gahwa served with dates is a ritual of welcome. Each region has its preferred roast and cardamom blend.</p>
-        </div>
-        <div class="glass rounded-3xl p-7 card-hover reveal">
-          <h3 class="font-playfair text-xl font-semibold text-saudi-beige mb-3">Historical Sites</h3>
-          <p class="text-sm text-saudi-beige/60 leading-relaxed">From Hegra and Diriyah to Al-Balad and the Rock Art of Hail — Saudi Arabia’s archaeological treasures span millennia.</p>
-        </div>
-        <div class="glass rounded-3xl p-7 card-hover reveal">
-          <h3 class="font-playfair text-xl font-semibold text-saudi-beige mb-3">Traditional Markets</h3>
-          <p class="text-sm text-saudi-beige/60 leading-relaxed">Souqs offer spices, incense, textiles, jewellery and local crafts. Experience bargaining and authentic atmosphere.</p>
-        </div>
-        <div class="glass rounded-3xl p-7 card-hover reveal">
-          <h3 class="font-playfair text-xl font-semibold text-saudi-beige mb-3">Festivals & Events</h3>
-          <p class="text-sm text-saudi-beige/60 leading-relaxed">Riyadh Season, Jeddah Season, AlUla events and National Day celebrations showcase modern Saudi culture.</p>
-        </div>
-      </div>
+<!-- FEATURED DESTINATIONS -->
+<section id="destinations" class="section-pad bg-saudi-soft/40">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 reveal">
+      <p class="text-saudi-gold tracking-widest text-xs uppercase mb-3">Explore the Kingdom</p>
+      <h2 class="font-playfair text-4xl md:text-5xl font-bold gold-text mb-4">Featured Destinations</h2>
     </div>
-  </section>
-
-  <!-- ========== FOOD ========== -->
-  <section id="food" class="section-pad bg-saudi-soft/40">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-14 reveal">
-        <p class="text-saudi-gold tracking-widest text-xs uppercase mb-3">Cuisine</p>
-        <h2 class="font-playfair text-4xl md:text-5xl font-bold gold-text mb-4">Saudi Food</h2>
-        <p class="text-saudi-beige/60 max-w-xl mx-auto">Discover the flavours of the Kingdom — from Kabsa to Mandi and traditional desserts.</p>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
-        <article class="glass rounded-2xl overflow-hidden card-hover reveal">
-          <div class="h-40 bg-saudi-card flex items-center justify-center text-4xl">🍚</div>
-          <div class="p-5">
-            <h3 class="font-playfair text-lg font-semibold text-saudi-beige">Kabsa</h3>
-            <p class="text-xs text-saudi-beige/50 mt-1">National rice dish with meat and fragrant spices.</p>
-          </div>
-        </article>
-        <article class="glass rounded-2xl overflow-hidden card-hover reveal">
-          <div class="h-40 bg-saudi-card flex items-center justify-center text-4xl">🍖</div>
-          <div class="p-5">
-            <h3 class="font-playfair text-lg font-semibold text-saudi-beige">Mandi</h3>
-            <p class="text-xs text-saudi-beige/50 mt-1">Slow-cooked meat and rice with Yemeni roots, popular across KSA.</p>
-          </div>
-        </article>
-        <article class="glass rounded-2xl overflow-hidden card-hover reveal">
-          <div class="h-40 bg-saudi-card flex items-center justify-center text-4xl">🥣</div>
-          <div class="p-5">
-            <h3 class="font-playfair text-lg font-semibold text-saudi-beige">Jareesh</h3>
-            <p class="text-xs text-saudi-beige/50 mt-1">Crushed wheat porridge with meat — comfort food of the central region.</p>
-          </div>
-        </article>
-        <article class="glass rounded-2xl overflow-hidden card-hover reveal">
-          <div class="h-40 bg-saudi-card flex items-center justify-center text-4xl">🥛</div>
-          <div class="p-5">
-            <h3 class="font-playfair text-lg font-semibold text-saudi-beige">Saleeg</h3>
-            <p class="text-xs text-saudi-beige/50 mt-1">Creamy rice and milk dish from the Hejaz region.</p>
-          </div>
-        </article>
-        <article class="glass rounded-2xl overflow-hidden card-hover reveal">
-          <div class="h-40 bg-saudi-card flex items-center justify-center text-4xl">🥟</div>
-          <div class="p-5">
-            <h3 class="font-playfair text-lg font-semibold text-saudi-beige">Mutabbaq</h3>
-            <p class="text-xs text-saudi-beige/50 mt-1">Stuffed flatbread with egg, meat or sweet fillings.</p>
-          </div>
-        </article>
-        <article class="glass rounded-2xl overflow-hidden card-hover reveal">
-          <div class="h-40 bg-saudi-card flex items-center justify-center text-4xl">☕</div>
-          <div class="p-5">
-            <h3 class="font-playfair text-lg font-semibold text-saudi-beige">Saudi Coffee</h3>
-            <p class="text-xs text-saudi-beige/50 mt-1">Lightly roasted with cardamom — served with dates.</p>
-          </div>
-        </article>
-        <article class="glass rounded-2xl overflow-hidden card-hover reveal">
-          <div class="h-40 bg-saudi-card flex items-center justify-center text-4xl">🌴</div>
-          <div class="p-5">
-            <h3 class="font-playfair text-lg font-semibold text-saudi-beige">Dates</h3>
-            <p class="text-xs text-saudi-beige/50 mt-1">Ajwa, Sukkari, Khalas and many more varieties.</p>
-          </div>
-        </article>
-        <article class="glass rounded-2xl overflow-hidden card-hover reveal">
-          <div class="h-40 bg-saudi-card flex items-center justify-center text-4xl">🍰</div>
-          <div class="p-5">
-            <h3 class="font-playfair text-lg font-semibold text-saudi-beige">Traditional Desserts</h3>
-            <p class="text-xs text-saudi-beige/50 mt-1">Maamoul, basbousa, luqaimat and more.</p>
-          </div>
-        </article>
-      </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+      <article class="card-hover glass rounded-3xl overflow-hidden reveal">
+        <div class="relative h-52 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c4?w=700&q=85" alt="Riyadh skyline" class="w-full h-full object-cover img-zoom" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-saudi-dark/90 to-transparent"></div>
+          <span class="absolute bottom-3 left-4 text-xs tracking-wider text-saudi-gold uppercase">Capital</span>
+        </div>
+        <div class="p-5">
+          <h3 class="font-playfair text-xl font-semibold text-saudi-beige mb-1">Riyadh</h3>
+          <p class="text-sm text-saudi-beige/60 mb-3">Modern capital of towers, culture and desert edges.</p>
+          <p class="text-xs text-saudi-gold/80">Best time: Oct – Apr</p>
+        </div>
+      </article>
+      <article class="card-hover glass rounded-3xl overflow-hidden reveal">
+        <div class="relative h-52 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=700&q=85" alt="Jeddah Red Sea" class="w-full h-full object-cover img-zoom" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-saudi-dark/90 to-transparent"></div>
+          <span class="absolute bottom-3 left-4 text-xs tracking-wider text-saudi-gold uppercase">Gateway</span>
+        </div>
+        <div class="p-5">
+          <h3 class="font-playfair text-xl font-semibold text-saudi-beige mb-1">Jeddah</h3>
+          <p class="text-sm text-saudi-beige/60 mb-3">Historic Red Sea port, Corniche & Al-Balad.</p>
+          <p class="text-xs text-saudi-gold/80">Best time: Nov – Mar</p>
+        </div>
+      </article>
+      <article class="card-hover glass rounded-3xl overflow-hidden reveal">
+        <div class="relative h-52 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=700&q=85" alt="AlUla landscape" class="w-full h-full object-cover img-zoom" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-saudi-dark/90 to-transparent"></div>
+          <span class="absolute bottom-3 left-4 text-xs tracking-wider text-saudi-gold uppercase">Heritage</span>
+        </div>
+        <div class="p-5">
+          <h3 class="font-playfair text-xl font-semibold text-saudi-beige mb-1">AlUla</h3>
+          <p class="text-sm text-saudi-beige/60 mb-3">Hegra, canyons and luxury desert experiences.</p>
+          <p class="text-xs text-saudi-gold/80">Best time: Oct – Apr</p>
+        </div>
+      </article>
+      <article class="card-hover glass rounded-3xl overflow-hidden reveal">
+        <div class="relative h-52 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=700&q=85" alt="Makkah" class="w-full h-full object-cover img-zoom" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-saudi-dark/90 to-transparent"></div>
+          <span class="absolute bottom-3 left-4 text-xs tracking-wider text-saudi-gold uppercase">Sacred</span>
+        </div>
+        <div class="p-5">
+          <h3 class="font-playfair text-xl font-semibold text-saudi-beige mb-1">Makkah</h3>
+          <p class="text-sm text-saudi-beige/60 mb-3">The holiest city in Islam.</p>
+          <p class="text-xs text-saudi-gold/80">Year-round (pilgrimage seasons)</p>
+        </div>
+      </article>
+      <article class="card-hover glass rounded-3xl overflow-hidden reveal">
+        <div class="relative h-52 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1542816417-0983c9c9ad53?w=700&q=85" alt="Madinah" class="w-full h-full object-cover img-zoom" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-saudi-dark/90 to-transparent"></div>
+          <span class="absolute bottom-3 left-4 text-xs tracking-wider text-saudi-gold uppercase">Sacred</span>
+        </div>
+        <div class="p-5">
+          <h3 class="font-playfair text-xl font-semibold text-saudi-beige mb-1">Madinah</h3>
+          <p class="text-sm text-saudi-beige/60 mb-3">City of the Prophet ﷺ — serenity and history.</p>
+          <p class="text-xs text-saudi-gold/80">Year-round</p>
+        </div>
+      </article>
+      <article class="card-hover glass rounded-3xl overflow-hidden reveal">
+        <div class="relative h-52 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700&q=85" alt="Abha mountains" class="w-full h-full object-cover img-zoom" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-saudi-dark/90 to-transparent"></div>
+          <span class="absolute bottom-3 left-4 text-xs tracking-wider text-saudi-gold uppercase">Mountains</span>
+        </div>
+        <div class="p-5">
+          <h3 class="font-playfair text-xl font-semibold text-saudi-beige mb-1">Abha</h3>
+          <p class="text-sm text-saudi-beige/60 mb-3">Cool mountain retreat of Asir.</p>
+          <p class="text-xs text-saudi-gold/80">Year-round</p>
+        </div>
+      </article>
+      <article class="card-hover glass rounded-3xl overflow-hidden reveal">
+        <div class="relative h-52 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=700&q=85" alt="Taif" class="w-full h-full object-cover img-zoom" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-saudi-dark/90 to-transparent"></div>
+          <span class="absolute bottom-3 left-4 text-xs tracking-wider text-saudi-gold uppercase">Roses</span>
+        </div>
+        <div class="p-5">
+          <h3 class="font-playfair text-xl font-semibold text-saudi-beige mb-1">Taif</h3>
+          <p class="text-sm text-saudi-beige/60 mb-3">City of roses and mild climate.</p>
+          <p class="text-xs text-saudi-gold/80">Best: Mar – May</p>
+        </div>
+      </article>
+      <article class="card-hover glass rounded-3xl overflow-hidden reveal">
+        <div class="relative h-52 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=700&q=85" alt="Dammam" class="w-full h-full object-cover img-zoom" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-saudi-dark/90 to-transparent"></div>
+          <span class="absolute bottom-3 left-4 text-xs tracking-wider text-saudi-gold uppercase">Eastern</span>
+        </div>
+        <div class="p-5">
+          <h3 class="font-playfair text-xl font-semibold text-saudi-beige mb-1">Dammam</h3>
+          <p class="text-sm text-saudi-beige/60 mb-3">Eastern Province hub & corniche.</p>
+          <p class="text-xs text-saudi-gold/80">Best time: Nov – Mar</p>
+        </div>
+      </article>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ========== HOTELS ========== -->
-  <section id="hotels" class="section-pad">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-14 reveal">
-        <p class="text-saudi-gold tracking-widest text-xs uppercase mb-3">Stay</p>
-        <h2 class="font-playfair text-4xl md:text-5xl font-bold gold-text mb-4">Hotels & Stays</h2>
-        <p class="text-saudi-beige/60 max-w-xl mx-auto">From luxury desert resorts to city business hotels — find the right stay for your trip.</p>
-      </div>
-
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        <div class="glass rounded-2xl p-6 text-center card-hover reveal">
-          <div class="text-3xl mb-3">✨</div>
-          <h3 class="font-medium text-saudi-beige">Luxury</h3>
-        </div>
-        <div class="glass rounded-2xl p-6 text-center card-hover reveal">
-          <div class="text-3xl mb-3">💰</div>
-          <h3 class="font-medium text-saudi-beige">Budget</h3>
-        </div>
-        <div class="glass rounded-2xl p-6 text-center card-hover reveal">
-          <div class="text-3xl mb-3">👨‍👩‍👧</div>
-          <h3 class="font-medium text-saudi-beige">Family</h3>
-        </div>
-        <div class="glass rounded-2xl p-6 text-center card-hover reveal">
-          <div class="text-3xl mb-3">💼</div>
-          <h3 class="font-medium text-saudi-beige">Business</h3>
-        </div>
-        <div class="glass rounded-2xl p-6 text-center card-hover reveal">
-          <div class="text-3xl mb-3">🏖️</div>
-          <h3 class="font-medium text-saudi-beige">Beach Resorts</h3>
-        </div>
-        <div class="glass rounded-2xl p-6 text-center card-hover reveal">
-          <div class="text-3xl mb-3">🏜️</div>
-          <h3 class="font-medium text-saudi-beige">Desert Resorts</h3>
-        </div>
-        <div class="glass rounded-2xl p-6 text-center card-hover reveal">
-          <div class="text-3xl mb-3">🏙️</div>
-          <h3 class="font-medium text-saudi-beige">City Hotels</h3>
-        </div>
-        <div class="glass rounded-2xl p-6 text-center card-hover reveal">
-          <div class="text-3xl mb-3">🕌</div>
-          <h3 class="font-medium text-saudi-beige">Near Holy Sites</h3>
-        </div>
-      </div>
-      <p class="text-center text-xs text-saudi-beige/40 mt-8">Prices and availability change frequently. Always check current rates with hotels or booking platforms.</p>
+<!-- THINGS TO DO / EXPERIENCES -->
+<section id="things-to-do" class="section-pad">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 reveal">
+      <p class="text-saudi-gold tracking-widest text-xs uppercase mb-3">Must Experience</p>
+      <h2 class="font-playfair text-4xl md:text-5xl font-bold gold-text mb-4">Popular Experiences</h2>
     </div>
-  </section>
-
-  <!-- ========== BLOG ========== -->
-  <section id="blog" class="section-pad bg-saudi-soft/40">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-14 reveal">
-        <p class="text-saudi-gold tracking-widest text-xs uppercase mb-3">Stories & Tips</p>
-        <h2 class="font-playfair text-4xl md:text-5xl font-bold gold-text mb-4">Blog</h2>
-        <p class="text-saudi-beige/60 max-w-xl mx-auto">Practical guides, destination stories and travel inspiration for Saudi Arabia.</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <article class="glass rounded-3xl overflow-hidden card-hover reveal">
-          <div class="h-48 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=600&q=80" alt="AlUla guide" class="w-full h-full object-cover img-zoom" loading="lazy" />
-          </div>
-          <div class="p-6">
-            <span class="text-xs text-saudi-gold uppercase tracking-wider">Destinations</span>
-            <h3 class="font-playfair text-xl font-semibold text-saudi-beige mt-2 mb-2">Ultimate AlUla Travel Guide</h3>
-            <p class="text-sm text-saudi-beige/60 mb-4 line-clamp-2">How to plan your visit to Hegra, Old Town, canyons and luxury stays.</p>
-            <div class="flex items-center justify-between text-xs text-saudi-beige/40">
-              <span>8 min read</span>
-              <span>2026</span>
-            </div>
-          </div>
-        </article>
-        <article class="glass rounded-3xl overflow-hidden card-hover reveal">
-          <div class="h-48 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c4?w=600&q=80" alt="Riyadh tips" class="w-full h-full object-cover img-zoom" loading="lazy" />
-          </div>
-          <div class="p-6">
-            <span class="text-xs text-saudi-gold uppercase tracking-wider">Travel Tips</span>
-            <h3 class="font-playfair text-xl font-semibold text-saudi-beige mt-2 mb-2">First Time in Riyadh</h3>
-            <p class="text-sm text-saudi-beige/60 mb-4 line-clamp-2">Neighbourhoods, transport, best viewpoints and what to expect in the capital.</p>
-            <div class="flex items-center justify-between text-xs text-saudi-beige/40">
-              <span>6 min read</span>
-              <span>2026</span>
-            </div>
-          </div>
-        </article>
-        <article class="glass rounded-3xl overflow-hidden card-hover reveal">
-          <div class="h-48 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&q=80" alt="Saudi food" class="w-full h-full object-cover img-zoom" loading="lazy" />
-          </div>
-          <div class="p-6">
-            <span class="text-xs text-saudi-gold uppercase tracking-wider">Food</span>
-            <h3 class="font-playfair text-xl font-semibold text-saudi-beige mt-2 mb-2">Must-Try Saudi Dishes</h3>
-            <p class="text-sm text-saudi-beige/60 mb-4 line-clamp-2">Kabsa, Mandi, Jareesh and where to experience authentic local flavours.</p>
-            <div class="flex items-center justify-between text-xs text-saudi-beige/40">
-              <span>5 min read</span>
-              <span>2026</span>
-            </div>
-          </div>
-        </article>
-      </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <article class="card-hover glass rounded-3xl overflow-hidden reveal">
+        <div class="h-48 overflow-hidden"><img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=600&q=85" alt="AlUla Old Town" class="w-full h-full object-cover img-zoom" loading="lazy" /></div>
+        <div class="p-6">
+          <p class="text-xs text-saudi-gold uppercase tracking-wider mb-1">AlUla</p>
+          <h3 class="font-playfair text-xl font-semibold text-saudi-beige mb-2">AlUla Old Town & Hegra</h3>
+          <p class="text-sm text-saudi-beige/60">UNESCO Hegra tombs and restored heritage streets.</p>
+        </div>
+      </article>
+      <article class="card-hover glass rounded-3xl overflow-hidden reveal">
+        <div class="h-48 overflow-hidden"><img src="https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c4?w=600&q=85" alt="Diriyah" class="w-full h-full object-cover img-zoom" loading="lazy" /></div>
+        <div class="p-6">
+          <p class="text-xs text-saudi-gold uppercase tracking-wider mb-1">Riyadh</p>
+          <h3 class="font-playfair text-xl font-semibold text-saudi-beige mb-2">Diriyah</h3>
+          <p class="text-sm text-saudi-beige/60">Birthplace of the Saudi state – At-Turaif UNESCO site.</p>
+        </div>
+      </article>
+      <article class="card-hover glass rounded-3xl overflow-hidden reveal">
+        <div class="h-48 overflow-hidden"><img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=600&q=85" alt="Edge of the World" class="w-full h-full object-cover img-zoom" loading="lazy" /></div>
+        <div class="p-6">
+          <p class="text-xs text-saudi-gold uppercase tracking-wider mb-1">Near Riyadh</p>
+          <h3 class="font-playfair text-xl font-semibold text-saudi-beige mb-2">Edge of the World</h3>
+          <p class="text-sm text-saudi-beige/60">Dramatic cliff escarpment with panoramic desert views.</p>
+        </div>
+      </article>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ========== ABOUT ========== -->
-  <section id="about" class="section-pad">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <p class="text-saudi-gold tracking-widest text-xs uppercase mb-3 reveal">Who We Are</p>
-      <h2 class="font-playfair text-4xl md:text-5xl font-bold gold-text mb-6 reveal">About KSA GUIDE</h2>
-      <p class="text-saudi-beige/70 text-lg leading-relaxed mb-8 reveal">
-        KSA GUIDE is an independent travel and information platform designed to help tourists, visitors, expats and residents discover Saudi Arabia through practical guides, destination insights, culture, food and useful travel resources.
-      </p>
-      <div class="grid md:grid-cols-3 gap-6 text-left">
-        <div class="glass rounded-2xl p-6 reveal">
-          <h3 class="font-playfair text-lg font-semibold text-saudi-beige mb-2">Our Mission</h3>
-          <p class="text-sm text-saudi-beige/60">Make Saudi Arabia accessible, understandable and inspiring for every traveller.</p>
-        </div>
-        <div class="glass rounded-2xl p-6 reveal">
-          <h3 class="font-playfair text-lg font-semibold text-saudi-beige mb-2">What We Cover</h3>
-          <p class="text-sm text-saudi-beige/60">Destinations, cities, experiences, culture, food, hotels and practical travel information.</p>
-        </div>
-        <div class="glass rounded-2xl p-6 reveal">
-          <h3 class="font-playfair text-lg font-semibold text-saudi-beige mb-2">Why KSA GUIDE</h3>
-          <p class="text-sm text-saudi-beige/60">Clear, trustworthy and Saudi-focused content presented with a premium experience.</p>
-        </div>
-      </div>
-      <p class="text-xs text-saudi-beige/40 mt-10 reveal">
-        Not affiliated with MOI, Absher, MISA, Qiwa or any Saudi government entity. Visit official portals for government services: moi.gov.sa · absher.sa · qiwa.sa · misa.gov.sa · visitsaudi.com
-      </p>
+<!-- CITIES -->
+<section id="cities" class="section-pad bg-saudi-soft/40">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 reveal">
+      <h2 class="font-playfair text-4xl md:text-5xl font-bold gold-text mb-4">Saudi Cities</h2>
     </div>
-  </section>
-
-  <!-- ========== CONTACT ========== -->
-  <section id="contact" class="section-pad bg-saudi-soft/40">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-12 reveal">
-        <p class="text-saudi-gold tracking-widest text-xs uppercase mb-3">Get in Touch</p>
-        <h2 class="font-playfair text-4xl md:text-5xl font-bold gold-text mb-4">Contact</h2>
-        <p class="text-saudi-beige/60">Questions, suggestions or collaboration? We would love to hear from you.</p>
-      </div>
-
-      <div class="grid md:grid-cols-2 gap-10">
-        <div class="reveal">
-          <form id="contact-form" class="space-y-5">
-            <div>
-              <label for="name" class="block text-sm text-saudi-beige/70 mb-1.5">Name</label>
-              <input type="text" id="name" name="name" required class="w-full bg-saudi-card border border-saudi-gold/20 rounded-xl py-3 px-4 text-saudi-beige focus:outline-none focus:border-saudi-gold/50" />
-            </div>
-            <div>
-              <label for="email" class="block text-sm text-saudi-beige/70 mb-1.5">Email</label>
-              <input type="email" id="email" name="email" required class="w-full bg-saudi-card border border-saudi-gold/20 rounded-xl py-3 px-4 text-saudi-beige focus:outline-none focus:border-saudi-gold/50" />
-            </div>
-            <div>
-              <label for="subject" class="block text-sm text-saudi-beige/70 mb-1.5">Subject</label>
-              <input type="text" id="subject" name="subject" class="w-full bg-saudi-card border border-saudi-gold/20 rounded-xl py-3 px-4 text-saudi-beige focus:outline-none focus:border-saudi-gold/50" />
-            </div>
-            <div>
-              <label for="message" class="block text-sm text-saudi-beige/70 mb-1.5">Message</label>
-              <textarea id="message" name="message" rows="5" required class="w-full bg-saudi-card border border-saudi-gold/20 rounded-xl py-3 px-4 text-saudi-beige focus:outline-none focus:border-saudi-gold/50 resize-none"></textarea>
-            </div>
-            <button type="submit" class="btn-gold w-full py-3.5 rounded-xl">Send Message</button>
-          </form>
-        </div>
-
-        <div class="space-y-6 reveal">
-          <div class="glass rounded-2xl p-6">
-            <h3 class="font-playfair text-lg font-semibold text-saudi-beige mb-4">Contact Information</h3>
-            <div class="space-y-4 text-sm">
-              <a href="mailto:ahmedtaimoori0012@gmail.com" class="flex items-center gap-3 text-saudi-beige/80 hover:text-saudi-gold transition">
-                <span class="w-10 h-10 rounded-full bg-saudi-gold/10 flex items-center justify-center">✉️</span>
-                ahmedtaimoori0012@gmail.com
-              </a>
-              <a href="https://wa.me/966501442697" target="_blank" rel="noopener" class="flex items-center gap-3 text-saudi-beige/80 hover:text-saudi-gold transition">
-                <span class="w-10 h-10 rounded-full bg-saudi-gold/10 flex items-center justify-center">💬</span>
-                050 144 2697 (WhatsApp)
-              </a>
-              <div class="flex items-center gap-3 text-saudi-beige/80">
-                <span class="w-10 h-10 rounded-full bg-saudi-gold/10 flex items-center justify-center">📍</span>
-                Riyadh, Saudi Arabia
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-col sm:flex-row gap-3">
-            <a href="mailto:ahmedtaimoori0012@gmail.com" class="btn-outline flex-1 text-center py-3 rounded-xl text-sm">Email Us</a>
-            <a href="https://wa.me/966501442697" target="_blank" rel="noopener" class="btn-gold flex-1 text-center py-3 rounded-xl text-sm">Chat on WhatsApp</a>
-          </div>
-        </div>
-      </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <a href="#destinations" class="glass rounded-2xl p-5 card-hover text-center reveal"><h3 class="font-playfair text-lg font-semibold">Riyadh</h3></a>
+      <a href="#destinations" class="glass rounded-2xl p-5 card-hover text-center reveal"><h3 class="font-playfair text-lg font-semibold">Jeddah</h3></a>
+      <a href="#destinations" class="glass rounded-2xl p-5 card-hover text-center reveal"><h3 class="font-playfair text-lg font-semibold">AlUla</h3></a>
+      <a href="#destinations" class="glass rounded-2xl p-5 card-hover text-center reveal"><h3 class="font-playfair text-lg font-semibold">Makkah</h3></a>
+      <a href="#destinations" class="glass rounded-2xl p-5 card-hover text-center reveal"><h3 class="font-playfair text-lg font-semibold">Madinah</h3></a>
+      <a href="#destinations" class="glass rounded-2xl p-5 card-hover text-center reveal"><h3 class="font-playfair text-lg font-semibold">Abha</h3></a>
+      <a href="#destinations" class="glass rounded-2xl p-5 card-hover text-center reveal"><h3 class="font-playfair text-lg font-semibold">Taif</h3></a>
+      <a href="#destinations" class="glass rounded-2xl p-5 card-hover text-center reveal"><h3 class="font-playfair text-lg font-semibold">Dammam</h3></a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ========== FOOTER ========== -->
-  <footer class="border-t border-saudi-gold/10 pt-16 pb-8">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
-        <div class="lg:col-span-2">
-          <a href="#home" class="inline-block mb-4">
-            <span class="font-playfair text-2xl font-bold gold-text">KSA GUIDE</span>
-          </a>
-          <p class="text-sm text-saudi-beige/50 max-w-xs leading-relaxed">Your Complete Guide to Saudi Arabia — independent travel information for tourists, visitors and residents.</p>
-          <div class="flex gap-3 mt-6">
-            <a href="#" class="w-10 h-10 rounded-full glass flex items-center justify-center text-saudi-beige/60 hover:text-saudi-gold transition" aria-label="Instagram">IG</a>
-            <a href="#" class="w-10 h-10 rounded-full glass flex items-center justify-center text-saudi-beige/60 hover:text-saudi-gold transition" aria-label="TikTok">TT</a>
-            <a href="#" class="w-10 h-10 rounded-full glass flex items-center justify-center text-saudi-beige/60 hover:text-saudi-gold transition" aria-label="YouTube">YT</a>
-            <a href="#" class="w-10 h-10 rounded-full glass flex items-center justify-center text-saudi-beige/60 hover:text-saudi-gold transition" aria-label="Facebook">FB</a>
-            <a href="#" class="w-10 h-10 rounded-full glass flex items-center justify-center text-saudi-beige/60 hover:text-saudi-gold transition" aria-label="X">X</a>
-          </div>
-        </div>
-        <div>
-          <h4 class="text-sm font-semibold text-saudi-beige mb-4 tracking-wide">Explore</h4>
-          <ul class="space-y-2 text-sm text-saudi-beige/50">
-            <li><a href="#destinations" class="hover:text-saudi-gold transition">Destinations</a></li>
-            <li><a href="#things-to-do" class="hover:text-saudi-gold transition">Things To Do</a></li>
-            <li><a href="#cities" class="hover:text-saudi-gold transition">Cities</a></li>
-            <li><a href="#food" class="hover:text-saudi-gold transition">Food</a></li>
-            <li><a href="#hotels" class="hover:text-saudi-gold transition">Hotels</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="text-sm font-semibold text-saudi-beige mb-4 tracking-wide">Travel</h4>
-          <ul class="space-y-2 text-sm text-saudi-beige/50">
-            <li><a href="#travel-guide" class="hover:text-saudi-gold transition">Travel Guide</a></li>
-            <li><a href="#travel-guide" class="hover:text-saudi-gold transition">Travel Tips</a></li>
-            <li><a href="#culture" class="hover:text-saudi-gold transition">Culture</a></li>
-            <li><a href="#blog" class="hover:text-saudi-gold transition">Blog</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="text-sm font-semibold text-saudi-beige mb-4 tracking-wide">Company</h4>
-          <ul class="space-y-2 text-sm text-saudi-beige/50">
-            <li><a href="#about" class="hover:text-saudi-gold transition">About</a></li>
-            <li><a href="#contact" class="hover:text-saudi-gold transition">Contact</a></li>
-            <li><a href="#privacy" class="hover:text-saudi-gold transition">Privacy Policy</a></li>
-            <li><a href="#terms" class="hover:text-saudi-gold transition">Terms</a></li>
-            <li><a href="#cookies" class="hover:text-saudi-gold transition">Cookie Policy</a></li>
-            <li><a href="#disclaimer" class="hover:text-saudi-gold transition">Disclaimer</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="border-t border-saudi-gold/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-saudi-beige/40">
-        <p>© 2026 KSA GUIDE. All rights reserved.</p>
-        <p>Independent Saudi Arabia Travel & Information Guide · Owned by Teimoor Ahmed</p>
-      </div>
+<!-- CULTURE -->
+<section id="culture" class="section-pad">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 reveal">
+      <h2 class="font-playfair text-4xl md:text-5xl font-bold gold-text mb-4">Culture & Heritage</h2>
     </div>
-  </footer>
-
-  <!-- ========== LEGAL MODALS (Privacy, Terms, Cookie, Disclaimer) ========== -->
-  <div id="legal-modals">
-    <!-- Privacy -->
-    <div id="privacy" class="fixed inset-0 z-[70] modal-overlay flex items-center justify-center p-4">
-      <div class="absolute inset-0 bg-saudi-dark/90" data-close="privacy"></div>
-      <div class="modal-box glass-strong rounded-3xl max-w-2xl w-full max-h-[80vh] overflow-y-auto p-8 relative">
-        <button data-close="privacy" class="absolute top-4 right-4 p-2 rounded-full hover:bg-saudi-gold/10" aria-label="Close">✕</button>
-        <h2 class="font-playfair text-2xl gold-text mb-4">Privacy Policy</h2>
-        <div class="text-sm text-saudi-beige/70 space-y-3 leading-relaxed">
-          <p>KSA GUIDE respects your privacy. We collect only information necessary to operate the website, improve user experience and respond to enquiries.</p>
-          <p>We do not sell personal data. Contact form submissions are used solely to reply to your message.</p>
-          <p>Location data (if you choose “Use My Location”) is processed in your browser only and is not stored on our servers in identifiable form.</p>
-          <p>For any privacy request contact: ahmedtaimoori0012@gmail.com</p>
-          <p class="text-xs text-saudi-beige/40 pt-4">Last updated: 2026 · Independent website, not affiliated with Saudi government entities.</p>
-        </div>
-      </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="glass rounded-3xl p-7 card-hover reveal"><h3 class="font-playfair text-xl font-semibold text-saudi-beige mb-3">Saudi Hospitality</h3><p class="text-sm text-saudi-beige/60">Arabic coffee, dates and warm welcomes define the culture of generosity.</p></div>
+      <div class="glass rounded-3xl p-7 card-hover reveal"><h3 class="font-playfair text-xl font-semibold text-saudi-beige mb-3">Traditional Clothing</h3><p class="text-sm text-saudi-beige/60">Thobe and abaya remain elegant everyday attire with regional variations.</p></div>
+      <div class="glass rounded-3xl p-7 card-hover reveal"><h3 class="font-playfair text-xl font-semibold text-saudi-beige mb-3">Saudi Coffee & Dates</h3><p class="text-sm text-saudi-beige/60">Gahwa with cardamom served with dates is a ritual of welcome.</p></div>
     </div>
+  </div>
+</section>
 
-    <!-- Terms -->
-    <div id="terms" class="fixed inset-0 z-[70] modal-overlay flex items-center justify-center p-4">
-      <div class="absolute inset-0 bg-saudi-dark/90" data-close="terms"></div>
-      <div class="modal-box glass-strong rounded-3xl max-w-2xl w-full max-h-[80vh] overflow-y-auto p-8 relative">
-        <button data-close="terms" class="absolute top-4 right-4 p-2 rounded-full hover:bg-saudi-gold/10" aria-label="Close">✕</button>
-        <h2 class="font-playfair text-2xl gold-text mb-4">Terms & Conditions</h2>
-        <div class="text-sm text-saudi-beige/70 space-y-3 leading-relaxed">
-          <p>By using KSA GUIDE you agree to these terms. Content is provided for general information only.</p>
-          <p>We strive for accuracy but do not guarantee completeness of travel, visa or practical information. Always verify with official sources before making decisions.</p>
-          <p>KSA GUIDE is not responsible for third-party websites, hotels, services or changes in government regulations.</p>
-          <p>All content remains the property of KSA GUIDE unless otherwise stated.</p>
-        </div>
-      </div>
+<!-- FOOD -->
+<section id="food" class="section-pad bg-saudi-soft/40">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 reveal">
+      <h2 class="font-playfair text-4xl md:text-5xl font-bold gold-text mb-4">Saudi Food</h2>
     </div>
-
-    <!-- Cookie Policy -->
-    <div id="cookies" class="fixed inset-0 z-[70] modal-overlay flex items-center justify-center p-4">
-      <div class="absolute inset-0 bg-saudi-dark/90" data-close="cookies"></div>
-      <div class="modal-box glass-strong rounded-3xl max-w-2xl w-full max-h-[80vh] overflow-y-auto p-8 relative">
-        <button data-close="cookies" class="absolute top-4 right-4 p-2 rounded-full hover:bg-saudi-gold/10" aria-label="Close">✕</button>
-        <h2 class="font-playfair text-2xl gold-text mb-4">Cookie Policy</h2>
-        <div class="text-sm text-saudi-beige/70 space-y-3 leading-relaxed">
-          <p>We use cookies to improve browsing experience, analyse traffic and remember preferences.</p>
-          <p><strong class="text-saudi-beige">Necessary:</strong> Essential for site function (always active).</p>
-          <p><strong class="text-saudi-beige">Analytics:</strong> Help us understand how visitors use the site.</p>
-          <p><strong class="text-saudi-beige">Preferences:</strong> Remember language and location choices.</p>
-          <p><strong class="text-saudi-beige">Marketing:</strong> Currently not used.</p>
-          <p>You can manage preferences via the Cookie Settings button in the banner.</p>
-        </div>
-      </div>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div class="glass rounded-2xl p-5 text-center card-hover reveal"><div class="text-3xl mb-2">🍚</div><h3 class="font-medium">Kabsa</h3></div>
+      <div class="glass rounded-2xl p-5 text-center card-hover reveal"><div class="text-3xl mb-2">🍖</div><h3 class="font-medium">Mandi</h3></div>
+      <div class="glass rounded-2xl p-5 text-center card-hover reveal"><div class="text-3xl mb-2">🥣</div><h3 class="font-medium">Jareesh</h3></div>
+      <div class="glass rounded-2xl p-5 text-center card-hover reveal"><div class="text-3xl mb-2">☕</div><h3 class="font-medium">Saudi Coffee</h3></div>
+      <div class="glass rounded-2xl p-5 text-center card-hover reveal"><div class="text-3xl mb-2">🌴</div><h3 class="font-medium">Dates</h3></div>
+      <div class="glass rounded-2xl p-5 text-center card-hover reveal"><div class="text-3xl mb-2">🥟</div><h3 class="font-medium">Mutabbaq</h3></div>
+      <div class="glass rounded-2xl p-5 text-center card-hover reveal"><div class="text-3xl mb-2">🥛</div><h3 class="font-medium">Saleeg</h3></div>
+      <div class="glass rounded-2xl p-5 text-center card-hover reveal"><div class="text-3xl mb-2">🍰</div><h3 class="font-medium">Desserts</h3></div>
     </div>
+  </div>
+</section>
 
-    <!-- Disclaimer -->
-    <div id="disclaimer" class="fixed inset-0 z-[70] modal-overlay flex items-center justify-center p-4">
-      <div class="absolute inset-0 bg-saudi-dark/90" data-close="disclaimer"></div>
-      <div class="modal-box glass-strong rounded-3xl max-w-2xl w-full max-h-[80vh] overflow-y-auto p-8 relative">
-        <button data-close="disclaimer" class="absolute top-4 right-4 p-2 rounded-full hover:bg-saudi-gold/10" aria-label="Close">✕</button>
-        <h2 class="font-playfair text-2xl gold-text mb-4">Disclaimer</h2>
-        <div class="text-sm text-saudi-beige/70 space-y-3 leading-relaxed">
-          <p>KSA GUIDE is an independent travel and information website. It is <strong class="text-saudi-beige">not affiliated</strong> with the Ministry of Interior (MOI), Absher, MISA, Qiwa, Jawazat, or any official Saudi government portal.</p>
-          <p>Information on visas, entry rules, fees and regulations can change. Always verify directly with official sources before travel or any official procedure.</p>
-          <p>We do not provide legal, immigration or government services.</p>
+<!-- HOTELS -->
+<section id="hotels" class="section-pad">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 reveal">
+      <h2 class="font-playfair text-4xl md:text-5xl font-bold gold-text mb-4">Hotels & Stays</h2>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="glass rounded-2xl p-6 text-center card-hover reveal"><div class="text-3xl mb-3">✨</div><h3 class="font-medium">Luxury</h3></div>
+      <div class="glass rounded-2xl p-6 text-center card-hover reveal"><div class="text-3xl mb-3">💰</div><h3 class="font-medium">Budget</h3></div>
+      <div class="glass rounded-2xl p-6 text-center card-hover reveal"><div class="text-3xl mb-3">🏜️</div><h3 class="font-medium">Desert Resorts</h3></div>
+      <div class="glass rounded-2xl p-6 text-center card-hover reveal"><div class="text-3xl mb-3">🏙️</div><h3 class="font-medium">City Hotels</h3></div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section id="blog" class="section-pad bg-saudi-soft/40">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 reveal">
+      <h2 class="font-playfair text-4xl md:text-5xl font-bold gold-text mb-4">Blog & Tips</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <article class="glass rounded-3xl overflow-hidden card-hover reveal">
+        <div class="h-44 overflow-hidden"><img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=600&q=85" alt="AlUla" class="w-full h-full object-cover img-zoom" loading="lazy" /></div>
+        <div class="p-6"><span class="text-xs text-saudi-gold uppercase">Destinations</span><h3 class="font-playfair text-xl font-semibold mt-2 mb-2">Ultimate AlUla Guide</h3><p class="text-sm text-saudi-beige/60">How to plan Hegra, Old Town and luxury stays.</p></div>
+      </article>
+      <article class="glass rounded-3xl overflow-hidden card-hover reveal">
+        <div class="h-44 overflow-hidden"><img src="https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c4?w=600&q=85" alt="Riyadh" class="w-full h-full object-cover img-zoom" loading="lazy" /></div>
+        <div class="p-6"><span class="text-xs text-saudi-gold uppercase">Expat</span><h3 class="font-playfair text-xl font-semibold mt-2 mb-2">First Time Iqama Tips</h3><p class="text-sm text-saudi-beige/60">What to expect when renewing and paying levies.</p></div>
+      </article>
+      <article class="glass rounded-3xl overflow-hidden card-hover reveal">
+        <div class="h-44 overflow-hidden"><img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&q=85" alt="Food" class="w-full h-full object-cover img-zoom" loading="lazy" /></div>
+        <div class="p-6"><span class="text-xs text-saudi-gold uppercase">Food</span><h3 class="font-playfair text-xl font-semibold mt-2 mb-2">Must-Try Saudi Dishes</h3><p class="text-sm text-saudi-beige/60">Kabsa, Mandi and where to find authentic flavours.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section-pad">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="font-playfair text-4xl md:text-5xl font-bold gold-text mb-6 reveal">About KSA GUIDE</h2>
+    <p class="text-saudi-beige/70 text-lg leading-relaxed mb-8 reveal">
+      Independent platform helping travelers and expats discover Saudi Arabia through practical guides (Iqama, Absher, visas), destinations, culture and food.
+    </p>
+    <p class="text-xs text-saudi-beige/40 reveal">
+      Not affiliated with MOI / Absher / Qiwa / MISA. Always use official portals for government services.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section-pad bg-saudi-soft/40">
+  <div class="max-w-5xl mx-auto px-4">
+    <div class="text-center mb-10 reveal">
+      <h2 class="font-playfair text-4xl md:text-5xl font-bold gold-text mb-4">Contact</h2>
+    </div>
+    <div class="grid md:grid-cols-2 gap-10">
+      <form id="contact-form" class="space-y-5 reveal">
+        <input type="text" id="name" placeholder="Name" required class="w-full bg-saudi-card border border-saudi-gold/20 rounded-xl py-3 px-4 text-saudi-beige focus:outline-none focus:border-saudi-gold/50" />
+        <input type="email" id="email" placeholder="Email" required class="w-full bg-saudi-card border border-saudi-gold/20 rounded-xl py-3 px-4 text-saudi-beige focus:outline-none focus:border-saudi-gold/50" />
+        <input type="text" id="subject" placeholder="Subject" class="w-full bg-saudi-card border border-saudi-gold/20 rounded-xl py-3 px-4 text-saudi-beige focus:outline-none focus:border-saudi-gold/50" />
+        <textarea id="message" rows="5" placeholder="Message" required class="w-full bg-saudi-card border border-saudi-gold/20 rounded-xl py-3 px-4 text-saudi-beige focus:outline-none focus:border-saudi-gold/50 resize-none"></textarea>
+        <button type="submit" class="btn-gold w-full py-3.5 rounded-xl">Send Message</button>
+      </form>
+      <div class="space-y-5 reveal">
+        <div class="glass rounded-2xl p-6">
+          <a href="mailto:ahmedtaimoori0012@gmail.com" class="flex items-center gap-3 text-saudi-beige/80 hover:text-saudi-gold mb-4">✉️ ahmedtaimoori0012@gmail.com</a>
+          <a href="https://wa.me/966501442697" target="_blank" rel="noopener" class="flex items-center gap-3 text-saudi-beige/80 hover:text-saudi-gold mb-4">💬 050 144 2697 (WhatsApp)</a>
+          <p class="flex items-center gap-3 text-saudi-beige/80">📍 Riyadh, Saudi Arabia</p>
+        </div>
+        <div class="flex gap-3">
+          <a href="mailto:ahmedtaimoori0012@gmail.com" class="btn-outline flex-1 text-center py-3 rounded-xl text-sm">Email Us</a>
+          <a href="https://wa.me/966501442697" target="_blank" rel="noopener" class="btn-gold flex-1 text-center py-3 rounded-xl text-sm">WhatsApp</a>
         </div>
       </div>
     </div>
   </div>
+</section>
 
-  <!-- ========== LOCATION MODAL ========== -->
-  <div id="location-modal" class="fixed inset-0 z-[70] modal-overlay flex items-center justify-center p-4">
-    <div class="absolute inset-0 bg-saudi-dark/90" data-close="location"></div>
-    <div class="modal-box glass-strong rounded-3xl max-w-md w-full p-8 relative">
-      <button data-close="location" class="absolute top-4 right-4 p-2 rounded-full hover:bg-saudi-gold/10" aria-label="Close">✕</button>
-      <h2 class="font-playfair text-2xl gold-text mb-2">📍 Choose Location</h2>
-      <p class="text-sm text-saudi-beige/50 mb-6">Select a city to personalise relevant content.</p>
-      <div class="grid grid-cols-2 gap-2 mb-6">
-        <button class="loc-option py-2.5 rounded-xl border border-saudi-gold/20 text-sm hover:bg-saudi-gold/10 transition" data-loc="Riyadh">Riyadh</button>
-        <button class="loc-option py-2.5 rounded-xl border border-saudi-gold/20 text-sm hover:bg-saudi-gold/10 transition" data-loc="Jeddah">Jeddah</button>
-        <button class="loc-option py-2.5 rounded-xl border border-saudi-gold/20 text-sm hover:bg-saudi-gold/10 transition" data-loc="Makkah">Makkah</button>
-        <button class="loc-option py-2.5 rounded-xl border border-saudi-gold/20 text-sm hover:bg-saudi-gold/10 transition" data-loc="Madinah">Madinah</button>
-        <button class="loc-option py-2.5 rounded-xl border border-saudi-gold/20 text-sm hover:bg-saudi-gold/10 transition" data-loc="AlUla">AlUla</button>
-        <button class="loc-option py-2.5 rounded-xl border border-saudi-gold/20 text-sm hover:bg-saudi-gold/10 transition" data-loc="Dammam">Dammam</button>
-        <button class="loc-option py-2.5 rounded-xl border border-saudi-gold/20 text-sm hover:bg-saudi-gold/10 transition" data-loc="Abha">Abha</button>
-        <button class="loc-option py-2.5 rounded-xl border border-saudi-gold/20 text-sm hover:bg-saudi-gold/10 transition" data-loc="Taif">Taif</button>
-        <button class="loc-option py-2.5 rounded-xl border border-saudi-gold/20 text-sm hover:bg-saudi-gold/10 transition" data-loc="Tabuk">Tabuk</button>
-        <button class="loc-option py-2.5 rounded-xl border border-saudi-gold/20 text-sm hover:bg-saudi-gold/10 transition" data-loc="NEOM">NEOM</button>
-        <button class="loc-option py-2.5 rounded-xl border border-saudi-gold/20 text-sm hover:bg-saudi-gold/10 transition col-span-2" data-loc="Other">Other</button>
+<!-- FOOTER -->
+<footer class="border-t border-saudi-gold/10 pt-14 pb-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-10">
+      <div class="lg:col-span-2">
+        <span class="font-playfair text-2xl font-bold gold-text">KSA GUIDE</span>
+        <p class="text-sm text-saudi-beige/50 mt-3 max-w-xs">Your Complete Guide to Saudi Arabia — independent information for expats & travelers.</p>
       </div>
-      <button id="use-my-location" class="w-full py-3 rounded-xl border border-saudi-gold/30 text-sm hover:bg-saudi-gold/10 transition">Use My Location</button>
-      <p class="text-xs text-saudi-beige/40 mt-3 text-center">We request permission only when you choose this option. Precise location is not stored.</p>
-    </div>
-  </div>
-
-  <!-- ========== COOKIE BANNER ========== -->
-  <div id="cookie-banner" class="cookie-banner fixed bottom-0 left-0 right-0 z-[80] p-4 md:p-6">
-    <div class="max-w-5xl mx-auto glass-strong rounded-2xl p-5 md:p-6 flex flex-col md:flex-row items-start md:items-center gap-4 shadow-gold">
-      <div class="flex-1">
-        <p class="text-sm text-saudi-beige/90 leading-relaxed">
-          We use cookies to improve your browsing experience, analyse website traffic and provide relevant content. By continuing you agree to our use of cookies in accordance with Saudi PDPL principles.
-        </p>
+      <div>
+        <h4 class="text-sm font-semibold text-saudi-beige mb-4">Guides</h4>
+        <ul class="space-y-2 text-sm text-saudi-beige/50">
+          <li><a href="#guides" class="hover:text-saudi-gold">Iqama & Absher</a></li>
+          <li><a href="#guides" class="hover:text-saudi-gold">Dependent Levy</a></li>
+          <li><a href="#guides" class="hover:text-saudi-gold">Exit / Re-Entry</a></li>
+          <li><a href="https://www.absher.sa/" target="_blank" class="hover:text-saudi-gold">Official Absher</a></li>
+        </ul>
       </div>
-      <div class="flex flex-wrap gap-2 shrink-0">
-        <button id="cookie-accept" class="btn-gold px-5 py-2.5 rounded-full text-sm">Accept All</button>
-        <button id="cookie-reject" class="btn-outline px-5 py-2.5 rounded-full text-sm">Reject Non-Essential</button>
-        <button id="cookie-settings-btn" class="btn-outline px-5 py-2.5 rounded-full text-sm">Cookie Settings</button>
+      <div>
+        <h4 class="text-sm font-semibold text-saudi-beige mb-4">Explore</h4>
+        <ul class="space-y-2 text-sm text-saudi-beige/50">
+          <li><a href="#destinations" class="hover:text-saudi-gold">Destinations</a></li>
+          <li><a href="#cities" class="hover:text-saudi-gold">Cities</a></li>
+          <li><a href="#food" class="hover:text-saudi-gold">Food</a></li>
+          <li><a href="#culture" class="hover:text-saudi-gold">Culture</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-sm font-semibold text-saudi-beige mb-4">Company</h4>
+        <ul class="space-y-2 text-sm text-saudi-beige/50">
+          <li><a href="#about" class="hover:text-saudi-gold">About</a></li>
+          <li><a href="#contact" class="hover:text-saudi-gold">Contact</a></li>
+          <li><a href="#privacy" class="hover:text-saudi-gold">Privacy</a></li>
+          <li><a href="#disclaimer" class="hover:text-saudi-gold">Disclaimer</a></li>
+        </ul>
       </div>
     </div>
-  </div>
-
-  <!-- Cookie Settings Modal -->
-  <div id="cookie-settings" class="fixed inset-0 z-[90] modal-overlay flex items-center justify-center p-4">
-    <div class="absolute inset-0 bg-saudi-dark/90" data-close="cookie-settings"></div>
-    <div class="modal-box glass-strong rounded-3xl max-w-lg w-full p-8 relative">
-      <button data-close="cookie-settings" class="absolute top-4 right-4 p-2 rounded-full hover:bg-saudi-gold/10" aria-label="Close">✕</button>
-      <h2 class="font-playfair text-2xl gold-text mb-6">Cookie Settings</h2>
-      <div class="space-y-5 text-sm">
-        <div class="flex items-center justify-between">
-          <div>
-            <p class="font-medium text-saudi-beige">Necessary Cookies</p>
-            <p class="text-xs text-saudi-beige/50">Required for basic site function</p>
-          </div>
-          <span class="text-saudi-gold text-xs">Always On</span>
-        </div>
-        <div class="flex items-center justify-between">
-          <div>
-            <p class="font-medium text-saudi-beige">Analytics Cookies</p>
-            <p class="text-xs text-saudi-beige/50">Help us improve the website</p>
-          </div>
-          <label class="relative inline-flex items-center cursor-pointer">
-            <input type="checkbox" id="cookie-analytics" class="sr-only peer" checked />
-            <div class="w-11 h-6 bg-saudi-card peer-checked:bg-saudi-green rounded-full peer after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:after:translate-x-full"></div>
-          </label>
-        </div>
-        <div class="flex items-center justify-between">
-          <div>
-            <p class="font-medium text-saudi-beige">Preference Cookies</p>
-            <p class="text-xs text-saudi-beige/50">Remember language & location</p>
-          </div>
-          <label class="relative inline-flex items-center cursor-pointer">
-            <input type="checkbox" id="cookie-preference" class="sr-only peer" checked />
-            <div class="w-11 h-6 bg-saudi-card peer-checked:bg-saudi-green rounded-full peer after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:after:translate-x-full"></div>
-          </label>
-        </div>
-        <div class="flex items-center justify-between">
-          <div>
-            <p class="font-medium text-saudi-beige">Marketing Cookies</p>
-            <p class="text-xs text-saudi-beige/50">Currently not used</p>
-          </div>
-          <label class="relative inline-flex items-center cursor-pointer">
-            <input type="checkbox" id="cookie-marketing" class="sr-only peer" />
-            <div class="w-11 h-6 bg-saudi-card peer-checked:bg-saudi-green rounded-full peer after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:after:translate-x-full"></div>
-          </label>
-        </div>
-      </div>
-      <button id="cookie-save" class="btn-gold w-full mt-8 py-3 rounded-xl">Save Preferences</button>
+    <div class="border-t border-saudi-gold/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-saudi-beige/40">
+      <p>© 2026 KSA GUIDE. All rights reserved.</p>
+      <p>Independent guide · Owned by Teimoor Ahmed · Not affiliated with MOI / Absher / Qiwa / MISA</p>
     </div>
   </div>
+</footer>
 
-  <!-- ========== FLOATING BUTTONS ========== -->
-  <div class="fixed bottom-6 right-6 z-40 flex flex-col gap-3">
-    <a href="https://wa.me/966501442697" target="_blank" rel="noopener" class="float-btn bg-[#25D366] text-white" title="Chat with KSA GUIDE" aria-label="WhatsApp">
-      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    </a>
-    <a href="mailto:ahmedtaimoori0012@gmail.com" class="float-btn bg-saudi-card border border-saudi-gold/30 text-saudi-gold" title="Email KSA GUIDE" aria-label="Email">
-      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-    </a>
+<!-- LEGAL MODALS (simplified) -->
+<div id="privacy" class="fixed inset-0 z-[70] modal-overlay flex items-center justify-center p-4">
+  <div class="absolute inset-0 bg-saudi-dark/90" data-close="privacy"></div>
+  <div class="modal-box glass-strong rounded-3xl max-w-lg w-full p-8 relative max-h-[80vh] overflow-y-auto">
+    <button data-close="privacy" class="absolute top-4 right-4 p-2">✕</button>
+    <h2 class="font-playfair text-2xl gold-text mb-4">Privacy Policy</h2>
+    <p class="text-sm text-saudi-beige/70">KSA GUIDE collects minimal data needed for contact forms and preferences. We do not sell data. Contact: ahmedtaimoori0012@gmail.com</p>
   </div>
+</div>
+<div id="disclaimer" class="fixed inset-0 z-[70] modal-overlay flex items-center justify-center p-4">
+  <div class="absolute inset-0 bg-saudi-dark/90" data-close="disclaimer"></div>
+  <div class="modal-box glass-strong rounded-3xl max-w-lg w-full p-8 relative">
+    <button data-close="disclaimer" class="absolute top-4 right-4 p-2">✕</button>
+    <h2 class="font-playfair text-2xl gold-text mb-4">Disclaimer</h2>
+    <p class="text-sm text-saudi-beige/70">KSA GUIDE is independent and not affiliated with MOI, Absher, Qiwa, MISA or any Saudi government entity. Always verify information on official portals before taking action.</p>
+  </div>
+</div>
 
-  <!-- ========== SCRIPTS ========== -->
-  <script>
-    // Header scroll effect
-    const header = document.getElementById('header');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) {
-        header.classList.add('shadow-lg');
-      } else {
-        header.classList.remove('shadow-lg');
-      }
+<!-- LOCATION MODAL -->
+<div id="location-modal" class="fixed inset-0 z-[70] modal-overlay flex items-center justify-center p-4">
+  <div class="absolute inset-0 bg-saudi-dark/90" data-close="location"></div>
+  <div class="modal-box glass-strong rounded-3xl max-w-md w-full p-8 relative">
+    <button data-close="location" class="absolute top-4 right-4 p-2">✕</button>
+    <h2 class="font-playfair text-2xl gold-text mb-4">📍 Choose Location</h2>
+    <div class="grid grid-cols-2 gap-2 mb-5">
+      <button class="loc-option py-2.5 rounded-xl border border-saudi-gold/20 text-sm hover:bg-saudi-gold/10" data-loc="Riyadh">Riyadh</button>
+      <button class="loc-option py-2.5 rounded-xl border border-saudi-gold/20 text-sm hover:bg-saudi-gold/10" data-loc="Jeddah">Jeddah</button>
+      <button class="loc-option py-2.5 rounded-xl border border-saudi-gold/20 text-sm hover:bg-saudi-gold/10" data-loc="Makkah">Makkah</button>
+      <button class="loc-option py-2.5 rounded-xl border border-saudi-gold/20 text-sm hover:bg-saudi-gold/10" data-loc="Madinah">Madinah</button>
+      <button class="loc-option py-2.5 rounded-xl border border-saudi-gold/20 text-sm hover:bg-saudi-gold/10" data-loc="AlUla">AlUla</button>
+      <button class="loc-option py-2.5 rounded-xl border border-saudi-gold/20 text-sm hover:bg-saudi-gold/10" data-loc="Dammam">Dammam</button>
+      <button class="loc-option py-2.5 rounded-xl border border-saudi-gold/20 text-sm hover:bg-saudi-gold/10" data-loc="Abha">Abha</button>
+      <button class="loc-option py-2.5 rounded-xl border border-saudi-gold/20 text-sm hover:bg-saudi-gold/10" data-loc="Other">Other</button>
+    </div>
+    <button id="use-my-location" class="w-full py-3 rounded-xl border border-saudi-gold/30 text-sm hover:bg-saudi-gold/10">Use My Location</button>
+  </div>
+</div>
+
+<!-- COOKIE BANNER -->
+<div id="cookie-banner" class="cookie-banner fixed bottom-0 left-0 right-0 z-[80] p-4 md:p-6">
+  <div class="max-w-5xl mx-auto glass-strong rounded-2xl p-5 md:p-6 flex flex-col md:flex-row items-start md:items-center gap-4 shadow-gold">
+    <p class="text-sm text-saudi-beige/90 flex-1">We use cookies to improve your experience and analyse traffic. By continuing you agree to our use of cookies (Saudi PDPL aligned).</p>
+    <div class="flex flex-wrap gap-2">
+      <button id="cookie-accept" class="btn-gold px-5 py-2.5 rounded-full text-sm">Accept All</button>
+      <button id="cookie-reject" class="btn-outline px-5 py-2.5 rounded-full text-sm">Reject Non-Essential</button>
+      <button id="cookie-settings-btn" class="btn-outline px-5 py-2.5 rounded-full text-sm">Settings</button>
+    </div>
+  </div>
+</div>
+
+<!-- COOKIE SETTINGS -->
+<div id="cookie-settings" class="fixed inset-0 z-[90] modal-overlay flex items-center justify-center p-4">
+  <div class="absolute inset-0 bg-saudi-dark/90" data-close="cookie-settings"></div>
+  <div class="modal-box glass-strong rounded-3xl max-w-lg w-full p-8 relative">
+    <button data-close="cookie-settings" class="absolute top-4 right-4 p-2">✕</button>
+    <h2 class="font-playfair text-2xl gold-text mb-6">Cookie Settings</h2>
+    <div class="space-y-4 text-sm">
+      <div class="flex justify-between items-center"><span>Necessary</span><span class="text-saudi-gold text-xs">Always On</span></div>
+      <div class="flex justify-between items-center"><span>Analytics</span><label class="relative inline-flex cursor-pointer"><input type="checkbox" id="cookie-analytics" class="sr-only peer" checked><div class="w-11 h-6 bg-saudi-card peer-checked:bg-saudi-green rounded-full after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:after:translate-x-full"></div></label></div>
+      <div class="flex justify-between items-center"><span>Preferences</span><label class="relative inline-flex cursor-pointer"><input type="checkbox" id="cookie-preference" class="sr-only peer" checked><div class="w-11 h-6 bg-saudi-card peer-checked:bg-saudi-green rounded-full after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:after:translate-x-full"></div></label></div>
+    </div>
+    <button id="cookie-save" class="btn-gold w-full mt-8 py-3 rounded-xl">Save Preferences</button>
+  </div>
+</div>
+
+<!-- FLOATING BUTTONS -->
+<div class="fixed bottom-6 right-6 z-40 flex flex-col gap-3">
+  <a href="https://wa.me/966501442697" target="_blank" rel="noopener" class="float-btn bg-[#25D366] text-white" title="Chat with KSA GUIDE" aria-label="WhatsApp">
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+  <a href="mailto:ahmedtaimoori0012@gmail.com" class="float-btn bg-saudi-card border border-saudi-gold/30 text-saudi-gold" title="Email KSA GUIDE" aria-label="Email">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+  </a>
+</div>
+
+<script>
+  // Header scroll
+  window.addEventListener('scroll', () => {
+    document.getElementById('header').classList.toggle('shadow-lg', window.scrollY > 40);
+  });
+
+  // Mobile menu
+  const mobileMenu = document.getElementById('mobile-menu');
+  document.getElementById('mobile-toggle')?.addEventListener('click', () => mobileMenu.classList.add('open'));
+  document.getElementById('mobile-close')?.addEventListener('click', () => mobileMenu.classList.remove('open'));
+  document.querySelectorAll('.mobile-link').forEach(l => l.addEventListener('click', () => mobileMenu.classList.remove('open')));
+
+  // Language
+  const langMenu = document.getElementById('lang-menu');
+  document.getElementById('lang-btn')?.addEventListener('click', e => { e.stopPropagation(); langMenu.classList.toggle('hidden'); });
+  document.querySelectorAll('[data-lang]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.getElementById('current-lang').textContent = btn.dataset.lang.toUpperCase();
+      langMenu.classList.add('hidden');
+      document.documentElement.dir = btn.dataset.lang === 'ar' ? 'rtl' : 'ltr';
+      document.documentElement.lang = btn.dataset.lang;
     });
+  });
+  document.addEventListener('click', () => langMenu?.classList.add('hidden'));
 
-    // Mobile menu
-    const mobileToggle = document.getElementById('mobile-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const mobileClose = document.getElementById('mobile-close');
-    mobileToggle?.addEventListener('click', () => mobileMenu.classList.add('open'));
-    mobileClose?.addEventListener('click', () => mobileMenu.classList.remove('open'));
-    document.querySelectorAll('.mobile-link').forEach(link => {
-      link.addEventListener('click', () => mobileMenu.classList.remove('open'));
+  // Location
+  const locationModal = document.getElementById('location-modal');
+  document.getElementById('location-btn')?.addEventListener('click', () => locationModal.classList.add('open'));
+  document.getElementById('mobile-location')?.addEventListener('click', () => locationModal.classList.add('open'));
+  document.querySelectorAll('.loc-option').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.getElementById('current-location').textContent = btn.dataset.loc;
+      localStorage.setItem('ksa-location', btn.dataset.loc);
+      locationModal.classList.remove('open');
     });
-
-    // Language selector
-    const langBtn = document.getElementById('lang-btn');
-    const langMenu = document.getElementById('lang-menu');
-    const currentLang = document.getElementById('current-lang');
-    langBtn?.addEventListener('click', (e) => {
-      e.stopPropagation();
-      langMenu.classList.toggle('hidden');
-    });
-    document.querySelectorAll('[data-lang]').forEach(btn => {
-      btn.addEventListener('click', () => {
-        currentLang.textContent = btn.dataset.lang.toUpperCase();
-        langMenu.classList.add('hidden');
-        // Direction for Arabic
-        if (btn.dataset.lang === 'ar') {
-          document.documentElement.setAttribute('dir', 'rtl');
-          document.documentElement.setAttribute('lang', 'ar');
-        } else {
-          document.documentElement.setAttribute('dir', 'ltr');
-          document.documentElement.setAttribute('lang', btn.dataset.lang);
-        }
-      });
-    });
-    document.addEventListener('click', () => langMenu?.classList.add('hidden'));
-
-    // Location
-    const locationBtn = document.getElementById('location-btn');
-    const mobileLocation = document.getElementById('mobile-location');
-    const locationModal = document.getElementById('location-modal');
-    const currentLocation = document.getElementById('current-location');
-    function openLocation() {
-      locationModal.classList.add('open');
-    }
-    locationBtn?.addEventListener('click', openLocation);
-    mobileLocation?.addEventListener('click', openLocation);
-    document.querySelectorAll('.loc-option').forEach(btn => {
-      btn.addEventListener('click', () => {
-        currentLocation.textContent = btn.dataset.loc;
+  });
+  document.getElementById('use-my-location')?.addEventListener('click', () => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(() => {
+        document.getElementById('current-location').textContent = 'Near Me';
+        localStorage.setItem('ksa-location', 'Near Me');
         locationModal.classList.remove('open');
-        localStorage.setItem('ksa-location', btn.dataset.loc);
-      });
-    });
-    document.getElementById('use-my-location')?.addEventListener('click', () => {
-      if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(
-          (pos) => {
-            // Simple reverse: we only set a generic label for privacy
-            currentLocation.textContent = 'Near Me';
-            locationModal.classList.remove('open');
-            localStorage.setItem('ksa-location', 'Near Me');
-          },
-          () => alert('Location permission denied or unavailable.')
-        );
-      } else {
-        alert('Geolocation is not supported by your browser.');
-      }
-    });
-    // Restore location
-    if (localStorage.getItem('ksa-location')) {
-      currentLocation.textContent = localStorage.getItem('ksa-location');
+      }, () => alert('Location permission denied.'));
     }
+  });
+  if (localStorage.getItem('ksa-location')) document.getElementById('current-location').textContent = localStorage.getItem('ksa-location');
 
-    // Search
-    const searchToggle = document.getElementById('search-toggle');
-    const searchOverlay = document.getElementById('search-overlay');
-    const searchClose = document.getElementById('search-close');
-    const searchInput = document.getElementById('search-input');
-    const searchResults = document.getElementById('search-results');
-    const heroSearch = document.getElementById('hero-search');
+  // Search
+  const searchOverlay = document.getElementById('search-overlay');
+  const searchInput = document.getElementById('search-input');
+  const searchable = [
+    { title: 'Absher', cat: 'Guide', desc: 'Official MOI platform', href: '#guides' },
+    { title: 'Iqama', cat: 'Guide', desc: 'Residence permit renewal', href: '#guides' },
+    { title: 'Dependent Levy', cat: 'Guide', desc: 'SAR 400 per month', href: '#guides' },
+    { title: 'Riyadh', cat: 'City', desc: 'Capital of Saudi Arabia', href: '#destinations' },
+    { title: 'Jeddah', cat: 'City', desc: 'Red Sea gateway', href: '#destinations' },
+    { title: 'AlUla', cat: 'Destination', desc: 'Hegra & heritage', href: '#destinations' },
+    { title: 'Kabsa', cat: 'Food', desc: 'National rice dish', href: '#food' },
+    { title: 'Qiwa', cat: 'Guide', desc: 'Labor platform', href: '#guides' }
+  ];
+  function performSearch(q) {
+    const query = q.toLowerCase().trim();
+    const results = document.getElementById('search-results');
+    if (!query) { results.innerHTML = ''; return; }
+    const matches = searchable.filter(i => i.title.toLowerCase().includes(query) || i.cat.toLowerCase().includes(query) || i.desc.toLowerCase().includes(query));
+    results.innerHTML = matches.length ? matches.map(m => `<a href="\( {m.href}" class="block p-4 rounded-xl hover:bg-saudi-gold/10 search-result"><p class="text-xs text-saudi-gold"> \){m.cat}</p><p class="font-medium text-saudi-beige">\( {m.title}</p><p class="text-sm text-saudi-beige/50"> \){m.desc}</p></a>`).join('') : '<p class="p-4 text-saudi-beige/50">No results found.</p>';
+    document.querySelectorAll('.search-result').forEach(el => el.addEventListener('click', () => { searchOverlay.classList.remove('opacity-100','visible'); searchOverlay.classList.add('opacity-0','invisible'); }));
+  }
+  document.getElementById('search-toggle')?.addEventListener('click', () => { searchOverlay.classList.add('opacity-100','visible'); searchOverlay.classList.remove('opacity-0','invisible'); setTimeout(() => searchInput.focus(), 80); });
+  document.getElementById('search-close')?.addEventListener('click', () => { searchOverlay.classList.remove('opacity-100','visible'); searchOverlay.classList.add('opacity-0','invisible'); });
+  searchInput?.addEventListener('input', e => performSearch(e.target.value));
+  document.getElementById('hero-search')?.addEventListener('focus', () => { searchOverlay.classList.add('opacity-100','visible'); searchOverlay.classList.remove('opacity-0','invisible'); setTimeout(() => searchInput.focus(), 80); });
 
-    const searchable = [
-      { title: 'Riyadh', cat: 'City', desc: 'Capital of Saudi Arabia', href: '#cities' },
-      { title: 'Jeddah', cat: 'City', desc: 'Red Sea gateway', href: '#cities' },
-      { title: 'AlUla', cat: 'Destination', desc: 'Heritage oasis & Hegra', href: '#destinations' },
-      { title: 'Makkah', cat: 'City', desc: 'Holiest city in Islam', href: '#cities' },
-      { title: 'Madinah', cat: 'City', desc: 'City of the Prophet', href: '#cities' },
-      { title: 'Kabsa', cat: 'Food', desc: 'National rice dish', href: '#food' },
-      { title: 'Mandi', cat: 'Food', desc: 'Slow-cooked meat & rice', href: '#food' },
-      { title: 'Travel Guide', cat: 'Guide', desc: 'Visa, transport, tips', href: '#travel-guide' },
-      { title: 'Diriyah', cat: 'Experience', desc: 'Birthplace of Saudi state', href: '#things-to-do' },
-      { title: 'Hegra', cat: 'Experience', desc: 'UNESCO Nabataean tombs', href: '#things-to-do' },
-      { title: 'Edge of the World', cat: 'Experience', desc: 'Cliff views near Riyadh', href: '#things-to-do' },
-      { title: 'Saudi Coffee', cat: 'Culture', desc: 'Gahwa tradition', href: '#culture' },
-      { title: 'Hotels', cat: 'Stay', desc: 'Luxury to budget stays', href: '#hotels' },
-      { title: 'Abha', cat: 'City', desc: 'Mountain retreat of Asir', href: '#cities' },
-      { title: 'Taif', cat: 'City', desc: 'City of roses', href: '#cities' }
-    ];
+  // Modals close
+  document.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', () => document.getElementById(el.dataset.close)?.classList.remove('open')));
+  document.querySelectorAll('a[href="#privacy"], a[href="#disclaimer"]').forEach(link => {
+    link.addEventListener('click', e => { e.preventDefault(); document.getElementById(link.getAttribute('href').slice(1))?.classList.add('open'); });
+  });
 
-    function performSearch(q) {
-      const query = q.toLowerCase().trim();
-      if (!query) {
-        searchResults.innerHTML = '';
-        return;
-      }
-      const matches = searchable.filter(item =>
-        item.title.toLowerCase().includes(query) ||
-        item.cat.toLowerCase().includes(query) ||
-        item.desc.toLowerCase().includes(query)
-      );
-      searchResults.innerHTML = matches.length
-        ? matches.map(m => `
-          <a href="${m.href}" class="flex items-center gap-4 p-4 rounded-xl hover:bg-saudi-gold/10 transition search-result">
-            <div class="flex-1">
-              <p class="text-xs text-saudi-gold uppercase">${m.cat}</p>
-              <p class="font-medium text-saudi-beige">${m.title}</p>
-              <p class="text-sm text-saudi-beige/50">${m.desc}</p>
-            </div>
-          </a>`).join('')
-        : '<p class="text-saudi-beige/50 p-4">No results found.</p>';
-      document.querySelectorAll('.search-result').forEach(el => {
-        el.addEventListener('click', () => searchOverlay.classList.remove('opacity-100', 'visible'));
-      });
-    }
+  // Cookies
+  const cookieBanner = document.getElementById('cookie-banner');
+  if (!localStorage.getItem('ksa-cookies')) setTimeout(() => cookieBanner.classList.add('show'), 700);
+  document.getElementById('cookie-accept')?.addEventListener('click', () => {
+    localStorage.setItem('ksa-cookies', JSON.stringify({ necessary: true, analytics: true, preference: true }));
+    cookieBanner.classList.remove('show');
+  });
+  document.getElementById('cookie-reject')?.addEventListener('click', () => {
+    localStorage.setItem('ksa-cookies', JSON.stringify({ necessary: true, analytics: false, preference: false }));
+    cookieBanner.classList.remove('show');
+  });
+  document.getElementById('cookie-settings-btn')?.addEventListener('click', () => document.getElementById('cookie-settings').classList.add('open'));
+  document.getElementById('cookie-save')?.addEventListener('click', () => {
+    localStorage.setItem('ksa-cookies', JSON.stringify({
+      necessary: true,
+      analytics: document.getElementById('cookie-analytics').checked,
+      preference: document.getElementById('cookie-preference').checked
+    }));
+    document.getElementById('cookie-settings').classList.remove('open');
+    cookieBanner.classList.remove('show');
+  });
 
-    searchToggle?.addEventListener('click', () => {
-      searchOverlay.classList.add('opacity-100', 'visible');
-      searchOverlay.classList.remove('opacity-0', 'invisible');
-      setTimeout(() => searchInput?.focus(), 100);
-    });
-    searchClose?.addEventListener('click', () => {
-      searchOverlay.classList.remove('opacity-100', 'visible');
-      searchOverlay.classList.add('opacity-0', 'invisible');
-    });
-    searchInput?.addEventListener('input', (e) => performSearch(e.target.value));
-    heroSearch?.addEventListener('focus', () => {
-      searchOverlay.classList.add('opacity-100', 'visible');
-      searchOverlay.classList.remove('opacity-0', 'invisible');
-      setTimeout(() => searchInput?.focus(), 100);
-    });
+  // Contact
+  document.getElementById('contact-form')?.addEventListener('submit', e => {
+    e.preventDefault();
+    alert('Thank you! We will reply soon.\nFor faster response: WhatsApp 050 144 2697');
+    e.target.reset();
+  });
 
-    // Legal modals & close
-    document.querySelectorAll('[data-close]').forEach(el => {
-      el.addEventListener('click', () => {
-        const id = el.getAttribute('data-close');
-        document.getElementById(id)?.classList.remove('open');
-      });
-    });
-    // Footer legal links open modals
-    document.querySelectorAll('a[href="#privacy"], a[href="#terms"], a[href="#cookies"], a[href="#disclaimer"]').forEach(link => {
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const id = link.getAttribute('href').slice(1);
-        document.getElementById(id)?.classList.add('open');
-      });
-    });
+  // Reveal
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.12, rootMargin: '0px 0px -30px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-    // Cookie system
-    const cookieBanner = document.getElementById('cookie-banner');
-    const cookieSettings = document.getElementById('cookie-settings');
-    function showCookieBanner() {
-      if (!localStorage.getItem('ksa-cookies')) {
-        setTimeout(() => cookieBanner.classList.add('show'), 800);
-      }
-    }
-    showCookieBanner();
-
-    document.getElementById('cookie-accept')?.addEventListener('click', () => {
-      localStorage.setItem('ksa-cookies', JSON.stringify({ necessary: true, analytics: true, preference: true, marketing: false }));
-      cookieBanner.classList.remove('show');
-    });
-    document.getElementById('cookie-reject')?.addEventListener('click', () => {
-      localStorage.setItem('ksa-cookies', JSON.stringify({ necessary: true, analytics: false, preference: false, marketing: false }));
-      cookieBanner.classList.remove('show');
-    });
-    document.getElementById('cookie-settings-btn')?.addEventListener('click', () => {
-      cookieSettings.classList.add('open');
-    });
-    document.getElementById('cookie-save')?.addEventListener('click', () => {
-      const prefs = {
-        necessary: true,
-        analytics: document.getElementById('cookie-analytics').checked,
-        preference: document.getElementById('cookie-preference').checked,
-        marketing: document.getElementById('cookie-marketing').checked
-      };
-      localStorage.setItem('ksa-cookies', JSON.stringify(prefs));
-      cookieSettings.classList.remove('open');
-      cookieBanner.classList.remove('show');
-    });
-
-    // Contact form
-    document.getElementById('contact-form')?.addEventListener('submit', (e) => {
-      e.preventDefault();
-      alert('Thank you for your message. We will get back to you soon.\n\nFor faster response, WhatsApp: 050 144 2697');
-      e.target.reset();
-    });
-
-    // Scroll reveal
-    const reveals = document.querySelectorAll('.reveal');
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-    reveals.forEach(el => revealObserver.observe(el));
-
-    // Schema markup (Organization + WebSite)
-    const schema = {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Organization",
-          "name": "KSA GUIDE",
-          "url": "https://ksa-guide.com",
-          "email": "ahmedtaimoori0012@gmail.com",
-          "telephone": "+966501442697",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Riyadh",
-            "addressCountry": "SA"
-          },
-          "description": "Independent Saudi Arabia travel and information guide."
-        },
-        {
-          "@type": "WebSite",
-          "name": "KSA GUIDE",
-          "url": "https://ksa-guide.com",
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://ksa-guide.com/?s={search_term_string}",
-            "query-input": "required name=search_term_string"
-          }
-        }
-      ]
-    };
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.textContent = JSON.stringify(schema);
-    document.head.appendChild(script);
-  </script>
+  // Schema
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      { "@type": "Organization", "name": "KSA GUIDE", "url": "https://ksa-guide.com", "email": "ahmedtaimoori0012@gmail.com", "telephone": "+966501442697", "address": { "@type": "PostalAddress", "addressLocality": "Riyadh", "addressCountry": "SA" } },
+      { "@type": "WebSite", "name": "KSA GUIDE", "url": "https://ksa-guide.com" }
+    ]
+  };
+  const s = document.createElement('script');
+  s.type = 'application/ld+json';
+  s.textContent = JSON.stringify(schema);
+  document.head.appendChild(s);
+</script>
 </body>
 </html>
