@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saudi Arabia Luxury Travel & Lifestyle Guide</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#050505;color:#d4af37;font-family:Montserrat,sans-serif;line-height:1.8;overflow-x:hidden}
+#bg{position:fixed;inset:0;width:100%;height:100%;z-index:-1;opacity:.55}
+.container{max-width:1100px;margin:auto;padding:0 20px}
+header{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+h1{font-family:Cinzel,serif;font-size:clamp(3rem,8vw,5rem);letter-spacing:8px;margin-bottom:20px;text-shadow:0 0 30px #d4af3766}
+.subtitle{font-size:clamp(1rem,3vw,1.5rem);text-transform:uppercase;letter-spacing:3px;color:#eee}
+main{display:block} section{padding:100px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;margin-top:50px}
+.card{background:rgba(20,20,20,.72);padding:40px;border:1px solid #d4af37;border-radius:10px;backdrop-filter:blur(8px);transition:.4s;box-shadow:0 15px 45px #0008}
+.card:hover{transform:translateY(-8px);box-shadow:0 20px 60px #d4af3733}
+h2{font-family:Cinzel,serif;font-size:clamp(2rem,5vw,2.5rem);margin-bottom:30px;border-bottom:1px solid #d4af37;display:inline-block}
+h3{font-family:Cinzel,serif;margin-bottom:12px;font-size:1.4rem}
+p{color:#ddd}
+footer{text-align:center;padding:40px 20px;border-top:1px solid #d4af3744;color:#aaa}
+.badge{margin-top:28px;padding:10px 20px;border:1px solid #d4af37;border-radius:30px;color:#d4af37}
+</style>
+</head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="container">
+<header>
+<h1>SAUDI ARABIA</h1>
+<p class="subtitle">An Ultimate Guide to Luxury Living & Travel</p>
+<div class="badge">EXPLORE • EXPERIENCE • DISCOVER</div>
+</header>
+<main>
+<section id="places">
+<h2>Elite Destinations</h2>
+<div class="grid">
+<article class="card"><h3>AlUla</h3><p>Step back in time at Hegra, a UNESCO World Heritage site, combined with world-class desert luxury resorts and art installations.</p></article>
+<article class="card"><h3>Riyadh</h3><p>The beating heart of progress. Experience the KAFD skyline, high-end dining in Al-Olaya, and exclusive shopping in Kingdom Centre.</p></article>
+<article class="card"><h3>Jeddah</h3><p>The cultural capital. Stroll through historic Al-Balad or enjoy the coastal lifestyle along the Jeddah Corniche.</p></article>
+</div>
+</section>
+<section id="tech">
+<h2>Digital Connectivity & Lifestyle</h2>
+<div class="grid">
+<div class="card"><h3>Premium Networks</h3><p>Explore major Saudi mobile providers including STC, Mobily and Zain for connectivity across cities and travel destinations.</p></div>
+<div class="card"><h3>Essential Digital Tools</h3><p><strong>Absher:</strong> Government access. <strong>Tawakkalna:</strong> Digital services. <strong>Careem:</strong> Ride services. <strong>Jahez:</strong> Food delivery.</p></div>
+</div>
+</section>
+</main>
+</div>
+<footer><p>&copy; 2026 Saudi Arabia Luxury Travel Guide. Explore the Kingdom.</p></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+const scene=new THREE.Scene();
+const camera=new THREE.PerspectiveCamera(75,innerWidth/innerHeight,.1,1000);
+const renderer=new THREE.WebGLRenderer({canvas:document.querySelector('#bg'),alpha:true,antialias:true});
+renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.setSize(innerWidth,innerHeight);
+const geometry=new THREE.IcosahedronGeometry(15,1);
+const material=new THREE.MeshBasicMaterial({color:0xd4af37,wireframe:true});
+const sphere=new THREE.Mesh(geometry,material);scene.add(sphere);camera.position.z=30;
+function animate(){requestAnimationFrame(animate);sphere.rotation.x+=.002;sphere.rotation.y+=.005;renderer.render(scene,camera)}
+addEventListener('resize',()=>{renderer.setSize(innerWidth,innerHeight);camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix()});
+animate();
+</script>
+</body>
+</html>
