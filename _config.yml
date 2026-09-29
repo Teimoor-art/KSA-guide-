@@ -1,3 +1,120 @@
-title: KSA Guide
-url: https://dreamy-taffy-fe6159.netlify.app
-description: "Saudi Arabia's complete guide to visas, Umrah, and travel"
+# =========================================================
+# KSA GUIDE — JEKYLL CONFIGURATION
+# =========================================================
+
+title: "KSA GUIDE"
+
+description: "Your Complete Guide to Saudi Arabia — Saudi life, travel, destinations, practical guides and professional digital services."
+
+url: "https://ksa-guide.com"
+baseurl: ""
+
+lang: "en"
+timezone: "Asia/Riyadh"
+
+# ---------------------------------------------------------
+# SEO
+# ---------------------------------------------------------
+
+author:
+  name: "KSA GUIDE"
+  email: "ahmediqbalteumoori@gmail.com"
+
+logo: "/assets/images/logo.png"
+
+twitter:
+  username: ""
+
+social:
+  name: "KSA GUIDE"
+  links:
+    - "https://ksa-guide.com/"
+
+# ---------------------------------------------------------
+# JEKYLL
+# ---------------------------------------------------------
+
+markdown: kramdown
+highlighter: rouge
+
+permalink: /blog/:title/
+
+future: false
+show_drafts: false
+
+# ---------------------------------------------------------
+# BLOG POSTS
+# ---------------------------------------------------------
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: null
+      author: "KSA GUIDE"
+
+# ---------------------------------------------------------
+# EXCLUDE FILES
+# ---------------------------------------------------------
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - .gitignore
+  - .github
+  - "*.scss"
+
+# ---------------------------------------------------------
+# KEEP IMPORTANT STATIC FILES
+# ---------------------------------------------------------
+
+include:
+  - robots.txt
+  - sitemap.xml
+  - google3b8147fe3ce9783.html
+
+# ---------------------------------------------------------
+# JEKYLL BUILD SETTINGS
+# ---------------------------------------------------------
+
+safe: true
+incremental: false
+
+# ---------------------------------------------------------
+# KSA GUIDE BRAND
+# ---------------------------------------------------------
+
+brand:
+  name: "KSA GUIDE"
+  tagline: "Your Complete Guide to Saudi Arabia"
+  country: "Saudi Arabia"
+
+# ---------------------------------------------------------
+# SITE CATEGORIES
+# ---------------------------------------------------------
+
+categories:
+  - Saudi Guide
+  - Travel & Tourism
+  - Destinations
+  - Digital Services
+
+# ---------------------------------------------------------
+# CONTACT
+# ---------------------------------------------------------
+
+contact:
+  email: "ahmediqbalteumoori@gmail.com"
+  whatsapp: "966501442697"
+
+# ---------------------------------------------------------
+# GOVERNMENT DISCLAIMER
+# ---------------------------------------------------------
+
+independent_platform: true
+
+government_disclaimer: "KSA GUIDE is an independent information platform and is not affiliated with, endorsed by, or operated by the Government of Saudi Arabia."
