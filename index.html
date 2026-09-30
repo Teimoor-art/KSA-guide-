@@ -4,87 +4,169 @@ permalink: /
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+  <title>KSA GUIDE — Your Complete Guide to Saudi Arabia</title>
 
-  <meta name="description"
-        content="KSA GUIDE — Your Complete Guide to Saudi Arabia. Explore Saudi life, travel, destinations, practical guides and professional digital services.">
+  <meta name="description" content="KSA GUIDE helps you understand life in Saudi Arabia, explore destinations, navigate Saudi services, travel smarter, and access professional digital services.">
+  <meta name="keywords" content="Saudi Arabia guide, KSA guide, Saudi visa, iqama, Absher, Riyadh, AlUla, Jeddah, Saudi tourism, Saudi apps, driving in Saudi Arabia">
+  <meta name="author" content="KSA GUIDE">
 
-  <meta name="keywords"
-        content="Saudi Arabia guide, Saudi travel, Riyadh, AlUla, Jeddah, Saudi visa, Iqama, Absher, Saudi destinations">
+  <meta name="theme-color" content="#04110C">
 
-  <meta name="author"
-        content="KSA GUIDE">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="KSA GUIDE — Your Complete Guide to Saudi Arabia">
+  <meta property="og:description" content="Explore Saudi Arabia. Understand Life. Get Things Done.">
+  <meta property="og:url" content="https://ksa-guide.com/">
 
-  <meta name="robots"
-        content="index, follow">
+  <link rel="canonical" href="https://ksa-guide.com/">
 
-  <link rel="canonical"
-        href="https://ksa-guide.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <meta property="og:type"
-        content="website">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
 
-  <meta property="og:title"
-        content="KSA GUIDE | Your Complete Guide to Saudi Arabia">
-
-  <meta property="og:description"
-        content="Explore Saudi Arabia. Understand life. Get things done.">
-
-  <meta property="og:url"
-        content="https://ksa-guide.com/">
-
-  <meta name="twitter:card"
-        content="summary_large_image">
-
-  <title>KSA GUIDE | Your Complete Guide to Saudi Arabia</title>
-
-  <!-- Fonts -->
-  <link rel="preconnect"
-        href="https://fonts.googleapis.com">
-
-  <link rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
-  <!-- Main CSS -->
-  <link rel="stylesheet"
-        href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body>
 
-<!-- =====================================================
-     HEADER
-===================================================== -->
+  <!-- =========================================================
+       HEADER
+  ========================================================== -->
 
-<header class="site-header" id="siteHeader">
+  <header class="site-header" id="siteHeader">
 
-  <div class="container header-inner">
+    <div class="container nav">
 
-    <a href="/"
-       class="brand"
-       aria-label="KSA GUIDE Home">
+      <a href="/" class="brand" aria-label="KSA GUIDE Home">
+        <span class="brand-mark">K</span>
 
-      <span class="brand-mark">KSA</span>
-
-      <span class="brand-text">
-        <strong>KSA GUIDE</strong>
-        <small>Your Complete Guide to Saudi Arabia</small>
-      </span>
-
-    </a>
+        <span class="brand-text">
+          <strong>KSA GUIDE</strong>
+          <small>Your Complete Guide to Saudi Arabia</small>
+        </span>
+      </a>
 
 
-    <nav class="desktop-nav"
-         aria-label="Main navigation">
+      <nav class="desktop-nav" aria-label="Main navigation">
+
+        <a href="/" class="active">Home</a>
+
+        <a href="/saudi-guide.html">
+          Saudi Guide
+        </a>
+
+        <a href="/travel.html">
+          Travel
+        </a>
+
+        <a href="/destinations.html">
+          Destinations
+        </a>
+
+        <a href="/digital-services.html">
+          Digital Services
+        </a>
+
+        <a href="/blog.html">
+          Blog
+        </a>
+
+        <a href="/about.html">
+          About
+        </a>
+
+        <a href="/contact.html">
+          Contact
+        </a>
+
+      </nav>
+
+
+      <div class="nav-actions">
+
+        <button
+          class="icon-btn"
+          id="searchOpen"
+          type="button"
+          aria-label="Open search"
+        >
+          ⌕
+        </button>
+
+
+        <select
+          id="language"
+          class="language-select"
+          aria-label="Language"
+        >
+          <option value="en">EN</option>
+          <option value="ar">AR</option>
+          <option value="ur">UR</option>
+        </select>
+
+
+        <a
+          href="/contact.html"
+          class="btn btn-primary nav-cta"
+        >
+          Get Started
+        </a>
+
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          type="button"
+          aria-label="Open menu"
+          aria-controls="mobileMenu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- =========================================================
+       MOBILE MENU
+  ========================================================== -->
+
+  <aside
+    class="mobile-menu"
+    id="mobileMenu"
+    aria-hidden="true"
+  >
+
+    <div class="mobile-menu-top">
+
+      <strong>KSA GUIDE</strong>
+
+      <button
+        id="mobileMenuClose"
+        type="button"
+        aria-label="Close menu"
+      >
+        ×
+      </button>
+
+    </div>
+
+
+    <nav aria-label="Mobile navigation">
 
       <a href="/">Home</a>
 
@@ -118,1681 +200,1327 @@ permalink: /
 
     </nav>
 
+  </aside>
 
-    <div class="header-actions">
 
-      <button
-        class="header-icon"
-        id="searchOpen"
-        type="button"
-        aria-label="Search">
+  <!-- =========================================================
+       HERO
+  ========================================================== -->
 
-        <span>⌕</span>
+  <main>
 
-      </button>
+    <section class="hero">
 
+      <div class="hero-gridlines"></div>
 
-      <select
-        id="language"
-        class="language-select"
-        aria-label="Select language">
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
 
-        <option value="en">
-          EN
-        </option>
 
-        <option value="ar">
-          العربية
-        </option>
+      <div class="container hero-layout">
 
-        <option value="ur">
-          اردو
-        </option>
+        <div class="hero-content">
 
-      </select>
-
-
-      <a href="/destinations.html"
-         class="header-cta">
-
-        Explore Saudi
-
-      </a>
-
-
-      <button
-        class="menu-toggle"
-        id="menuToggle"
-        type="button"
-        aria-label="Open menu"
-        aria-expanded="false">
-
-        <span></span>
-        <span></span>
-        <span></span>
-
-      </button>
-
-    </div>
-
-  </div>
-
-</header>
-
-
-<!-- =====================================================
-     MOBILE MENU
-===================================================== -->
-
-<div class="mobile-menu"
-     id="mobileMenu"
-     aria-hidden="true">
-
-  <div class="mobile-menu-inner">
-
-    <div class="mobile-menu-top">
-
-      <span class="mobile-menu-label">
-        KSA GUIDE
-      </span>
-
-      <button
-        id="mobileMenuClose"
-        class="mobile-menu-close"
-        type="button"
-        aria-label="Close menu">
-
-        ×
-
-      </button>
-
-    </div>
-
-
-    <nav class="mobile-nav">
-
-      <a href="/">
-        Home
-      </a>
-
-      <a href="/saudi-guide.html">
-        Saudi Guide
-      </a>
-
-      <a href="/travel.html">
-        Travel
-      </a>
-
-      <a href="/destinations.html">
-        Destinations
-      </a>
-
-      <a href="/digital-services.html">
-        Digital Services
-      </a>
-
-      <a href="/blog.html">
-        Blog
-      </a>
-
-      <a href="/about.html">
-        About
-      </a>
-
-      <a href="/contact.html">
-        Contact
-      </a>
-
-    </nav>
-
-
-    <a href="/destinations.html"
-       class="mobile-menu-cta">
-
-      Explore Saudi Arabia
-
-    </a>
-
-  </div>
-
-</div>
-
-
-<!-- =====================================================
-     HERO
-===================================================== -->
-
-<main>
-
-<section class="hero-section">
-
-  <div class="hero-background">
-
-    <div class="hero-image"></div>
-
-    <div class="hero-overlay"></div>
-
-    <div class="hero-grid"></div>
-
-    <div class="hero-glow hero-glow-one"></div>
-
-    <div class="hero-glow hero-glow-two"></div>
-
-    <div class="hero-particles"></div>
-
-  </div>
-
-
-  <div class="container hero-container">
-
-    <div class="hero-content">
-
-      <div class="hero-badge">
-
-        <span class="badge-dot"></span>
-
-        INDEPENDENT SAUDI GUIDE
-
-      </div>
-
-
-      <h1 class="hero-title">
-
-        Explore Saudi Arabia.
-        <span>Understand Life.</span>
-        Get Things Done.
-
-      </h1>
-
-
-      <div class="hero-arabic"
-           dir="rtl">
-
-        اكتشف المملكة، افهم الحياة، وأنجز أعمالك
-
-      </div>
-
-
-      <p class="hero-description">
-
-        Your modern guide to Saudi Arabia —
-        practical information, destinations,
-        travel inspiration and professional
-        digital services for people around the world.
-
-      </p>
-
-
-      <div class="hero-actions">
-
-        <a href="/destinations.html"
-           class="btn btn-primary">
-
-          Explore Saudi Arabia
-
-          <span>→</span>
-
-        </a>
-
-
-        <a href="/digital-services.html"
-           class="btn btn-glass">
-
-          Digital Services
-
-          <span>↗</span>
-
-        </a>
-
-      </div>
-
-
-      <a href="/travel.html"
-         class="hero-secondary-link">
-
-        Plan Your Saudi Trip
-
-        <span>↓</span>
-
-      </a>
-
-
-      <div class="hero-trust">
-
-        <div class="trust-item">
-
-          <span class="trust-icon">✦</span>
-
-          <span>Travel</span>
-
-        </div>
-
-
-        <div class="trust-line"></div>
-
-
-        <div class="trust-item">
-
-          <span class="trust-icon">◈</span>
-
-          <span>Saudi Guides</span>
-
-        </div>
-
-
-        <div class="trust-line"></div>
-
-
-        <div class="trust-item">
-
-          <span class="trust-icon">◆</span>
-
-          <span>Digital Services</span>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-    <!-- HERO FLOATING CARDS -->
-
-    <div class="hero-floating-ui">
-
-      <div class="floating-card floating-card-one">
-
-        <div class="floating-icon">
-          🇸🇦
-        </div>
-
-        <div>
-
-          <strong>
-            Saudi Guide
-          </strong>
-
-          <span>
-            Visa • Iqama • Absher
-          </span>
-
-        </div>
-
-      </div>
-
-
-      <div class="floating-card floating-card-two">
-
-        <div class="floating-icon">
-          ✈
-        </div>
-
-        <div>
-
-          <strong>
-            Travel
-          </strong>
-
-          <span>
-            Riyadh • AlUla • Jeddah
-          </span>
-
-        </div>
-
-      </div>
-
-
-      <div class="floating-card floating-card-three">
-
-        <div class="floating-icon">
-          ◇
-        </div>
-
-        <div>
-
-          <strong>
-            Digital
-          </strong>
-
-          <span>
-            Web • AI • Business
-          </span>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-    <!-- SAUDI MAP DECORATION -->
-
-    <div class="hero-map">
-
-      <div class="map-ring map-ring-one"></div>
-
-      <div class="map-ring map-ring-two"></div>
-
-      <div class="map-ring map-ring-three"></div>
-
-      <div class="map-label">
-
-        <span>SAUDI</span>
-
-        <small>ARABIA</small>
-
-      </div>
-
-    </div>
-
-  </div>
-
-
-  <div class="hero-scroll">
-
-    <span>
-      Scroll to explore
-    </span>
-
-    <div class="scroll-line"></div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     SMART SEARCH
-===================================================== -->
-
-<section class="search-section">
-
-  <div class="container">
-
-    <div class="smart-search">
-
-      <div class="search-icon">
-        ⌕
-      </div>
-
-      <input
-        id="globalSearch"
-        type="search"
-        placeholder="Search Saudi Arabia..."
-        autocomplete="off">
-
-      <div class="search-category">
-
-        <span>
-          Explore
-        </span>
-
-        <select id="searchCategory">
-
-          <option value="all">
-            All
-          </option>
-
-          <option value="guides">
-            Saudi Guides
-          </option>
-
-          <option value="travel">
-            Travel
-          </option>
-
-          <option value="destinations">
-            Destinations
-          </option>
-
-          <option value="services">
-            Digital Services
-          </option>
-
-          <option value="articles">
-            Articles
-          </option>
-
-        </select>
-
-      </div>
-
-      <button
-        id="searchButton"
-        type="button">
-
-        Search
-
-      </button>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     THREE CORE PILLARS
-===================================================== -->
-
-<section class="section pillars-section">
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <span class="eyebrow">
-        THE KSA GUIDE PLATFORM
-      </span>
-
-      <h2>
-        Everything you need to
-        <span>navigate Saudi Arabia.</span>
-      </h2>
-
-      <p>
-        From practical daily information to unforgettable
-        destinations and professional online services.
-      </p>
-
-    </div>
-
-
-    <div class="pillar-grid">
-
-
-      <!-- SAUDI GUIDE -->
-
-      <article class="pillar-card pillar-guide">
-
-        <div class="pillar-number">
-          01
-        </div>
-
-        <div class="pillar-icon">
-          🇸🇦
-        </div>
-
-        <span class="pillar-label">
-          LIVE • LEARN • NAVIGATE
-        </span>
-
-        <h3>
-          Saudi Guide
-        </h3>
-
-        <p>
-          Practical information for visitors,
-          residents and expats navigating
-          everyday life in Saudi Arabia.
-        </p>
-
-
-        <div class="pillar-links">
-
-          <a href="/saudi-guide.html">
-            Iqama
-          </a>
-
-          <a href="/saudi-guide.html">
-            Visa
-          </a>
-
-          <a href="/saudi-guide.html">
-            Absher
-          </a>
-
-          <a href="/saudi-guide.html">
-            Driving
-          </a>
-
-          <a href="/saudi-guide.html">
-            Saudi Apps
-          </a>
-
-        </div>
-
-
-        <a href="/saudi-guide.html"
-           class="card-link">
-
-          Explore Saudi Guide
-
-          <span>→</span>
-
-        </a>
-
-      </article>
-
-
-      <!-- TRAVEL -->
-
-      <article class="pillar-card pillar-travel">
-
-        <div class="pillar-number">
-          02
-        </div>
-
-        <div class="pillar-icon">
-          ✈
-        </div>
-
-        <span class="pillar-label">
-          DISCOVER • EXPERIENCE
-        </span>
-
-        <h3>
-          Travel & Tourism
-        </h3>
-
-        <p>
-          Discover Saudi Arabia through
-          destinations, experiences,
-          itineraries and travel inspiration.
-        </p>
-
-
-        <div class="pillar-links">
-
-          <a href="/destinations.html">
-            Riyadh
-          </a>
-
-          <a href="/destinations.html">
-            AlUla
-          </a>
-
-          <a href="/destinations.html">
-            Jeddah
-          </a>
-
-          <a href="/destinations.html">
-            Red Sea
-          </a>
-
-          <a href="/destinations.html">
-            Abha
-          </a>
-
-        </div>
-
-
-        <a href="/travel.html"
-           class="card-link">
-
-          Explore Travel
-
-          <span>→</span>
-
-        </a>
-
-      </article>
-
-
-      <!-- DIGITAL -->
-
-      <article class="pillar-card pillar-digital">
-
-        <div class="pillar-number">
-          03
-        </div>
-
-        <div class="pillar-icon">
-          ◇
-        </div>
-
-        <span class="pillar-label">
-          BUILD • GROW • WORK
-        </span>
-
-        <h3>
-          Digital Services
-        </h3>
-
-        <p>
-          Professional online services for
-          international clients and
-          growing small businesses.
-        </p>
-
-
-        <div class="pillar-links">
-
-          <a href="/digital-services.html">
-            Data Entry
-          </a>
-
-          <a href="/digital-services.html">
-            WordPress
-          </a>
-
-          <a href="/digital-services.html">
-            AI Services
-          </a>
-
-          <a href="/digital-services.html">
-            CV & Resume
-          </a>
-
-          <a href="/digital-services.html">
-            Virtual Assistant
-          </a>
-
-        </div>
-
-
-        <a href="/digital-services.html"
-           class="card-link">
-
-          Explore Services
-
-          <span>→</span>
-
-        </a>
-
-      </article>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     WHY KSA GUIDE
-===================================================== -->
-
-<section class="section why-section">
-
-  <div class="container why-grid">
-
-    <div class="why-content">
-
-      <span class="eyebrow">
-        WHY KSA GUIDE
-      </span>
-
-      <h2>
-        Built to make Saudi Arabia
-        <span>easier to understand.</span>
-      </h2>
-
-      <p>
-        KSA GUIDE brings practical Saudi information,
-        travel inspiration and useful digital services
-        together in one modern platform.
-      </p>
-
-
-      <div class="why-points">
-
-        <div class="why-point">
-
-          <span>
-            01
-          </span>
-
-          <div>
-
-            <h3>
-              Practical
-            </h3>
-
-            <p>
-              Useful information designed
-              for real-world situations.
-            </p>
-
-          </div>
-
-        </div>
-
-
-        <div class="why-point">
-
-          <span>
-            02
-          </span>
-
-          <div>
-
-            <h3>
-              Independent
-            </h3>
-
-            <p>
-              An independent information
-              platform — not a government website.
-            </p>
-
-          </div>
-
-        </div>
-
-
-        <div class="why-point">
-
-          <span>
-            03
-          </span>
-
-          <div>
-
-            <h3>
-              Modern
-            </h3>
-
-            <p>
-              Clean, accessible and built
-              for today's web.
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-    <div class="why-visual">
-
-      <div class="visual-orbit orbit-one"></div>
-
-      <div class="visual-orbit orbit-two"></div>
-
-      <div class="visual-orbit orbit-three"></div>
-
-      <div class="visual-center">
-
-        <span>
-          KSA
-        </span>
-
-        <strong>
-          GUIDE
-        </strong>
-
-        <small>
-          SAUDI ARABIA
-        </small>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     FEATURED DESTINATIONS
-===================================================== -->
-
-<section class="section destinations-section">
-
-  <div class="container">
-
-    <div class="section-heading section-heading-row">
-
-      <div>
-
-        <span class="eyebrow">
-          DISCOVER SAUDI ARABIA
-        </span>
-
-        <h2>
-          Featured
-          <span>Destinations</span>
-        </h2>
-
-      </div>
-
-
-      <a href="/destinations.html"
-         class="outline-link">
-
-        View All Destinations
-        <span>→</span>
-
-      </a>
-
-    </div>
-
-
-    <div class="destination-grid">
-
-      <a href="/destinations.html"
-         class="destination-card destination-riyadh">
-
-        <div class="destination-image"></div>
-
-        <div class="destination-overlay"></div>
-
-        <div class="destination-content">
-
-          <span>
-            CAPITAL CITY
-          </span>
-
-          <h3>
-            Riyadh
-          </h3>
-
-          <p>
-            Modern Saudi Arabia
-          </p>
-
-        </div>
-
-      </a>
-
-
-      <a href="/destinations.html"
-         class="destination-card destination-alula">
-
-        <div class="destination-image"></div>
-
-        <div class="destination-overlay"></div>
-
-        <div class="destination-content">
-
-          <span>
-            ANCIENT ARABIA
-          </span>
-
-          <h3>
-            AlUla
-          </h3>
-
-          <p>
-            Heritage & dramatic landscapes
-          </p>
-
-        </div>
-
-      </a>
-
-
-      <a href="/destinations.html"
-         class="destination-card destination-jeddah">
-
-        <div class="destination-image"></div>
-
-        <div class="destination-overlay"></div>
-
-        <div class="destination-content">
-
-          <span>
-            RED SEA
-          </span>
-
-          <h3>
-            Jeddah
-          </h3>
-
-          <p>
-            Culture, coast & history
-          </p>
-
-        </div>
-
-      </a>
-
-
-      <a href="/destinations.html"
-         class="destination-card destination-abha">
-
-        <div class="destination-image"></div>
-
-        <div class="destination-overlay"></div>
-
-        <div class="destination-content">
-
-          <span>
-            MOUNTAIN ESCAPE
-          </span>
-
-          <h3>
-            Abha
-          </h3>
-
-          <p>
-            Highlands & cool weather
-          </p>
-
-        </div>
-
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     POPULAR GUIDES
-===================================================== -->
-
-<section class="section guides-section">
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <span class="eyebrow">
-        PRACTICAL INFORMATION
-      </span>
-
-      <h2>
-        Popular
-        <span>Saudi Guides</span>
-      </h2>
-
-    </div>
-
-
-    <div class="guide-grid">
-
-      <a href="/saudi-guide.html"
-         class="guide-card">
-
-        <span class="guide-icon">
-          ◈
-        </span>
-
-        <h3>
-          Iqama Guide
-        </h3>
-
-        <p>
-          Practical residency information.
-        </p>
-
-        <span class="guide-arrow">
-          →
-        </span>
-
-      </a>
-
-
-      <a href="/saudi-guide.html"
-         class="guide-card">
-
-        <span class="guide-icon">
-          ◇
-        </span>
-
-        <h3>
-          Saudi Visa
-        </h3>
-
-        <p>
-          Understand visa options and processes.
-        </p>
-
-        <span class="guide-arrow">
-          →
-        </span>
-
-      </a>
-
-
-      <a href="/saudi-guide.html"
-         class="guide-card">
-
-        <span class="guide-icon">
-          ◎
-        </span>
-
-        <h3>
-          Absher
-        </h3>
-
-        <p>
-          Learn about essential Saudi services.
-        </p>
-
-        <span class="guide-arrow">
-          →
-        </span>
-
-      </a>
-
-
-      <a href="/saudi-guide.html"
-         class="guide-card">
-
-        <span class="guide-icon">
-          ◉
-        </span>
-
-        <h3>
-          Driving
-        </h3>
-
-        <p>
-          Driving information for Saudi Arabia.
-        </p>
-
-        <span class="guide-arrow">
-          →
-        </span>
-
-      </a>
-
-
-      <a href="/saudi-guide.html"
-         class="guide-card">
-
-        <span class="guide-icon">
-          ✦
-        </span>
-
-        <h3>
-          Saudi Apps
-        </h3>
-
-        <p>
-          Useful apps for everyday life.
-        </p>
-
-        <span class="guide-arrow">
-          →
-        </span>
-
-      </a>
-
-
-      <a href="/saudi-guide.html"
-         class="guide-card">
-
-        <span class="guide-icon">
-          ◌
-        </span>
-
-        <h3>
-          Cost of Living
-        </h3>
-
-        <p>
-          Understand everyday expenses.
-        </p>
-
-        <span class="guide-arrow">
-          →
-        </span>
-
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     TRAVEL EXPERIENCES
-===================================================== -->
-
-<section class="section experiences-section">
-
-  <div class="container">
-
-    <div class="section-heading section-heading-row">
-
-      <div>
-
-        <span class="eyebrow">
-          EXPERIENCE THE KINGDOM
-        </span>
-
-        <h2>
-          Travel beyond the
-          <span>ordinary.</span>
-        </h2>
-
-      </div>
-
-
-      <a href="/travel.html"
-         class="outline-link">
-
-        Explore Travel
-        <span>→</span>
-
-      </a>
-
-    </div>
-
-
-    <div class="experience-grid">
-
-      <a href="/travel.html"
-         class="experience-card">
-
-        <span>
-          01
-        </span>
-
-        <h3>
-          Desert Adventures
-        </h3>
-
-        <p>
-          Sand, stars and unforgettable landscapes.
-        </p>
-
-      </a>
-
-
-      <a href="/travel.html"
-         class="experience-card">
-
-        <span>
-          02
-        </span>
-
-        <h3>
-          Cultural Experiences
-        </h3>
-
-        <p>
-          Discover Saudi heritage and traditions.
-        </p>
-
-      </a>
-
-
-      <a href="/travel.html"
-         class="experience-card">
-
-        <span>
-          03
-        </span>
-
-        <h3>
-          Red Sea
-        </h3>
-
-        <p>
-          Coastlines, diving and marine experiences.
-        </p>
-
-      </a>
-
-
-      <a href="/travel.html"
-         class="experience-card">
-
-        <span>
-          04
-        </span>
-
-        <h3>
-          Mountain Escapes
-        </h3>
-
-        <p>
-          Explore Saudi Arabia's highlands.
-        </p>
-
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     DIGITAL SERVICES
-===================================================== -->
-
-<section class="section digital-preview">
-
-  <div class="container">
-
-    <div class="digital-box">
-
-      <div class="digital-content">
-
-        <span class="eyebrow">
-          PROFESSIONAL DIGITAL SERVICES
-        </span>
-
-        <h2>
-          Build better.
-          <span>Work smarter.</span>
-        </h2>
-
-        <p>
-          Professional online support for
-          entrepreneurs, creators and small businesses
-          around the world.
-        </p>
-
-
-        <a href="/digital-services.html"
-           class="btn btn-primary">
-
-          Explore Digital Services
-
-          <span>→</span>
-
-        </a>
-
-      </div>
-
-
-      <div class="digital-services-list">
-
-        <div>
-          Data Entry
-        </div>
-
-        <div>
-          WordPress
-        </div>
-
-        <div>
-          AI Services
-        </div>
-
-        <div>
-          CV & Resume
-        </div>
-
-        <div>
-          Virtual Assistant
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     HOW IT WORKS
-===================================================== -->
-
-<section class="section how-section">
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <span class="eyebrow">
-        SIMPLE BY DESIGN
-      </span>
-
-      <h2>
-        Explore.
-        Learn.
-        <span>Take Action.</span>
-      </h2>
-
-    </div>
-
-
-    <div class="steps-grid">
-
-      <div class="step-card">
-
-        <span>
-          01
-        </span>
-
-        <h3>
-          Explore
-        </h3>
-
-        <p>
-          Find destinations, guides,
-          experiences and useful information.
-        </p>
-
-      </div>
-
-
-      <div class="step-card">
-
-        <span>
-          02
-        </span>
-
-        <h3>
-          Learn
-        </h3>
-
-        <p>
-          Understand Saudi Arabia
-          through practical, clear content.
-        </p>
-
-      </div>
-
-
-      <div class="step-card">
-
-        <span>
-          03
-        </span>
-
-        <h3>
-          Take Action
-        </h3>
-
-        <p>
-          Use the information to plan,
-          travel, live or get things done.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     LATEST ARTICLES
-===================================================== -->
-
-<section class="section articles-section">
-
-  <div class="container">
-
-    <div class="section-heading section-heading-row">
-
-      <div>
-
-        <span class="eyebrow">
-          FROM THE GUIDE
-        </span>
-
-        <h2>
-          Latest
-          <span>Articles</span>
-        </h2>
-
-      </div>
-
-
-      <a href="/blog.html"
-         class="outline-link">
-
-        View All Articles
-        <span>→</span>
-
-      </a>
-
-    </div>
-
-
-    <div class="article-grid">
-
-      {% if site.posts and site.posts.size > 0 %}
-
-        {% for post in site.posts limit:3 %}
-
-        <article class="article-card">
-
-          <div class="article-meta">
-
-            <span>
-              {{ post.categories | first | default: "Saudi Guide" }}
-            </span>
-
-            <span>
-              {{ post.date | date: "%d %b %Y" }}
-            </span>
-
+          <div class="eyebrow">
+            <span></span>
+            YOUR SAUDI COMPANION
           </div>
 
 
-          <h3>
+          <h1>
+            Explore Saudi Arabia.
+            <br>
+            <em>Understand Life.</em>
+            <br>
+            Get Things Done.
+          </h1>
 
-            <a href="{{ post.url | relative_url }}">
 
-              {{ post.title }}
+          <p class="hero-arabic">
+            اكتشف المملكة، افهم الحياة، وأنجز أعمالك
+          </p>
 
+
+          <p class="hero-description">
+            Your practical digital guide to Saudi Arabia —
+            from everyday life and government services to
+            unforgettable destinations and professional digital services.
+          </p>
+
+
+          <div class="hero-actions">
+
+            <a
+              href="/saudi-guide.html"
+              class="btn btn-primary btn-large"
+            >
+              Explore Saudi Guide
+              <span>→</span>
             </a>
 
-          </h3>
+            <a
+              href="/destinations.html"
+              class="btn btn-outline btn-large"
+            >
+              Discover Saudi
+            </a>
 
+          </div>
+
+
+          <div class="hero-trust">
+
+            <div>
+              <strong>01</strong>
+              <span>Saudi Life</span>
+            </div>
+
+            <div>
+              <strong>02</strong>
+              <span>Travel</span>
+            </div>
+
+            <div>
+              <strong>03</strong>
+              <span>Digital Services</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- HERO VISUAL -->
+
+        <div class="hero-visual" aria-hidden="true">
+
+          <div class="hero-map">
+
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="orbit orbit-three"></div>
+
+
+            <div class="saudi-silhouette">
+
+              <div class="silhouette-shape"></div>
+
+            </div>
+
+
+            <div class="map-pin pin-riyadh">
+              <span></span>
+              <small>RIYADH</small>
+            </div>
+
+
+            <div class="map-pin pin-alula">
+              <span></span>
+              <small>ALULA</small>
+            </div>
+
+
+            <div class="map-pin pin-jeddah">
+              <span></span>
+              <small>JEDDAH</small>
+            </div>
+
+
+            <div class="floating-card card-one">
+
+              <span class="card-icon">✦</span>
+
+              <div>
+                <strong>Saudi Guide</strong>
+                <small>Practical information</small>
+              </div>
+
+            </div>
+
+
+            <div class="floating-card card-two">
+
+              <span class="card-icon">◈</span>
+
+              <div>
+                <strong>Travel</strong>
+                <small>Explore the Kingdom</small>
+              </div>
+
+            </div>
+
+
+            <div class="floating-card card-three">
+
+              <span class="card-icon">⌘</span>
+
+              <div>
+                <strong>Digital Services</strong>
+                <small>Professional support</small>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="hero-scroll">
+        <span>SCROLL TO EXPLORE</span>
+        <i></i>
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         SMART SEARCH
+    ========================================================== -->
+
+    <section class="smart-search-section">
+
+      <div class="container">
+
+        <div class="smart-search-card">
+
+          <div class="search-intro">
+
+            <span class="search-kicker">
+              KSA GUIDE SEARCH
+            </span>
+
+            <h2>
+              What are you looking for?
+            </h2>
+
+            <p>
+              Search guides, destinations, Saudi services and useful information.
+            </p>
+
+          </div>
+
+
+          <div class="global-search">
+
+            <div class="search-field">
+
+              <span class="search-symbol">⌕</span>
+
+              <input
+                type="search"
+                id="globalSearch"
+                placeholder="Try “Iqama”, “Riyadh”, “AlUla”, “Absher”..."
+                autocomplete="off"
+              >
+
+            </div>
+
+
+            <select
+              id="searchCategory"
+              aria-label="Search category"
+            >
+
+              <option value="all">
+                Everything
+              </option>
+
+              <option value="guide">
+                Saudi Guide
+              </option>
+
+              <option value="travel">
+                Travel
+              </option>
+
+              <option value="destinations">
+                Destinations
+              </option>
+
+              <option value="services">
+                Digital Services
+              </option>
+
+              <option value="blog">
+                Blog
+              </option>
+
+            </select>
+
+
+            <button
+              id="searchButton"
+              class="btn btn-primary"
+              type="button"
+            >
+              Search
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         THREE PILLARS
+    ========================================================== -->
+
+    <section class="section pillars-section">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="eyebrow">
+            <span></span>
+            EVERYTHING IN ONE PLACE
+          </span>
+
+          <h2>
+            Built around your Saudi journey
+          </h2>
 
           <p>
-
-            {{ post.excerpt
-              | strip_html
-              | truncate: 140 }}
-
+            Whether you're living in Saudi Arabia, visiting for the first time,
+            or building your digital future — KSA GUIDE brings practical
+            information together.
           </p>
 
+        </div>
 
-          <a href="{{ post.url | relative_url }}"
-             class="article-link">
 
-            Read Article
+        <div class="pillar-grid">
 
-            <span>→</span>
+          <a
+            href="/saudi-guide.html"
+            class="pillar-card"
+          >
+
+            <div class="pillar-number">01</div>
+
+            <div class="pillar-icon">
+              ◉
+            </div>
+
+            <h3>
+              Saudi Guide
+            </h3>
+
+            <p>
+              Understand Iqama, Visa, Absher, driving,
+              Saudi apps, daily life and essential procedures.
+            </p>
+
+            <span class="card-link">
+              Explore Guide →
+            </span>
 
           </a>
 
-        </article>
 
-        {% endfor %}
+          <a
+            href="/travel.html"
+            class="pillar-card featured"
+          >
 
-      {% else %}
+            <div class="pillar-number">02</div>
 
-        <article class="article-card">
+            <div class="pillar-icon">
+              ◇
+            </div>
 
-          <div class="article-meta">
+            <h3>
+              Travel & Tourism
+            </h3>
+
+            <p>
+              Discover Saudi's landscapes, culture,
+              experiences, cities, beaches and hidden gems.
+            </p>
+
+            <span class="card-link">
+              Start Exploring →
+            </span>
+
+          </a>
+
+
+          <a
+            href="/digital-services.html"
+            class="pillar-card"
+          >
+
+            <div class="pillar-number">03</div>
+
+            <div class="pillar-icon">
+              ✦
+            </div>
+
+            <h3>
+              Digital Services
+            </h3>
+
+            <p>
+              Get professional help with WordPress,
+              data entry, AI services, CVs and virtual assistance.
+            </p>
+
+            <span class="card-link">
+              View Services →
+            </span>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         WHY KSA GUIDE
+    ========================================================== -->
+
+    <section class="section why-section">
+
+      <div class="container split-section">
+
+        <div class="split-content">
+
+          <span class="eyebrow">
+            <span></span>
+            WHY KSA GUIDE
+          </span>
+
+          <h2>
+            Information made
+            <em>simple.</em>
+          </h2>
+
+          <p>
+            Saudi Arabia is changing quickly. New destinations,
+            services, regulations and opportunities appear every day.
+            KSA GUIDE is designed to make useful information easier
+            to understand and easier to act on.
+          </p>
+
+
+          <div class="feature-list">
+
+            <div class="feature-item">
+
+              <span>01</span>
+
+              <div>
+                <h3>Practical</h3>
+                <p>
+                  Clear guides focused on real-world needs.
+                </p>
+              </div>
+
+            </div>
+
+
+            <div class="feature-item">
+
+              <span>02</span>
+
+              <div>
+                <h3>Independent</h3>
+                <p>
+                  An independent information platform, not a government website.
+                </p>
+              </div>
+
+            </div>
+
+
+            <div class="feature-item">
+
+              <span>03</span>
+
+              <div>
+                <h3>Made for people</h3>
+                <p>
+                  Designed for residents, visitors and businesses.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <a
+            href="/about.html"
+            class="btn btn-outline"
+          >
+            Learn About KSA GUIDE
+          </a>
+
+        </div>
+
+
+        <div class="split-visual">
+
+          <div class="glass-panel">
+
+            <span class="panel-label">
+              THE KINGDOM
+            </span>
+
+            <strong>
+              13
+            </strong>
+
+            <p>
+              Regions waiting to be explored
+            </p>
+
+
+            <div class="mini-stats">
+
+              <div>
+                <strong>∞</strong>
+                <span>Experiences</span>
+              </div>
+
+              <div>
+                <strong>3</strong>
+                <span>Guide Pillars</span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         DESTINATIONS
+    ========================================================== -->
+
+    <section class="section destinations-section">
+
+      <div class="container">
+
+        <div class="section-heading section-heading-row">
+
+          <div>
+
+            <span class="eyebrow">
+              <span></span>
+              DESTINATIONS
+            </span>
+
+            <h2>
+              See Saudi differently
+            </h2>
+
+            <p>
+              From futuristic city life to ancient landscapes and Red Sea shores.
+            </p>
+
+          </div>
+
+
+          <a
+            href="/destinations.html"
+            class="text-link"
+          >
+            View All Destinations →
+          </a>
+
+        </div>
+
+
+        <div class="destination-grid">
+
+          <a
+            href="/destinations.html#riyadh"
+            class="dest riyadh"
+          >
+
+            <div class="dest-overlay"></div>
+
+            <div class="dest-content">
+
+              <span>
+                CAPITAL CITY
+              </span>
+
+              <h3>
+                Riyadh
+              </h3>
+
+              <p>
+                Modern Saudi Arabia in motion.
+              </p>
+
+            </div>
+
+          </a>
+
+
+          <a
+            href="/destinations.html#alula"
+            class="dest alula"
+          >
+
+            <div class="dest-overlay"></div>
+
+            <div class="dest-content">
+
+              <span>
+                ANCIENT WONDER
+              </span>
+
+              <h3>
+                AlUla
+              </h3>
+
+              <p>
+                History, desert and extraordinary landscapes.
+              </p>
+
+            </div>
+
+          </a>
+
+
+          <a
+            href="/destinations.html#jeddah"
+            class="dest jeddah"
+          >
+
+            <div class="dest-overlay"></div>
+
+            <div class="dest-content">
+
+              <span>
+                RED SEA
+              </span>
+
+              <h3>
+                Jeddah
+              </h3>
+
+              <p>
+                Culture, coastlines and historic Al-Balad.
+              </p>
+
+            </div>
+
+          </a>
+
+
+          <a
+            href="/destinations.html"
+            class="dest abha"
+          >
+
+            <div class="dest-overlay"></div>
+
+            <div class="dest-content">
+
+              <span>
+                MOUNTAIN ESCAPE
+              </span>
+
+              <h3>
+                Abha
+              </h3>
+
+              <p>
+                Cool mountain air and spectacular scenery.
+              </p>
+
+            </div>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         POPULAR GUIDES
+    ========================================================== -->
+
+    <section class="section guides-section">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="eyebrow">
+            <span></span>
+            POPULAR GUIDES
+          </span>
+
+          <h2>
+            Get things done
+          </h2>
+
+          <p>
+            Useful Saudi information without unnecessary complexity.
+          </p>
+
+        </div>
+
+
+        <div class="article-grid">
+
+          <a
+            href="/saudi-guide.html#iqama"
+            class="article-card"
+          >
+
+            <div class="article-number">
+              01
+            </div>
+
+            <span class="article-category">
+              SAUDI GUIDE
+            </span>
+
+            <h3>
+              Iqama & Residency
+            </h3>
+
+            <p>
+              Understand the basics of Saudi residency,
+              renewals and everyday requirements.
+            </p>
+
+            <span class="read-more">
+              Read Guide →
+            </span>
+
+          </a>
+
+
+          <a
+            href="/saudi-guide.html#absher"
+            class="article-card"
+          >
+
+            <div class="article-number">
+              02
+            </div>
+
+            <span class="article-category">
+              SAUDI GUIDE
+            </span>
+
+            <h3>
+              Absher
+            </h3>
+
+            <p>
+              Learn about one of Saudi Arabia's most important
+              digital government platforms.
+            </p>
+
+            <span class="read-more">
+              Read Guide →
+            </span>
+
+          </a>
+
+
+          <a
+            href="/saudi-guide.html#driving"
+            class="article-card"
+          >
+
+            <div class="article-number">
+              03
+            </div>
+
+            <span class="article-category">
+              SAUDI GUIDE
+            </span>
+
+            <h3>
+              Driving in Saudi Arabia
+            </h3>
+
+            <p>
+              Practical information for driving,
+              licenses, roads and everyday mobility.
+            </p>
+
+            <span class="read-more">
+              Read Guide →
+            </span>
+
+          </a>
+
+
+          <a
+            href="/saudi-guide.html#apps"
+            class="article-card"
+          >
+
+            <div class="article-number">
+              04
+            </div>
+
+            <span class="article-category">
+              SAUDI GUIDE
+            </span>
+
+            <h3>
+              Essential Saudi Apps
+            </h3>
+
+            <p>
+              Discover useful apps for transportation,
+              government services, payments and daily life.
+            </p>
+
+            <span class="read-more">
+              Read Guide →
+            </span>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         TRAVEL EXPERIENCES
+    ========================================================== -->
+
+    <section class="section experiences-section">
+
+      <div class="container">
+
+        <div class="section-heading section-heading-row">
+
+          <div>
+
+            <span class="eyebrow">
+              <span></span>
+              TRAVEL EXPERIENCES
+            </span>
+
+            <h2>
+              Find your kind of Saudi
+            </h2>
+
+          </div>
+
+          <a
+            href="/travel.html"
+            class="text-link"
+          >
+            Explore Travel →
+          </a>
+
+        </div>
+
+
+        <div class="experience-grid">
+
+          <a
+            href="/travel.html#culture"
+            class="experience-card"
+          >
+
+            <span class="experience-icon">
+              ◈
+            </span>
+
+            <h3>
+              Culture & Heritage
+            </h3>
+
+            <p>
+              Historic cities, traditions, architecture and stories.
+            </p>
+
+          </a>
+
+
+          <a
+            href="/travel.html#adventure"
+            class="experience-card"
+          >
+
+            <span class="experience-icon">
+              △
+            </span>
+
+            <h3>
+              Adventure
+            </h3>
+
+            <p>
+              Deserts, mountains, hiking and unforgettable landscapes.
+            </p>
+
+          </a>
+
+
+          <a
+            href="/travel.html#coast"
+            class="experience-card"
+          >
+
+            <span class="experience-icon">
+              ≋
+            </span>
+
+            <h3>
+              Red Sea
+            </h3>
+
+            <p>
+              Beaches, marine life, islands and coastal escapes.
+            </p>
+
+          </a>
+
+
+          <a
+            href="/travel.html#city"
+            class="experience-card"
+          >
+
+            <span class="experience-icon">
+              ✦
+            </span>
+
+            <h3>
+              Modern Saudi
+            </h3>
+
+            <p>
+              Food, entertainment, events, shopping and city life.
+            </p>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         DIGITAL SERVICES
+    ========================================================== -->
+
+    <section class="section services-section">
+
+      <div class="container">
+
+        <div class="services-panel">
+
+          <div class="services-copy">
+
+            <span class="eyebrow">
+              <span></span>
+              DIGITAL SERVICES
+            </span>
+
+            <h2>
+              Need digital work done?
+            </h2>
+
+            <p>
+              KSA GUIDE also provides practical digital services
+              for individuals, entrepreneurs and businesses.
+            </p>
+
+
+            <a
+              href="/digital-services.html"
+              class="btn btn-primary"
+            >
+              Explore Services →
+            </a>
+
+          </div>
+
+
+          <div class="services-list">
+
+            <div>
+              <span>01</span>
+              <strong>WordPress</strong>
+            </div>
+
+            <div>
+              <span>02</span>
+              <strong>AI Services</strong>
+            </div>
+
+            <div>
+              <span>03</span>
+              <strong>Data Entry</strong>
+            </div>
+
+            <div>
+              <span>04</span>
+              <strong>CV / Resume</strong>
+            </div>
+
+            <div>
+              <span>05</span>
+              <strong>Virtual Assistant</strong>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         HOW IT WORKS
+    ========================================================== -->
+
+    <section class="section process-section">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="eyebrow">
+            <span></span>
+            SIMPLE PROCESS
+          </span>
+
+          <h2>
+            Find. Understand. Act.
+          </h2>
+
+        </div>
+
+
+        <div class="process-grid">
+
+          <div class="process-step">
+
+            <span>01</span>
+
+            <h3>
+              Find
+            </h3>
+
+            <p>
+              Search the information, destination or service you need.
+            </p>
+
+          </div>
+
+
+          <div class="process-step">
+
+            <span>02</span>
+
+            <h3>
+              Understand
+            </h3>
+
+            <p>
+              Read practical explanations designed for everyday users.
+            </p>
+
+          </div>
+
+
+          <div class="process-step">
+
+            <span>03</span>
+
+            <h3>
+              Act
+            </h3>
+
+            <p>
+              Use the information to plan your next step with confidence.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         LATEST ARTICLES
+    ========================================================== -->
+
+    <section class="section latest-section">
+
+      <div class="container">
+
+        <div class="section-heading section-heading-row">
+
+          <div>
+
+            <span class="eyebrow">
+              <span></span>
+              FROM THE BLOG
+            </span>
+
+            <h2>
+              Latest from KSA GUIDE
+            </h2>
+
+          </div>
+
+          <a
+            href="/blog.html"
+            class="text-link"
+          >
+            View All Articles →
+          </a>
+
+        </div>
+
+
+        <div class="latest-grid">
+
+          <article class="latest-card">
 
             <span>
               SAUDI GUIDE
             </span>
 
+            <h3>
+              Essential information for life in Saudi Arabia
+            </h3>
+
+            <p>
+              Practical resources for residents and newcomers.
+            </p>
+
+            <a href="/blog.html">
+              Read Article →
+            </a>
+
+          </article>
+
+
+          <article class="latest-card">
+
             <span>
-              Coming Soon
+              TRAVEL
             </span>
+
+            <h3>
+              Places to discover across the Kingdom
+            </h3>
+
+            <p>
+              Explore cities, landscapes, culture and experiences.
+            </p>
+
+            <a href="/blog.html">
+              Read Article →
+            </a>
+
+          </article>
+
+
+          <article class="latest-card">
+
+            <span>
+              DIGITAL
+            </span>
+
+            <h3>
+              Build your digital presence
+            </h3>
+
+            <p>
+              Useful digital tools, services and practical advice.
+            </p>
+
+            <a href="/blog.html">
+              Read Article →
+            </a>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         NEWSLETTER
+    ========================================================== -->
+
+    <section class="section newsletter-section">
+
+      <div class="container">
+
+        <div class="newsletter-card">
+
+          <div>
+
+            <span class="eyebrow">
+              <span></span>
+              STAY UPDATED
+            </span>
+
+            <h2>
+              Get useful Saudi updates.
+            </h2>
+
+            <p>
+              New guides, travel ideas and digital resources —
+              delivered when something useful is published.
+            </p>
 
           </div>
 
-          <h3>
-            Saudi Arabia Guides & Insights
-          </h3>
+
+          <form id="newsletterForm">
+
+            <label for="newsletterEmail" class="sr-only">
+              Email address
+            </label>
+
+            <input
+              type="email"
+              id="newsletterEmail"
+              name="email"
+              placeholder="Your email address"
+              required
+            >
+
+            <button
+              type="submit"
+              class="btn btn-primary"
+            >
+              Subscribe
+            </button>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         FINAL CTA
+    ========================================================== -->
+
+    <section class="section final-cta-section">
+
+      <div class="container">
+
+        <div class="final-cta">
+
+          <span class="eyebrow">
+            <span></span>
+            KSA GUIDE
+          </span>
+
+          <h2>
+            Your Saudi journey
+            <em>starts here.</em>
+          </h2>
 
           <p>
-            New practical guides and travel
-            articles will appear here.
+            Explore the Kingdom. Understand everyday life.
+            Discover what's next.
           </p>
 
-          <a href="/blog.html"
-             class="article-link">
 
-            Visit Blog
+          <div class="cta-actions">
 
-            <span>→</span>
+            <a
+              href="/destinations.html"
+              class="btn btn-primary btn-large"
+            >
+              Explore Saudi Arabia
+            </a>
 
-          </a>
+            <a
+              href="/contact.html"
+              class="btn btn-outline btn-large"
+            >
+              Contact Us
+            </a>
 
-        </article>
+          </div>
 
-      {% endif %}
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     NEWSLETTER
-===================================================== -->
-
-<section class="newsletter-section">
-
-  <div class="container">
-
-    <div class="newsletter-box">
-
-      <div>
-
-        <span class="eyebrow">
-          STAY IN THE KNOW
-        </span>
-
-        <h2>
-          Saudi Arabia,
-          <span>delivered to you.</span>
-        </h2>
-
-        <p>
-          Get useful guides, travel ideas and
-          Saudi updates in your inbox.
-        </p>
+        </div>
 
       </div>
 
+    </section>
 
-      <form
-        class="newsletter-form"
-        id="newsletterForm">
-
-        <input
-          type="email"
-          name="email"
-          placeholder="Your email address"
-          required
-          aria-label="Email address">
-
-        <button type="submit">
-          Subscribe
-          <span>→</span>
-        </button>
-
-      </form>
-
-    </div>
-
-  </div>
-
-</section>
+  </main>
 
 
-<!-- =====================================================
-     FINAL CTA
-===================================================== -->
+  <!-- =========================================================
+       FOOTER
+  ========================================================== -->
 
-<section class="final-cta">
+  <footer class="site-footer">
 
-  <div class="container">
-
-    <div class="final-cta-content">
-
-      <span class="eyebrow">
-        YOUR SAUDI JOURNEY STARTS HERE
-      </span>
-
-      <h2>
-        Ready to explore
-        <span>Saudi Arabia?</span>
-      </h2>
-
-      <p>
-        Discover the Kingdom through
-        practical guides, destinations,
-        travel experiences and useful resources.
-      </p>
-
-
-      <div class="final-cta-actions">
-
-        <a href="/destinations.html"
-           class="btn btn-primary">
-
-          Explore Saudi Arabia
-
-          <span>→</span>
-
-        </a>
-
-
-        <a href="/contact.html"
-           class="btn btn-glass">
-
-          Contact KSA GUIDE
-
-          <span>↗</span>
-
-        </a>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-</main>
-
-
-<!-- =====================================================
-     FOOTER
-===================================================== -->
-
-<footer class="site-footer">
-
-  <div class="container">
-
-    <div class="footer-grid">
+    <div class="container footer-grid">
 
       <div class="footer-brand">
 
-        <a href="/"
-           class="brand">
+        <a href="/" class="brand">
 
           <span class="brand-mark">
-            KSA
+            K
           </span>
 
           <span class="brand-text">
-
-            <strong>
-              KSA GUIDE
-            </strong>
-
-            <small>
-              Your Complete Guide to Saudi Arabia
-            </small>
-
+            <strong>KSA GUIDE</strong>
+            <small>Your Complete Guide to Saudi Arabia</small>
           </span>
 
         </a>
 
 
         <p>
-          An independent digital platform
-          for discovering, understanding and
-          navigating Saudi Arabia.
+          Independent Saudi information, travel inspiration
+          and practical digital services.
         </p>
 
       </div>
@@ -1801,119 +1529,57 @@ permalink: /
       <div class="footer-column">
 
         <h3>
+          Explore
+        </h3>
+
+        <a href="/saudi-guide.html">
           Saudi Guide
-        </h3>
-
-        <a href="/saudi-guide.html">
-          Iqama
-        </a>
-
-        <a href="/saudi-guide.html">
-          Visa
-        </a>
-
-        <a href="/saudi-guide.html">
-          Absher
-        </a>
-
-        <a href="/saudi-guide.html">
-          Driving
-        </a>
-
-      </div>
-
-
-      <div class="footer-column">
-
-        <h3>
-          Travel
-        </h3>
-
-        <a href="/destinations.html">
-          Riyadh
-        </a>
-
-        <a href="/destinations.html">
-          AlUla
-        </a>
-
-        <a href="/destinations.html">
-          Jeddah
         </a>
 
         <a href="/travel.html">
-          Experiences
+          Travel
         </a>
 
-      </div>
-
-
-      <div class="footer-column">
-
-        <h3>
-          Digital
-        </h3>
-
-        <a href="/digital-services.html">
-          Data Entry
-        </a>
-
-        <a href="/digital-services.html">
-          WordPress
-        </a>
-
-        <a href="/digital-services.html">
-          AI Services
-        </a>
-
-        <a href="/digital-services.html">
-          Virtual Assistant
-        </a>
-
-      </div>
-
-
-      <div class="footer-column">
-
-        <h3>
-          Company
-        </h3>
-
-        <a href="/about.html">
-          About
-        </a>
-
-        <a href="/contact.html">
-          Contact
+        <a href="/destinations.html">
+          Destinations
         </a>
 
         <a href="/blog.html">
           Blog
         </a>
 
-        <a href="/privacy-policy.html">
-          Privacy
+      </div>
+
+
+      <div class="footer-column">
+
+        <h3>
+          Services
+        </h3>
+
+        <a href="/digital-services.html">
+          Digital Services
+        </a>
+
+        <a href="/contact.html">
+          Contact
+        </a>
+
+        <a href="/about.html">
+          About
         </a>
 
       </div>
 
-    </div>
 
+      <div class="footer-column">
 
-    <div class="footer-bottom">
-
-      <div>
-
-        © 2026 KSA GUIDE.
-        All rights reserved.
-
-      </div>
-
-
-      <div class="footer-legal">
+        <h3>
+          Information
+        </h3>
 
         <a href="/privacy-policy.html">
-          Privacy
+          Privacy Policy
         </a>
 
         <a href="/terms.html">
@@ -1921,7 +1587,7 @@ permalink: /
         </a>
 
         <a href="/cookie-policy.html">
-          Cookies
+          Cookie Policy
         </a>
 
         <a href="/disclaimer.html">
@@ -1933,153 +1599,132 @@ permalink: /
     </div>
 
 
-    <div class="footer-disclaimer">
+    <div class="container footer-bottom">
 
-      KSA GUIDE is an independent information platform
-      and is not affiliated with, endorsed by, or operated
-      by the Government of Saudi Arabia. Information is
-      provided for general informational purposes and
-      should be verified with official sources where appropriate.
+      <p>
+        © 2026 KSA GUIDE. All rights reserved.
+      </p>
+
+      <p>
+        KSA GUIDE is an independent information platform
+        and is not affiliated with the Saudi government.
+      </p>
 
     </div>
 
-  </div>
-
-</footer>
+  </footer>
 
 
-<!-- =====================================================
-     SEARCH OVERLAY
-===================================================== -->
+  <!-- =========================================================
+       SEARCH OVERLAY
+  ========================================================== -->
 
-<div class="search-overlay"
-     id="searchOverlay"
-     aria-hidden="true">
+  <div
+    class="search-overlay"
+    id="searchOverlay"
+    aria-hidden="true"
+  >
 
-  <div class="search-overlay-inner">
+    <div class="search-overlay-inner">
 
-    <button
-      class="search-close"
-      id="searchClose"
-      type="button"
-      aria-label="Close search">
-
-      ×
-
-    </button>
-
-
-    <span class="eyebrow">
-      KSA GUIDE SEARCH
-    </span>
+      <button
+        id="searchClose"
+        class="search-close"
+        type="button"
+        aria-label="Close search"
+      >
+        ×
+      </button>
 
 
-    <h2>
-      What are you looking for?
-    </h2>
-
-
-    <div class="overlay-search-box">
-
-      <span>
-        ⌕
+      <span class="eyebrow">
+        <span></span>
+        SEARCH KSA GUIDE
       </span>
 
-      <input
-        id="overlaySearchInput"
-        type="search"
-        placeholder="Search Saudi Arabia...">
 
-    </div>
+      <h2>
+        What can we help you find?
+      </h2>
 
 
-    <div class="search-suggestions">
+      <div class="overlay-search">
 
-      <span>
-        Popular:
-      </span>
+        <input
+          type="search"
+          id="overlaySearchInput"
+          placeholder="Search Saudi Arabia..."
+          autocomplete="off"
+        >
 
-      <a href="/saudi-guide.html">
-        Saudi Visa
-      </a>
+        <button
+          class="btn btn-primary"
+          type="button"
+          onclick="document.getElementById('searchButton')?.click()"
+        >
+          Search
+        </button>
 
-      <a href="/saudi-guide.html">
-        Iqama
-      </a>
-
-      <a href="/destinations.html">
-        Riyadh
-      </a>
-
-      <a href="/destinations.html">
-        AlUla
-      </a>
-
-      <a href="/saudi-guide.html">
-        Absher
-      </a>
+      </div>
 
     </div>
 
   </div>
 
-</div>
+
+  <!-- =========================================================
+       COOKIE BANNER
+  ========================================================== -->
+
+  <div
+    class="cookie-banner"
+    id="cookieBanner"
+    role="dialog"
+    aria-label="Cookie notice"
+  >
+
+    <div>
+
+      <strong>
+        We use cookies
+      </strong>
+
+      <p>
+        KSA GUIDE uses essential cookies to help the website
+        work properly and improve your experience.
+      </p>
+
+    </div>
 
 
-<!-- =====================================================
-     COOKIE BANNER
-===================================================== -->
+    <div class="cookie-actions">
 
-<div class="cookie-banner"
-     id="cookieBanner"
-     role="dialog"
-     aria-label="Cookie consent">
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-cookie-accept
+      >
+        Accept
+      </button>
 
-  <div class="cookie-content">
+      <button
+        type="button"
+        class="btn btn-outline"
+        data-cookie-reject
+      >
+        Reject
+      </button>
 
-    <strong>
-      Your privacy matters
-    </strong>
-
-    <p>
-      We use essential cookies to make KSA GUIDE
-      work and optional cookies to understand
-      website usage.
-    </p>
+    </div>
 
   </div>
 
 
-  <div class="cookie-actions">
+  <!-- =========================================================
+       SCRIPTS
+  ========================================================== -->
 
-    <button
-      type="button"
-      data-cookie-reject>
-
-      Reject Non-Essential
-
-    </button>
-
-
-    <button
-      type="button"
-      data-cookie-accept>
-
-      Accept All
-
-    </button>
-
-  </div>
-
-</div>
-
-
-<!-- =====================================================
-     JAVASCRIPT
-===================================================== -->
-
-<script src="/assets/js/app.js"
-        defer></script>
+  <script src="/assets/js/app.js" defer></script>
 
 </body>
 </html>
