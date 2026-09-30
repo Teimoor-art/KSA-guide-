@@ -1,96 +1,59 @@
 ---
 layout: null
 permalink: /digital-services.html
+title: "Digital Services | KSA GUIDE"
+description: "Professional digital services including data entry, WordPress, AI support, CV and resume services, virtual assistance and website support."
 ---
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-
-  <title>Digital Services — Professional Online Services | KSA GUIDE</title>
+  <title>Digital Services | KSA GUIDE</title>
 
   <meta name="description"
-        content="Professional digital services for individuals, creators and small businesses including data entry, WordPress, AI services, CV and resume work and virtual assistance.">
+        content="Professional digital services from KSA GUIDE including data entry, WordPress websites, AI-powered business support, CV and resume services, virtual assistance and website content support.">
 
-  <meta name="robots"
-        content="index, follow">
+  <meta name="robots" content="index, follow">
 
-  <link rel="canonical"
-        href="https://ksa-guide.com/digital-services.html">
+  <link rel="canonical" href="https://ksa-guide.com/digital-services.html">
 
-  <meta property="og:title"
-        content="Digital Services | KSA GUIDE">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <meta property="og:description"
-        content="Professional online digital services for individuals and small businesses.">
-
-  <meta property="og:type"
-        content="website">
-
-  <meta property="og:url"
-        content="https://ksa-guide.com/digital-services.html">
-
-  <link rel="preconnect"
-        href="https://fonts.googleapis.com">
-
-  <link rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-  <link rel="stylesheet"
-        href="/assets/css/style.css">
-
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
-
 
 <body>
 
-
-<!-- =====================================================
+<!-- =========================================================
      HEADER
-===================================================== -->
+========================================================= -->
 
-<header class="site-header"
-        id="siteHeader">
+<header class="site-header" id="siteHeader">
 
-  <div class="container header-inner">
+  <div class="container nav">
 
+    <a href="/" class="brand" aria-label="KSA GUIDE Home">
 
-    <a href="/"
-       class="brand">
-
-      <span class="brand-mark">
-        <span class="brand-map">◆</span>
-      </span>
+      <span class="brand-mark">K</span>
 
       <span class="brand-text">
-
-        <strong>KSA</strong>
-
-        <span>GUIDE</span>
-
+        <strong>KSA GUIDE</strong>
+        <small>Your Complete Guide to Saudi Arabia</small>
       </span>
 
     </a>
 
 
-    <nav class="main-nav"
-         id="mainNav">
+    <nav class="desktop-nav" aria-label="Main navigation">
 
-      <a href="/">
-        Home
-      </a>
+      <a href="/">Home</a>
 
       <a href="/saudi-guide.html">
         Saudi Guide
@@ -104,11 +67,8 @@ permalink: /digital-services.html
         Destinations
       </a>
 
-      <a href="/digital-services.html"
-         class="active">
-
+      <a href="/digital-services.html" class="active">
         Digital Services
-
       </a>
 
       <a href="/blog.html">
@@ -126,56 +86,40 @@ permalink: /digital-services.html
     </nav>
 
 
-    <div class="header-actions">
-
+    <div class="nav-actions">
 
       <button
         class="icon-btn"
-        id="searchToggle"
-        aria-label="Search">
-
-        <i class="fa-solid fa-magnifying-glass"></i>
-
+        id="searchOpen"
+        type="button"
+        aria-label="Open search">
+        ⌕
       </button>
 
-
       <select
-        id="language"
         class="language-select"
-        aria-label="Language">
+        id="languageSelect"
+        aria-label="Select language">
 
-        <option value="en">
-          EN
-        </option>
-
-        <option value="ar">
-          AR
-        </option>
-
-        <option value="ur">
-          UR
-        </option>
+        <option value="en">EN</option>
+        <option value="ar">AR</option>
+        <option value="ur">UR</option>
 
       </select>
 
-
-      <a href="/contact.html"
-         class="header-cta">
-
+      <a
+        href="/contact.html"
+        class="btn btn-primary nav-cta">
         Get Started
-
       </a>
 
-
       <button
-        class="mobile-menu-btn"
-        id="mobileMenuBtn"
-        aria-label="Open menu">
-
-        <span></span>
-        <span></span>
-        <span></span>
-
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false">
+        ☰
       </button>
 
     </div>
@@ -185,197 +129,90 @@ permalink: /digital-services.html
 </header>
 
 
-<!-- =====================================================
-     SEARCH
-===================================================== -->
+<!-- =========================================================
+     MOBILE MENU
+========================================================= -->
 
-<div class="search-overlay"
-     id="searchOverlay">
+<div class="mobile-menu" id="mobileMenu">
 
-  <div class="search-box">
+  <div class="mobile-menu-top">
 
+    <strong>KSA GUIDE</strong>
 
     <button
-      class="search-close"
-      id="searchClose">
-
-      <i class="fa-solid fa-xmark"></i>
-
+      id="mobileMenuClose"
+      class="icon-btn"
+      type="button"
+      aria-label="Close menu">
+      ×
     </button>
 
-
-    <span class="eyebrow">
-      KSA GUIDE SEARCH
-    </span>
-
-
-    <h2>
-      Search KSA GUIDE
-    </h2>
-
-
-    <form
-      class="global-search-form"
-      action="/blog.html"
-      method="get">
-
-
-      <div class="search-input-wrap">
-
-        <i class="fa-solid fa-magnifying-glass"></i>
-
-        <input
-          type="search"
-          name="q"
-          placeholder="Search services, guides, articles..."
-          autocomplete="off">
-
-      </div>
-
-
-      <button
-        type="submit"
-        class="btn btn-gold">
-
-        Search
-
-      </button>
-
-    </form>
-
-
-    <div class="search-suggestions">
-
-      <span>
-        Popular:
-      </span>
-
-      <a href="#data-entry">
-        Data Entry
-      </a>
-
-      <a href="#wordpress">
-        WordPress
-      </a>
-
-      <a href="#ai">
-        AI Services
-      </a>
-
-      <a href="#cv">
-        CV & Resume
-      </a>
-
-    </div>
-
   </div>
+
+  <a href="/">Home</a>
+  <a href="/saudi-guide.html">Saudi Guide</a>
+  <a href="/travel.html">Travel</a>
+  <a href="/destinations.html">Destinations</a>
+  <a href="/digital-services.html">Digital Services</a>
+  <a href="/blog.html">Blog</a>
+  <a href="/about.html">About</a>
+  <a href="/contact.html">Contact</a>
+
+  <a
+    href="/contact.html"
+    class="btn btn-primary">
+    Get Started
+  </a>
 
 </div>
 
 
-<!-- =====================================================
-     MAIN
-===================================================== -->
+<!-- =========================================================
+     PAGE HERO
+========================================================= -->
 
 <main>
 
+<section class="page-hero">
 
-<!-- =====================================================
-     HERO
-===================================================== -->
+  <div class="page-hero-glow"></div>
 
-<section class="inner-hero services-hero">
+  <div class="container page-hero-content">
 
-  <div class="inner-hero-bg"></div>
+    <span class="eyebrow">
+      DIGITAL SERVICES
+    </span>
 
-  <div class="inner-hero-overlay"></div>
+    <h1>
+      Digital Support
+      <span>Built Around Your Work.</span>
+    </h1>
 
+    <p class="hero-arabic">
+      خدمات رقمية احترافية تساعدك على إنجاز أعمالك
+    </p>
 
-  <div class="container">
+    <p>
+      From everyday administrative tasks to websites, AI-assisted
+      workflows and professional CVs, KSA GUIDE provides practical
+      digital support for individuals, professionals and small businesses.
+    </p>
 
-    <div class="inner-hero-content">
+    <div class="hero-actions">
 
+      <a
+        href="#services"
+        class="btn btn-primary btn-large">
+        Explore Services
+      </a>
 
-      <div class="breadcrumb">
-
-        <a href="/">
-          Home
-        </a>
-
-        <span>
-          /
-        </span>
-
-        <span>
-          Digital Services
-        </span>
-
-      </div>
-
-
-      <span class="eyebrow">
-        DIGITAL SERVICES
-      </span>
-
-
-      <h1>
-        Digital Support
-        <br>
-        Built for Modern Work.
-      </h1>
-
-
-      <p>
-        Professional online services for individuals,
-        creators and small businesses — from data
-        entry and WordPress to AI support and resumes.
-      </p>
-
-
-      <div class="hero-buttons">
-
-
-        <a href="/contact.html"
-           class="btn btn-gold btn-large">
-
-          Start a Project
-
-          <i class="fa-solid fa-arrow-right"></i>
-
-        </a>
-
-
-        <a href="#services"
-           class="btn btn-outline btn-large">
-
-          Explore Services
-
-        </a>
-
-
-      </div>
-
-
-      <div class="trust-row">
-
-
-        <span>
-          <i class="fa-solid fa-check"></i>
-          Professional
-        </span>
-
-        <span>
-          <i class="fa-solid fa-check"></i>
-          Remote
-        </span>
-
-        <span>
-          <i class="fa-solid fa-check"></i>
-          Flexible
-        </span>
-
-      </div>
-
+      <a
+        href="https://wa.me/966501442697"
+        target="_blank"
+        rel="noopener"
+        class="btn btn-large">
+        WhatsApp Us
+      </a>
 
     </div>
 
@@ -384,594 +221,245 @@ permalink: /digital-services.html
 </section>
 
 
-<!-- =====================================================
+<!-- =========================================================
+     SMART SEARCH
+========================================================= -->
+
+<section class="smart-search-section">
+
+  <div class="container">
+
+    <div class="smart-search-card">
+
+      <div class="search-intro">
+
+        <span class="search-kicker">
+          FIND A SERVICE
+        </span>
+
+        <h2>
+          What do you need help with?
+        </h2>
+
+        <p>
+          Search our services or tell us what you are trying to accomplish.
+        </p>
+
+      </div>
+
+
+      <div class="global-search">
+
+        <span class="search-symbol">⌕</span>
+
+        <input
+          type="search"
+          id="globalSearch"
+          placeholder="Try: WordPress, CV, data entry, AI..."
+          autocomplete="off"
+          aria-label="Search digital services">
+
+        <select
+          id="searchCategory"
+          aria-label="Search category">
+
+          <option value="digital">
+            Digital Services
+          </option>
+
+          <option value="all">
+            All KSA GUIDE
+          </option>
+
+        </select>
+
+        <button
+          id="searchButton"
+          class="btn btn-primary"
+          type="button">
+          Search
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
      INTRO
-===================================================== -->
+========================================================= -->
 
 <section class="section">
 
   <div class="container">
 
-
-    <div class="section-heading centered">
+    <div class="section-heading">
 
       <span class="eyebrow">
-        WHAT WE DO
+        PRACTICAL DIGITAL HELP
       </span>
 
-
       <h2>
-        Practical Digital
-        <br>
-        Services.
+        Get the work done without the unnecessary complexity.
       </h2>
 
-
       <p>
-        Need an extra pair of hands for digital work?
-        KSA GUIDE provides practical support designed
-        to save time and help you get tasks completed.
+        Whether you need a clean website, organized documents,
+        a professional CV or support with repetitive digital work,
+        our services are designed around clear tasks and practical outcomes.
       </p>
 
     </div>
 
 
-    <div class="service-stats">
-
-
-      <div>
-
-        <i class="fa-solid fa-laptop"></i>
-
-        <strong>
-          Online
-        </strong>
-
-        <span>
-          Remote delivery
-        </span>
-
-      </div>
-
-
-      <div>
-
-        <i class="fa-solid fa-layer-group"></i>
-
-        <strong>
-          Flexible
-        </strong>
-
-        <span>
-          Project-based work
-        </span>
-
-      </div>
-
-
-      <div>
-
-        <i class="fa-solid fa-comments"></i>
-
-        <strong>
-          Direct
-        </strong>
-
-        <span>
-          Clear communication
-        </span>
-
-      </div>
-
-
-      <div>
-
-        <i class="fa-solid fa-shield-halved"></i>
-
-        <strong>
-          Professional
-        </strong>
-
-        <span>
-          Privacy-conscious approach
-        </span>
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     SERVICES
-===================================================== -->
-
-<section class="section services-section"
-         id="services">
-
-  <div class="container">
-
-
-    <div class="section-heading split-heading">
-
-      <div>
-
-        <span class="eyebrow">
-          OUR SERVICES
-        </span>
-
-
-        <h2>
-          Choose the Support
-          <br>
-          You Need.
-        </h2>
-
-      </div>
-
-
-      <p>
-        Select a service below or contact us
-        with a custom requirement. We'll discuss
-        the scope before starting.
-      </p>
-
-    </div>
-
-
-    <div class="service-grid">
-
+    <div class="experience-grid">
 
       <!-- DATA ENTRY -->
 
-      <article class="service-card"
-               id="data-entry">
+      <article class="experience-card">
 
-
-        <div class="service-card-top">
-
-          <div class="service-icon">
-
-            <i class="fa-solid fa-table-list"></i>
-
-          </div>
-
-
-          <span>
-            01
-          </span>
-
+        <div class="experience-icon">
+          01
         </div>
 
-
-        <span class="service-label">
-          ADMIN SUPPORT
-        </span>
-
-
         <h3>
-          Data Entry
+          Data Entry & Documents
         </h3>
 
-
         <p>
-          Accurate and organised data entry
-          support for documents, spreadsheets,
-          lists and digital records.
+          Organizing spreadsheets, documents, lists and structured
+          information with careful formatting and consistency.
         </p>
 
-
-        <ul>
-
-          <li>
-            <i class="fa-solid fa-check"></i>
-            Spreadsheet data entry
-          </li>
-
-          <li>
-            <i class="fa-solid fa-check"></i>
-            Data collection
-          </li>
-
-          <li>
-            <i class="fa-solid fa-check"></i>
-            PDF to Excel / Word
-          </li>
-
-          <li>
-            <i class="fa-solid fa-check"></i>
-            Web research
-          </li>
-
-        </ul>
-
-
-        <a href="/contact.html?service=data-entry"
-           class="service-link">
-
-          Request Service
-
-          <i class="fa-solid fa-arrow-right"></i>
-
+        <a href="#data-entry" class="read-more">
+          View service →
         </a>
-
 
       </article>
 
 
       <!-- WORDPRESS -->
 
-      <article class="service-card featured-service"
-               id="wordpress">
+      <article class="experience-card">
 
-
-        <div class="service-card-top">
-
-          <div class="service-icon">
-
-            <i class="fa-brands fa-wordpress"></i>
-
-          </div>
-
-
-          <span>
-            02
-          </span>
-
+        <div class="experience-icon">
+          02
         </div>
 
-
-        <span class="service-label">
-          WEB
-        </span>
-
-
         <h3>
-          WordPress
+          WordPress Websites
         </h3>
 
-
         <p>
-          Professional WordPress support for
-          websites, content updates, layouts,
-          pages and basic site improvements.
+          Website setup, page creation, content updates,
+          basic customization and ongoing website support.
         </p>
 
-
-        <ul>
-
-          <li>
-            <i class="fa-solid fa-check"></i>
-            Page creation
-          </li>
-
-          <li>
-            <i class="fa-solid fa-check"></i>
-            Content updates
-          </li>
-
-          <li>
-            <i class="fa-solid fa-check"></i>
-            Website maintenance
-          </li>
-
-          <li>
-            <i class="fa-solid fa-check"></i>
-            Basic optimisation
-          </li>
-
-        </ul>
-
-
-        <a href="/contact.html?service=wordpress"
-           class="service-link">
-
-          Request Service
-
-          <i class="fa-solid fa-arrow-right"></i>
-
+        <a href="#wordpress" class="read-more">
+          View service →
         </a>
-
 
       </article>
 
 
       <!-- AI -->
 
-      <article class="service-card"
-               id="ai">
+      <article class="experience-card">
 
-
-        <div class="service-card-top">
-
-          <div class="service-icon">
-
-            <i class="fa-solid fa-wand-magic-sparkles"></i>
-
-          </div>
-
-
-          <span>
-            03
-          </span>
-
+        <div class="experience-icon">
+          03
         </div>
 
-
-        <span class="service-label">
-          AI & AUTOMATION
-        </span>
-
-
         <h3>
-          AI Services
+          AI-Powered Support
         </h3>
 
-
         <p>
-          Practical AI-assisted support for
-          content, research, workflows,
-          organisation and repetitive tasks.
+          Practical AI-assisted workflows for research,
+          content organization, repetitive tasks and productivity.
         </p>
 
-
-        <ul>
-
-          <li>
-            <i class="fa-solid fa-check"></i>
-            AI content assistance
-          </li>
-
-          <li>
-            <i class="fa-solid fa-check"></i>
-            Research support
-          </li>
-
-          <li>
-            <i class="fa-solid fa-check"></i>
-            Workflow ideas
-          </li>
-
-          <li>
-            <i class="fa-solid fa-check"></i>
-            AI productivity support
-          </li>
-
-        </ul>
-
-
-        <a href="/contact.html?service=ai-services"
-           class="service-link">
-
-          Request Service
-
-          <i class="fa-solid fa-arrow-right"></i>
-
+        <a href="#ai-services" class="read-more">
+          View service →
         </a>
-
 
       </article>
 
 
       <!-- CV -->
 
-      <article class="service-card"
-               id="cv">
+      <article class="experience-card">
 
-
-        <div class="service-card-top">
-
-          <div class="service-icon">
-
-            <i class="fa-solid fa-file-lines"></i>
-
-          </div>
-
-
-          <span>
-            04
-          </span>
-
+        <div class="experience-icon">
+          04
         </div>
-
-
-        <span class="service-label">
-          CAREER
-        </span>
-
 
         <h3>
           CV & Resume
         </h3>
 
-
         <p>
-          Clean, professional CV and resume
-          support for job seekers who want
-          their experience presented clearly.
+          Professional CV formatting, restructuring and
+          presentation for job applications and career profiles.
         </p>
 
-
-        <ul>
-
-          <li>
-            <i class="fa-solid fa-check"></i>
-            CV formatting
-          </li>
-
-          <li>
-            <i class="fa-solid fa-check"></i>
-            Resume improvement
-          </li>
-
-          <li>
-            <i class="fa-solid fa-check"></i>
-            Professional structure
-          </li>
-
-          <li>
-            <i class="fa-solid fa-check"></i>
-            Job-focused presentation
-          </li>
-
-        </ul>
-
-
-        <a href="/contact.html?service=cv-resume"
-           class="service-link">
-
-          Request Service
-
-          <i class="fa-solid fa-arrow-right"></i>
-
+        <a href="#cv-services" class="read-more">
+          View service →
         </a>
-
 
       </article>
 
 
-      <!-- VIRTUAL ASSISTANT -->
+      <!-- VA -->
 
-      <article class="service-card"
-               id="virtual-assistant">
+      <article class="experience-card">
 
-
-        <div class="service-card-top">
-
-          <div class="service-icon">
-
-            <i class="fa-solid fa-headset"></i>
-
-          </div>
-
-
-          <span>
-            05
-          </span>
-
+        <div class="experience-icon">
+          05
         </div>
-
-
-        <span class="service-label">
-          REMOTE SUPPORT
-        </span>
-
 
         <h3>
           Virtual Assistant
         </h3>
 
-
         <p>
-          Flexible remote assistance for
-          organisation, research, admin tasks
-          and everyday digital work.
+          Administrative and online support for routine tasks,
+          research, organization and digital workflows.
         </p>
 
-
-        <ul>
-
-          <li>
-            <i class="fa-solid fa-check"></i>
-            Online research
-          </li>
-
-          <li>
-            <i class="fa-solid fa-check"></i>
-            Admin assistance
-          </li>
-
-          <li>
-            <i class="fa-solid fa-check"></i>
-            File organisation
-          </li>
-
-          <li>
-            <i class="fa-solid fa-check"></i>
-            Task support
-          </li>
-
-        </ul>
-
-
-        <a href="/contact.html?service=virtual-assistant"
-           class="service-link">
-
-          Request Service
-
-          <i class="fa-solid fa-arrow-right"></i>
-
+        <a href="#virtual-assistant" class="read-more">
+          View service →
         </a>
-
 
       </article>
 
 
-      <!-- CUSTOM -->
+      <!-- CONTENT -->
 
-      <article class="service-card custom-service">
+      <article class="experience-card">
 
-
-        <div class="service-card-top">
-
-          <div class="service-icon">
-
-            <i class="fa-solid fa-cubes"></i>
-
-          </div>
-
-
-          <span>
-            06
-          </span>
-
+        <div class="experience-icon">
+          06
         </div>
-
-
-        <span class="service-label">
-          CUSTOM
-        </span>
-
 
         <h3>
-          Custom Digital Support
+          Website Content Support
         </h3>
 
-
         <p>
-          Have a task that doesn't fit one of
-          the categories above? Tell us what
-          you need and we'll discuss it.
+          Content updates, page organization, basic SEO structure,
+          product information and website administration.
         </p>
 
-
-        <div class="custom-service-box">
-
-          <i class="fa-solid fa-comments"></i>
-
-          <span>
-            Tell us about your project
-          </span>
-
-        </div>
-
-
-        <a href="/contact.html?service=custom"
-           class="service-link">
-
-          Discuss Your Project
-
-          <i class="fa-solid fa-arrow-right"></i>
-
+        <a href="#content-support" class="read-more">
+          View service →
         </a>
 
-
       </article>
-
 
     </div>
 
@@ -980,156 +468,99 @@ permalink: /digital-services.html
 </section>
 
 
-<!-- =====================================================
-     PROCESS
-===================================================== -->
+<!-- =========================================================
+     DATA ENTRY
+========================================================= -->
 
-<section class="section process-section">
+<section class="section split-section" id="data-entry">
 
-  <div class="container">
+  <div class="container split-section">
 
-
-    <div class="section-heading centered">
+    <div class="split-content">
 
       <span class="eyebrow">
-        SIMPLE PROCESS
+        01 / DATA & DOCUMENTS
       </span>
 
-
       <h2>
-        From Request
-        <br>
-        to Delivery.
+        Turn messy information into organized work.
       </h2>
 
-
       <p>
-        A straightforward process keeps projects
-        clear and expectations aligned.
+        Need information transferred, organized or formatted?
+        We can help with structured digital tasks where accuracy,
+        consistency and clean presentation matter.
       </p>
+
+      <ul class="feature-list">
+
+        <li class="feature-item">
+          <strong>Spreadsheet Data Entry</strong>
+          <span>
+            Structured entry and formatting for Excel or similar files.
+          </span>
+        </li>
+
+        <li class="feature-item">
+          <strong>Document Formatting</strong>
+          <span>
+            Clean layouts, headings, tables and consistent formatting.
+          </span>
+        </li>
+
+        <li class="feature-item">
+          <strong>Data Organization</strong>
+          <span>
+            Sorting, categorizing and organizing provided information.
+          </span>
+        </li>
+
+        <li class="feature-item">
+          <strong>Web Research Support</strong>
+          <span>
+            Research and information collection based on a defined brief.
+          </span>
+        </li>
+
+      </ul>
 
     </div>
 
 
-    <div class="process-grid">
+    <div class="split-visual">
 
+      <div class="glass-panel">
 
-      <div class="process-card">
-
-        <div class="process-number">
-          01
-        </div>
-
-
-        <div class="process-icon">
-
-          <i class="fa-solid fa-message"></i>
-
-        </div>
-
+        <span class="panel-label">
+          DIGITAL WORKFLOW
+        </span>
 
         <h3>
-          Tell Us
+          Organized.
+          Structured.
+          Ready to use.
         </h3>
 
+        <div class="mini-stats">
 
-        <p>
-          Send your requirements, files,
-          goals and preferred timeline.
-        </p>
+          <div>
+            <strong>01</strong>
+            <span>Receive</span>
+          </div>
+
+          <div>
+            <strong>02</strong>
+            <span>Organize</span>
+          </div>
+
+          <div>
+            <strong>03</strong>
+            <span>Review</span>
+          </div>
+
+        </div>
 
       </div>
-
-
-      <div class="process-line"></div>
-
-
-      <div class="process-card">
-
-        <div class="process-number">
-          02
-        </div>
-
-
-        <div class="process-icon">
-
-          <i class="fa-solid fa-clipboard-check"></i>
-
-        </div>
-
-
-        <h3>
-          Review
-        </h3>
-
-
-        <p>
-          We review the task and clarify
-          the scope before work begins.
-        </p>
-
-      </div>
-
-
-      <div class="process-line"></div>
-
-
-      <div class="process-card">
-
-        <div class="process-number">
-          03
-        </div>
-
-
-        <div class="process-icon">
-
-          <i class="fa-solid fa-gears"></i>
-
-        </div>
-
-
-        <h3>
-          Work
-        </h3>
-
-
-        <p>
-          The agreed work is completed
-          according to the project scope.
-        </p>
-
-      </div>
-
-
-      <div class="process-line"></div>
-
-
-      <div class="process-card">
-
-        <div class="process-number">
-          04
-        </div>
-
-
-        <div class="process-icon">
-
-          <i class="fa-solid fa-circle-check"></i>
-
-        </div>
-
-
-        <h3>
-          Delivery
-        </h3>
-
-
-        <p>
-          Receive the completed work
-          and review the final result.
-        </p>
-
-      </div>
-
 
     </div>
 
@@ -1138,466 +569,116 @@ permalink: /digital-services.html
 </section>
 
 
-<!-- =====================================================
-     WHO WE HELP
-===================================================== -->
+<!-- =========================================================
+     WORDPRESS
+========================================================= -->
 
-<section class="section light-section">
+<section class="section" id="wordpress">
 
   <div class="container">
-
 
     <div class="section-heading">
 
       <span class="eyebrow">
-        WHO WE HELP
+        02 / WORDPRESS
       </span>
 
-
       <h2>
-        Built for People
-        <br>
-        Who Need Things Done.
+        A professional website starts with a clear foundation.
       </h2>
-
-    </div>
-
-
-    <div class="audience-grid">
-
-
-      <div class="audience-card">
-
-        <div class="audience-icon">
-
-          <i class="fa-solid fa-user"></i>
-
-        </div>
-
-
-        <h3>
-          Individuals
-        </h3>
-
-
-        <p>
-          Get help with personal digital
-          tasks, CVs, documents and research.
-        </p>
-
-      </div>
-
-
-      <div class="audience-card">
-
-        <div class="audience-icon">
-
-          <i class="fa-solid fa-briefcase"></i>
-
-        </div>
-
-
-        <h3>
-          Freelancers
-        </h3>
-
-
-        <p>
-          Delegate repetitive tasks and
-          spend more time on client work.
-        </p>
-
-      </div>
-
-
-      <div class="audience-card">
-
-        <div class="audience-icon">
-
-          <i class="fa-solid fa-store"></i>
-
-        </div>
-
-
-        <h3>
-          Small Businesses
-        </h3>
-
-
-        <p>
-          Get practical support with
-          websites, admin and digital tasks.
-        </p>
-
-      </div>
-
-
-      <div class="audience-card">
-
-        <div class="audience-icon">
-
-          <i class="fa-solid fa-pen-nib"></i>
-
-        </div>
-
-
-        <h3>
-          Creators
-        </h3>
-
-
-        <p>
-          Get assistance with content,
-          research and digital workflows.
-        </p>
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     WHY KSA GUIDE
-===================================================== -->
-
-<section class="section why-services-section">
-
-  <div class="container">
-
-
-    <div class="why-services-grid">
-
-
-      <div>
-
-        <span class="eyebrow">
-          WHY KSA GUIDE
-        </span>
-
-
-        <h2>
-          Professional Support
-          <br>
-          Without the Complexity.
-        </h2>
-
-
-        <p>
-          Our goal is simple: understand the task,
-          communicate clearly and provide useful
-          digital support without unnecessary complexity.
-        </p>
-
-
-        <a href="/contact.html"
-           class="btn btn-gold">
-
-          Start a Conversation
-
-          <i class="fa-solid fa-arrow-right"></i>
-
-        </a>
-
-      </div>
-
-
-      <div class="why-services-list">
-
-
-        <div>
-
-          <span>
-            01
-          </span>
-
-          <div>
-
-            <h3>
-              Clear Scope
-            </h3>
-
-            <p>
-              Requirements are discussed before
-              work begins.
-            </p>
-
-          </div>
-
-        </div>
-
-
-        <div>
-
-          <span>
-            02
-          </span>
-
-          <div>
-
-            <h3>
-              Practical Approach
-            </h3>
-
-            <p>
-              We focus on useful outcomes
-              rather than unnecessary complexity.
-            </p>
-
-          </div>
-
-        </div>
-
-
-        <div>
-
-          <span>
-            03
-          </span>
-
-          <div>
-
-            <h3>
-              Remote Friendly
-            </h3>
-
-            <p>
-              Projects can be handled online
-              for clients in different locations.
-            </p>
-
-          </div>
-
-        </div>
-
-
-        <div>
-
-          <span>
-            04
-          </span>
-
-          <div>
-
-            <h3>
-              Direct Communication
-            </h3>
-
-            <p>
-              Keep project communication
-              straightforward and organised.
-            </p>
-
-          </div>
-
-        </div>
-
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     FAQ
-===================================================== -->
-
-<section class="section faq-section">
-
-  <div class="container">
-
-
-    <div class="section-heading centered">
-
-      <span class="eyebrow">
-        QUESTIONS
-      </span>
-
-
-      <h2>
-        Frequently Asked Questions
-      </h2>
-
-    </div>
-
-
-    <div class="faq-list">
-
-
-      <details>
-
-        <summary>
-
-          What digital services do you provide?
-
-          <i class="fa-solid fa-plus"></i>
-
-        </summary>
-
-
-        <p>
-          KSA GUIDE offers services such as data entry,
-          WordPress support, AI-assisted digital work,
-          CV and resume support, virtual assistance and
-          selected custom digital tasks.
-        </p>
-
-      </details>
-
-
-      <details>
-
-        <summary>
-
-          Can I request a custom project?
-
-          <i class="fa-solid fa-plus"></i>
-
-        </summary>
-
-
-        <p>
-          Yes. If your requirement does not fit one
-          of the listed services, contact us with the
-          details and we can discuss the scope.
-        </p>
-
-      </details>
-
-
-      <details>
-
-        <summary>
-
-          Do you work with international clients?
-
-          <i class="fa-solid fa-plus"></i>
-
-        </summary>
-
-
-        <p>
-          Digital projects can be discussed with
-          clients internationally. Availability,
-          scope and delivery arrangements are
-          confirmed before work starts.
-        </p>
-
-      </details>
-
-
-      <details>
-
-        <summary>
-
-          How do I get started?
-
-          <i class="fa-solid fa-plus"></i>
-
-        </summary>
-
-
-        <p>
-          Visit the contact page and send your
-          project details. Include the service you
-          need, your requirements and any relevant
-          files or links.
-        </p>
-
-      </details>
-
-
-      <details>
-
-        <summary>
-
-          Is pricing fixed?
-
-          <i class="fa-solid fa-plus"></i>
-
-        </summary>
-
-
-        <p>
-          Pricing can depend on the size and
-          complexity of the project. A scope and
-          quotation can be discussed before work
-          begins.
-        </p>
-
-      </details>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     CTA
-===================================================== -->
-
-<section class="final-cta">
-
-  <div class="final-cta-bg"></div>
-
-
-  <div class="container">
-
-    <div class="final-cta-content">
-
-
-      <span class="eyebrow">
-        HAVE A PROJECT?
-      </span>
-
-
-      <h2>
-        Let's Get
-        <br>
-        Things Done.
-      </h2>
-
 
       <p>
-        Tell us what you need and start
-        a conversation about your project.
+        From a simple business website to content-driven pages,
+        we can help with practical WordPress setup and management.
       </p>
 
-
-      <div class="cta-buttons">
-
-
-        <a href="/contact.html"
-           class="btn btn-gold btn-large">
-
-          Contact KSA GUIDE
-
-          <i class="fa-solid fa-arrow-right"></i>
-
-        </a>
+    </div>
 
 
-        <a href="/about.html"
-           class="btn btn-outline btn-large">
+    <div class="article-grid">
 
-          About KSA GUIDE
+      <article class="article-card">
 
-        </a>
+        <span class="article-number">
+          01
+        </span>
+
+        <span class="article-category">
+          SETUP
+        </span>
+
+        <h3>
+          WordPress Installation
+        </h3>
+
+        <p>
+          Basic setup, structure and configuration for a new website.
+        </p>
+
+      </article>
 
 
-      </div>
+      <article class="article-card">
 
+        <span class="article-number">
+          02
+        </span>
+
+        <span class="article-category">
+          PAGES
+        </span>
+
+        <h3>
+          Website Page Creation
+        </h3>
+
+        <p>
+          Home, About, Services, Contact and other essential pages.
+        </p>
+
+      </article>
+
+
+      <article class="article-card">
+
+        <span class="article-number">
+          03
+        </span>
+
+        <span class="article-category">
+          SUPPORT
+        </span>
+
+        <h3>
+          Content & Updates
+        </h3>
+
+        <p>
+          Assistance with routine content updates and website administration.
+        </p>
+
+      </article>
+
+
+      <article class="article-card">
+
+        <span class="article-number">
+          04
+        </span>
+
+        <span class="article-category">
+          STRUCTURE
+        </span>
+
+        <h3>
+          Basic SEO Structure
+        </h3>
+
+        <p>
+          Page titles, descriptions, headings and clean content organization.
+        </p>
+
+      </article>
 
     </div>
 
@@ -1605,120 +686,664 @@ permalink: /digital-services.html
 
 </section>
 
+
+<!-- =========================================================
+     AI SERVICES
+========================================================= -->
+
+<section class="section split-section" id="ai-services">
+
+  <div class="container split-section">
+
+    <div class="split-visual">
+
+      <div class="glass-panel">
+
+        <span class="panel-label">
+          AI + HUMAN WORKFLOW
+        </span>
+
+        <h3>
+          Use AI where it saves time.
+          Keep human review where it matters.
+        </h3>
+
+        <div class="mini-stats">
+
+          <div>
+            <strong>AI</strong>
+            <span>Assist</span>
+          </div>
+
+          <div>
+            <strong>H</strong>
+            <span>Review</span>
+          </div>
+
+          <div>
+            <strong>✓</strong>
+            <span>Deliver</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="split-content">
+
+      <span class="eyebrow">
+        03 / AI SERVICES
+      </span>
+
+      <h2>
+        Practical AI support for everyday digital work.
+      </h2>
+
+      <p>
+        AI can reduce repetitive work, but good results still require
+        clear instructions, verification and human judgment.
+        Our approach combines AI-assisted productivity with review.
+      </p>
+
+      <ul class="feature-list">
+
+        <li class="feature-item">
+          <strong>Content Assistance</strong>
+          <span>
+            Drafting, restructuring and organizing provided information.
+          </span>
+        </li>
+
+        <li class="feature-item">
+          <strong>Research Support</strong>
+          <span>
+            Helping collect and structure information around a defined task.
+          </span>
+        </li>
+
+        <li class="feature-item">
+          <strong>Workflow Assistance</strong>
+          <span>
+            Identifying repetitive digital tasks that can be streamlined.
+          </span>
+        </li>
+
+        <li class="feature-item">
+          <strong>AI Prompt Support</strong>
+          <span>
+            Creating practical prompts and repeatable workflows for common tasks.
+          </span>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     CV / RESUME
+========================================================= -->
+
+<section class="section" id="cv-services">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <span class="eyebrow">
+        04 / CV & RESUME
+      </span>
+
+      <h2>
+        Present your professional experience clearly.
+      </h2>
+
+      <p>
+        A good CV should make your experience easy to understand.
+        We can help restructure, format and present the information
+        you provide in a cleaner professional format.
+      </p>
+
+    </div>
+
+
+    <div class="services-panel">
+
+      <div class="services-copy">
+
+        <span class="panel-label">
+          WHAT WE CAN HELP WITH
+        </span>
+
+        <h3>
+          From raw information to a polished document.
+        </h3>
+
+        <p>
+          Suitable for fresh graduates, professionals,
+          career changes and people updating an existing CV.
+        </p>
+
+      </div>
+
+
+      <div class="services-list">
+
+        <div>
+          <strong>CV Formatting</strong>
+          <span>Clean structure and professional presentation.</span>
+        </div>
+
+        <div>
+          <strong>Content Organization</strong>
+          <span>Clear arrangement of experience, skills and education.</span>
+        </div>
+
+        <div>
+          <strong>Resume Refresh</strong>
+          <span>Improve the structure of an existing resume.</span>
+        </div>
+
+        <div>
+          <strong>Application Documents</strong>
+          <span>Support with related professional documents when requested.</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     VIRTUAL ASSISTANT
+========================================================= -->
+
+<section class="section split-section" id="virtual-assistant">
+
+  <div class="container split-section">
+
+    <div class="split-content">
+
+      <span class="eyebrow">
+        05 / VIRTUAL ASSISTANT
+      </span>
+
+      <h2>
+        Extra digital support when your workload gets busy.
+      </h2>
+
+      <p>
+        Some tasks do not need another full-time employee.
+        A virtual assistant can help handle defined online and
+        administrative tasks so you can focus on higher-priority work.
+      </p>
+
+      <ul class="feature-list">
+
+        <li class="feature-item">
+          <strong>Online Research</strong>
+          <span>
+            Research based on specific instructions and requirements.
+          </span>
+        </li>
+
+        <li class="feature-item">
+          <strong>File & Information Organization</strong>
+          <span>
+            Help structure documents, lists and digital information.
+          </span>
+        </li>
+
+        <li class="feature-item">
+          <strong>Administrative Support</strong>
+          <span>
+            Assistance with routine digital tasks and workflows.
+          </span>
+        </li>
+
+        <li class="feature-item">
+          <strong>Content Administration</strong>
+          <span>
+            Help maintain provided website or digital content.
+          </span>
+        </li>
+
+      </ul>
+
+    </div>
+
+
+    <div class="split-visual">
+
+      <div class="glass-panel">
+
+        <span class="panel-label">
+          SIMPLE SUPPORT MODEL
+        </span>
+
+        <h3>
+          You define the task.
+          We organize the workflow.
+        </h3>
+
+        <div class="mini-stats">
+
+          <div>
+            <strong>01</strong>
+            <span>Brief</span>
+          </div>
+
+          <div>
+            <strong>02</strong>
+            <span>Work</span>
+          </div>
+
+          <div>
+            <strong>03</strong>
+            <span>Review</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     CONTENT SUPPORT
+========================================================= -->
+
+<section class="section" id="content-support">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <span class="eyebrow">
+        06 / WEBSITE CONTENT
+      </span>
+
+      <h2>
+        Keep your digital presence organized.
+      </h2>
+
+      <p>
+        Websites need regular updates. We can assist with defined
+        content and administrative tasks so your website stays useful
+        and easier to maintain.
+      </p>
+
+    </div>
+
+
+    <div class="experience-grid">
+
+      <article class="experience-card">
+
+        <div class="experience-icon">
+          A
+        </div>
+
+        <h3>
+          Page Updates
+        </h3>
+
+        <p>
+          Updating provided text, sections and basic website information.
+        </p>
+
+      </article>
+
+
+      <article class="experience-card">
+
+        <div class="experience-icon">
+          B
+        </div>
+
+        <h3>
+          Content Organization
+        </h3>
+
+        <p>
+          Structuring website information into clearer sections and pages.
+        </p>
+
+      </article>
+
+
+      <article class="experience-card">
+
+        <div class="experience-icon">
+          C
+        </div>
+
+        <h3>
+          Basic SEO Support
+        </h3>
+
+        <p>
+          Assistance with titles, descriptions, headings and content structure.
+        </p>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     HOW IT WORKS
+========================================================= -->
+
+<section class="section">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <span class="eyebrow">
+        HOW IT WORKS
+      </span>
+
+      <h2>
+        A simple process from request to delivery.
+      </h2>
+
+    </div>
+
+
+    <div class="experience-grid">
+
+      <article class="experience-card">
+
+        <div class="experience-icon">
+          01
+        </div>
+
+        <h3>
+          Tell Us What You Need
+        </h3>
+
+        <p>
+          Send the task, files, requirements or website details.
+        </p>
+
+      </article>
+
+
+      <article class="experience-card">
+
+        <div class="experience-icon">
+          02
+        </div>
+
+        <h3>
+          We Clarify the Scope
+        </h3>
+
+        <p>
+          We review what is required and clarify important details.
+        </p>
+
+      </article>
+
+
+      <article class="experience-card">
+
+        <div class="experience-icon">
+          03
+        </div>
+
+        <h3>
+          Work Begins
+        </h3>
+
+        <p>
+          The agreed task is completed according to the defined scope.
+        </p>
+
+      </article>
+
+
+      <article class="experience-card">
+
+        <div class="experience-icon">
+          04
+        </div>
+
+        <h3>
+          Review & Delivery
+        </h3>
+
+        <p>
+          You review the result and any agreed final adjustments are handled.
+        </p>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     SERVICE REQUEST
+========================================================= -->
+
+<section class="section">
+
+  <div class="container">
+
+    <div class="services-panel">
+
+      <div class="services-copy">
+
+        <span class="panel-label">
+          REQUEST A QUOTE
+        </span>
+
+        <h3>
+          Have a specific task in mind?
+        </h3>
+
+        <p>
+          Send us a short description of what you need.
+          Pricing and delivery depend on the scope, complexity
+          and amount of work involved.
+        </p>
+
+      </div>
+
+
+      <div class="services-list">
+
+        <div>
+          <strong>
+            WhatsApp
+          </strong>
+
+          <span>
+            +966 50 144 2697
+          </span>
+        </div>
+
+        <div>
+          <strong>
+            Email
+          </strong>
+
+          <span>
+            ahmediqbalteumoori@gmail.com
+          </span>
+        </div>
+
+        <div>
+          <strong>
+            Response
+          </strong>
+
+          <span>
+            Send your requirements and we will review the request.
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     DISCLAIMER
+========================================================= -->
+
+<section class="section">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <span class="eyebrow">
+        IMPORTANT NOTE
+      </span>
+
+      <h2>
+        Clear scope. Clear expectations.
+      </h2>
+
+      <p>
+        KSA GUIDE is an independent digital-services and information
+        platform. Services are provided according to the agreed scope.
+        Government approvals, official decisions, employment outcomes,
+        visa decisions or other third-party results cannot be guaranteed.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     FINAL CTA
+========================================================= -->
+
+<section class="final-cta-section">
+
+  <div class="container">
+
+    <div class="final-cta">
+
+      <span class="eyebrow">
+        READY TO START?
+      </span>
+
+      <h2>
+        Tell us what you need.
+      </h2>
+
+      <p>
+        Send your task or idea and let's work out the next step.
+      </p>
+
+      <div class="cta-actions">
+
+        <a
+          href="https://wa.me/966501442697"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-primary btn-large">
+          Chat on WhatsApp
+        </a>
+
+        <a
+          href="mailto:ahmediqbalteumoori@gmail.com"
+          class="btn btn-large">
+          Send Email
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
 </main>
 
 
-<!-- =====================================================
+<!-- =========================================================
      FOOTER
-===================================================== -->
+========================================================= -->
 
 <footer class="site-footer">
 
   <div class="container">
 
+    <div class="footer-grid">
 
-    <div class="footer-main">
+      <div>
 
-
-      <div class="footer-brand">
-
-
-        <a href="/"
-           class="brand">
+        <a href="/" class="brand">
 
           <span class="brand-mark">
-            <span class="brand-map">◆</span>
+            K
           </span>
 
           <span class="brand-text">
-
-            <strong>KSA</strong>
-
-            <span>GUIDE</span>
-
+            <strong>KSA GUIDE</strong>
+            <small>Your Complete Guide to Saudi Arabia</small>
           </span>
 
         </a>
 
-
         <p>
-          Your complete independent guide
-          to Saudi Arabia.
+          Independent Saudi information, travel guidance
+          and practical digital services.
         </p>
 
-
-        <div class="social-links">
-
-          <a href="#"
-             aria-label="Instagram">
-
-            <i class="fa-brands fa-instagram"></i>
-
-          </a>
-
-
-          <a href="#"
-             aria-label="YouTube">
-
-            <i class="fa-brands fa-youtube"></i>
-
-          </a>
-
-
-          <a href="#"
-             aria-label="TikTok">
-
-            <i class="fa-brands fa-tiktok"></i>
-
-          </a>
-
-
-          <a href="#"
-             aria-label="Facebook">
-
-            <i class="fa-brands fa-facebook-f"></i>
-
-          </a>
-
-        </div>
-
       </div>
 
 
-      <div class="footer-column">
+      <div>
 
-        <h4>
+        <h3>
+          Explore
+        </h3>
+
+        <a href="/saudi-guide.html">
           Saudi Guide
-        </h4>
-
-        <a href="/saudi-guide.html">
-          Iqama
         </a>
-
-        <a href="/saudi-guide.html">
-          Visa
-        </a>
-
-        <a href="/saudi-guide.html">
-          Absher
-        </a>
-
-        <a href="/saudi-guide.html">
-          Driving
-        </a>
-
-      </div>
-
-
-      <div class="footer-column">
-
-        <h4>
-          Travel
-        </h4>
 
         <a href="/travel.html">
-          Travel Guide
+          Travel
         </a>
 
         <a href="/destinations.html">
@@ -1726,17 +1351,17 @@ permalink: /digital-services.html
         </a>
 
         <a href="/blog.html">
-          Travel Articles
+          Blog
         </a>
 
       </div>
 
 
-      <div class="footer-column">
+      <div>
 
-        <h4>
+        <h3>
           Services
-        </h4>
+        </h3>
 
         <a href="#data-entry">
           Data Entry
@@ -1746,12 +1371,12 @@ permalink: /digital-services.html
           WordPress
         </a>
 
-        <a href="#ai">
+        <a href="#ai-services">
           AI Services
         </a>
 
-        <a href="#cv">
-          CV & Resume
+        <a href="#cv-services">
+          CV / Resume
         </a>
 
         <a href="#virtual-assistant">
@@ -1761,50 +1386,28 @@ permalink: /digital-services.html
       </div>
 
 
-      <div class="footer-column">
+      <div>
 
-        <h4>
-          Company
-        </h4>
+        <h3>
+          Contact
+        </h3>
 
-        <a href="/about.html">
-          About
+        <a href="mailto:ahmediqbalteumoori@gmail.com">
+          Email
         </a>
 
-        <a href="/blog.html">
-          Blog
+        <a
+          href="https://wa.me/966501442697"
+          target="_blank"
+          rel="noopener">
+          WhatsApp
         </a>
 
         <a href="/contact.html">
-          Contact
-        </a>
-
-        <a href="/privacy-policy.html">
-          Privacy
-        </a>
-
-        <a href="/disclaimer.html">
-          Disclaimer
+          Contact Page
         </a>
 
       </div>
-
-
-    </div>
-
-
-    <div class="footer-disclaimer">
-
-      <strong>
-        Important:
-      </strong>
-
-      KSA GUIDE is an independent information
-      and digital services platform. It is not affiliated
-      with, endorsed by, or operated by the Saudi
-      Arabian government. Information is provided
-      for general guidance and should be verified
-      with official sources where appropriate.
 
     </div>
 
@@ -1815,11 +1418,10 @@ permalink: /digital-services.html
         © 2026 KSA GUIDE. All rights reserved.
       </p>
 
-
       <div>
 
         <a href="/privacy-policy.html">
-          Privacy Policy
+          Privacy
         </a>
 
         <a href="/terms.html">
@@ -1828,6 +1430,10 @@ permalink: /digital-services.html
 
         <a href="/cookie-policy.html">
           Cookies
+        </a>
+
+        <a href="/disclaimer.html">
+          Disclaimer
         </a>
 
       </div>
@@ -1839,56 +1445,103 @@ permalink: /digital-services.html
 </footer>
 
 
-<!-- =====================================================
-     COOKIE BANNER
-===================================================== -->
+<!-- =========================================================
+     SEARCH OVERLAY
+========================================================= -->
 
-<div class="cookie-banner"
-     id="cookieBanner">
+<div
+  class="search-overlay"
+  id="searchOverlay"
+  aria-hidden="true">
 
+  <div class="search-overlay-inner">
 
-  <div>
+    <button
+      class="icon-btn search-close"
+      id="searchClose"
+      type="button"
+      aria-label="Close search">
+      ×
+    </button>
 
-    <strong>
-      Your Privacy Matters
-    </strong>
+    <span class="eyebrow">
+      SEARCH KSA GUIDE
+    </span>
+
+    <h2>
+      What are you looking for?
+    </h2>
+
+    <input
+      type="search"
+      id="overlaySearchInput"
+      placeholder="Search Saudi guides, travel, destinations or services..."
+      autocomplete="off">
 
     <p>
-      We use essential cookies to make this website
-      work and optional cookies to understand usage.
+      Try words such as Riyadh, Iqama, AlUla, WordPress,
+      CV, data entry or AI.
     </p>
-
-  </div>
-
-
-  <div class="cookie-actions">
-
-
-    <button
-      class="btn btn-small btn-outline-light"
-      id="rejectCookies">
-
-      Reject Non-Essential
-
-    </button>
-
-
-    <button
-      class="btn btn-small btn-gold"
-      id="acceptCookies">
-
-      Accept All
-
-    </button>
-
 
   </div>
 
 </div>
 
 
-<script src="/assets/js/app.js"></script>
+<!-- =========================================================
+     COOKIE BANNER
+========================================================= -->
 
+<div
+  class="cookie-banner"
+  id="cookieBanner"
+  role="dialog"
+  aria-label="Cookie notice">
+
+  <div>
+
+    <strong>
+      Your privacy matters.
+    </strong>
+
+    <p>
+      KSA GUIDE uses essential website functionality and,
+      where applicable, analytics or similar technologies.
+      See our Cookie Policy for details.
+    </p>
+
+  </div>
+
+  <div class="cookie-actions">
+
+    <button
+      class="btn btn-primary"
+      data-cookie-accept
+      type="button">
+      Accept
+    </button>
+
+    <button
+      class="btn"
+      data-cookie-reject
+      type="button">
+      Reject
+    </button>
+
+    <a href="/cookie-policy.html">
+      Cookie Policy
+    </a>
+
+  </div>
+
+</div>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script src="/assets/js/app.js"></script>
 
 </body>
 </html>
