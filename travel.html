@@ -2,60 +2,78 @@
 layout: null
 permalink: /travel.html
 ---
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
 
   <meta charset="UTF-8">
 
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
   <title>Saudi Travel & Tourism — Explore the Kingdom | KSA GUIDE</title>
 
-  <meta name="description"
-        content="Discover Saudi Arabia travel experiences, destinations, itineraries, desert adventures, cultural experiences, Red Sea escapes, food, family activities and more.">
+  <meta
+    name="description"
+    content="Explore Saudi Arabia through travel guides covering culture, heritage, adventure, the Red Sea, modern cities, food and unforgettable experiences."
+  >
 
-  <meta name="robots"
-        content="index, follow">
+  <meta
+    name="robots"
+    content="index,follow"
+  >
 
-  <link rel="canonical"
-        href="https://ksa-guide.com/travel.html">
+  <link
+    rel="canonical"
+    href="https://ksa-guide.com/travel.html"
+  >
 
-  <meta property="og:title"
-        content="Saudi Travel & Tourism | KSA GUIDE">
+  <meta
+    property="og:title"
+    content="Saudi Travel & Tourism | KSA GUIDE"
+  >
 
-  <meta property="og:description"
-        content="Discover destinations, experiences and travel ideas across Saudi Arabia.">
+  <meta
+    property="og:description"
+    content="Discover destinations, experiences, culture, adventure and modern Saudi Arabia."
+  >
 
-  <meta property="og:type"
-        content="website">
+  <meta
+    property="og:type"
+    content="website"
+  >
 
-  <meta property="og:url"
-        content="https://ksa-guide.com/travel.html">
+  <meta
+    property="og:url"
+    content="https://ksa-guide.com/travel.html"
+  >
 
-  <!-- Fonts -->
+  <meta
+    name="theme-color"
+    content="#04110C"
+  >
 
-  <link rel="preconnect"
-        href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 
-  <link rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
 
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
 
-  <!-- Icons -->
-
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-  <!-- Main CSS -->
-
-  <link rel="stylesheet"
-        href="/assets/css/style.css">
+  <link
+    rel="stylesheet"
+    href="/assets/css/style.css"
+  >
 
 </head>
 
@@ -63,36 +81,46 @@ permalink: /travel.html
 <body>
 
 
-<!-- =====================================================
+<!-- =========================================================
      HEADER
-===================================================== -->
+========================================================= -->
 
-<header class="site-header"
-        id="siteHeader">
+<header
+  class="site-header"
+  id="siteHeader"
+>
 
-  <div class="container header-inner">
+  <div class="container nav">
 
-
-    <a href="/"
-       class="brand">
+    <a
+      href="/"
+      class="brand"
+      aria-label="KSA GUIDE Home"
+    >
 
       <span class="brand-mark">
-        <span class="brand-map">◆</span>
+        K
       </span>
 
       <span class="brand-text">
 
-        <strong>KSA</strong>
+        <strong>
+          KSA GUIDE
+        </strong>
 
-        <span>GUIDE</span>
+        <small>
+          Your Complete Guide to Saudi Arabia
+        </small>
 
       </span>
 
     </a>
 
 
-    <nav class="main-nav"
-         id="mainNav">
+    <nav
+      class="desktop-nav"
+      aria-label="Main navigation"
+    >
 
       <a href="/">
         Home
@@ -102,11 +130,11 @@ permalink: /travel.html
         Saudi Guide
       </a>
 
-      <a href="/travel.html"
-         class="active">
-
+      <a
+        href="/travel.html"
+        class="active"
+      >
         Travel
-
       </a>
 
       <a href="/destinations.html">
@@ -132,23 +160,23 @@ permalink: /travel.html
     </nav>
 
 
-    <div class="header-actions">
-
+    <div class="nav-actions">
 
       <button
         class="icon-btn"
-        id="searchToggle"
-        aria-label="Search">
-
-        <i class="fa-solid fa-magnifying-glass"></i>
-
+        id="searchOpen"
+        type="button"
+        aria-label="Open search"
+      >
+        ⌕
       </button>
 
 
       <select
         id="language"
         class="language-select"
-        aria-label="Language">
+        aria-label="Language"
+      >
 
         <option value="en">
           EN
@@ -165,18 +193,22 @@ permalink: /travel.html
       </select>
 
 
-      <a href="/destinations.html"
-         class="header-cta">
-
-        Explore Saudi
-
+      <a
+        href="/contact.html"
+        class="btn btn-primary nav-cta"
+      >
+        Get Started
       </a>
 
 
       <button
-        class="mobile-menu-btn"
-        id="mobileMenuBtn"
-        aria-label="Open menu">
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Open menu"
+        aria-controls="mobileMenu"
+        aria-expanded="false"
+      >
 
         <span></span>
         <span></span>
@@ -191,177 +223,130 @@ permalink: /travel.html
 </header>
 
 
-<!-- =====================================================
-     SEARCH
-===================================================== -->
 
-<div class="search-overlay"
-     id="searchOverlay">
+<!-- =========================================================
+     MOBILE MENU
+========================================================= -->
 
-  <div class="search-box">
+<aside
+  class="mobile-menu"
+  id="mobileMenu"
+  aria-hidden="true"
+>
 
+  <div class="mobile-menu-top">
+
+    <strong>
+      KSA GUIDE
+    </strong>
 
     <button
-      class="search-close"
-      id="searchClose">
-
-      <i class="fa-solid fa-xmark"></i>
-
+      id="mobileMenuClose"
+      type="button"
+      aria-label="Close menu"
+    >
+      ×
     </button>
-
-
-    <span class="eyebrow">
-      KSA GUIDE SEARCH
-    </span>
-
-
-    <h2>
-      Find Your Saudi Experience
-    </h2>
-
-
-    <form
-      class="global-search-form"
-      action="/blog.html"
-      method="get">
-
-
-      <div class="search-input-wrap">
-
-        <i class="fa-solid fa-magnifying-glass"></i>
-
-        <input
-          type="search"
-          name="q"
-          placeholder="Search Riyadh, AlUla, Red Sea..."
-          autocomplete="off">
-
-      </div>
-
-
-      <button
-        type="submit"
-        class="btn btn-gold">
-
-        Search
-
-      </button>
-
-
-    </form>
-
-
-    <div class="search-suggestions">
-
-      <span>
-        Popular:
-      </span>
-
-      <a href="/destinations.html">
-        Riyadh
-      </a>
-
-      <a href="/destinations.html">
-        AlUla
-      </a>
-
-      <a href="/destinations.html">
-        Jeddah
-      </a>
-
-      <a href="#desert">
-        Desert
-      </a>
-
-      <a href="#red-sea">
-        Red Sea
-      </a>
-
-    </div>
 
   </div>
 
-</div>
+
+  <nav aria-label="Mobile navigation">
+
+    <a href="/">
+      Home
+    </a>
+
+    <a href="/saudi-guide.html">
+      Saudi Guide
+    </a>
+
+    <a href="/travel.html">
+      Travel
+    </a>
+
+    <a href="/destinations.html">
+      Destinations
+    </a>
+
+    <a href="/digital-services.html">
+      Digital Services
+    </a>
+
+    <a href="/blog.html">
+      Blog
+    </a>
+
+    <a href="/about.html">
+      About
+    </a>
+
+    <a href="/contact.html">
+      Contact
+    </a>
+
+  </nav>
+
+</aside>
 
 
-<!-- =====================================================
-     TRAVEL HERO
-===================================================== -->
+
+<!-- =========================================================
+     HERO
+========================================================= -->
 
 <main>
 
+<section class="page-hero">
 
-<section class="inner-hero travel-hero">
-
-  <div class="inner-hero-bg"></div>
-
-  <div class="inner-hero-overlay"></div>
-
+  <div class="page-hero-glow"></div>
 
   <div class="container">
 
-    <div class="inner-hero-content">
-
-
-      <div class="breadcrumb">
-
-        <a href="/">
-          Home
-        </a>
-
-        <span>
-          /
-        </span>
-
-        <span>
-          Travel
-        </span>
-
-      </div>
-
+    <div class="page-hero-content">
 
       <span class="eyebrow">
+        <span></span>
         TRAVEL & TOURISM
       </span>
 
 
       <h1>
-        Discover a Different
-        <br>
-        Side of Saudi Arabia.
+        Discover
+        <em>Saudi Arabia.</em>
       </h1>
 
 
-      <p>
-        From ancient landscapes and desert adventures
-        to modern cities, mountain escapes and the
-        Red Sea — explore the Kingdom your way.
+      <p class="hero-arabic">
+        اكتشف جمال المملكة وتجاربها الاستثنائية
       </p>
 
 
-      <div class="hero-buttons">
+      <p>
+        From ancient heritage and dramatic deserts to
+        Red Sea coastlines and modern city life,
+        discover a different side of the Kingdom.
+      </p>
 
 
-        <a href="/destinations.html"
-           class="btn btn-gold btn-large">
+      <div class="hero-actions">
 
-          Explore Destinations
-
-          <i class="fa-solid fa-arrow-right"></i>
-
+        <a
+          href="#experiences"
+          class="btn btn-primary btn-large"
+        >
+          Explore Experiences
+          <span>↓</span>
         </a>
 
-
-        <a href="#experiences"
-           class="btn btn-outline btn-large">
-
-          Browse Experiences
-
+        <a
+          href="/destinations.html"
+          class="btn btn-outline btn-large"
+        >
+          View Destinations
         </a>
-
 
       </div>
-
 
     </div>
 
@@ -370,137 +355,208 @@ permalink: /travel.html
 </section>
 
 
-<!-- =====================================================
-     TRAVEL INTRO
-===================================================== -->
 
-<section class="section">
+<!-- =========================================================
+     TRAVEL SEARCH
+========================================================= -->
 
-  <div class="container">
-
-
-    <div class="section-heading centered">
-
-      <span class="eyebrow">
-        YOUR SAUDI JOURNEY
-      </span>
-
-      <h2>
-        Travel Beyond
-        <br>
-        the Expected.
-      </h2>
-
-      <p>
-        Saudi Arabia combines ancient heritage,
-        dramatic landscapes, modern architecture,
-        rich food traditions and new experiences.
-      </p>
-
-    </div>
-
-
-    <div class="travel-stat-grid">
-
-
-      <div class="travel-stat">
-
-        <i class="fa-solid fa-city"></i>
-
-        <strong>
-          Cities
-        </strong>
-
-        <span>
-          Modern Saudi life
-        </span>
-
-      </div>
-
-
-      <div class="travel-stat">
-
-        <i class="fa-solid fa-mountain-sun"></i>
-
-        <strong>
-          Landscapes
-        </strong>
-
-        <span>
-          Mountains & deserts
-        </span>
-
-      </div>
-
-
-      <div class="travel-stat">
-
-        <i class="fa-solid fa-landmark"></i>
-
-        <strong>
-          Heritage
-        </strong>
-
-        <span>
-          History & culture
-        </span>
-
-      </div>
-
-
-      <div class="travel-stat">
-
-        <i class="fa-solid fa-water"></i>
-
-        <strong>
-          Red Sea
-        </strong>
-
-        <span>
-          Coast & marine life
-        </span>
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     EXPERIENCES
-===================================================== -->
-
-<section class="section experiences-section"
-         id="experiences">
+<section class="smart-search-section">
 
   <div class="container">
 
+    <div class="smart-search-card">
 
-    <div class="section-heading split-heading">
+      <div class="search-intro">
 
-      <div>
-
-        <span class="eyebrow">
-          EXPERIENCES
+        <span class="search-kicker">
+          PLAN YOUR JOURNEY
         </span>
 
         <h2>
-          Choose Your
-          <br>
-          Adventure.
+          What kind of Saudi experience?
         </h2>
+
+        <p>
+          Find travel ideas, destinations and experiences.
+        </p>
 
       </div>
 
 
+      <div class="global-search">
+
+        <div class="search-field">
+
+          <span class="search-symbol">
+            ⌕
+          </span>
+
+          <input
+            type="search"
+            id="globalSearch"
+            placeholder="Try “AlUla”, “Red Sea”, “Riyadh”..."
+            autocomplete="off"
+          >
+
+        </div>
+
+
+        <select
+          id="searchCategory"
+          aria-label="Search category"
+        >
+
+          <option value="travel">
+            Travel
+          </option>
+
+          <option value="all">
+            Everything
+          </option>
+
+          <option value="destinations">
+            Destinations
+          </option>
+
+          <option value="guide">
+            Saudi Guide
+          </option>
+
+        </select>
+
+
+        <button
+          id="searchButton"
+          class="btn btn-primary"
+          type="button"
+        >
+          Search
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     INTRO
+========================================================= -->
+
+<section class="section">
+
+  <div class="container split-section">
+
+    <div class="split-content">
+
+      <span class="eyebrow">
+        <span></span>
+        THE KINGDOM AWAITS
+      </span>
+
+
+      <h2>
+        One country.
+        <em>Many worlds.</em>
+      </h2>
+
+
       <p>
-        Whether you're looking for adventure,
-        relaxation, culture or family time,
-        Saudi Arabia offers many ways to explore.
+        Saudi Arabia combines ancient landscapes,
+        historic communities, modern cities,
+        mountains, beaches and vast desert environments.
+      </p>
+
+
+      <p>
+        Whether you want a cultural journey,
+        an outdoor adventure or a modern city escape,
+        there is a different Saudi experience waiting to be explored.
+      </p>
+
+
+      <a
+        href="/destinations.html"
+        class="btn btn-outline"
+      >
+        Explore Destinations →
+      </a>
+
+    </div>
+
+
+    <div class="split-visual">
+
+      <div class="glass-panel">
+
+        <span class="panel-label">
+          TRAVEL KSA
+        </span>
+
+        <strong>
+          360°
+        </strong>
+
+        <p>
+          Culture, nature, adventure and modern experiences.
+        </p>
+
+
+        <div class="mini-stats">
+
+          <div>
+            <strong>01</strong>
+            <span>Culture</span>
+          </div>
+
+          <div>
+            <strong>02</strong>
+            <span>Adventure</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     EXPERIENCES
+========================================================= -->
+
+<section
+  class="section experiences-section"
+  id="experiences"
+>
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <span class="eyebrow">
+        <span></span>
+        EXPERIENCES
+      </span>
+
+
+      <h2>
+        Find your kind of
+        <em>Saudi.</em>
+      </h2>
+
+
+      <p>
+        Choose an experience and start building your Saudi journey.
       </p>
 
     </div>
@@ -509,133 +565,330 @@ permalink: /travel.html
     <div class="experience-grid">
 
 
-      <a href="#desert"
-         class="experience-card">
+      <a
+        href="#culture"
+        class="experience-card"
+      >
 
-        <i class="fa-solid fa-sun"></i>
+        <span class="experience-icon">
+          ◈
+        </span>
 
         <h3>
-          Desert Adventures
+          Culture & Heritage
         </h3>
 
-        <span>
-          Discover
-        </span>
+        <p>
+          Discover historic places, traditional architecture,
+          local customs, museums and stories from across the Kingdom.
+        </p>
 
       </a>
 
 
-      <a href="#luxury"
-         class="experience-card">
+      <a
+        href="#adventure"
+        class="experience-card"
+      >
 
-        <i class="fa-solid fa-gem"></i>
+        <span class="experience-icon">
+          △
+        </span>
 
         <h3>
-          Luxury Travel
+          Adventure
         </h3>
 
-        <span>
-          Discover
-        </span>
+        <p>
+          Explore deserts, mountains, valleys, hiking routes
+          and spectacular natural landscapes.
+        </p>
 
       </a>
 
 
-      <a href="#culture"
-         class="experience-card">
+      <a
+        href="#red-sea"
+        class="experience-card"
+      >
 
-        <i class="fa-solid fa-mosque"></i>
-
-        <h3>
-          Cultural Experiences
-        </h3>
-
-        <span>
-          Discover
+        <span class="experience-icon">
+          ≋
         </span>
-
-      </a>
-
-
-      <a href="#family"
-         class="experience-card">
-
-        <i class="fa-solid fa-people-group"></i>
-
-        <h3>
-          Family Activities
-        </h3>
-
-        <span>
-          Discover
-        </span>
-
-      </a>
-
-
-      <a href="#food"
-         class="experience-card">
-
-        <i class="fa-solid fa-utensils"></i>
-
-        <h3>
-          Food & Dining
-        </h3>
-
-        <span>
-          Discover
-        </span>
-
-      </a>
-
-
-      <a href="#red-sea"
-         class="experience-card">
-
-        <i class="fa-solid fa-water"></i>
 
         <h3>
           Red Sea
         </h3>
 
-        <span>
-          Discover
-        </span>
+        <p>
+          Experience coastal landscapes, marine environments,
+          islands and relaxing seaside escapes.
+        </p>
 
       </a>
 
 
-      <a href="#mountains"
-         class="experience-card">
+      <a
+        href="#modern"
+        class="experience-card"
+      >
 
-        <i class="fa-solid fa-mountain"></i>
+        <span class="experience-icon">
+          ✦
+        </span>
+
+        <h3>
+          Modern Saudi
+        </h3>
+
+        <p>
+          Explore restaurants, events, entertainment,
+          shopping and contemporary Saudi city life.
+        </p>
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CULTURE
+========================================================= -->
+
+<section
+  class="section why-section"
+  id="culture"
+>
+
+  <div class="container split-section">
+
+    <div class="split-content">
+
+      <span class="eyebrow">
+        <span></span>
+        CULTURE & HERITAGE
+      </span>
+
+
+      <h2>
+        Travel through
+        <em>history.</em>
+      </h2>
+
+
+      <p>
+        Saudi Arabia's heritage stretches across ancient settlements,
+        historic trade routes, traditional architecture and
+        generations of cultural traditions.
+      </p>
+
+
+      <div class="feature-list">
+
+        <div class="feature-item">
+
+          <span>01</span>
+
+          <div>
+
+            <h3>
+              Historic Places
+            </h3>
+
+            <p>
+              Explore old towns, archaeological areas and heritage sites.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="feature-item">
+
+          <span>02</span>
+
+          <div>
+
+            <h3>
+              Local Culture
+            </h3>
+
+            <p>
+              Discover food, traditions, crafts and regional identities.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="feature-item">
+
+          <span>03</span>
+
+          <div>
+
+            <h3>
+              Stories of the Kingdom
+            </h3>
+
+            <p>
+              Learn how different regions shaped Saudi Arabia's history.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="split-visual">
+
+      <div class="glass-panel">
+
+        <span class="panel-label">
+          HERITAGE
+        </span>
+
+        <strong>
+          TIMELESS
+        </strong>
+
+        <p>
+          Ancient stories meet a rapidly changing modern Kingdom.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     ADVENTURE
+========================================================= -->
+
+<section
+  class="section"
+  id="adventure"
+>
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <span class="eyebrow">
+        <span></span>
+        ADVENTURE
+      </span>
+
+
+      <h2>
+        Beyond the
+        <em>city.</em>
+      </h2>
+
+
+      <p>
+        Saudi Arabia offers huge open spaces and diverse terrain
+        for travellers looking for something different.
+      </p>
+
+    </div>
+
+
+    <div class="article-grid">
+
+
+      <article class="article-card">
+
+        <div class="article-number">
+          01
+        </div>
+
+        <span class="article-category">
+          DESERT
+        </span>
+
+        <h3>
+          Desert Landscapes
+        </h3>
+
+        <p>
+          Experience vast dunes, dramatic rock formations
+          and wide-open landscapes.
+        </p>
+
+        <span class="read-more">
+          Explore Desert Travel →
+        </span>
+
+      </article>
+
+
+      <article class="article-card">
+
+        <div class="article-number">
+          02
+        </div>
+
+        <span class="article-category">
+          MOUNTAINS
+        </span>
 
         <h3>
           Mountain Escapes
         </h3>
 
-        <span>
-          Discover
+        <p>
+          Discover elevated landscapes, cooler climates,
+          valleys and mountain communities.
+        </p>
+
+        <span class="read-more">
+          Explore Mountains →
         </span>
 
-      </a>
+      </article>
 
 
-      <a href="#heritage"
-         class="experience-card">
+      <article class="article-card">
 
-        <i class="fa-solid fa-landmark"></i>
+        <div class="article-number">
+          03
+        </div>
+
+        <span class="article-category">
+          OUTDOORS
+        </span>
 
         <h3>
-          Historic Saudi Arabia
+          Outdoor Experiences
         </h3>
 
-        <span>
-          Discover
+        <p>
+          Hiking, viewpoints, nature and open-air adventures
+          offer another way to see the Kingdom.
+        </p>
+
+        <span class="read-more">
+          Explore Outdoors →
         </span>
 
-      </a>
-
+      </article>
 
     </div>
 
@@ -644,563 +897,109 @@ permalink: /travel.html
 </section>
 
 
-<!-- =====================================================
-     DESERT
-===================================================== -->
 
-<section class="section travel-feature"
-         id="desert">
-
-  <div class="container">
-
-
-    <div class="travel-feature-grid">
-
-
-      <div class="travel-feature-visual desert-visual">
-
-        <div class="visual-label">
-
-          <i class="fa-solid fa-sun"></i>
-
-          DESERT ADVENTURES
-
-        </div>
-
-      </div>
-
-
-      <div class="travel-feature-content">
-
-        <span class="eyebrow">
-          ADVENTURE
-        </span>
-
-        <h2>
-          Into the Saudi Desert.
-        </h2>
-
-        <p>
-          Experience wide open landscapes,
-          dramatic dunes and unforgettable
-          desert scenery across the Kingdom.
-        </p>
-
-
-        <div class="feature-checks">
-
-
-          <div>
-
-            <i class="fa-solid fa-check"></i>
-
-            <span>
-              Desert landscapes
-            </span>
-
-          </div>
-
-
-          <div>
-
-            <i class="fa-solid fa-check"></i>
-
-            <span>
-              Sunset experiences
-            </span>
-
-          </div>
-
-
-          <div>
-
-            <i class="fa-solid fa-check"></i>
-
-            <span>
-              Camping & outdoor experiences
-            </span>
-
-          </div>
-
-
-          <div>
-
-            <i class="fa-solid fa-check"></i>
-
-            <span>
-              Photography opportunities
-            </span>
-
-          </div>
-
-
-        </div>
-
-
-        <a href="/destinations.html"
-           class="btn btn-outline-light">
-
-          Explore Destinations
-
-          <i class="fa-solid fa-arrow-right"></i>
-
-        </a>
-
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     CULTURE
-===================================================== -->
-
-<section class="section light-section"
-         id="culture">
-
-  <div class="container">
-
-
-    <div class="section-heading centered">
-
-      <span class="eyebrow">
-        CULTURE & HERITAGE
-      </span>
-
-      <h2>
-        Connect With Saudi Culture.
-      </h2>
-
-      <p>
-        Explore historic places, traditional
-        architecture, local food and the cultural
-        stories that shape the Kingdom.
-      </p>
-
-    </div>
-
-
-    <div class="culture-grid">
-
-
-      <article class="culture-card">
-
-        <div class="culture-icon">
-
-          <i class="fa-solid fa-landmark"></i>
-
-        </div>
-
-        <h3>
-          Historic Places
-        </h3>
-
-        <p>
-          Discover heritage sites and
-          historic districts.
-        </p>
-
-        <a href="/destinations.html">
-          Explore
-          <i class="fa-solid fa-arrow-right"></i>
-        </a>
-
-      </article>
-
-
-      <article class="culture-card">
-
-        <div class="culture-icon">
-
-          <i class="fa-solid fa-mug-hot"></i>
-
-        </div>
-
-        <h3>
-          Saudi Hospitality
-        </h3>
-
-        <p>
-          Experience the traditions of
-          Saudi welcome and hospitality.
-        </p>
-
-        <a href="/blog.html">
-          Explore
-          <i class="fa-solid fa-arrow-right"></i>
-        </a>
-
-      </article>
-
-
-      <article class="culture-card">
-
-        <div class="culture-icon">
-
-          <i class="fa-solid fa-utensils"></i>
-
-        </div>
-
-        <h3>
-          Local Food
-        </h3>
-
-        <p>
-          Discover flavours and dishes
-          from different regions.
-        </p>
-
-        <a href="#food">
-          Explore
-          <i class="fa-solid fa-arrow-right"></i>
-        </a>
-
-      </article>
-
-
-      <article class="culture-card">
-
-        <div class="culture-icon">
-
-          <i class="fa-solid fa-palette"></i>
-
-        </div>
-
-        <h3>
-          Art & Creativity
-        </h3>
-
-        <p>
-          Explore Saudi art, design and
-          creative experiences.
-        </p>
-
-        <a href="/blog.html">
-          Explore
-          <i class="fa-solid fa-arrow-right"></i>
-        </a>
-
-      </article>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
+<!-- =========================================================
      RED SEA
-===================================================== -->
+========================================================= -->
 
-<section class="section travel-feature reverse-feature"
-         id="red-sea">
-
-  <div class="container">
-
-
-    <div class="travel-feature-grid reverse">
-
-
-      <div class="travel-feature-content">
-
-        <span class="eyebrow">
-          COASTAL SAUDI
-        </span>
-
-        <h2>
-          The Red Sea Awaits.
-        </h2>
-
-        <p>
-          Saudi Arabia's western coastline offers
-          a completely different travel experience,
-          with beaches, marine environments and
-          emerging tourism destinations.
-        </p>
-
-
-        <div class="feature-checks">
-
-
-          <div>
-
-            <i class="fa-solid fa-check"></i>
-
-            <span>
-              Coastal destinations
-            </span>
-
-          </div>
-
-
-          <div>
-
-            <i class="fa-solid fa-check"></i>
-
-            <span>
-              Marine experiences
-            </span>
-
-          </div>
-
-
-          <div>
-
-            <i class="fa-solid fa-check"></i>
-
-            <span>
-              Beach escapes
-            </span>
-
-          </div>
-
-
-          <div>
-
-            <i class="fa-solid fa-check"></i>
-
-            <span>
-              Scenic coastline
-            </span>
-
-          </div>
-
-
-        </div>
-
-
-        <a href="/destinations.html"
-           class="btn btn-gold">
-
-          Discover Red Sea Destinations
-
-          <i class="fa-solid fa-arrow-right"></i>
-
-        </a>
-
-
-      </div>
-
-
-      <div class="travel-feature-visual sea-visual">
-
-        <div class="visual-label">
-
-          <i class="fa-solid fa-water"></i>
-
-          RED SEA
-
-        </div>
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     MOUNTAINS
-===================================================== -->
-
-<section class="section mountain-section"
-         id="mountains">
+<section
+  class="section experiences-section"
+  id="red-sea"
+>
 
   <div class="container">
-
-
-    <div class="mountain-panel">
-
-
-      <div class="mountain-content">
-
-        <span class="eyebrow">
-          MOUNTAIN ESCAPES
-        </span>
-
-        <h2>
-          Cool Air.
-          <br>
-          Dramatic Views.
-        </h2>
-
-        <p>
-          Head towards the mountains of
-          southwestern Saudi Arabia for cooler
-          landscapes, elevated viewpoints and
-          a different side of the Kingdom.
-        </p>
-
-
-        <a href="/destinations.html"
-           class="btn btn-gold">
-
-          Explore Mountain Destinations
-
-          <i class="fa-solid fa-arrow-right"></i>
-
-        </a>
-
-      </div>
-
-
-      <div class="mountain-stats">
-
-
-        <div>
-
-          <i class="fa-solid fa-mountain-sun"></i>
-
-          <strong>
-            Abha
-          </strong>
-
-          <span>
-            Mountain escape
-          </span>
-
-        </div>
-
-
-        <div>
-
-          <i class="fa-solid fa-cloud-sun"></i>
-
-          <strong>
-            Asir
-          </strong>
-
-          <span>
-            Natural landscapes
-          </span>
-
-        </div>
-
-
-        <div>
-
-          <i class="fa-solid fa-camera"></i>
-
-          <strong>
-            Views
-          </strong>
-
-          <span>
-            Scenic experiences
-          </span>
-
-        </div>
-
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     FAMILY
-===================================================== -->
-
-<section class="section light-section"
-         id="family">
-
-  <div class="container">
-
 
     <div class="section-heading">
 
       <span class="eyebrow">
-        FAMILY TRAVEL
+        <span></span>
+        RED SEA
       </span>
 
+
       <h2>
-        Experiences for Everyone.
+        A different side of
+        <em>Saudi.</em>
       </h2>
 
+
       <p>
-        Build a Saudi itinerary that works
-        for couples, families and groups.
+        The western coast of Saudi Arabia offers beaches,
+        marine environments and coastal destinations.
       </p>
 
     </div>
 
 
-    <div class="family-grid">
+    <div class="experience-grid">
 
 
-      <article class="family-card">
+      <article class="experience-card">
 
-        <div>
-
-          <i class="fa-solid fa-child"></i>
-
-        </div>
+        <span class="experience-icon">
+          ≋
+        </span>
 
         <h3>
-          Family Activities
+          Coastlines
         </h3>
 
         <p>
-          Explore attractions and activities
-          suitable for family trips.
+          Discover the beauty and variety of Saudi Arabia's western coast.
         </p>
 
       </article>
 
 
-      <article class="family-card">
+      <article class="experience-card">
 
-        <div>
-
-          <i class="fa-solid fa-heart"></i>
-
-        </div>
+        <span class="experience-icon">
+          ◇
+        </span>
 
         <h3>
-          Couple Escapes
+          Marine Life
         </h3>
 
         <p>
-          Discover ideas for relaxed,
-          memorable journeys.
+          Learn about the diverse marine environments associated with the Red Sea.
         </p>
 
       </article>
 
 
-      <article class="family-card">
+      <article class="experience-card">
 
-        <div>
-
-          <i class="fa-solid fa-camera-retro"></i>
-
-        </div>
+        <span class="experience-icon">
+          △
+        </span>
 
         <h3>
-          Photo Experiences
+          Islands
         </h3>
 
         <p>
-          Find landscapes, architecture and
-          places worth capturing.
+          Explore coastal destinations and island experiences where available.
         </p>
 
       </article>
 
+
+      <article class="experience-card">
+
+        <span class="experience-icon">
+          ✦
+        </span>
+
+        <h3>
+          Coastal Escapes
+        </h3>
+
+        <p>
+          Combine relaxation, nature and exploration along the coast.
+        </p>
+
+      </article>
 
     </div>
 
@@ -1209,350 +1008,270 @@ permalink: /travel.html
 </section>
 
 
-<!-- =====================================================
-     FOOD
-===================================================== -->
 
-<section class="section food-section"
-         id="food">
+<!-- =========================================================
+     MODERN SAUDI
+========================================================= -->
+
+<section
+  class="section"
+  id="modern"
+>
+
+  <div class="container split-section">
+
+    <div class="split-content">
+
+      <span class="eyebrow">
+        <span></span>
+        MODERN SAUDI
+      </span>
+
+
+      <h2>
+        Experience the
+        <em>new Kingdom.</em>
+      </h2>
+
+
+      <p>
+        Saudi Arabia's cities are evolving quickly,
+        with new restaurants, entertainment venues,
+        cultural events and creative spaces.
+      </p>
+
+
+      <div class="feature-list">
+
+        <div class="feature-item">
+
+          <span>01</span>
+
+          <div>
+
+            <h3>
+              Food
+            </h3>
+
+            <p>
+              From traditional Saudi dishes to international cuisine.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="feature-item">
+
+          <span>02</span>
+
+          <div>
+
+            <h3>
+              Entertainment
+            </h3>
+
+            <p>
+              Discover events, activities and entertainment across major cities.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="feature-item">
+
+          <span>03</span>
+
+          <div>
+
+            <h3>
+              City Life
+            </h3>
+
+            <p>
+              Experience the energy of Riyadh, Jeddah and other Saudi cities.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="split-visual">
+
+      <div class="glass-panel">
+
+        <span class="panel-label">
+          MODERN KSA
+        </span>
+
+        <strong>
+          FUTURE
+        </strong>
+
+        <p>
+          A rapidly evolving destination with a strong sense of identity.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     DESTINATION PREVIEW
+========================================================= -->
+
+<section class="section destinations-section">
 
   <div class="container">
 
+    <div class="section-heading section-heading-row">
 
-    <div class="food-panel">
-
-
-      <div class="food-content">
+      <div>
 
         <span class="eyebrow">
-          FOOD & DINING
+          <span></span>
+          WHERE TO GO
         </span>
 
         <h2>
-          Taste Saudi Arabia.
+          Start with a
+          <em>destination.</em>
         </h2>
 
         <p>
-          Saudi cuisine reflects the Kingdom's
-          regions, history and hospitality.
-          Explore traditional flavours as well
-          as modern dining scenes.
+          Explore some of the Kingdom's most recognisable travel destinations.
         </p>
 
+      </div>
 
-        <div class="food-tags">
 
+      <a
+        href="/destinations.html"
+        class="text-link"
+      >
+        View All Destinations →
+      </a>
+
+    </div>
+
+
+    <div class="destination-grid">
+
+
+      <a
+        href="/destinations.html#riyadh"
+        class="dest riyadh"
+      >
+
+        <div class="dest-overlay"></div>
+
+        <div class="dest-content">
 
           <span>
-            <i class="fa-solid fa-mug-hot"></i>
-            Saudi Coffee
+            CAPITAL
           </span>
 
+          <h3>
+            Riyadh
+          </h3>
+
+          <p>
+            Modern city life, culture and entertainment.
+          </p>
+
+        </div>
+
+      </a>
+
+
+      <a
+        href="/destinations.html#alula"
+        class="dest alula"
+      >
+
+        <div class="dest-overlay"></div>
+
+        <div class="dest-content">
 
           <span>
-            <i class="fa-solid fa-bowl-food"></i>
-            Traditional Dishes
+            HERITAGE
           </span>
 
+          <h3>
+            AlUla
+          </h3>
+
+          <p>
+            Ancient landscapes and extraordinary rock formations.
+          </p>
+
+        </div>
+
+      </a>
+
+
+      <a
+        href="/destinations.html#jeddah"
+        class="dest jeddah"
+      >
+
+        <div class="dest-overlay"></div>
+
+        <div class="dest-content">
 
           <span>
-            <i class="fa-solid fa-utensils"></i>
-            Modern Dining
+            RED SEA
           </span>
 
+          <h3>
+            Jeddah
+          </h3>
+
+          <p>
+            Coastal life, culture and historic Al-Balad.
+          </p>
+
+        </div>
+
+      </a>
+
+
+      <a
+        href="/destinations.html"
+        class="dest abha"
+      >
+
+        <div class="dest-overlay"></div>
+
+        <div class="dest-content">
 
           <span>
-            <i class="fa-solid fa-store"></i>
-            Local Markets
+            MOUNTAINS
           </span>
 
+          <h3>
+            Abha
+          </h3>
+
+          <p>
+            Mountain scenery and a cooler highland escape.
+          </p>
 
         </div>
-
-
-        <a href="/blog.html"
-           class="btn btn-outline-light">
-
-          Explore Food Guides
-
-          <i class="fa-solid fa-arrow-right"></i>
-
-        </a>
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     LUXURY
-===================================================== -->
-
-<section class="section"
-         id="luxury">
-
-  <div class="container">
-
-
-    <div class="section-heading centered">
-
-      <span class="eyebrow">
-        LUXURY TRAVEL
-      </span>
-
-      <h2>
-        A More Refined Journey.
-      </h2>
-
-      <p>
-        Discover premium hotels, sophisticated
-        dining, modern attractions and
-        high-end Saudi experiences.
-      </p>
-
-    </div>
-
-
-    <div class="luxury-grid">
-
-
-      <div class="luxury-card">
-
-        <div class="luxury-icon">
-
-          <i class="fa-solid fa-hotel"></i>
-
-        </div>
-
-        <h3>
-          Luxury Stays
-        </h3>
-
-        <p>
-          Premium hospitality across
-          Saudi destinations.
-        </p>
-
-      </div>
-
-
-      <div class="luxury-card">
-
-        <div class="luxury-icon">
-
-          <i class="fa-solid fa-champagne-glasses"></i>
-
-        </div>
-
-        <h3>
-          Fine Dining
-        </h3>
-
-        <p>
-          Explore sophisticated dining
-          experiences and restaurants.
-        </p>
-
-      </div>
-
-
-      <div class="luxury-card">
-
-        <div class="luxury-icon">
-
-          <i class="fa-solid fa-star"></i>
-
-        </div>
-
-        <h3>
-          Premium Experiences
-        </h3>
-
-        <p>
-          Discover memorable experiences
-          across the Kingdom.
-        </p>
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     HISTORIC SAUDI
-===================================================== -->
-
-<section class="section heritage-section"
-         id="heritage">
-
-  <div class="container">
-
-
-    <div class="heritage-panel">
-
-
-      <div class="heritage-content">
-
-        <span class="eyebrow">
-          HERITAGE
-        </span>
-
-        <h2>
-          Walk Through
-          <br>
-          History.
-        </h2>
-
-        <p>
-          Saudi Arabia's heritage spans ancient
-          settlements, historic cities, traditional
-          architecture and centuries of culture.
-        </p>
-
-
-        <a href="/destinations.html"
-           class="btn btn-gold">
-
-          Discover Heritage Destinations
-
-          <i class="fa-solid fa-arrow-right"></i>
-
-        </a>
-
-      </div>
-
-
-      <div class="heritage-symbol">
-
-        <div class="heritage-circle">
-
-          <i class="fa-solid fa-landmark"></i>
-
-        </div>
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     TRIP PLANNING
-===================================================== -->
-
-<section class="section planning-section">
-
-  <div class="container">
-
-
-    <div class="section-heading centered">
-
-      <span class="eyebrow">
-        PLAN YOUR TRIP
-      </span>
-
-      <h2>
-        From Inspiration
-        <br>
-        to Itinerary.
-      </h2>
-
-      <p>
-        Use KSA GUIDE to move from discovering
-        an idea to planning your Saudi journey.
-      </p>
-
-    </div>
-
-
-    <div class="planning-grid">
-
-
-      <div class="planning-step">
-
-        <div class="planning-number">
-          01
-        </div>
-
-        <i class="fa-solid fa-compass"></i>
-
-        <h3>
-          Choose a Destination
-        </h3>
-
-        <p>
-          Find a city, region or landscape
-          that matches your interests.
-        </p>
-
-      </div>
-
-
-      <div class="planning-step">
-
-        <div class="planning-number">
-          02
-        </div>
-
-        <i class="fa-solid fa-list-check"></i>
-
-        <h3>
-          Choose Experiences
-        </h3>
-
-        <p>
-          Select activities, food, culture
-          and attractions to explore.
-        </p>
-
-      </div>
-
-
-      <div class="planning-step">
-
-        <div class="planning-number">
-          03
-        </div>
-
-        <i class="fa-solid fa-calendar-check"></i>
-
-        <h3>
-          Build Your Plan
-        </h3>
-
-        <p>
-          Organise your ideas into a
-          practical travel itinerary.
-        </p>
-
-      </div>
-
-
-    </div>
-
-
-    <div class="center-button">
-
-      <a href="/destinations.html"
-         class="btn btn-gold btn-large">
-
-        Start Exploring
-
-        <i class="fa-solid fa-arrow-right"></i>
 
       </a>
 
@@ -1563,110 +1282,124 @@ permalink: /travel.html
 </section>
 
 
-<!-- =====================================================
-     TRAVEL NOTICE
-===================================================== -->
 
-<section class="notice-section">
+<!-- =========================================================
+     TRAVEL TIPS
+========================================================= -->
 
-  <div class="container">
-
-    <div class="notice-card">
-
-
-      <div class="notice-icon">
-
-        <i class="fa-solid fa-circle-info"></i>
-
-      </div>
-
-
-      <div>
-
-        <h3>
-          Travel Information Notice
-        </h3>
-
-        <p>
-          KSA GUIDE provides independent travel
-          information and inspiration. We are not
-          a government website, travel authority,
-          visa issuer or official tourism authority.
-        </p>
-
-        <p>
-          Travel rules, opening hours, prices,
-          entry requirements and other details
-          can change. Verify important information
-          with official sources and relevant providers
-          before travelling.
-        </p>
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     FINAL CTA
-===================================================== -->
-
-<section class="final-cta">
-
-  <div class="final-cta-bg"></div>
-
+<section class="section guides-section">
 
   <div class="container">
 
-    <div class="final-cta-content">
-
+    <div class="section-heading">
 
       <span class="eyebrow">
-        KEEP EXPLORING
+        <span></span>
+        BEFORE YOU GO
       </span>
 
 
       <h2>
-        Your Next Saudi
-        <br>
-        Adventure Starts Here.
+        Travel smarter.
       </h2>
 
 
       <p>
-        Explore destinations, discover experiences
-        and start planning your journey.
+        A few practical habits can make your journey easier.
       </p>
 
-
-      <div class="cta-buttons">
-
-
-        <a href="/destinations.html"
-           class="btn btn-gold btn-large">
-
-          Explore Destinations
-
-          <i class="fa-solid fa-arrow-right"></i>
-
-        </a>
+    </div>
 
 
-        <a href="/blog.html"
-           class="btn btn-outline btn-large">
-
-          Read Travel Articles
-
-        </a>
+    <div class="article-grid">
 
 
-      </div>
+      <article class="article-card">
 
+        <div class="article-number">
+          01
+        </div>
+
+        <span class="article-category">
+          PLAN
+        </span>
+
+        <h3>
+          Plan Around Your Destination
+        </h3>
+
+        <p>
+          Distances between destinations can be significant.
+          Check routes and travel times before setting out.
+        </p>
+
+      </article>
+
+
+      <article class="article-card">
+
+        <div class="article-number">
+          02
+        </div>
+
+        <span class="article-category">
+          WEATHER
+        </span>
+
+        <h3>
+          Check the Weather
+        </h3>
+
+        <p>
+          Saudi Arabia has very different climates and conditions
+          across regions and seasons.
+        </p>
+
+      </article>
+
+
+      <article class="article-card">
+
+        <div class="article-number">
+          03
+        </div>
+
+        <span class="article-category">
+          RESPECT
+        </span>
+
+        <h3>
+          Respect Local Culture
+        </h3>
+
+        <p>
+          Be considerate of local customs, cultural sites,
+          religious spaces and community expectations.
+        </p>
+
+      </article>
+
+
+      <article class="article-card">
+
+        <div class="article-number">
+          04
+        </div>
+
+        <span class="article-category">
+          VERIFY
+        </span>
+
+        <h3>
+          Check Current Information
+        </h3>
+
+        <p>
+          Opening hours, events, access requirements and
+          travel conditions can change.
+        </p>
+
+      </article>
 
     </div>
 
@@ -1675,266 +1408,350 @@ permalink: /travel.html
 </section>
 
 
-</main>
 
+<!-- =========================================================
+     DISCLAIMER
+========================================================= -->
 
-<!-- =====================================================
-     FOOTER
-===================================================== -->
-
-<footer class="site-footer">
+<section class="section">
 
   <div class="container">
 
+    <div class="services-panel">
 
-    <div class="footer-main">
+      <div class="services-copy">
+
+        <span class="eyebrow">
+          <span></span>
+          TRAVEL NOTE
+        </span>
 
 
-      <div class="footer-brand">
-
-
-        <a href="/"
-           class="brand">
-
-          <span class="brand-mark">
-            <span class="brand-map">◆</span>
-          </span>
-
-          <span class="brand-text">
-
-            <strong>KSA</strong>
-
-            <span>GUIDE</span>
-
-          </span>
-
-        </a>
+        <h2>
+          Plan with current information.
+        </h2>
 
 
         <p>
-          Your complete independent guide
-          to Saudi Arabia.
+          KSA GUIDE provides independent travel information.
+          Travel conditions, opening hours, regulations, events,
+          access rules and prices can change. Verify important
+          details with the relevant official or destination source
+          before travelling.
         </p>
 
 
-        <div class="social-links">
+        <a
+          href="/disclaimer.html"
+          class="btn btn-outline"
+        >
+          Read Disclaimer →
+        </a>
+
+      </div>
 
 
-          <a href="#"
-             aria-label="Instagram">
+      <div class="services-list">
 
-            <i class="fa-brands fa-instagram"></i>
-
-          </a>
-
-
-          <a href="#"
-             aria-label="YouTube">
-
-            <i class="fa-brands fa-youtube"></i>
-
-          </a>
-
-
-          <a href="#"
-             aria-label="TikTok">
-
-            <i class="fa-brands fa-tiktok"></i>
-
-          </a>
-
-
-          <a href="#"
-             aria-label="Facebook">
-
-            <i class="fa-brands fa-facebook-f"></i>
-
-          </a>
-
-
+        <div>
+          <span>01</span>
+          <strong>Check dates</strong>
         </div>
 
+        <div>
+          <span>02</span>
+          <strong>Check weather</strong>
+        </div>
+
+        <div>
+          <span>03</span>
+          <strong>Plan transport</strong>
+        </div>
+
+        <div>
+          <span>04</span>
+          <strong>Verify access</strong>
+        </div>
 
       </div>
-
-
-      <div class="footer-column">
-
-        <h4>
-          Saudi Guide
-        </h4>
-
-        <a href="/saudi-guide.html">
-          Iqama
-        </a>
-
-        <a href="/saudi-guide.html">
-          Visa
-        </a>
-
-        <a href="/saudi-guide.html">
-          Absher
-        </a>
-
-        <a href="/saudi-guide.html">
-          Driving
-        </a>
-
-      </div>
-
-
-      <div class="footer-column">
-
-        <h4>
-          Travel
-        </h4>
-
-        <a href="/destinations.html">
-          Riyadh
-        </a>
-
-        <a href="/destinations.html">
-          AlUla
-        </a>
-
-        <a href="/destinations.html">
-          Jeddah
-        </a>
-
-        <a href="/destinations.html">
-          Abha
-        </a>
-
-        <a href="/destinations.html">
-          Red Sea
-        </a>
-
-      </div>
-
-
-      <div class="footer-column">
-
-        <h4>
-          Digital Services
-        </h4>
-
-        <a href="/digital-services.html">
-          Data Entry
-        </a>
-
-        <a href="/digital-services.html">
-          WordPress
-        </a>
-
-        <a href="/digital-services.html">
-          AI Services
-        </a>
-
-        <a href="/digital-services.html">
-          CV & Resume
-        </a>
-
-      </div>
-
-
-      <div class="footer-column">
-
-        <h4>
-          Company
-        </h4>
-
-        <a href="/about.html">
-          About
-        </a>
-
-        <a href="/blog.html">
-          Blog
-        </a>
-
-        <a href="/contact.html">
-          Contact
-        </a>
-
-        <a href="/privacy-policy.html">
-          Privacy
-        </a>
-
-        <a href="/disclaimer.html">
-          Disclaimer
-        </a>
-
-      </div>
-
 
     </div>
 
+  </div>
 
-    <div class="footer-disclaimer">
-
-      <strong>
-        Important:
-      </strong>
-
-      KSA GUIDE is an independent information
-      and digital services platform. It is not affiliated
-      with, endorsed by, or operated by the Saudi
-      Arabian government. Information is provided
-      for general guidance and should be verified
-      with official sources where appropriate.
-
-    </div>
+</section>
 
 
-    <div class="footer-bottom">
+
+<!-- =========================================================
+     FINAL CTA
+========================================================= -->
+
+<section class="section final-cta-section">
+
+  <div class="container">
+
+    <div class="final-cta">
+
+      <span class="eyebrow">
+        <span></span>
+        YOUR NEXT ADVENTURE
+      </span>
+
+
+      <h2>
+        Where will you go
+        <em>first?</em>
+      </h2>
 
 
       <p>
-        © 2026 KSA GUIDE. All rights reserved.
+        Explore Saudi destinations and start planning
+        your next journey through the Kingdom.
       </p>
 
 
-      <div>
+      <div class="cta-actions">
 
-        <a href="/privacy-policy.html">
-          Privacy Policy
+        <a
+          href="/destinations.html"
+          class="btn btn-primary btn-large"
+        >
+          Explore Destinations
         </a>
 
-        <a href="/terms.html">
-          Terms
-        </a>
 
-        <a href="/cookie-policy.html">
-          Cookies
+        <a
+          href="/blog.html"
+          class="btn btn-outline btn-large"
+        >
+          Read Travel Articles
         </a>
 
       </div>
 
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+  <div class="container footer-grid">
+
+
+    <div class="footer-brand">
+
+      <a
+        href="/"
+        class="brand"
+      >
+
+        <span class="brand-mark">
+          K
+        </span>
+
+        <span class="brand-text">
+
+          <strong>
+            KSA GUIDE
+          </strong>
+
+          <small>
+            Your Complete Guide to Saudi Arabia
+          </small>
+
+        </span>
+
+      </a>
+
+
+      <p>
+        Independent Saudi information, travel inspiration
+        and practical digital services.
+      </p>
 
     </div>
 
+
+    <div class="footer-column">
+
+      <h3>
+        Explore
+      </h3>
+
+      <a href="/saudi-guide.html">
+        Saudi Guide
+      </a>
+
+      <a href="/travel.html">
+        Travel
+      </a>
+
+      <a href="/destinations.html">
+        Destinations
+      </a>
+
+      <a href="/blog.html">
+        Blog
+      </a>
+
+    </div>
+
+
+    <div class="footer-column">
+
+      <h3>
+        Services
+      </h3>
+
+      <a href="/digital-services.html">
+        Digital Services
+      </a>
+
+      <a href="/contact.html">
+        Contact
+      </a>
+
+      <a href="/about.html">
+        About
+      </a>
+
+    </div>
+
+
+    <div class="footer-column">
+
+      <h3>
+        Information
+      </h3>
+
+      <a href="/privacy-policy.html">
+        Privacy Policy
+      </a>
+
+      <a href="/terms.html">
+        Terms
+      </a>
+
+      <a href="/cookie-policy.html">
+        Cookie Policy
+      </a>
+
+      <a href="/disclaimer.html">
+        Disclaimer
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <div class="container footer-bottom">
+
+    <p>
+      © 2026 KSA GUIDE. All rights reserved.
+    </p>
+
+    <p>
+      KSA GUIDE is an independent information platform
+      and is not affiliated with the Saudi government.
+    </p>
 
   </div>
 
 </footer>
 
 
-<!-- =====================================================
-     COOKIE BANNER
-===================================================== -->
 
-<div class="cookie-banner"
-     id="cookieBanner">
+<!-- =========================================================
+     SEARCH OVERLAY
+========================================================= -->
 
+<div
+  class="search-overlay"
+  id="searchOverlay"
+  aria-hidden="true"
+>
+
+  <div class="search-overlay-inner">
+
+    <button
+      id="searchClose"
+      class="search-close"
+      type="button"
+      aria-label="Close search"
+    >
+      ×
+    </button>
+
+
+    <span class="eyebrow">
+      <span></span>
+      SEARCH KSA GUIDE
+    </span>
+
+
+    <h2>
+      What can we help you find?
+    </h2>
+
+
+    <div class="overlay-search">
+
+      <input
+        type="search"
+        id="overlaySearchInput"
+        placeholder="Search Saudi Arabia..."
+        autocomplete="off"
+      >
+
+
+      <button
+        class="btn btn-primary"
+        type="button"
+        onclick="document.getElementById('searchButton')?.click()"
+      >
+        Search
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<!-- =========================================================
+     COOKIE
+========================================================= -->
+
+<div
+  class="cookie-banner"
+  id="cookieBanner"
+  role="dialog"
+  aria-label="Cookie notice"
+>
 
   <div>
 
     <strong>
-      Your Privacy Matters
+      We use cookies
     </strong>
 
     <p>
-      We use essential cookies to make this website
-      work and optional cookies to understand usage.
+      KSA GUIDE uses essential cookies to help the website
+      work properly and improve your experience.
     </p>
 
   </div>
@@ -1942,33 +1759,33 @@ permalink: /travel.html
 
   <div class="cookie-actions">
 
-
     <button
-      class="btn btn-small btn-outline-light"
-      id="rejectCookies">
-
-      Reject Non-Essential
-
+      type="button"
+      class="btn btn-primary"
+      data-cookie-accept
+    >
+      Accept
     </button>
 
 
     <button
-      class="btn btn-small btn-gold"
-      id="acceptCookies">
-
-      Accept All
-
+      type="button"
+      class="btn btn-outline"
+      data-cookie-reject
+    >
+      Reject
     </button>
-
 
   </div>
 
 </div>
 
 
-<!-- JAVASCRIPT -->
 
-<script src="/assets/js/app.js"></script>
+<script
+  src="/assets/js/app.js"
+  defer
+></script>
 
 
 </body>
