@@ -1,5 +1,5 @@
 /* =========================================================
-   KSA GUIDE — PREMIUM GLOBAL JAVASCRIPT
+   KSA GUIDE — FINAL PREMIUM GLOBAL JAVASCRIPT
    Mobile Menu + Search + Language + Location + Cookies
    ========================================================= */
 
@@ -7,20 +7,23 @@
   "use strict";
 
   /* =======================================================
-     HELPERS
+     BASIC HELPERS
      ======================================================= */
 
-  const $ = (selector, parent = document) =>
-    parent.querySelector(selector);
+  const $ = (selector, parent = document) => {
+    return parent.querySelector(selector);
+  };
 
-  const $$ = (selector, parent = document) =>
-    Array.from(parent.querySelectorAll(selector));
+  const $$ = (selector, parent = document) => {
+    return Array.from(parent.querySelectorAll(selector));
+  };
 
   const html = document.documentElement;
   const body = document.body;
 
+
   /* =======================================================
-     HEADER — SCROLL EFFECT
+     HEADER SCROLL EFFECT
      ======================================================= */
 
   const header = $(".site-header");
@@ -35,11 +38,14 @@
     }
   }
 
-  window.addEventListener("scroll", updateHeader, {
-    passive: true
-  });
+  window.addEventListener(
+    "scroll",
+    updateHeader,
+    { passive: true }
+  );
 
   updateHeader();
+
 
   /* =======================================================
      MOBILE NAVIGATION
@@ -53,10 +59,14 @@
     if (!mobileNav) return;
 
     mobileNav.classList.add("open");
+
     body.style.overflow = "hidden";
 
     if (menuToggle) {
-      menuToggle.setAttribute("aria-expanded", "true");
+      menuToggle.setAttribute(
+        "aria-expanded",
+        "true"
+      );
     }
   }
 
@@ -64,52 +74,93 @@
     if (!mobileNav) return;
 
     mobileNav.classList.remove("open");
-    body.style.overflow = "";
+
+    if (
+      !searchOverlay ||
+      !searchOverlay.classList.contains("open")
+    ) {
+      body.style.overflow = "";
+    }
 
     if (menuToggle) {
-      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute(
+        "aria-expanded",
+        "false"
+      );
     }
   }
 
   if (menuToggle) {
-    menuToggle.addEventListener("click", openMobileMenu);
+    menuToggle.addEventListener(
+      "click",
+      function (event) {
+        event.preventDefault();
+
+        if (
+          mobileNav &&
+          mobileNav.classList.contains("open")
+        ) {
+          closeMobileMenu();
+        } else {
+          openMobileMenu();
+        }
+      }
+    );
   }
 
   if (mobileClose) {
-    mobileClose.addEventListener("click", closeMobileMenu);
+    mobileClose.addEventListener(
+      "click",
+      function (event) {
+        event.preventDefault();
+        closeMobileMenu();
+      }
+    );
   }
 
-  $$(".mobile-nav a").forEach(function (link) {
-    link.addEventListener("click", closeMobileMenu);
-  });
+  $$(".mobile-nav a").forEach(
+    function (link) {
 
-  document.addEventListener("keydown", function (event) {
-    if (event.key === "Escape") {
-      closeMobileMenu();
-      closeSearch();
+      link.addEventListener(
+        "click",
+        function () {
+          closeMobileMenu();
+        }
+      );
+
     }
-  });
+  );
+
 
   /* =======================================================
      SEARCH OVERLAY
      ======================================================= */
 
-  const searchOverlay = $("#searchOverlay");
-  const searchInput = searchOverlay
-    ? $("input", searchOverlay)
-    : null;
+  const searchOverlay =
+    $("#searchOverlay");
+
+  const searchInput =
+    searchOverlay
+      ? $("input", searchOverlay)
+      : null;
 
   function openSearch() {
     if (!searchOverlay) return;
 
     searchOverlay.classList.add("open");
+
     body.style.overflow = "hidden";
 
-    setTimeout(function () {
-      if (searchInput) {
-        searchInput.focus();
-      }
-    }, 100);
+    window.setTimeout(
+      function () {
+
+        if (searchInput) {
+          searchInput.focus();
+        }
+
+      },
+      120
+    );
   }
 
   function closeSearch() {
@@ -117,163 +168,340 @@
 
     searchOverlay.classList.remove("open");
 
-    if (!mobileNav || !mobileNav.classList.contains("open")) {
+    if (
+      !mobileNav ||
+      !mobileNav.classList.contains("open")
+    ) {
       body.style.overflow = "";
     }
   }
 
-  $$("[data-open-search]").forEach(function (button) {
-    button.addEventListener("click", function (event) {
-      event.preventDefault();
-      openSearch();
-    });
-  });
+  $$("[data-open-search]").forEach(
+    function (button) {
 
-  $$("[data-close-search]").forEach(function (button) {
-    button.addEventListener("click", function (event) {
-      event.preventDefault();
-      closeSearch();
-    });
-  });
+      button.addEventListener(
+        "click",
+        function (event) {
+
+          event.preventDefault();
+          event.stopPropagation();
+
+          openSearch();
+
+        }
+      );
+
+    }
+  );
+
+  $$("[data-close-search]").forEach(
+    function (button) {
+
+      button.addEventListener(
+        "click",
+        function (event) {
+
+          event.preventDefault();
+          event.stopPropagation();
+
+          closeSearch();
+
+        }
+      );
+
+    }
+  );
 
   if (searchOverlay) {
-    searchOverlay.addEventListener("click", function (event) {
-      if (event.target === searchOverlay) {
-        closeSearch();
+
+    searchOverlay.addEventListener(
+      "click",
+      function (event) {
+
+        if (event.target === searchOverlay) {
+          closeSearch();
+        }
+
       }
-    });
+    );
+
   }
+
+
+  /* =======================================================
+     KEYBOARD CONTROLS
+     ======================================================= */
+
+  document.addEventListener(
+    "keydown",
+    function (event) {
+
+      if (event.key === "Escape") {
+
+        closeMobileMenu();
+        closeSearch();
+
+      }
+
+    }
+  );
+
 
   /* =======================================================
      SEARCH FORM
      ======================================================= */
 
-  $$("form[data-search-form]").forEach(function (form) {
-    form.addEventListener("submit", function (event) {
-      event.preventDefault();
+  $$("form[data-search-form]").forEach(
+    function (form) {
 
-      const input = $("input", form);
+      form.addEventListener(
+        "submit",
+        function (event) {
 
-      if (!input) return;
+          event.preventDefault();
 
-      const query = input.value.trim();
+          const input =
+            $("input[type='search']", form) ||
+            $("input", form);
 
-      if (!query) {
-        input.focus();
-        return;
-      }
+          if (!input) return;
 
-      window.location.href =
-        "/blog.html?q=" + encodeURIComponent(query);
-    });
-  });
+          const query =
+            input.value.trim();
+
+          if (!query) {
+
+            input.focus();
+            return;
+
+          }
+
+          const blogUrl =
+            form.getAttribute("action") ||
+            "/blog.html";
+
+          window.location.href =
+            blogUrl +
+            "?q=" +
+            encodeURIComponent(query);
+
+        }
+      );
+
+    }
+  );
+
 
   /* =======================================================
      LANGUAGE SYSTEM
-     English / Arabic / Urdu
+     ENGLISH / ARABIC / URDU
      ======================================================= */
 
-  const languageSelectors = $$("select#language");
+  const languageSelectors =
+    $$("select#language");
 
   const savedLanguage =
-    localStorage.getItem("ksa_lang") || "en";
+    localStorage.getItem("ksa_lang") ||
+    "en";
 
   function setLanguage(language) {
+
     let lang = language;
 
-    if (!["en", "ar", "ur"].includes(lang)) {
+    if (
+      !["en", "ar", "ur"].includes(lang)
+    ) {
       lang = "en";
     }
 
-    localStorage.setItem("ksa_lang", lang);
+    localStorage.setItem(
+      "ksa_lang",
+      lang
+    );
 
-    languageSelectors.forEach(function (select) {
-      select.value = lang;
-    });
 
-    /*
-      Arabic and Urdu use RTL.
-      English uses LTR.
-    */
+    languageSelectors.forEach(
+      function (select) {
+        select.value = lang;
+      }
+    );
 
-    if (lang === "ar" || lang === "ur") {
-      html.setAttribute("dir", "rtl");
-      html.setAttribute("lang", lang);
+
+    /* RTL */
+
+    if (
+      lang === "ar" ||
+      lang === "ur"
+    ) {
+
+      html.setAttribute(
+        "dir",
+        "rtl"
+      );
+
+      html.setAttribute(
+        "lang",
+        lang
+      );
+
+      body.classList.add(
+        "rtl-mode"
+      );
+
     } else {
-      html.setAttribute("dir", "ltr");
-      html.setAttribute("lang", "en");
+
+      html.setAttribute(
+        "dir",
+        "ltr"
+      );
+
+      html.setAttribute(
+        "lang",
+        "en"
+      );
+
+      body.classList.remove(
+        "rtl-mode"
+      );
+
     }
 
-    /*
-      Optional translation system.
 
-      If an element contains:
-      data-en="Explore Saudi Arabia"
-      data-ar="اكتشف المملكة العربية السعودية"
-      data-ur="سعودی عرب دریافت کریں"
+    /* Optional text translations */
 
-      JavaScript will automatically change its text.
-    */
-
-    $$("[data-en], [data-ar], [data-ur]").forEach(
+    $$(
+      "[data-en], [data-ar], [data-ur]"
+    ).forEach(
       function (element) {
 
         const translation =
-          element.getAttribute("data-" + lang);
+          element.getAttribute(
+            "data-" + lang
+          );
 
         if (!translation) return;
+
 
         if (
           element.tagName === "INPUT" ||
           element.tagName === "TEXTAREA"
         ) {
-          element.placeholder = translation;
+
+          element.placeholder =
+            translation;
+
         } else {
-          element.textContent = translation;
+
+          element.textContent =
+            translation;
+
         }
+
       }
     );
 
-    /*
-      Optional HTML translation attributes.
-      Useful for title/tooltips.
-    */
 
-    $$("[data-title-en], [data-title-ar], [data-title-ur]")
-      .forEach(function (element) {
+    /* Optional title translations */
+
+    $$(
+      "[data-title-en], [data-title-ar], [data-title-ur]"
+    ).forEach(
+      function (element) {
 
         const title =
-          element.getAttribute("data-title-" + lang);
+          element.getAttribute(
+            "data-title-" + lang
+          );
 
         if (title) {
-          element.setAttribute("title", title);
+          element.setAttribute(
+            "title",
+            title
+          );
         }
-      });
+
+      }
+    );
+
   }
 
   setLanguage(savedLanguage);
 
-  languageSelectors.forEach(function (select) {
 
-    select.addEventListener("change", function (event) {
-      setLanguage(event.target.value);
-    });
+  languageSelectors.forEach(
+    function (select) {
 
-  });
+      select.addEventListener(
+        "change",
+        function (event) {
+
+          setLanguage(
+            event.target.value
+          );
+
+        }
+      );
+
+    }
+  );
+
 
   /* =======================================================
      LOCATION
-     Permission is requested ONLY after clicking button
+     Permission ONLY after button click
      ======================================================= */
 
-  const locationButtons = $$(
-    "[data-location], #locationButton, .location-button"
-  );
+  const locationButtons =
+    $$(
+      "[data-location], #locationButton, .location-button"
+    );
+
+
+  function saveCity(city) {
+
+    const cleanCity =
+      String(city || "").trim();
+
+    if (!cleanCity) return;
+
+    localStorage.setItem(
+      "ksa_city",
+      cleanCity
+    );
+
+
+    locationButtons.forEach(
+      function (button) {
+
+        button.classList.add(
+          "location-active"
+        );
+
+        const label =
+          $("span", button);
+
+        if (label) {
+          label.textContent =
+            cleanCity;
+        } else {
+          button.textContent =
+            cleanCity;
+        }
+
+      }
+    );
+
+  }
+
 
   function locationSuccess(position) {
 
-    const latitude = position.coords.latitude;
-    const longitude = position.coords.longitude;
+    const latitude =
+      position.coords.latitude;
+
+    const longitude =
+      position.coords.longitude;
+
 
     localStorage.setItem(
       "ksa_location",
@@ -284,32 +512,48 @@
       })
     );
 
-    locationButtons.forEach(function (button) {
 
-      button.classList.add("location-active");
+    locationButtons.forEach(
+      function (button) {
 
-      const originalText =
-        button.getAttribute("data-location-success");
+        button.classList.add(
+          "location-active"
+        );
 
-      if (originalText) {
-        button.textContent = originalText;
-      } else {
+        const successText =
+          button.getAttribute(
+            "data-location-success"
+          );
+
         const label =
-          button.querySelector("span");
+          $("span", button);
 
-        if (label) {
-          label.textContent = "Location enabled";
+        if (successText) {
+
+          if (label) {
+            label.textContent =
+              successText;
+          } else {
+            button.textContent =
+              successText;
+          }
+
+        } else {
+
+          if (label) {
+            label.textContent =
+              "Location enabled";
+          }
+
         }
+
       }
-    });
+    );
+
   }
 
-  function locationError(error) {
 
-    console.log(
-      "Location permission was not granted:",
-      error
-    );
+  function locationError() {
 
     const city =
       window.prompt(
@@ -318,26 +562,16 @@
 
     if (!city) return;
 
-    localStorage.setItem(
-      "ksa_city",
-      city.trim()
-    );
+    saveCity(city);
 
-    locationButtons.forEach(function (button) {
-
-      const label =
-        button.querySelector("span");
-
-      if (label) {
-        label.textContent = city.trim();
-      }
-
-    });
   }
+
 
   function requestLocation() {
 
-    if (!navigator.geolocation) {
+    if (
+      !navigator.geolocation
+    ) {
 
       const city =
         window.prompt(
@@ -345,14 +579,12 @@
         );
 
       if (city) {
-        localStorage.setItem(
-          "ksa_city",
-          city.trim()
-        );
+        saveCity(city);
       }
 
       return;
     }
+
 
     navigator.geolocation.getCurrentPosition(
       locationSuccess,
@@ -363,25 +595,35 @@
         maximumAge: 300000
       }
     );
+
   }
 
-  locationButtons.forEach(function (button) {
 
-    button.addEventListener("click", function (event) {
+  locationButtons.forEach(
+    function (button) {
 
-      event.preventDefault();
+      button.addEventListener(
+        "click",
+        function (event) {
 
-      requestLocation();
+          event.preventDefault();
+          event.stopPropagation();
 
-    });
+          requestLocation();
 
-  });
+        }
+      );
+
+    }
+  );
+
 
   /* =======================================================
      COOKIE CONSENT
      ======================================================= */
 
-  const cookieBanner = $("#cookieBanner");
+  const cookieBanner =
+    $("#cookieBanner");
 
   const cookieAccept =
     $("[data-cookie-accept]");
@@ -392,70 +634,129 @@
   const COOKIE_KEY =
     "ksa_cookie_consent";
 
+
   function hideCookieBanner() {
 
     if (!cookieBanner) return;
 
-    cookieBanner.classList.add("hidden");
+    cookieBanner.classList.add(
+      "hidden"
+    );
 
-    setTimeout(function () {
-      cookieBanner.style.display = "none";
-    }, 400);
+
+    window.setTimeout(
+      function () {
+
+        if (cookieBanner) {
+          cookieBanner.style.display =
+            "none";
+        }
+
+      },
+      350
+    );
+
   }
+
 
   function saveCookieConsent(type) {
 
-    localStorage.setItem(
-      COOKIE_KEY,
-      JSON.stringify({
-        type: type,
-        date: new Date().toISOString()
-      })
-    );
+    try {
+
+      localStorage.setItem(
+        COOKIE_KEY,
+        JSON.stringify({
+          type: type,
+          date: new Date().toISOString()
+        })
+      );
+
+    } catch (error) {
+
+      console.log(
+        "Cookie preference could not be saved.",
+        error
+      );
+
+    }
+
 
     hideCookieBanner();
+
   }
+
 
   if (cookieAccept) {
 
     cookieAccept.addEventListener(
       "click",
-      function () {
+      function (event) {
+
+        event.preventDefault();
+        event.stopPropagation();
+
         saveCookieConsent("all");
+
       }
     );
 
   }
+
 
   if (cookieReject) {
 
     cookieReject.addEventListener(
       "click",
-      function () {
-        saveCookieConsent("essential");
+      function (event) {
+
+        event.preventDefault();
+        event.stopPropagation();
+
+        saveCookieConsent(
+          "essential"
+        );
+
       }
     );
 
   }
 
-  /*
-    Hide banner if the user has already selected
-    a cookie preference.
-  */
+
+  /* Show cookie banner only when no choice exists */
+
+  let cookieChoice = null;
+
+  try {
+
+    cookieChoice =
+      localStorage.getItem(
+        COOKIE_KEY
+      );
+
+  } catch (error) {
+
+    cookieChoice = null;
+
+  }
+
 
   if (
     cookieBanner &&
-    localStorage.getItem(COOKIE_KEY)
+    cookieChoice
   ) {
-    cookieBanner.classList.add("hidden");
 
-    setTimeout(function () {
-      cookieBanner.style.display = "none";
-    }, 400);
+    cookieBanner.classList.add(
+      "hidden"
+    );
+
+    cookieBanner.style.display =
+      "none";
+
   }
 
+
   /* =======================================================
-     NEWSLETTER FORM
+     NEWSLETTER
      ======================================================= */
 
   $$("form[data-newsletter]").forEach(
@@ -475,41 +776,39 @@
           const email =
             emailInput.value.trim();
 
+
           if (!email) {
+
             emailInput.focus();
             return;
+
           }
 
-          /*
-            Front-end confirmation only.
-
-            Real email subscriptions can later be
-            connected to Mailchimp, Brevo, ConvertKit
-            or another provider.
-          */
 
           let message =
             $(".newsletter-message", form);
 
+
           if (!message) {
 
             message =
-              document.createElement("div");
+              document.createElement(
+                "div"
+              );
 
             message.className =
               "newsletter-message";
 
-            message.style.marginTop = "12px";
-            message.style.color =
-              "#E5C77B";
-            message.style.fontSize =
-              "12px";
+            form.appendChild(
+              message
+            );
 
-            form.appendChild(message);
           }
+
 
           message.textContent =
             "Thank you! You're on the KSA GUIDE list.";
+
 
           emailInput.value = "";
 
@@ -518,6 +817,7 @@
 
     }
   );
+
 
   /* =======================================================
      CONTACT FORM
@@ -530,45 +830,58 @@
         "submit",
         function (event) {
 
+          const action =
+            form.getAttribute(
+              "action"
+            );
+
+
           /*
-            Allow normal form submission if
-            an action attribute exists.
+            If a real action exists,
+            allow normal submission.
           */
 
-          const action =
-            form.getAttribute("action");
-
-          if (action && action.trim() !== "") {
+          if (
+            action &&
+            action.trim() !== ""
+          ) {
             return;
           }
 
+
           event.preventDefault();
+
 
           let message =
             $(".form-message", form);
 
+
           if (!message) {
 
             message =
-              document.createElement("div");
+              document.createElement(
+                "div"
+              );
 
             message.className =
               "form-message notice notice-success";
 
-            message.style.marginTop =
-              "15px";
+            form.appendChild(
+              message
+            );
 
-            form.appendChild(message);
           }
 
+
           message.textContent =
-            "Thank you. Your message has been prepared successfully.";
+            "Thank you. Your message has been received.";
 
         }
       );
 
     }
   );
+
 
   /* =======================================================
      SCROLL REVEAL
@@ -577,46 +890,74 @@
   const revealElements =
     $$(".reveal");
 
-  if ("IntersectionObserver" in window) {
+
+  if (
+    "IntersectionObserver" in window
+  ) {
 
     const revealObserver =
       new IntersectionObserver(
-        function (entries, observer) {
+        function (
+          entries,
+          observer
+        ) {
 
-          entries.forEach(function (entry) {
+          entries.forEach(
+            function (entry) {
 
-            if (!entry.isIntersecting) {
-              return;
+              if (
+                !entry.isIntersecting
+              ) {
+                return;
+              }
+
+
+              entry.target.classList.add(
+                "visible"
+              );
+
+
+              observer.unobserve(
+                entry.target
+              );
+
             }
-
-            entry.target.classList.add("visible");
-
-            observer.unobserve(entry.target);
-
-          });
+          );
 
         },
         {
           threshold: 0.12,
-          rootMargin: "0px 0px -40px 0px"
+          rootMargin:
+            "0px 0px -40px 0px"
         }
       );
 
+
     revealElements.forEach(
       function (element) {
-        revealObserver.observe(element);
+
+        revealObserver.observe(
+          element
+        );
+
       }
     );
+
 
   } else {
 
     revealElements.forEach(
       function (element) {
-        element.classList.add("visible");
+
+        element.classList.add(
+          "visible"
+        );
+
       }
     );
 
   }
+
 
   /* =======================================================
      ACTIVE NAVIGATION
@@ -624,38 +965,58 @@
 
   const currentPath =
     window.location.pathname
-      .replace(/\/+$/, "") || "/";
+      .replace(/\/+$/, "") ||
+    "/";
 
-  $$(".main-nav a, .mobile-nav a").forEach(
+
+  $$(
+    ".main-nav a, .desktop-nav a, .mobile-nav a"
+  ).forEach(
     function (link) {
 
       const href =
-        link.getAttribute("href");
+        link.getAttribute(
+          "href"
+        );
 
       if (!href) return;
 
+
       if (
         href.startsWith("#") ||
-        href.startsWith("http")
+        href.startsWith("http") ||
+        href.startsWith("mailto:") ||
+        href.startsWith("tel:")
       ) {
         return;
       }
 
-      let linkPath = href
-        .split("?")[0]
-        .split("#")[0]
-        .replace(/\/+$/, "");
+
+      let linkPath =
+        href
+          .split("?")[0]
+          .split("#")[0]
+          .replace(/\/+$/, "");
+
 
       if (linkPath === "") {
         linkPath = "/";
       }
 
-      if (linkPath === currentPath) {
-        link.classList.add("active");
+
+      if (
+        linkPath === currentPath
+      ) {
+
+        link.classList.add(
+          "active"
+        );
+
       }
 
     }
   );
+
 
   /* =======================================================
      BACK TO TOP
@@ -664,40 +1025,55 @@
   let backToTop =
     $(".back-to-top");
 
-  /*
-    If the HTML doesn't contain a back-to-top button,
-    create one automatically.
-  */
 
   if (!backToTop) {
 
     backToTop =
-      document.createElement("button");
+      document.createElement(
+        "button"
+      );
 
     backToTop.className =
       "back-to-top";
 
-    backToTop.type = "button";
+    backToTop.type =
+      "button";
 
     backToTop.setAttribute(
       "aria-label",
       "Back to top"
     );
 
-    backToTop.innerHTML = "↑";
+    backToTop.innerHTML =
+      "↑";
 
-    body.appendChild(backToTop);
+    body.appendChild(
+      backToTop
+    );
+
   }
+
 
   function updateBackToTop() {
 
-    if (window.scrollY > 500) {
-      backToTop.classList.add("visible");
+    if (
+      window.scrollY > 500
+    ) {
+
+      backToTop.classList.add(
+        "visible"
+      );
+
     } else {
-      backToTop.classList.remove("visible");
+
+      backToTop.classList.remove(
+        "visible"
+      );
+
     }
 
   }
+
 
   window.addEventListener(
     "scroll",
@@ -705,11 +1081,15 @@
     { passive: true }
   );
 
+
   updateBackToTop();
+
 
   backToTop.addEventListener(
     "click",
-    function () {
+    function (event) {
+
+      event.preventDefault();
 
       window.scrollTo({
         top: 0,
@@ -719,11 +1099,14 @@
     }
   );
 
+
   /* =======================================================
      SMOOTH ANCHOR LINKS
      ======================================================= */
 
-  $$("a[href^='#']").forEach(
+  $$(
+    "a[href^='#']"
+  ).forEach(
     function (link) {
 
       link.addEventListener(
@@ -731,31 +1114,56 @@
         function (event) {
 
           const id =
-            link.getAttribute("href");
+            link.getAttribute(
+              "href"
+            );
 
-          if (!id || id === "#") {
+
+          if (
+            !id ||
+            id === "#"
+          ) {
             return;
           }
 
-          const target =
-            document.querySelector(id);
+
+          let target = null;
+
+          try {
+
+            target =
+              document.querySelector(
+                id
+              );
+
+          } catch (error) {
+
+            return;
+
+          }
+
 
           if (!target) {
             return;
           }
 
+
           event.preventDefault();
+
 
           const headerHeight =
             header
               ? header.offsetHeight
               : 0;
 
+
           const targetTop =
-            target.getBoundingClientRect().top +
+            target.getBoundingClientRect()
+              .top +
             window.scrollY -
             headerHeight -
             20;
+
 
           window.scrollTo({
             top: targetTop,
@@ -768,9 +1176,10 @@
     }
   );
 
+
   /* =======================================================
      HERO 3D DEPTH EFFECT
-     Lightweight — desktop only
+     DESKTOP / MOUSE ONLY
      ======================================================= */
 
   const hero =
@@ -778,6 +1187,7 @@
 
   const heroMap =
     $(".hero-map");
+
 
   if (
     hero &&
@@ -787,6 +1197,7 @@
     ).matches
   ) {
 
+
     hero.addEventListener(
       "mousemove",
       function (event) {
@@ -794,19 +1205,30 @@
         const rect =
           hero.getBoundingClientRect();
 
+
         const x =
-          (event.clientX - rect.left) /
+          (
+            event.clientX -
+            rect.left
+          ) /
           rect.width;
 
+
         const y =
-          (event.clientY - rect.top) /
+          (
+            event.clientY -
+            rect.top
+          ) /
           rect.height;
+
 
         const rotateY =
           (x - 0.5) * 8;
 
+
         const rotateX =
           (0.5 - y) * 5;
+
 
         heroMap.style.transform =
           "rotateY(" +
@@ -817,6 +1239,7 @@
 
       }
     );
+
 
     hero.addEventListener(
       "mouseleave",
@@ -830,41 +1253,76 @@
 
   }
 
+
   /* =======================================================
      IMAGE LAZY LOADING
      ======================================================= */
 
-  $$("img").forEach(function (image) {
+  $$("img").forEach(
+    function (image) {
 
-    if (
-      !image.hasAttribute("loading") &&
-      !image.hasAttribute("fetchpriority")
-    ) {
-      image.setAttribute(
-        "loading",
-        "lazy"
-      );
+      if (
+        !image.hasAttribute(
+          "loading"
+        ) &&
+        !image.hasAttribute(
+          "fetchpriority"
+        )
+      ) {
+
+        image.setAttribute(
+          "loading",
+          "lazy"
+        );
+
+      }
+
     }
+  );
 
-  });
 
   /* =======================================================
      EXTERNAL LINKS
+     Do NOT change internal KSA GUIDE links.
      ======================================================= */
 
-  $$("a[href^='http']").forEach(
+  $$(
+    "a[href^='http://'], a[href^='https://']"
+  ).forEach(
     function (link) {
 
       const url =
-        link.getAttribute("href");
+        link.getAttribute(
+          "href"
+        );
 
       if (!url) return;
 
-      if (
-        !url.includes(
-          window.location.hostname
-        )
-      ) {
+
+      let isExternal = false;
+
+
+      try {
+
+        const linkUrl =
+          new URL(
+            url,
+            window.location.href
+          );
+
+
+        isExternal =
+          linkUrl.hostname !==
+          window.location.hostname;
+
+      } catch (error) {
+
+        return;
+
+      }
+
+
+      if (isExternal) {
 
         link.setAttribute(
           "target",
@@ -881,14 +1339,48 @@
     }
   );
 
+
+  /* =======================================================
+     PREVENT DOUBLE SUBMISSION
+     ======================================================= */
+
+  $$(
+    "form"
+  ).forEach(
+    function (form) {
+
+      form.addEventListener(
+        "submit",
+        function () {
+
+          /*
+            Only add a small visual state.
+            We don't disable buttons because
+            some forms are handled by other scripts.
+          */
+
+          form.classList.add(
+            "form-submitted"
+          );
+
+        }
+      );
+
+    }
+  );
+
+
   /* =======================================================
      PAGE READY
      ======================================================= */
 
-  html.classList.add("js-enabled");
+  html.classList.add(
+    "js-enabled"
+  );
+
 
   console.log(
-    "KSA GUIDE — Premium JavaScript loaded successfully."
+    "KSA GUIDE — Final JavaScript loaded successfully."
   );
 
 })();
