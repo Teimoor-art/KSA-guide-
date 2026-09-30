@@ -4,148 +4,429 @@ layout: null
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>{{ page.title }} | KSA GUIDE</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-  <meta name="description" content="{{ page.description | default: page.title | escape }}">
-  <meta name="author" content="KSA GUIDE">
+  <title>
+    {{ page.title | default: "KSA GUIDE" | escape }} | KSA GUIDE
+  </title>
 
-  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <meta
+    name="description"
+    content="{{ page.description | default: page.title | default: 'KSA GUIDE — Your Complete Guide to Saudi Arabia' | escape }}"
+  >
+
+  <meta
+    name="author"
+    content="KSA GUIDE"
+  >
+
+  <meta
+    name="robots"
+    content="index, follow"
+  >
+
+  <!-- CANONICAL -->
+
+  <link
+    rel="canonical"
+    href="{{ site.url }}{{ page.url }}"
+  >
+
+
+  <!-- OPEN GRAPH -->
+
+  <meta
+    property="og:type"
+    content="article"
+  >
+
+  <meta
+    property="og:title"
+    content="{{ page.title | default: 'KSA GUIDE' | escape }}"
+  >
+
+  <meta
+    property="og:description"
+    content="{{ page.description | default: page.title | default: 'Your Complete Guide to Saudi Arabia' | escape }}"
+  >
+
+  <meta
+    property="og:url"
+    content="{{ site.url }}{{ page.url }}"
+  >
+
+  <meta
+    property="og:site_name"
+    content="KSA GUIDE"
+  >
+
+
+  <!-- FONTS -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
 
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+
+  <!-- MAIN CSS -->
+
+  <link
+    rel="stylesheet"
+    href="{{ '/assets/css/style.css' | relative_url }}"
+  >
+
 </head>
+
 
 <body>
 
+
+<!-- =====================================================
+     HEADER
+     ===================================================== -->
+
 <header class="site-header">
+
   <div class="container header-inner">
 
-    <a href="{{ '/' | relative_url }}" class="brand">
-      <span class="brand-mark">◆</span>
-      <span class="brand-text">
-        <strong>KSA</strong>
-        <small>GUIDE</small>
+
+    <!-- BRAND -->
+
+    <a
+      href="{{ '/' | relative_url }}"
+      class="brand"
+      aria-label="KSA GUIDE Home"
+    >
+
+      <span class="brand-mark">
+        ◆
       </span>
+
+      <span class="brand-text">
+
+        <strong>
+          KSA
+        </strong>
+
+        <small>
+          GUIDE
+        </small>
+
+      </span>
+
     </a>
 
-    <nav class="desktop-nav">
-      <a href="{{ '/' | relative_url }}">Home</a>
-      <a href="{{ '/saudi-guide.html' | relative_url }}">Saudi Guide</a>
-      <a href="{{ '/travel.html' | relative_url }}">Travel</a>
-      <a href="{{ '/destinations.html' | relative_url }}">Destinations</a>
-      <a href="{{ '/digital-services.html' | relative_url }}">Digital Services</a>
-      <a href="{{ '/blog.html' | relative_url }}">Blog</a>
-      <a href="{{ '/about.html' | relative_url }}">About</a>
-      <a href="{{ '/contact.html' | relative_url }}">Contact</a>
+
+    <!-- DESKTOP NAV -->
+
+    <nav
+      class="main-nav"
+      aria-label="Main navigation"
+    >
+
+      <a href="{{ '/' | relative_url }}">
+        Home
+      </a>
+
+      <a href="{{ '/saudi-guide.html' | relative_url }}">
+        Saudi Guide
+      </a>
+
+      <a href="{{ '/travel.html' | relative_url }}">
+        Travel
+      </a>
+
+      <a href="{{ '/destinations.html' | relative_url }}">
+        Destinations
+      </a>
+
+      <a href="{{ '/digital-services.html' | relative_url }}">
+        Digital Services
+      </a>
+
+      <a href="{{ '/blog.html' | relative_url }}">
+        Blog
+      </a>
+
+      <a href="{{ '/about.html' | relative_url }}">
+        About
+      </a>
+
+      <a href="{{ '/contact.html' | relative_url }}">
+        Contact
+      </a>
+
     </nav>
 
+
+    <!-- HEADER ACTIONS -->
+
     <div class="header-actions">
-      <button type="button" class="icon-btn" data-open-search aria-label="Search">
+
+
+      <!-- SEARCH -->
+
+      <button
+        type="button"
+        class="icon-btn"
+        data-open-search
+        aria-label="Open search"
+      >
         🔍
       </button>
 
-      <select id="language" aria-label="Language">
-        <option value="en">EN</option>
-        <option value="ar">AR</option>
-        <option value="ur">UR</option>
+
+      <!-- LANGUAGE -->
+
+      <select
+        id="language"
+        aria-label="Select language"
+      >
+
+        <option value="en">
+          EN
+        </option>
+
+        <option value="ar">
+          AR
+        </option>
+
+        <option value="ur">
+          UR
+        </option>
+
       </select>
 
-      <a href="{{ '/' | relative_url }}" class="header-cta">
+
+      <!-- CTA -->
+
+      <a
+        href="{{ '/' | relative_url }}"
+        class="header-cta"
+      >
         Explore Saudi
       </a>
 
-      <button class="menu-toggle" type="button" aria-label="Open menu">
+
+      <!-- MOBILE MENU -->
+
+      <button
+        type="button"
+        class="menu-toggle"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
         ☰
       </button>
+
     </div>
 
   </div>
+
 </header>
 
 
+
+<!-- =====================================================
+     MAIN ARTICLE
+     ===================================================== -->
+
 <main>
 
-  <!-- ARTICLE HERO -->
+
+  <!-- ===================================================
+       ARTICLE HERO
+       =================================================== -->
+
   <section class="article-hero">
+
     <div class="container">
 
+
+      <!-- BREADCRUMB -->
+
       <div class="article-breadcrumb">
-        <a href="{{ '/' | relative_url }}">Home</a>
-        <span>→</span>
-        <a href="{{ '/blog.html' | relative_url }}">Blog</a>
-        <span>→</span>
-        <span>{{ page.title }}</span>
+
+        <a href="{{ '/' | relative_url }}">
+          Home
+        </a>
+
+        <span>
+          →
+        </span>
+
+        <a href="{{ '/blog.html' | relative_url }}">
+          Blog
+        </a>
+
+        <span>
+          →
+        </span>
+
+        <span>
+          {{ page.title }}
+        </span>
+
       </div>
+
+
+      <!-- CATEGORY -->
 
       <div class="article-category">
+
         {% if page.category %}
+
           {{ page.category }}
+
+        {% elsif page.categories %}
+
+          {{ page.categories | first }}
+
         {% else %}
+
           SAUDI GUIDE
+
         {% endif %}
+
       </div>
 
-      <h1>{{ page.title }}</h1>
+
+      <!-- TITLE -->
+
+      <h1>
+        {{ page.title }}
+      </h1>
+
+
+      <!-- DESCRIPTION -->
 
       {% if page.description %}
+
         <p class="article-description">
           {{ page.description }}
         </p>
+
       {% endif %}
+
+
+      <!-- META -->
 
       <div class="article-meta">
 
+
         {% if page.date %}
+
           <span>
             {{ page.date | date: "%d %b %Y" }}
           </span>
+
         {% endif %}
 
-        <span>•</span>
 
-        <span>KSA GUIDE</span>
+        <span>
+          •
+        </span>
+
+
+        <span>
+          KSA GUIDE
+        </span>
+
 
         {% if page.read_time %}
-          <span>•</span>
-          <span>{{ page.read_time }} read</span>
+
+          <span>
+            •
+          </span>
+
+          <span>
+            {{ page.read_time }} read
+          </span>
+
         {% endif %}
 
       </div>
 
     </div>
+
   </section>
 
 
-  <!-- ARTICLE CONTENT -->
+
+  <!-- ===================================================
+       ARTICLE CONTENT
+       =================================================== -->
+
   <section class="article-section">
+
     <div class="container article-layout">
+
+
+      <!-- ARTICLE -->
 
       <article class="article-content">
 
         {{ content }}
 
+
+        <!-- IMPORTANT INFORMATION -->
+
         <div class="article-disclaimer">
-          <strong>Important:</strong>
-          Information on KSA GUIDE is provided for general informational purposes.
-          Rules, fees and government procedures may change.
-          Always verify the latest requirements with the relevant official Saudi authorities.
+
+          <strong>
+            Important:
+          </strong>
+
+          <p>
+            Information on KSA GUIDE is provided for
+            general informational purposes only.
+            Rules, fees, requirements and government
+            procedures may change.
+          </p>
+
+          <p>
+            Always verify the latest requirements
+            with the relevant official Saudi authorities
+            before taking action.
+          </p>
+
         </div>
+
+
+        <!-- ARTICLE ACTIONS -->
 
         <div class="article-footer">
 
-          <a href="{{ '/blog.html' | relative_url }}" class="btn btn-primary">
+
+          <a
+            href="{{ '/blog.html' | relative_url }}"
+            class="btn btn-primary"
+          >
             ← Back to Articles
           </a>
 
-          <a href="{{ '/' | relative_url }}" class="btn btn-secondary">
+
+          <a
+            href="{{ '/' | relative_url }}"
+            class="btn btn-secondary"
+          >
             Explore Saudi Arabia
           </a>
 
@@ -154,29 +435,52 @@ layout: null
       </article>
 
 
-      <!-- SIDEBAR -->
-      <aside class="article-sidebar">
+
+      <!-- =================================================
+           ARTICLE SIDEBAR
+           ================================================= -->
+
+      <aside
+        class="article-sidebar"
+        aria-label="Related KSA GUIDE sections"
+      >
+
+
+        <!-- SAUDI GUIDE -->
 
         <div class="article-side-card">
-          <span class="eyebrow">KSA GUIDE</span>
+
+          <span class="eyebrow">
+            KSA GUIDE
+          </span>
 
           <h3>
             Your Complete Guide to Saudi Arabia
           </h3>
 
           <p>
-            Practical Saudi guides, travel information, destinations,
-            daily life and useful digital services.
+            Practical Saudi guides, travel information,
+            destinations, daily life and useful digital
+            services.
           </p>
 
-          <a href="{{ '/saudi-guide.html' | relative_url }}">
+          <a
+            href="{{ '/saudi-guide.html' | relative_url }}"
+          >
             Explore Saudi Guide →
           </a>
+
         </div>
 
 
+
+        <!-- TRAVEL -->
+
         <div class="article-side-card">
-          <span class="eyebrow">TRAVEL</span>
+
+          <span class="eyebrow">
+            TRAVEL
+          </span>
 
           <h3>
             Plan Your Saudi Trip
@@ -184,82 +488,149 @@ layout: null
 
           <p>
             Discover Riyadh, AlUla, Jeddah, Madinah,
-            Abha, Taif and more.
+            Abha, Taif and other Saudi destinations.
           </p>
 
-          <a href="{{ '/destinations.html' | relative_url }}">
+          <a
+            href="{{ '/destinations.html' | relative_url }}"
+          >
             Explore Destinations →
           </a>
+
         </div>
 
 
+
+        <!-- DIGITAL SERVICES -->
+
         <div class="article-side-card">
-          <span class="eyebrow">DIGITAL SERVICES</span>
+
+          <span class="eyebrow">
+            DIGITAL SERVICES
+          </span>
 
           <h3>
             Need Online Help?
           </h3>
 
           <p>
-            Explore professional digital services for individuals
-            and small businesses.
+            Explore professional digital services
+            for individuals and small businesses.
           </p>
 
-          <a href="{{ '/digital-services.html' | relative_url }}">
+          <a
+            href="{{ '/digital-services.html' | relative_url }}"
+          >
             View Services →
           </a>
+
         </div>
 
       </aside>
 
     </div>
+
   </section>
 
 </main>
 
 
-<!-- SEARCH -->
-<div class="search-overlay" id="searchOverlay">
 
-  <button class="search-close" data-close-search aria-label="Close">
+<!-- =====================================================
+     SEARCH OVERLAY
+     ===================================================== -->
+
+<div
+  class="search-overlay"
+  id="searchOverlay"
+  aria-hidden="true"
+>
+
+
+  <!-- CLOSE -->
+
+  <button
+    type="button"
+    class="search-close"
+    data-close-search
+    aria-label="Close search"
+  >
     ×
   </button>
 
+
+  <!-- SEARCH BOX -->
+
   <div class="search-box">
 
-    <span class="eyebrow">SEARCH KSA GUIDE</span>
+    <span class="eyebrow">
+      SEARCH KSA GUIDE
+    </span>
 
-    <h2>What are you looking for?</h2>
+    <h2>
+      What are you looking for?
+    </h2>
 
-    <form action="{{ '/blog.html' | relative_url }}" method="get">
+
+    <form
+      action="{{ '/blog.html' | relative_url }}"
+      method="get"
+      data-search-form
+    >
 
       <input
         type="search"
         name="q"
         placeholder="Search Saudi guides, travel, visas, destinations..."
         autocomplete="off"
+        aria-label="Search KSA GUIDE"
       >
 
-      <button type="submit" class="btn btn-primary">
+
+      <button
+        type="submit"
+        class="btn btn-primary"
+      >
         Search →
       </button>
 
     </form>
 
   </div>
+
 </div>
 
 
-<!-- MOBILE NAV -->
-<div class="mobile-nav" id="mobileNav">
 
-  <button class="mobile-close" type="button" aria-label="Close menu">
+<!-- =====================================================
+     MOBILE NAVIGATION
+     ===================================================== -->
+
+<div
+  class="mobile-nav"
+  id="mobileNav"
+  aria-hidden="true"
+>
+
+
+  <!-- CLOSE -->
+
+  <button
+    type="button"
+    class="mobile-close"
+    aria-label="Close menu"
+  >
     ×
   </button>
 
-  <nav>
 
-    <a href="{{ '/' | relative_url }}">Home</a>
+  <!-- NAV -->
+
+  <nav aria-label="Mobile navigation">
+
+    <a href="{{ '/' | relative_url }}">
+      Home
+    </a>
 
     <a href="{{ '/saudi-guide.html' | relative_url }}">
       Saudi Guide
@@ -294,23 +665,102 @@ layout: null
 </div>
 
 
-<!-- FOOTER -->
+
+<!-- =====================================================
+     COOKIE CONSENT
+     ===================================================== -->
+
+<div
+  class="cookie-banner"
+  id="cookieBanner"
+  role="dialog"
+  aria-label="Cookie consent"
+>
+
+
+  <div class="cookie-content">
+
+    <strong>
+      Your Privacy
+    </strong>
+
+    <p>
+      KSA GUIDE uses essential cookies to keep the
+      website working properly. Optional cookies may
+      be used for analytics and preferences.
+    </p>
+
+    <a
+      href="{{ '/cookie-policy.html' | relative_url }}"
+    >
+      Read Cookie Policy →
+    </a>
+
+  </div>
+
+
+  <div class="cookie-actions">
+
+
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-cookie-accept
+    >
+      Accept All
+    </button>
+
+
+    <button
+      type="button"
+      class="btn btn-secondary"
+      data-cookie-reject
+    >
+      Reject Non-Essential
+    </button>
+
+  </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     FOOTER
+     ===================================================== -->
+
 <footer class="site-footer">
 
   <div class="container footer-grid">
 
+
+    <!-- BRAND -->
+
     <div class="footer-brand">
 
-      <a href="{{ '/' | relative_url }}" class="brand">
+      <a
+        href="{{ '/' | relative_url }}"
+        class="brand"
+      >
 
-        <span class="brand-mark">◆</span>
+        <span class="brand-mark">
+          ◆
+        </span>
 
         <span class="brand-text">
-          <strong>KSA</strong>
-          <small>GUIDE</small>
+
+          <strong>
+            KSA
+          </strong>
+
+          <small>
+            GUIDE
+          </small>
+
         </span>
 
       </a>
+
 
       <p>
         Your Complete Guide to Saudi Arabia.
@@ -321,54 +771,124 @@ layout: null
     </div>
 
 
+
+    <!-- SAUDI GUIDE -->
+
     <div class="footer-col">
 
-      <h4>Saudi Guide</h4>
+      <h4>
+        Saudi Guide
+      </h4>
 
-      <a href="{{ '/saudi-guide.html' | relative_url }}">Saudi Guide</a>
-      <a href="{{ '/blog.html' | relative_url }}">Latest Articles</a>
-      <a href="{{ '/destinations.html' | relative_url }}">Destinations</a>
+      <a
+        href="{{ '/saudi-guide.html' | relative_url }}"
+      >
+        Saudi Guide
+      </a>
+
+      <a
+        href="{{ '/blog.html' | relative_url }}"
+      >
+        Latest Articles
+      </a>
+
+      <a
+        href="{{ '/destinations.html' | relative_url }}"
+      >
+        Destinations
+      </a>
 
     </div>
 
 
+
+    <!-- COMPANY -->
+
     <div class="footer-col">
 
-      <h4>Company</h4>
+      <h4>
+        Company
+      </h4>
 
-      <a href="{{ '/about.html' | relative_url }}">About</a>
-      <a href="{{ '/contact.html' | relative_url }}">Contact</a>
-      <a href="{{ '/digital-services.html' | relative_url }}">Digital Services</a>
+      <a
+        href="{{ '/about.html' | relative_url }}"
+      >
+        About
+      </a>
+
+      <a
+        href="{{ '/contact.html' | relative_url }}"
+      >
+        Contact
+      </a>
+
+      <a
+        href="{{ '/digital-services.html' | relative_url }}"
+      >
+        Digital Services
+      </a>
 
     </div>
 
 
+
+    <!-- LEGAL -->
+
     <div class="footer-col">
 
-      <h4>Legal</h4>
+      <h4>
+        Legal
+      </h4>
 
-      <a href="{{ '/privacy-policy.html' | relative_url }}">Privacy Policy</a>
-      <a href="{{ '/terms.html' | relative_url }}">Terms</a>
-      <a href="{{ '/cookie-policy.html' | relative_url }}">Cookie Policy</a>
-      <a href="{{ '/disclaimer.html' | relative_url }}">Disclaimer</a>
+      <a
+        href="{{ '/privacy-policy.html' | relative_url }}"
+      >
+        Privacy Policy
+      </a>
+
+      <a
+        href="{{ '/terms.html' | relative_url }}"
+      >
+        Terms
+      </a>
+
+      <a
+        href="{{ '/cookie-policy.html' | relative_url }}"
+      >
+        Cookie Policy
+      </a>
+
+      <a
+        href="{{ '/disclaimer.html' | relative_url }}"
+      >
+        Disclaimer
+      </a>
 
     </div>
 
   </div>
 
 
+
+  <!-- INDEPENDENT PLATFORM -->
+
   <div class="container footer-disclaimer">
 
-    <strong>Independent Platform</strong>
+    <strong>
+      Independent Platform
+    </strong>
 
     <p>
       KSA GUIDE is an independent information platform.
-      It is not affiliated with, endorsed by, or operated by
-      the Saudi Arabian government.
+      It is not affiliated with, endorsed by, or operated
+      by the Saudi Arabian government.
     </p>
 
   </div>
 
+
+
+  <!-- COPYRIGHT -->
 
   <div class="container footer-bottom">
 
@@ -385,7 +905,16 @@ layout: null
 </footer>
 
 
-<script src="{{ '/assets/js/app.js' | relative_url }}"></script>
+
+<!-- =====================================================
+     JAVASCRIPT
+     ===================================================== -->
+
+<script
+  src="{{ '/assets/js/app.js' | relative_url }}"
+></script>
+
 
 </body>
+
 </html>
