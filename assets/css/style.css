@@ -1,57 +1,37 @@
 /* =========================================================
    KSA GUIDE — PREMIUM GLOBAL CSS
-   Version: 2026.1
-   Saudi Luxury / Editorial / Cinematic / 3D
-========================================================= */
-
-
-/* =========================================================
-   GOOGLE FONTS
+   FINAL CLEAN VERSION — NO EXTERNAL IMAGES
 ========================================================= */
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
 
-
-/* =========================================================
-   ROOT VARIABLES
-========================================================= */
-
 :root{
   --black:#04110C;
-  --black-2:#020907;
+  --black2:#020907;
   --green:#062017;
-  --green-2:#08281B;
-  --green-3:#0B3323;
-
+  --green2:#08281B;
   --ksa:#006C35;
-  --ksa-light:#0A8B4C;
+  --ksa2:#008A47;
 
   --gold:#C9A86A;
-  --gold-2:#E5C77B;
-  --gold-soft:rgba(229,199,123,.16);
+  --gold2:#E5C77B;
+  --gold-soft:rgba(229,199,123,.12);
 
   --white:#F8F7F2;
-  --white-soft:#E8ECE9;
-
+  --soft:#E8ECE9;
   --muted:#AEBAB3;
-  --muted-2:#7F8D86;
+  --muted2:#7F8D86;
 
   --line:rgba(229,199,123,.18);
-  --line-strong:rgba(229,199,123,.35);
-  --line-soft:rgba(255,255,255,.08);
+  --line-soft:rgba(255,255,255,.07);
 
-  --glass:rgba(5,20,14,.66);
-  --glass-heavy:rgba(3,14,10,.90);
+  --glass:rgba(5,20,14,.72);
+  --glass2:rgba(3,14,10,.92);
 
-  --shadow:
-    0 30px 90px rgba(0,0,0,.42);
-
-  --shadow-soft:
-    0 18px 55px rgba(0,0,0,.24);
+  --shadow:0 30px 90px rgba(0,0,0,.42);
+  --shadow2:0 18px 55px rgba(0,0,0,.25);
 
   --radius:24px;
-  --radius-small:16px;
-
   --container:1180px;
 }
 
@@ -67,6 +47,8 @@
 }
 
 html{
+  margin:0;
+  padding:0;
   scroll-behavior:smooth;
   background:var(--black);
 }
@@ -74,21 +56,9 @@ html{
 body{
   margin:0;
   padding:0;
-
   min-height:100vh;
 
-  background:
-    radial-gradient(
-      circle at 85% 5%,
-      rgba(0,108,53,.14),
-      transparent 28%
-    ),
-    linear-gradient(
-      180deg,
-      #04110C 0%,
-      #03100B 45%,
-      #020907 100%
-    );
+  overflow-x:hidden;
 
   color:var(--white);
 
@@ -103,7 +73,22 @@ body{
   font-size:15px;
   line-height:1.7;
 
-  overflow-x:hidden;
+  background:
+    radial-gradient(
+      circle at 85% 5%,
+      rgba(0,108,53,.18),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 10% 65%,
+      rgba(229,199,123,.035),
+      transparent 25%
+    ),
+    linear-gradient(
+      180deg,
+      #04110C,
+      #020907 100%
+    );
 }
 
 body.menu-open,
@@ -114,6 +99,11 @@ body.search-open{
 img{
   display:block;
   max-width:100%;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
 }
 
 button,
@@ -127,14 +117,9 @@ button{
   cursor:pointer;
 }
 
-a{
-  color:inherit;
-  text-decoration:none;
-}
-
 ::selection{
-  background:var(--gold-2);
-  color:var(--black);
+  background:var(--gold2);
+  color:#04110C;
 }
 
 
@@ -166,13 +151,12 @@ h5{
 
   font-weight:600;
   line-height:1.08;
-
   letter-spacing:-.025em;
 }
 
 p{
-  color:var(--muted);
   margin:0 0 18px;
+  color:var(--muted);
 }
 
 strong{
@@ -199,12 +183,11 @@ strong{
   background:
     linear-gradient(
       180deg,
-      rgba(2,10,7,.78),
-      rgba(2,10,7,.25)
+      rgba(2,10,7,.82),
+      rgba(2,10,7,.20)
     );
 
-  border-bottom:
-    1px solid transparent;
+  border-bottom:1px solid transparent;
 
   transition:
     background .35s ease,
@@ -215,20 +198,15 @@ strong{
 
 .site-header.scrolled,
 .nav.scrolled{
-  background:
-    rgba(3,14,10,.88);
+  background:rgba(3,14,10,.90);
 
-  border-bottom-color:
-    var(--line-soft);
+  border-bottom-color:var(--line-soft);
 
-  backdrop-filter:
-    blur(20px);
-
-  -webkit-backdrop-filter:
-    blur(20px);
+  backdrop-filter:blur(22px);
+  -webkit-backdrop-filter:blur(22px);
 
   box-shadow:
-    0 15px 50px rgba(0,0,0,.22);
+    0 15px 50px rgba(0,0,0,.20);
 }
 
 .header-inner,
@@ -250,7 +228,6 @@ strong{
 .logo{
   display:flex;
   align-items:center;
-
   gap:11px;
 
   min-width:max-content;
@@ -264,44 +241,35 @@ strong{
   display:grid;
   place-items:center;
 
-  color:var(--gold-2);
+  color:var(--gold2);
 
-  border:
-    1px solid rgba(229,199,123,.65);
+  border:1px solid rgba(229,199,123,.60);
 
   background:
     linear-gradient(
       145deg,
-      rgba(229,199,123,.13),
+      rgba(229,199,123,.12),
       rgba(0,108,53,.16)
     );
 
-  clip-path:
-    polygon(
-      50% 0,
-      90% 18%,
-      100% 65%,
-      76% 100%,
-      28% 90%,
-      0 55%,
-      8% 20%
-    );
-
-  font-family:
-    "Playfair Display",
-    serif;
-
-  font-size:12px;
+  clip-path:polygon(
+    50% 0,
+    90% 18%,
+    100% 65%,
+    76% 100%,
+    28% 90%,
+    0 55%,
+    8% 20%
+  );
 
   box-shadow:
-    0 0 25px rgba(229,199,123,.08);
+    0 0 30px rgba(229,199,123,.07);
 }
 
 .brand-text,
 .logo-text{
   display:flex;
   flex-direction:column;
-
   line-height:1.05;
 }
 
@@ -345,7 +313,7 @@ strong{
   font-size:12px;
   font-weight:500;
 
-  opacity:.84;
+  opacity:.86;
 
   transition:
     color .25s ease,
@@ -364,17 +332,16 @@ strong{
   width:0;
   height:1px;
 
-  background:var(--gold-2);
+  background:var(--gold2);
 
-  transition:
-    width .25s ease;
+  transition:width .25s ease;
 }
 
 .desktop-nav a:hover,
 .desktop-nav a.active,
 .menu a:hover,
 .menu a.active{
-  color:var(--gold-2);
+  color:var(--gold2);
   opacity:1;
 }
 
@@ -407,11 +374,9 @@ strong{
 
   color:var(--white);
 
-  background:
-    rgba(255,255,255,.035);
+  background:rgba(255,255,255,.035);
 
-  border:
-    1px solid var(--line);
+  border:1px solid var(--line);
 
   border-radius:50%;
 
@@ -426,11 +391,9 @@ strong{
 .menu-toggle:hover{
   transform:translateY(-2px);
 
-  background:
-    rgba(229,199,123,.08);
+  background:rgba(229,199,123,.08);
 
-  border-color:
-    rgba(229,199,123,.5);
+  border-color:rgba(229,199,123,.5);
 }
 
 .hamb,
@@ -451,11 +414,9 @@ select#language{
 
   border-radius:999px;
 
-  border:
-    1px solid rgba(229,199,123,.45);
+  border:1px solid rgba(229,199,123,.45);
 
-  background:
-    rgba(4,17,12,.76);
+  background:rgba(4,17,12,.75);
 
   color:var(--white);
 
@@ -488,10 +449,9 @@ select#language option{
 
   padding:12px 20px;
 
-  border-radius:999px;
+  border:1px solid var(--gold);
 
-  border:
-    1px solid var(--gold);
+  border-radius:999px;
 
   font-size:12px;
   font-weight:600;
@@ -500,7 +460,6 @@ select#language option{
     transform .25s ease,
     box-shadow .25s ease,
     background .25s ease,
-    color .25s ease,
     border-color .25s ease;
 }
 
@@ -517,7 +476,7 @@ select#language option{
   background:
     linear-gradient(
       135deg,
-      var(--gold-2),
+      var(--gold2),
       var(--gold)
     );
 
@@ -527,41 +486,34 @@ select#language option{
 
 .btn.gold:hover{
   box-shadow:
-    0 18px 45px rgba(201,168,106,.24);
+    0 18px 45px rgba(201,168,106,.25);
 }
 
 .btn.ghost{
   color:var(--white);
-
-  background:
-    rgba(255,255,255,.035);
+  background:rgba(255,255,255,.035);
 }
 
 .btn.ghost:hover{
-  background:
-    rgba(229,199,123,.07);
-
-  border-color:
-    var(--gold-2);
+  background:rgba(229,199,123,.07);
+  border-color:var(--gold2);
 }
 
 .btn.text-btn{
   border-color:transparent;
-
   padding-inline:5px;
-
-  color:var(--gold-2);
+  color:var(--gold2);
 }
 
 
 /* =========================================================
-   PREMIUM CINEMATIC HERO
+   HERO — NO IMAGE
 ========================================================= */
 
 .hero{
   position:relative;
 
-  min-height:820px;
+  min-height:760px;
 
   display:flex;
   align-items:center;
@@ -570,78 +522,53 @@ select#language option{
 
   isolation:isolate;
 
-  /*
-    IMPORTANT:
-    Upload your Riyadh image here:
-    /assets/images/riyadh-hero.jpg
-  */
-
-  background-image:
-    linear-gradient(
-      90deg,
-      rgba(2,10,7,.78) 0%,
-      rgba(3,17,11,.55) 34%,
-      rgba(3,17,11,.22) 68%,
-      rgba(3,17,11,.35) 100%
+  background:
+    radial-gradient(
+      ellipse at 78% 28%,
+      rgba(0,108,53,.34),
+      transparent 34%
+    ),
+    radial-gradient(
+      ellipse at 35% 65%,
+      rgba(229,199,123,.055),
+      transparent 28%
     ),
     linear-gradient(
-      180deg,
-      rgba(2,10,7,.08) 35%,
-      rgba(2,10,7,.32) 62%,
-      rgba(2,10,7,.96) 100%
-    ),
-    url("/assets/images/riyadh-hero.jpg");
-
-  background-position:
-    center,
-    center,
-    center center;
-
-  background-size:
-    cover,
-    cover,
-    cover;
-
-  background-repeat:
-    no-repeat;
-
-  background-attachment:
-    scroll;
+      135deg,
+      #020907 0%,
+      #04110C 42%,
+      #062017 100%
+    );
 }
 
 
-/* =========================================================
-   HERO CINEMATIC LIGHT
-========================================================= */
+/* cinematic light */
 
 .hero::before{
   content:"";
 
   position:absolute;
-
   inset:0;
 
-  z-index:0;
+  z-index:-1;
 
   background:
     radial-gradient(
-      ellipse at 72% 38%,
+      circle at 76% 38%,
       rgba(229,199,123,.12),
-      transparent 24%
+      transparent 18%
     ),
     radial-gradient(
-      ellipse at 25% 42%,
-      rgba(0,108,53,.16),
-      transparent 35%
+      circle at 18% 48%,
+      rgba(0,108,53,.20),
+      transparent 34%
     );
 
   pointer-events:none;
 }
 
 
-/* =========================================================
-   HERO BOTTOM FADE
-========================================================= */
+/* bottom fade */
 
 .hero::after{
   content:"";
@@ -652,16 +579,15 @@ select#language option{
   right:0;
   bottom:0;
 
-  height:32%;
+  height:35%;
 
-  z-index:1;
+  z-index:0;
 
   background:
     linear-gradient(
       to bottom,
-      transparent 0%,
-      rgba(4,17,12,.42) 38%,
-      var(--black) 100%
+      transparent,
+      var(--black)
     );
 
   pointer-events:none;
@@ -669,7 +595,7 @@ select#language option{
 
 
 /* =========================================================
-   HERO LAYOUT
+   HERO GRID
 ========================================================= */
 
 .hero-layout{
@@ -682,25 +608,20 @@ select#language option{
   display:grid;
 
   grid-template-columns:
-    minmax(0,1.2fr)
-    minmax(280px,.8fr);
+    minmax(0,1.25fr)
+    minmax(300px,.75fr);
 
   gap:55px;
 
   align-items:center;
 
-  padding-top:115px;
-  padding-bottom:100px;
+  padding-top:105px;
+  padding-bottom:80px;
 }
 
 .hero-content{
   max-width:760px;
 }
-
-
-/* =========================================================
-   HERO EYEBROW
-========================================================= */
 
 .eyebrow{
   display:inline-flex;
@@ -710,60 +631,40 @@ select#language option{
 
   margin-bottom:20px;
 
-  border:
-    1px solid rgba(229,199,123,.35);
+  border:1px solid rgba(229,199,123,.32);
 
   border-radius:999px;
 
-  background:
-    rgba(4,20,14,.42);
+  background:rgba(4,20,14,.48);
 
-  color:var(--gold-2);
+  color:var(--gold2);
 
   font-size:10px;
   font-weight:700;
 
   letter-spacing:.16em;
 
-  backdrop-filter:
-    blur(12px);
-
-  -webkit-backdrop-filter:
-    blur(12px);
-
-  box-shadow:
-    0 12px 35px rgba(0,0,0,.18);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
 }
-
-
-/* =========================================================
-   HERO HEADING
-========================================================= */
 
 .hero h1{
   max-width:850px;
 
-  margin-bottom:0;
+  color:var(--white);
 
   font-size:
     clamp(48px,6.8vw,88px);
 
   letter-spacing:-.045em;
 
-  color:var(--white);
-
   text-shadow:
-    0 12px 50px rgba(0,0,0,.38);
+    0 12px 50px rgba(0,0,0,.28);
 }
 
 .hero h1 span{
-  color:var(--gold-2);
+  color:var(--gold2);
 }
-
-
-/* =========================================================
-   HERO ARABIC
-========================================================= */
 
 .hero-arabic{
   margin:20px 0 14px;
@@ -782,33 +683,16 @@ select#language option{
   direction:rtl;
 
   text-align:left;
-
-  text-shadow:
-    0 5px 25px rgba(0,0,0,.35);
 }
-
-
-/* =========================================================
-   HERO DESCRIPTION
-========================================================= */
 
 .hero .lead{
   max-width:690px;
 
-  color:#D0D9D4;
+  color:#C0CCC6;
 
   font-size:16px;
-
   line-height:1.9;
-
-  text-shadow:
-    0 4px 20px rgba(0,0,0,.4);
 }
-
-
-/* =========================================================
-   HERO ACTIONS
-========================================================= */
 
 .hero-actions{
   display:flex;
@@ -819,15 +703,6 @@ select#language option{
   margin-top:28px;
 }
 
-.hero-actions .btn{
-  min-width:150px;
-}
-
-
-/* =========================================================
-   HERO TRUST
-========================================================= */
-
 .hero-trust{
   display:flex;
   flex-wrap:wrap;
@@ -837,20 +712,18 @@ select#language option{
 
   margin-top:25px;
 
-  color:#C2CDC7;
+  color:#AEBAB3;
 
   font-size:9px;
   font-weight:600;
 
   letter-spacing:.13em;
-
   text-transform:uppercase;
 }
 
 .hero-trust span{
   display:inline-flex;
   align-items:center;
-
   gap:7px;
 }
 
@@ -862,7 +735,7 @@ select#language option{
 
   border-radius:50%;
 
-  background:var(--gold-2);
+  background:var(--gold2);
 
   box-shadow:
     0 0 10px rgba(229,199,123,.6);
@@ -888,8 +761,7 @@ select#language option{
   width:370px;
   height:370px;
 
-  border:
-    1px solid rgba(229,199,123,.18);
+  border:1px solid rgba(229,199,123,.15);
 
   border-radius:50%;
 
@@ -897,17 +769,13 @@ select#language option{
     perspective(800px)
     rotateX(64deg)
     rotateZ(-15deg);
-
-  box-shadow:
-    0 0 80px rgba(229,199,123,.04);
 }
 
 .hero-orbit.orbit-two{
   width:280px;
   height:280px;
 
-  border-color:
-    rgba(0,108,53,.38);
+  border-color:rgba(0,108,53,.34);
 
   transform:
     perspective(800px)
@@ -915,50 +783,44 @@ select#language option{
     rotateZ(35deg);
 }
 
-
-/* =========================================================
-   SAUDI SILHOUETTE
-========================================================= */
-
 .saudi-silhouette{
   position:relative;
 
   width:250px;
   height:300px;
 
-  opacity:.58;
+  opacity:.52;
 
   background:
     linear-gradient(
       145deg,
-      rgba(229,199,123,.18),
+      rgba(229,199,123,.16),
       rgba(0,108,53,.20)
     );
 
-  clip-path:
-    polygon(
-      39% 0,
-      58% 5%,
-      70% 16%,
-      78% 24%,
-      91% 34%,
-      86% 45%,
-      97% 55%,
-      82% 63%,
-      87% 75%,
-      70% 80%,
-      65% 93%,
-      49% 100%,
-      39% 89%,
-      27% 83%,
-      18% 71%,
-      7% 65%,
-      13% 53%,
-      5% 43%,
-      18% 35%,
-      14% 22%,
-      27% 17%
-    );
+  clip-path:polygon(
+    39% 0,
+    58% 5%,
+    70% 16%,
+    78% 24%,
+    91% 34%,
+    86% 45%,
+    97% 55%,
+    82% 63%,
+    87% 75%,
+    70% 80%,
+    65% 93%,
+    49% 100%,
+    39% 89%,
+    27% 83%,
+    18% 71%,
+    7% 65%,
+    13% 53%,
+    5% 43%,
+    18% 35%,
+    14% 22%,
+    27% 17%
+  );
 
   filter:
     drop-shadow(
@@ -978,8 +840,7 @@ select#language option{
 
   padding:15px 17px;
 
-  border:
-    1px solid rgba(229,199,123,.26);
+  border:1px solid rgba(229,199,123,.24);
 
   border-radius:18px;
 
@@ -987,17 +848,14 @@ select#language option{
     linear-gradient(
       145deg,
       rgba(8,32,22,.84),
-      rgba(3,15,10,.64)
+      rgba(3,15,10,.62)
     );
 
-  backdrop-filter:
-    blur(18px);
-
-  -webkit-backdrop-filter:
-    blur(18px);
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
 
   box-shadow:
-    0 25px 65px rgba(0,0,0,.42);
+    0 25px 65px rgba(0,0,0,.38);
 
   transition:
     transform .35s ease,
@@ -1005,11 +863,7 @@ select#language option{
 }
 
 .hero-card:hover{
-  border-color:
-    rgba(229,199,123,.52);
-
-  transform:
-    translateY(-5px);
+  border-color:rgba(229,199,123,.50);
 }
 
 .hero-card-top{
@@ -1047,13 +901,12 @@ select#language option{
 
   margin-bottom:6px;
 
-  color:var(--gold-2);
+  color:var(--gold2);
 
   font-size:9px;
   font-weight:700;
 
   letter-spacing:.12em;
-
   text-transform:uppercase;
 }
 
@@ -1068,18 +921,16 @@ select#language option{
 
   border-radius:11px;
 
-  background:
-    rgba(229,199,123,.08);
+  background:rgba(229,199,123,.08);
 
-  border:
-    1px solid rgba(229,199,123,.18);
+  border:1px solid rgba(229,199,123,.18);
 
-  color:var(--gold-2);
+  color:var(--gold2);
 }
 
 
 /* =========================================================
-   HERO PINS
+   PINS
 ========================================================= */
 
 .hero-pin{
@@ -1090,7 +941,7 @@ select#language option{
 
   border-radius:50%;
 
-  background:var(--gold-2);
+  background:var(--gold2);
 
   box-shadow:
     0 0 0 5px rgba(229,199,123,.08),
@@ -1121,8 +972,7 @@ select#language option{
 
 @keyframes pinPulse{
 
-  0%,
-  100%{
+  0%,100%{
     transform:scale(1);
     opacity:.8;
   }
@@ -1169,7 +1019,7 @@ select#language option{
 
   background:
     linear-gradient(
-      var(--gold-2),
+      var(--gold2),
       transparent
     );
 }
@@ -1191,38 +1041,35 @@ select#language option{
 
   pointer-events:none;
 
-  z-index:2;
+  z-index:1;
 }
 
 .hero-glow-one{
   right:-120px;
   top:80px;
 
-  background:
-    rgba(0,108,53,.13);
+  background:rgba(0,108,53,.13);
 }
 
 .hero-glow-two{
   left:-160px;
   bottom:-120px;
 
-  background:
-    rgba(229,199,123,.055);
+  background:rgba(229,199,123,.055);
 }
 
 
 /* =========================================================
-   HERO GRID
+   GRIDLINES
 ========================================================= */
 
 .hero-gridlines{
   position:absolute;
-
   inset:0;
 
-  z-index:2;
+  z-index:1;
 
-  opacity:.07;
+  opacity:.08;
 
   background-image:
     linear-gradient(
@@ -1235,18 +1082,9 @@ select#language option{
       transparent 1px
     );
 
-  background-size:
-    90px 90px;
+  background-size:90px 90px;
 
   mask-image:
-    linear-gradient(
-      to bottom,
-      transparent,
-      black 25%,
-      transparent 90%
-    );
-
-  -webkit-mask-image:
     linear-gradient(
       to bottom,
       transparent,
@@ -1267,14 +1105,13 @@ select#language option{
 
   z-index:20;
 
-  margin-top:-72px;
+  margin-top:-75px;
 }
 
 .search-inner{
   padding:22px;
 
-  border:
-    1px solid var(--line);
+  border:1px solid var(--line);
 
   border-radius:24px;
 
@@ -1285,20 +1122,15 @@ select#language option{
       rgba(3,15,10,.88)
     );
 
-  box-shadow:
-    var(--shadow);
+  box-shadow:var(--shadow);
 
-  backdrop-filter:
-    blur(20px);
-
-  -webkit-backdrop-filter:
-    blur(20px);
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
 }
 
 .search-row{
   display:flex;
   align-items:center;
-
   gap:10px;
 }
 
@@ -1308,8 +1140,7 @@ select#language option{
 #searchCategory{
   min-height:48px;
 
-  border:
-    1px solid rgba(229,199,123,.18);
+  border:1px solid rgba(229,199,123,.18);
 
   border-radius:14px;
 
@@ -1327,7 +1158,6 @@ select#language option{
 .search-row input,
 #globalSearch{
   flex:1;
-
   padding:0 16px;
 }
 
@@ -1340,8 +1170,7 @@ select#language option{
 .search-row select:focus,
 #globalSearch:focus,
 #searchCategory:focus{
-  border-color:
-    rgba(229,199,123,.55);
+  border-color:rgba(229,199,123,.55);
 
   box-shadow:
     0 0 0 4px rgba(229,199,123,.06);
@@ -1369,15 +1198,13 @@ select#language option{
 
   padding:5px 11px;
 
-  border:
-    1px solid var(--line);
+  border:1px solid var(--line);
 
   border-radius:999px;
 
   color:#C8D1CD;
 
-  background:
-    rgba(255,255,255,.02);
+  background:rgba(255,255,255,.02);
 
   font-size:10px;
 
@@ -1388,13 +1215,11 @@ select#language option{
 }
 
 .chip:hover{
-  color:var(--gold-2);
+  color:var(--gold2);
 
-  border-color:
-    rgba(229,199,123,.4);
+  border-color:rgba(229,199,123,.4);
 
-  background:
-    rgba(229,199,123,.05);
+  background:rgba(229,199,123,.05);
 }
 
 
@@ -1404,25 +1229,21 @@ select#language option{
 
 .search-overlay{
   position:fixed;
-
   inset:0;
 
   z-index:200;
 
   display:none;
+
   align-items:flex-start;
   justify-content:center;
 
   padding:110px 20px 30px;
 
-  background:
-    rgba(1,7,5,.86);
+  background:rgba(1,7,5,.86);
 
-  backdrop-filter:
-    blur(22px);
-
-  -webkit-backdrop-filter:
-    blur(22px);
+  backdrop-filter:blur(22px);
+  -webkit-backdrop-filter:blur(22px);
 }
 
 .search-overlay.open{
@@ -1434,8 +1255,7 @@ select#language option{
 
   padding:30px;
 
-  border:
-    1px solid var(--line);
+  border:1px solid var(--line);
 
   border-radius:28px;
 
@@ -1460,8 +1280,7 @@ select#language option{
 
   border-radius:16px;
 
-  border:
-    1px solid var(--line);
+  border:1px solid var(--line);
 
   background:#06170F;
 
@@ -1473,22 +1292,20 @@ select#language option{
 }
 
 .search-close{
-  margin-left:auto;
-  margin-bottom:15px;
-
   width:38px;
   height:38px;
 
   display:grid;
   place-items:center;
 
+  margin-left:auto;
+  margin-bottom:15px;
+
   border-radius:50%;
 
-  border:
-    1px solid var(--line);
+  border:1px solid var(--line);
 
-  background:
-    rgba(255,255,255,.03);
+  background:rgba(255,255,255,.03);
 
   color:var(--white);
 }
@@ -1501,7 +1318,7 @@ select#language option{
 .section{
   position:relative;
 
-  padding:105px 0;
+  padding:100px 0;
 }
 
 .section.alt{
@@ -1529,7 +1346,6 @@ select#language option{
 
 .section-head p{
   max-width:620px;
-
   margin-bottom:0;
 }
 
@@ -1538,7 +1354,7 @@ select#language option{
 
   margin-bottom:10px;
 
-  color:var(--gold-2);
+  color:var(--gold2);
 
   font-size:10px;
   font-weight:700;
@@ -1588,8 +1404,7 @@ select#language option{
 
   padding:28px;
 
-  border:
-    1px solid var(--line);
+  border:1px solid var(--line);
 
   border-radius:var(--radius);
 
@@ -1602,6 +1417,8 @@ select#language option{
 
   box-shadow:
     0 18px 60px rgba(0,0,0,.18);
+
+  transform:translateZ(0);
 
   transition:
     transform .35s ease,
@@ -1636,7 +1453,6 @@ select#language option{
   content:"";
 
   position:absolute;
-
   inset:0;
 
   background:
@@ -1647,8 +1463,7 @@ select#language option{
       transparent 65%
     );
 
-  transform:
-    translateX(-100%);
+  transform:translateX(-100%);
 
   transition:
     transform .7s ease;
@@ -1670,8 +1485,7 @@ select#language option{
 }
 
 .card:hover::after{
-  transform:
-    translateX(100%);
+  transform:translateX(100%);
 }
 
 .pillar{
@@ -1690,7 +1504,7 @@ select#language option{
 .card-icon{
   margin:18px 0;
 
-  color:var(--gold-2);
+  color:var(--gold2);
 
   font-size:32px;
 }
@@ -1726,33 +1540,62 @@ select#language option{
   display:flex;
   align-items:flex-end;
 
-  background-size:cover;
-  background-position:center;
+  position:relative;
 
   overflow:hidden;
 
-  isolation:isolate;
+  border-radius:var(--radius);
+
+  background:
+    radial-gradient(
+      circle at 70% 25%,
+      rgba(0,108,53,.38),
+      transparent 35%
+    ),
+    linear-gradient(
+      145deg,
+      #0A3020,
+      #03120C
+    );
 }
 
 .dest::before{
   content:"";
 
   position:absolute;
-
   inset:0;
 
-  z-index:-1;
+  background:
+    radial-gradient(
+      circle at 25% 25%,
+      rgba(229,199,123,.10),
+      transparent 22%
+    );
+
+  pointer-events:none;
+}
+
+.dest::after{
+  content:"";
+
+  position:absolute;
+  inset:0;
 
   background:
     linear-gradient(
       180deg,
-      rgba(2,10,7,.02) 20%,
-      rgba(2,10,7,.35) 55%,
-      rgba(2,10,7,.96) 100%
+      transparent 25%,
+      rgba(2,10,7,.92) 100%
     );
+
+  pointer-events:none;
 }
 
 .dest .overlay{
+  position:relative;
+
+  z-index:2;
+
   width:100%;
 
   padding:25px;
@@ -1768,24 +1611,9 @@ select#language option{
   margin:0;
 }
 
-.dest.riyadh{
-  background-image:
-    url("/assets/images/riyadh-hero.jpg");
-}
-
-.dest.alula{
-  background-image:
-    url("/assets/images/alula.jpg");
-}
-
-.dest.jeddah{
-  background-image:
-    url("/assets/images/jeddah.jpg");
-}
-
 
 /* =========================================================
-   ARTICLE IMAGES
+   ARTICLE IMAGE
 ========================================================= */
 
 .article-img{
@@ -1812,12 +1640,11 @@ select#language option{
 
   padding:6px 9px;
 
-  border:
-    1px solid var(--line);
+  border:1px solid var(--line);
 
   border-radius:999px;
 
-  color:var(--gold-2);
+  color:var(--gold2);
 
   font-size:9px;
   font-weight:600;
@@ -1826,8 +1653,7 @@ select#language option{
 
   text-transform:uppercase;
 
-  background:
-    rgba(229,199,123,.035);
+  background:rgba(229,199,123,.035);
 }
 
 
@@ -1847,8 +1673,13 @@ select#language option{
   background:
     radial-gradient(
       circle at 80% 25%,
-      rgba(0,108,53,.24),
+      rgba(0,108,53,.28),
       transparent 38%
+    ),
+    radial-gradient(
+      circle at 15% 70%,
+      rgba(229,199,123,.05),
+      transparent 28%
     ),
     linear-gradient(
       180deg,
@@ -1856,8 +1687,7 @@ select#language option{
       var(--black)
     );
 
-  border-bottom:
-    1px solid var(--line);
+  border-bottom:1px solid var(--line);
 }
 
 .page-hero h1{
@@ -1898,8 +1728,7 @@ select#language option{
 }
 
 .prose a{
-  color:var(--gold-2);
-
+  color:var(--gold2);
   text-decoration:underline;
 }
 
@@ -1908,11 +1737,9 @@ select#language option{
 
   padding:20px 24px;
 
-  border-left:
-    2px solid var(--gold);
+  border-left:2px solid var(--gold);
 
-  background:
-    rgba(229,199,123,.04);
+  background:rgba(229,199,123,.04);
 
   color:#DCE3DF;
 }
@@ -1924,7 +1751,6 @@ select#language option{
 
 .form{
   display:grid;
-
   gap:14px;
 }
 
@@ -1935,8 +1761,7 @@ select#language option{
 
   padding:14px;
 
-  border:
-    1px solid var(--line);
+  border:1px solid var(--line);
 
   border-radius:14px;
 
@@ -1950,12 +1775,10 @@ select#language option{
 .form input:focus,
 .form textarea:focus,
 .form select:focus{
-  border-color:
-    rgba(229,199,123,.55);
+  border-color:rgba(229,199,123,.55);
 
   box-shadow:
-    0 0 0 4px
-    rgba(229,199,123,.05);
+    0 0 0 4px rgba(229,199,123,.05);
 }
 
 .form textarea{
@@ -1988,11 +1811,8 @@ select#language option{
       #04110C
     );
 
-  border-top:
-    1px solid var(--line);
-
-  border-bottom:
-    1px solid var(--line);
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
 }
 
 .cta-box{
@@ -2018,8 +1838,7 @@ select#language option{
 
   background:#020907;
 
-  border-top:
-    1px solid var(--line);
+  border-top:1px solid var(--line);
 }
 
 .footer-grid{
@@ -2034,11 +1853,9 @@ select#language option{
 .footer h4{
   margin-bottom:14px;
 
-  color:var(--gold-2);
+  color:var(--gold2);
 
-  font-family:
-    "Poppins",
-    sans-serif;
+  font-family:"Poppins",sans-serif;
 
   font-size:11px;
   font-weight:700;
@@ -2057,15 +1874,11 @@ select#language option{
 
   font-size:12px;
 
-  transition:
-    color .2s ease,
-    transform .2s ease;
+  transition:color .2s ease;
 }
 
 .footer a:hover{
-  color:var(--gold-2);
-
-  transform:translateX(3px);
+  color:var(--gold2);
 }
 
 .footer-bottom{
@@ -2078,8 +1891,7 @@ select#language option{
   margin-top:45px;
   padding-top:20px;
 
-  border-top:
-    1px solid rgba(255,255,255,.07);
+  border-top:1px solid rgba(255,255,255,.07);
 
   color:#7F8C85;
 
@@ -2112,14 +1924,10 @@ select#language option{
       #020907
     );
 
-  border-top:
-    1px solid var(--line);
+  border-top:1px solid var(--line);
 
-  backdrop-filter:
-    blur(25px);
-
-  -webkit-backdrop-filter:
-    blur(25px);
+  backdrop-filter:blur(25px);
+  -webkit-backdrop-filter:blur(25px);
 }
 
 .mobile-menu.open,
@@ -2133,21 +1941,18 @@ select#language option{
 
   padding:16px 0;
 
-  border-bottom:
-    1px solid rgba(255,255,255,.07);
+  border-bottom:1px solid rgba(255,255,255,.07);
 
   color:var(--white);
 
-  font-family:
-    "Playfair Display",
-    serif;
+  font-family:"Playfair Display",serif;
 
   font-size:28px;
 }
 
 .mobile-menu a:hover,
 .mobile-nav a:hover{
-  color:var(--gold-2);
+  color:var(--gold2);
 }
 
 .mobile-menu-close{
@@ -2162,11 +1967,9 @@ select#language option{
 
   border-radius:50%;
 
-  border:
-    1px solid var(--line);
+  border:1px solid var(--line);
 
-  background:
-    rgba(255,255,255,.03);
+  background:rgba(255,255,255,.03);
 
   color:var(--white);
 }
@@ -2190,22 +1993,16 @@ select#language option{
 
   padding:20px;
 
-  border:
-    1px solid var(--line);
+  border:1px solid var(--line);
 
   border-radius:20px;
 
-  background:
-    rgba(7,27,19,.96);
+  background:rgba(7,27,19,.96);
 
-  box-shadow:
-    var(--shadow);
+  box-shadow:var(--shadow);
 
-  backdrop-filter:
-    blur(20px);
-
-  -webkit-backdrop-filter:
-    blur(20px);
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
 }
 
 .cookie.show,
@@ -2216,6 +2013,11 @@ select#language option{
   justify-content:space-between;
 
   gap:20px;
+}
+
+.cookie.hidden,
+.cookie-banner.hidden{
+  display:none;
 }
 
 .cookie-content{
@@ -2231,7 +2033,6 @@ select#language option{
 .cookie-actions{
   display:flex;
   flex-wrap:wrap;
-
   gap:8px;
 }
 
@@ -2242,7 +2043,6 @@ select#language option{
 
 .modal{
   position:fixed;
-
   inset:0;
 
   z-index:180;
@@ -2254,11 +2054,9 @@ select#language option{
 
   padding:20px;
 
-  background:
-    rgba(0,0,0,.72);
+  background:rgba(0,0,0,.72);
 
-  backdrop-filter:
-    blur(9px);
+  backdrop-filter:blur(9px);
 }
 
 .modal.open{
@@ -2270,15 +2068,13 @@ select#language option{
 
   padding:28px;
 
-  border:
-    1px solid var(--line);
+  border:1px solid var(--line);
 
   border-radius:24px;
 
   background:#071B13;
 
-  box-shadow:
-    var(--shadow);
+  box-shadow:var(--shadow);
 }
 
 
@@ -2294,8 +2090,7 @@ select#language option{
 
   z-index:250;
 
-  max-width:
-    calc(100% - 30px);
+  max-width:calc(100% - 30px);
 
   padding:11px 17px;
 
@@ -2337,8 +2132,7 @@ select#language option{
 .reveal{
   opacity:0;
 
-  transform:
-    translateY(24px);
+  transform:translateY(24px);
 
   transition:
     opacity .75s ease,
@@ -2384,20 +2178,13 @@ body.rtl{
   padding-right:18px;
 }
 
-.rtl .footer a:hover{
-  transform:
-    translateX(-3px);
-}
-
 
 /* =========================================================
-   ACCESSIBILITY
+   FOCUS
 ========================================================= */
 
 :focus-visible{
-  outline:
-    2px solid var(--gold-2);
-
+  outline:2px solid var(--gold2);
   outline-offset:4px;
 }
 
@@ -2453,11 +2240,7 @@ body.rtl{
   }
 
   .container{
-    width:
-      min(
-        calc(100% - 28px),
-        1180px
-      );
+    width:min(100% - 28px,1180px);
   }
 
   .header-inner,
@@ -2467,14 +2250,12 @@ body.rtl{
 
   .site-header,
   .nav{
-    background:
-      rgba(3,14,10,.76);
+    background:rgba(3,14,10,.82);
   }
 
   .site-header.scrolled,
   .nav.scrolled{
-    background:
-      rgba(3,14,10,.94);
+    background:rgba(3,14,10,.96);
   }
 
   .brand-text small,
@@ -2491,157 +2272,97 @@ body.rtl{
   }
 
 
-  /* -------------------------------------------------------
-     MOBILE HERO
-  ------------------------------------------------------- */
+  /* HERO */
 
   .hero{
-    min-height:760px;
+    min-height:720px;
 
     align-items:flex-start;
 
-    background-image:
+    background:
+      radial-gradient(
+        circle at 75% 20%,
+        rgba(0,108,53,.30),
+        transparent 35%
+      ),
       linear-gradient(
         180deg,
-        rgba(2,10,7,.34) 0%,
-        rgba(2,10,7,.48) 30%,
-        rgba(2,10,7,.70) 55%,
-        rgba(2,10,7,.91) 78%,
-        #04110C 100%
-      ),
-      url("/assets/images/riyadh-hero.jpg");
-
-    background-position:
-      center,
-      center center;
-
-    background-size:
-      cover,
-      cover;
-
-    background-repeat:
-      no-repeat;
+        #020907 0%,
+        #04110C 55%,
+        #062017 100%
+      );
   }
-
 
   .hero-layout{
     display:block;
 
     padding-top:125px;
-    padding-bottom:75px;
+    padding-bottom:80px;
   }
 
   .hero-content{
     max-width:100%;
   }
 
-
-  /* -------------------------------------------------------
-     MOBILE HERO TITLE
-  ------------------------------------------------------- */
-
   .hero h1{
-    max-width:100%;
-
     font-size:
-      clamp(42px,12.8vw,62px);
+      clamp(42px,13vw,62px);
 
-    line-height:1.01;
+    line-height:1.03;
 
     letter-spacing:-.045em;
-
-    text-shadow:
-      0 8px 30px rgba(0,0,0,.5);
   }
 
   .hero-arabic{
-    margin-top:18px;
-
-    font-size:13px;
-
+    font-size:14px;
     line-height:1.9;
   }
 
   .hero .lead{
-    max-width:100%;
-
-    font-size:12.5px;
-
+    font-size:13px;
     line-height:1.8;
-
-    color:#CBD5D0;
   }
-
-
-  /* -------------------------------------------------------
-     MOBILE BUTTONS
-  ------------------------------------------------------- */
 
   .hero-actions{
     display:grid;
 
     grid-template-columns:1fr;
 
-    margin-top:22px;
-
-    gap:9px;
+    margin-top:24px;
   }
 
   .hero-actions .btn{
     width:100%;
-
-    min-height:46px;
   }
 
-
-  /* -------------------------------------------------------
-     MOBILE TRUST
-  ------------------------------------------------------- */
-
   .hero-trust{
-    gap:7px;
+    gap:8px;
 
-    margin-top:20px;
-
-    font-size:7.5px;
+    font-size:8px;
 
     line-height:1.8;
   }
 
-
-  /* -------------------------------------------------------
-     HIDE DECORATIVE 3D VISUAL
-  ------------------------------------------------------- */
-
-  .hero-visual{
-    display:none;
-  }
-
   .hero-gridlines{
     opacity:.035;
-
-    background-size:
-      55px 55px;
+    background-size:55px 55px;
   }
 
 
-  /* -------------------------------------------------------
-     SEARCH
-  ------------------------------------------------------- */
+  /* SEARCH */
 
   .searchbox{
-    margin-top:-42px;
+    margin-top:-35px;
   }
 
   .search-inner{
-    padding:15px;
+    padding:16px;
 
     border-radius:20px;
   }
 
   .search-row{
     flex-direction:column;
-
     align-items:stretch;
   }
 
@@ -2657,12 +2378,10 @@ body.rtl{
   }
 
 
-  /* -------------------------------------------------------
-     SECTIONS
-  ------------------------------------------------------- */
+  /* SECTIONS */
 
   .section{
-    padding:72px 0;
+    padding:70px 0;
   }
 
   .section-head{
@@ -2680,9 +2399,7 @@ body.rtl{
   }
 
 
-  /* -------------------------------------------------------
-     GRIDS
-  ------------------------------------------------------- */
+  /* GRIDS */
 
   .grid3,
   .grid4{
@@ -2690,9 +2407,7 @@ body.rtl{
   }
 
 
-  /* -------------------------------------------------------
-     CARDS
-  ------------------------------------------------------- */
+  /* CARDS */
 
   .card{
     padding:23px;
@@ -2705,26 +2420,14 @@ body.rtl{
   }
 
 
-  /* -------------------------------------------------------
-     DESTINATIONS
-  ------------------------------------------------------- */
+  /* DESTINATIONS */
 
   .dest{
     min-height:330px;
   }
 
-  .dest .overlay{
-    padding:22px;
-  }
 
-  .dest h3{
-    font-size:28px;
-  }
-
-
-  /* -------------------------------------------------------
-     PAGE HERO
-  ------------------------------------------------------- */
+  /* PAGE HERO */
 
   .page-hero{
     padding:
@@ -2738,9 +2441,7 @@ body.rtl{
   }
 
 
-  /* -------------------------------------------------------
-     CTA
-  ------------------------------------------------------- */
+  /* CTA */
 
   .cta{
     padding:70px 0;
@@ -2755,31 +2456,24 @@ body.rtl{
   }
 
 
-  /* -------------------------------------------------------
-     FOOTER
-  ------------------------------------------------------- */
+  /* FOOTER */
 
   .footer-grid{
     grid-template-columns:1fr;
-
     gap:25px;
   }
 
   .footer-bottom{
     flex-direction:column;
-
     align-items:flex-start;
   }
 
 
-  /* -------------------------------------------------------
-     COOKIE
-  ------------------------------------------------------- */
+  /* COOKIE */
 
   .cookie.show,
   .cookie-banner.show{
     flex-direction:column;
-
     align-items:stretch;
 
     left:10px;
@@ -2798,9 +2492,7 @@ body.rtl{
   }
 
 
-  /* -------------------------------------------------------
-     MOBILE MENU
-  ------------------------------------------------------- */
+  /* MOBILE MENU */
 
   .mobile-menu,
   .mobile-nav{
@@ -2813,26 +2505,17 @@ body.rtl{
   }
 
 
-  /* -------------------------------------------------------
-     SEARCH OVERLAY
-  ------------------------------------------------------- */
+  /* SEARCH OVERLAY */
 
   .search-overlay{
     padding:
-      88px 12px 20px;
+      90px 12px 20px;
   }
 
   .search-overlay-content{
     padding:20px;
 
     border-radius:22px;
-  }
-
-  .search-overlay-content input,
-  #overlaySearchInput{
-    min-height:55px;
-
-    font-size:15px;
   }
 }
 
@@ -2844,11 +2527,11 @@ body.rtl{
 @media (max-width:390px){
 
   .hero{
-    min-height:735px;
+    min-height:700px;
   }
 
   .hero-layout{
-    padding-top:118px;
+    padding-top:115px;
   }
 
   .hero h1{
@@ -2863,45 +2546,12 @@ body.rtl{
     font-size:12px;
   }
 
-  .hero-trust{
-    font-size:7px;
-  }
-
   .section h2{
     font-size:34px;
   }
 
   .btn{
     font-size:11px;
-  }
-}
-
-
-/* =========================================================
-   VERY SMALL DEVICES
-========================================================= */
-
-@media (max-width:340px){
-
-  .hero h1{
-    font-size:38px;
-  }
-
-  .hero{
-    min-height:720px;
-  }
-
-  .brand-mark,
-  .logo-mark{
-    width:36px;
-    height:42px;
-  }
-
-  .language-select,
-  select#language{
-    padding:0 8px;
-
-    font-size:10px;
   }
 }
 
@@ -2920,15 +2570,12 @@ body.rtl{
   *::before,
   *::after{
     animation-duration:.01ms !important;
-
     animation-iteration-count:1 !important;
-
     transition-duration:.01ms !important;
   }
 
   .reveal{
     opacity:1;
-
     transform:none;
   }
 }
