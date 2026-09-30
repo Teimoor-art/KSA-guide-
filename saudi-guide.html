@@ -2,60 +2,78 @@
 layout: null
 permalink: /saudi-guide.html
 ---
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
 
   <meta charset="UTF-8">
 
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-  <title>Saudi Guide — Practical Guide to Life in Saudi Arabia | KSA GUIDE</title>
+  <title>Saudi Guide — Iqama, Visa, Absher, Driving & Daily Life | KSA GUIDE</title>
 
-  <meta name="description"
-        content="Practical Saudi Arabia guides covering Iqama, visas, Absher, driving, Saudi apps, daily life, rules and useful information for residents and visitors.">
+  <meta
+    name="description"
+    content="Practical Saudi Arabia guides covering Iqama, visas, Absher, driving, Saudi apps, daily life, documents and useful services."
+  >
 
-  <meta name="robots"
-        content="index, follow">
+  <meta
+    name="robots"
+    content="index,follow"
+  >
 
-  <link rel="canonical"
-        href="https://ksa-guide.com/saudi-guide.html">
+  <link
+    rel="canonical"
+    href="https://ksa-guide.com/saudi-guide.html"
+  >
 
-  <meta property="og:title"
-        content="Saudi Guide | KSA GUIDE">
+  <meta
+    property="og:title"
+    content="Saudi Guide | KSA GUIDE"
+  >
 
-  <meta property="og:description"
-        content="Practical information for understanding life in Saudi Arabia.">
+  <meta
+    property="og:description"
+    content="Practical information for understanding everyday life in Saudi Arabia."
+  >
 
-  <meta property="og:type"
-        content="website">
+  <meta
+    property="og:type"
+    content="website"
+  >
 
-  <meta property="og:url"
-        content="https://ksa-guide.com/saudi-guide.html">
+  <meta
+    property="og:url"
+    content="https://ksa-guide.com/saudi-guide.html"
+  >
 
-  <!-- Fonts -->
+  <meta
+    name="theme-color"
+    content="#04110C"
+  >
 
-  <link rel="preconnect"
-        href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 
-  <link rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
 
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
 
-  <!-- Icons -->
-
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-  <!-- Main CSS -->
-
-  <link rel="stylesheet"
-        href="/assets/css/style.css">
+  <link
+    rel="stylesheet"
+    href="/assets/css/style.css"
+  >
 
 </head>
 
@@ -63,46 +81,56 @@ permalink: /saudi-guide.html
 <body>
 
 
-<!-- =====================================================
+<!-- =========================================================
      HEADER
-===================================================== -->
+========================================================= -->
 
-<header class="site-header"
-        id="siteHeader">
+<header
+  class="site-header"
+  id="siteHeader"
+>
 
-  <div class="container header-inner">
+  <div class="container nav">
 
-
-    <a href="/"
-       class="brand">
+    <a
+      href="/"
+      class="brand"
+      aria-label="KSA GUIDE Home"
+    >
 
       <span class="brand-mark">
-        <span class="brand-map">◆</span>
+        K
       </span>
 
       <span class="brand-text">
 
-        <strong>KSA</strong>
+        <strong>
+          KSA GUIDE
+        </strong>
 
-        <span>GUIDE</span>
+        <small>
+          Your Complete Guide to Saudi Arabia
+        </small>
 
       </span>
 
     </a>
 
 
-    <nav class="main-nav"
-         id="mainNav">
+    <nav
+      class="desktop-nav"
+      aria-label="Main navigation"
+    >
 
       <a href="/">
         Home
       </a>
 
-      <a href="/saudi-guide.html"
-         class="active">
-
+      <a
+        href="/saudi-guide.html"
+        class="active"
+      >
         Saudi Guide
-
       </a>
 
       <a href="/travel.html">
@@ -132,23 +160,23 @@ permalink: /saudi-guide.html
     </nav>
 
 
-    <div class="header-actions">
-
+    <div class="nav-actions">
 
       <button
         class="icon-btn"
-        id="searchToggle"
-        aria-label="Search">
-
-        <i class="fa-solid fa-magnifying-glass"></i>
-
+        id="searchOpen"
+        type="button"
+        aria-label="Open search"
+      >
+        ⌕
       </button>
 
 
       <select
         id="language"
         class="language-select"
-        aria-label="Language">
+        aria-label="Language"
+      >
 
         <option value="en">
           EN
@@ -165,18 +193,22 @@ permalink: /saudi-guide.html
       </select>
 
 
-      <a href="/destinations.html"
-         class="header-cta">
-
-        Explore Saudi
-
+      <a
+        href="/contact.html"
+        class="btn btn-primary nav-cta"
+      >
+        Get Started
       </a>
 
 
       <button
-        class="mobile-menu-btn"
-        id="mobileMenuBtn"
-        aria-label="Open menu">
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Open menu"
+        aria-controls="mobileMenu"
+        aria-expanded="false"
+      >
 
         <span></span>
         <span></span>
@@ -191,479 +223,303 @@ permalink: /saudi-guide.html
 </header>
 
 
-<!-- =====================================================
-     SEARCH OVERLAY
-===================================================== -->
 
-<div class="search-overlay"
-     id="searchOverlay">
+<!-- =========================================================
+     MOBILE MENU
+========================================================= -->
 
-  <div class="search-box">
+<aside
+  class="mobile-menu"
+  id="mobileMenu"
+  aria-hidden="true"
+>
 
+  <div class="mobile-menu-top">
+
+    <strong>
+      KSA GUIDE
+    </strong>
 
     <button
-      class="search-close"
-      id="searchClose">
-
-      <i class="fa-solid fa-xmark"></i>
-
+      id="mobileMenuClose"
+      type="button"
+      aria-label="Close menu"
+    >
+      ×
     </button>
-
-
-    <span class="eyebrow">
-      KSA GUIDE SEARCH
-    </span>
-
-
-    <h2>
-      Search Saudi Guides
-    </h2>
-
-
-    <form
-      class="global-search-form"
-      action="/blog.html"
-      method="get">
-
-
-      <div class="search-input-wrap">
-
-        <i class="fa-solid fa-magnifying-glass"></i>
-
-        <input
-          type="search"
-          name="q"
-          placeholder="Search Iqama, Visa, Absher, Driving..."
-          autocomplete="off">
-
-      </div>
-
-
-      <button
-        type="submit"
-        class="btn btn-gold">
-
-        Search
-
-      </button>
-
-    </form>
-
-
-    <div class="search-suggestions">
-
-      <span>
-        Popular:
-      </span>
-
-      <a href="#iqama">
-        Iqama
-      </a>
-
-      <a href="#visa">
-        Visa
-      </a>
-
-      <a href="#absher">
-        Absher
-      </a>
-
-      <a href="#driving">
-        Driving
-      </a>
-
-      <a href="#apps">
-        Saudi Apps
-      </a>
-
-    </div>
 
   </div>
 
-</div>
+
+  <nav aria-label="Mobile navigation">
+
+    <a href="/">
+      Home
+    </a>
+
+    <a href="/saudi-guide.html">
+      Saudi Guide
+    </a>
+
+    <a href="/travel.html">
+      Travel
+    </a>
+
+    <a href="/destinations.html">
+      Destinations
+    </a>
+
+    <a href="/digital-services.html">
+      Digital Services
+    </a>
+
+    <a href="/blog.html">
+      Blog
+    </a>
+
+    <a href="/about.html">
+      About
+    </a>
+
+    <a href="/contact.html">
+      Contact
+    </a>
+
+  </nav>
+
+</aside>
 
 
-<!-- =====================================================
+
+<!-- =========================================================
      PAGE HERO
-===================================================== -->
+========================================================= -->
 
 <main>
 
+<section class="page-hero">
 
-<section class="inner-hero">
-
-  <div class="inner-hero-bg"></div>
-
-  <div class="inner-hero-overlay"></div>
-
+  <div class="page-hero-glow"></div>
 
   <div class="container">
 
-    <div class="inner-hero-content">
-
-
-      <div class="breadcrumb">
-
-        <a href="/">
-          Home
-        </a>
-
-        <span>
-          /
-        </span>
-
-        <span>
-          Saudi Guide
-        </span>
-
-      </div>
-
+    <div class="page-hero-content">
 
       <span class="eyebrow">
+        <span></span>
         SAUDI GUIDE
       </span>
 
 
       <h1>
-        Understand Life
-        <br>
-        in Saudi Arabia.
+        Understand
+        <em>Saudi Arabia.</em>
       </h1>
 
 
-      <p>
-        Practical information for visitors,
-        residents, expats and anyone who wants
-        to understand everyday life in the Kingdom.
+      <p class="hero-arabic">
+        دليلك العملي للحياة في المملكة العربية السعودية
       </p>
 
 
-      <div class="hero-mini-stats">
-
-
-        <div>
-
-          <strong>
-            01
-          </strong>
-
-          <span>
-            Practical
-          </span>
-
-        </div>
-
-
-        <div>
-
-          <strong>
-            02
-          </strong>
-
-          <span>
-            Useful
-          </span>
-
-        </div>
-
-
-        <div>
-
-          <strong>
-            03
-          </strong>
-
-          <span>
-            Independent
-          </span>
-
-        </div>
-
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     INTRO
-===================================================== -->
-
-<section class="section guide-intro">
-
-  <div class="container">
-
-
-    <div class="section-heading centered">
-
-      <span class="eyebrow">
-        START HERE
-      </span>
-
-      <h2>
-        Your Practical Saudi
-        <br>
-        Knowledge Hub.
-      </h2>
-
       <p>
-        Whether you're visiting Saudi Arabia,
-        moving to the Kingdom or already living here,
-        these guides are designed to help you
-        understand the basics and find your next step.
+        Practical information for residents, newcomers and visitors —
+        from Iqama and visas to Absher, driving, essential apps and everyday life.
       </p>
 
-    </div>
 
-
-    <div class="guide-category-grid">
-
-
-      <a href="#residency"
-         class="category-tile">
-
-        <div class="category-icon">
-
-          <i class="fa-solid fa-id-card"></i>
-
-        </div>
-
-        <h3>
-          Residency
-        </h3>
-
-        <p>
-          Iqama and everyday residency information.
-        </p>
-
-        <span>
-          Explore
-          <i class="fa-solid fa-arrow-right"></i>
-        </span>
-
-      </a>
-
-
-      <a href="#travel-documents"
-         class="category-tile">
-
-        <div class="category-icon">
-
-          <i class="fa-solid fa-passport"></i>
-
-        </div>
-
-        <h3>
-          Visas
-        </h3>
-
-        <p>
-          General visa and travel information.
-        </p>
-
-        <span>
-          Explore
-          <i class="fa-solid fa-arrow-right"></i>
-        </span>
-
-      </a>
-
-
-      <a href="#digital"
-         class="category-tile">
-
-        <div class="category-icon">
-
-          <i class="fa-solid fa-mobile-screen-button"></i>
-
-        </div>
-
-        <h3>
-          Saudi Apps
-        </h3>
-
-        <p>
-          Useful digital platforms and services.
-        </p>
-
-        <span>
-          Explore
-          <i class="fa-solid fa-arrow-right"></i>
-        </span>
-
-      </a>
-
-
-      <a href="#mobility"
-         class="category-tile">
-
-        <div class="category-icon">
-
-          <i class="fa-solid fa-car"></i>
-
-        </div>
-
-        <h3>
-          Driving
-        </h3>
-
-        <p>
-          Driving, transport and mobility guides.
-        </p>
-
-        <span>
-          Explore
-          <i class="fa-solid fa-arrow-right"></i>
-        </span>
-
-      </a>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     RESIDENCY
-===================================================== -->
-
-<section class="section guide-detail-section"
-         id="residency">
-
-  <div class="container">
-
-
-    <div class="guide-feature-grid">
-
-
-      <div class="guide-feature-content">
-
-        <span class="eyebrow">
-          RESIDENCY
-        </span>
-
-        <h2>
-          Iqama & Residency
-        </h2>
-
-        <p>
-          Learn the basic concepts around residency
-          in Saudi Arabia and the documents,
-          services and digital platforms commonly
-          associated with residents.
-        </p>
-
-
-        <div class="guide-points">
-
-
-          <div>
-
-            <i class="fa-solid fa-check"></i>
-
-            <span>
-              Understanding Iqama basics
-            </span>
-
-          </div>
-
-
-          <div>
-
-            <i class="fa-solid fa-check"></i>
-
-            <span>
-              Common residency services
-            </span>
-
-          </div>
-
-
-          <div>
-
-            <i class="fa-solid fa-check"></i>
-
-            <span>
-              Important documents
-            </span>
-
-          </div>
-
-
-          <div>
-
-            <i class="fa-solid fa-check"></i>
-
-            <span>
-              Digital service platforms
-            </span>
-
-          </div>
-
-
-        </div>
-
-
-        <a href="/blog.html"
-           class="btn btn-outline-light">
-
-          Read Saudi Guides
-
-          <i class="fa-solid fa-arrow-right"></i>
-
+      <div class="hero-actions">
+
+        <a
+          href="#guides"
+          class="btn btn-primary btn-large"
+        >
+          Explore Guides
+          <span>↓</span>
+        </a>
+
+        <a
+          href="/contact.html"
+          class="btn btn-outline btn-large"
+        >
+          Need Help?
         </a>
 
       </div>
 
+    </div>
 
-      <div class="guide-feature-visual">
+  </div>
 
-        <div class="guide-glass-card">
+</section>
 
-          <div class="guide-card-top">
 
-            <span>
-              RESIDENCY
-            </span>
 
-            <i class="fa-solid fa-id-card"></i>
+<!-- =========================================================
+     QUICK NAVIGATION
+========================================================= -->
 
+<section class="smart-search-section">
+
+  <div class="container">
+
+    <div class="smart-search-card">
+
+      <div class="search-intro">
+
+        <span class="search-kicker">
+          QUICK NAVIGATION
+        </span>
+
+        <h2>
+          What do you need?
+        </h2>
+
+        <p>
+          Jump directly to the Saudi information you're looking for.
+        </p>
+
+      </div>
+
+
+      <div class="global-search">
+
+        <div class="search-field">
+
+          <span class="search-symbol">
+            ⌕
+          </span>
+
+          <input
+            type="search"
+            id="globalSearch"
+            placeholder="Search Iqama, Absher, visa, driving..."
+            autocomplete="off"
+          >
+
+        </div>
+
+
+        <select
+          id="searchCategory"
+          aria-label="Search category"
+        >
+
+          <option value="guide">
+            Saudi Guide
+          </option>
+
+          <option value="all">
+            Everything
+          </option>
+
+          <option value="travel">
+            Travel
+          </option>
+
+          <option value="destinations">
+            Destinations
+          </option>
+
+          <option value="services">
+            Digital Services
+          </option>
+
+        </select>
+
+
+        <button
+          id="searchButton"
+          class="btn btn-primary"
+          type="button"
+        >
+          Search
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     INTRO
+========================================================= -->
+
+<section class="section">
+
+  <div class="container split-section">
+
+    <div class="split-content">
+
+      <span class="eyebrow">
+        <span></span>
+        LIFE IN SAUDI ARABIA
+      </span>
+
+
+      <h2>
+        Saudi life,
+        <em>made simpler.</em>
+      </h2>
+
+
+      <p>
+        Moving to or living in Saudi Arabia can involve many
+        different systems, documents and digital platforms.
+        This guide brings the most useful topics together
+        in one place.
+      </p>
+
+
+      <p>
+        Use the sections below to find practical explanations
+        and understand what each service or topic is about.
+      </p>
+
+
+      <a
+        href="#guides"
+        class="btn btn-outline"
+      >
+        Browse All Guides →
+      </a>
+
+    </div>
+
+
+    <div class="split-visual">
+
+      <div class="glass-panel">
+
+        <span class="panel-label">
+          KSA GUIDE
+        </span>
+
+        <strong>
+          06
+        </strong>
+
+        <p>
+          Core areas for everyday Saudi life
+        </p>
+
+
+        <div class="mini-stats">
+
+          <div>
+            <strong>01</strong>
+            <span>Documents</span>
           </div>
 
-
-          <div class="guide-card-icon">
-
-            <i class="fa-solid fa-user-check"></i>
-
+          <div>
+            <strong>02</strong>
+            <span>Services</span>
           </div>
-
-
-          <h3>
-            Saudi Residency
-          </h3>
-
-
-          <p>
-            Understand the terminology,
-            services and information you may
-            encounter as a resident.
-          </p>
-
-
-          <div class="guide-card-line"></div>
-
-
-          <small>
-            Always verify current requirements
-            with official Saudi sources.
-          </small>
 
         </div>
 
@@ -676,641 +532,34 @@ permalink: /saudi-guide.html
 </section>
 
 
-<!-- =====================================================
-     VISA
-===================================================== -->
 
-<section class="section light-section"
-         id="travel-documents">
+<!-- =========================================================
+     GUIDE CARDS
+========================================================= -->
+
+<section
+  class="section guides-section"
+  id="guides"
+>
 
   <div class="container">
-
 
     <div class="section-heading">
 
       <span class="eyebrow">
-        TRAVEL DOCUMENTS
+        <span></span>
+        CORE GUIDES
       </span>
 
-      <h2>
-        Saudi Visa Information
-      </h2>
-
-      <p>
-        Understanding the different types of
-        Saudi travel permissions can make planning
-        your journey easier.
-      </p>
-
-    </div>
-
-
-    <div class="info-card-grid">
-
-
-      <article class="info-card">
-
-        <div class="info-card-icon">
-
-          <i class="fa-solid fa-plane-arrival"></i>
-
-        </div>
-
-        <span>
-          TRAVEL
-        </span>
-
-        <h3>
-          Visitor Information
-        </h3>
-
-        <p>
-          General information to consider
-          before travelling to Saudi Arabia.
-        </p>
-
-        <a href="/blog.html">
-          Explore Guides
-          <i class="fa-solid fa-arrow-right"></i>
-        </a>
-
-      </article>
-
-
-      <article class="info-card">
-
-        <div class="info-card-icon">
-
-          <i class="fa-solid fa-stamp"></i>
-
-        </div>
-
-        <span>
-          VISA
-        </span>
-
-        <h3>
-          Visa Types
-        </h3>
-
-        <p>
-          Learn about common categories and
-          where to find official requirements.
-        </p>
-
-        <a href="/blog.html">
-          Explore Guides
-          <i class="fa-solid fa-arrow-right"></i>
-        </a>
-
-      </article>
-
-
-      <article class="info-card">
-
-        <div class="info-card-icon">
-
-          <i class="fa-solid fa-calendar-check"></i>
-
-        </div>
-
-        <span>
-          PLANNING
-        </span>
-
-        <h3>
-          Before You Travel
-        </h3>
-
-        <p>
-          Useful preparation points for a
-          smoother Saudi travel experience.
-        </p>
-
-        <a href="/travel.html">
-          Plan Your Trip
-          <i class="fa-solid fa-arrow-right"></i>
-        </a>
-
-      </article>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     ABshER / DIGITAL
-===================================================== -->
-
-<section class="section digital-guide-section"
-         id="digital">
-
-  <div class="container">
-
-
-    <div class="guide-feature-grid reverse">
-
-
-      <div class="guide-feature-visual">
-
-        <div class="digital-dashboard">
-
-
-          <div class="dashboard-top">
-
-            <span>
-              SAUDI DIGITAL LIFE
-            </span>
-
-            <span class="status-dot"></span>
-
-          </div>
-
-
-          <div class="dashboard-main">
-
-            <div class="dashboard-icon">
-
-              <i class="fa-solid fa-mobile-screen"></i>
-
-            </div>
-
-
-            <h3>
-              Digital Platforms
-            </h3>
-
-
-            <p>
-              Saudi Arabia has a wide range
-              of digital services for residents
-              and visitors.
-            </p>
-
-          </div>
-
-
-          <div class="dashboard-items">
-
-
-            <div>
-
-              <i class="fa-solid fa-shield-halved"></i>
-
-              <span>
-                Secure
-              </span>
-
-            </div>
-
-
-            <div>
-
-              <i class="fa-solid fa-bolt"></i>
-
-              <span>
-                Digital
-              </span>
-
-            </div>
-
-
-            <div>
-
-              <i class="fa-solid fa-clock"></i>
-
-              <span>
-                Convenient
-              </span>
-
-            </div>
-
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-      <div class="guide-feature-content">
-
-        <span class="eyebrow">
-          DIGITAL SAUDI
-        </span>
-
-        <h2>
-          Absher & Saudi Apps
-        </h2>
-
-        <p>
-          Discover the digital platforms that
-          residents and visitors may encounter
-          while living, travelling or completing
-          everyday tasks in Saudi Arabia.
-        </p>
-
-
-        <div class="guide-points">
-
-
-          <div>
-
-            <i class="fa-solid fa-check"></i>
-
-            <span>
-              Understand what Absher is
-            </span>
-
-          </div>
-
-
-          <div>
-
-            <i class="fa-solid fa-check"></i>
-
-            <span>
-              Discover useful Saudi apps
-            </span>
-
-          </div>
-
-
-          <div>
-
-            <i class="fa-solid fa-check"></i>
-
-            <span>
-              Learn digital-service terminology
-            </span>
-
-          </div>
-
-
-          <div>
-
-            <i class="fa-solid fa-check"></i>
-
-            <span>
-              Find official resources
-            </span>
-
-          </div>
-
-
-        </div>
-
-
-        <a href="/blog.html"
-           class="btn btn-gold">
-
-          Browse Digital Guides
-
-          <i class="fa-solid fa-arrow-right"></i>
-
-        </a>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     DRIVING
-===================================================== -->
-
-<section class="section light-section"
-         id="mobility">
-
-  <div class="container">
-
-
-    <div class="section-heading centered">
-
-      <span class="eyebrow">
-        MOBILITY
-      </span>
 
       <h2>
-        Driving in Saudi Arabia
+        Start with what matters
       </h2>
 
-      <p>
-        Helpful information for understanding
-        driving, roads, licences and mobility.
-      </p>
-
-    </div>
-
-
-    <div class="mobility-grid">
-
-
-      <article class="mobility-card">
-
-        <i class="fa-solid fa-id-badge"></i>
-
-        <h3>
-          Driving Licence
-        </h3>
-
-        <p>
-          General information about driving
-          licence processes and requirements.
-        </p>
-
-      </article>
-
-
-      <article class="mobility-card">
-
-        <i class="fa-solid fa-road"></i>
-
-        <h3>
-          Roads & Driving
-        </h3>
-
-        <p>
-          Learn about everyday road travel
-          and practical driving considerations.
-        </p>
-
-      </article>
-
-
-      <article class="mobility-card">
-
-        <i class="fa-solid fa-car"></i>
-
-        <h3>
-          Vehicle Life
-        </h3>
-
-        <p>
-          Useful topics around cars,
-          transport and everyday mobility.
-        </p>
-
-      </article>
-
-
-      <article class="mobility-card">
-
-        <i class="fa-solid fa-train-subway"></i>
-
-        <h3>
-          Public Transport
-        </h3>
-
-        <p>
-          Explore public transport options
-          available across Saudi cities.
-        </p>
-
-      </article>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     DAILY LIFE
-===================================================== -->
-
-<section class="section daily-life-section">
-
-  <div class="container">
-
-
-    <div class="section-heading split-heading">
-
-      <div>
-
-        <span class="eyebrow">
-          EVERYDAY SAUDI LIFE
-        </span>
-
-        <h2>
-          Useful Things
-          <br>
-          to Know.
-        </h2>
-
-      </div>
 
       <p>
-        Small details can make everyday life
-        easier. Explore practical topics covering
-        common questions about living in Saudi Arabia.
+        Explore the most important topics for navigating everyday life in Saudi Arabia.
       </p>
-
-    </div>
-
-
-    <div class="daily-life-grid">
-
-
-      <a href="/blog.html"
-         class="life-card">
-
-        <i class="fa-solid fa-house"></i>
-
-        <h3>
-          Housing
-        </h3>
-
-        <span>
-          Explore
-          <i class="fa-solid fa-arrow-right"></i>
-        </span>
-
-      </a>
-
-
-      <a href="/blog.html"
-         class="life-card">
-
-        <i class="fa-solid fa-building-columns"></i>
-
-        <h3>
-          Banking
-        </h3>
-
-        <span>
-          Explore
-          <i class="fa-solid fa-arrow-right"></i>
-        </span>
-
-      </a>
-
-
-      <a href="/blog.html"
-         class="life-card">
-
-        <i class="fa-solid fa-sim-card"></i>
-
-        <h3>
-          SIM & Mobile
-        </h3>
-
-        <span>
-          Explore
-          <i class="fa-solid fa-arrow-right"></i>
-        </span>
-
-      </a>
-
-
-      <a href="/blog.html"
-         class="life-card">
-
-        <i class="fa-solid fa-cart-shopping"></i>
-
-        <h3>
-          Shopping
-        </h3>
-
-        <span>
-          Explore
-          <i class="fa-solid fa-arrow-right"></i>
-        </span>
-
-      </a>
-
-
-      <a href="/blog.html"
-         class="life-card">
-
-        <i class="fa-solid fa-utensils"></i>
-
-        <h3>
-          Food & Dining
-        </h3>
-
-        <span>
-          Explore
-          <i class="fa-solid fa-arrow-right"></i>
-        </span>
-
-      </a>
-
-
-      <a href="/blog.html"
-         class="life-card">
-
-        <i class="fa-solid fa-calendar-days"></i>
-
-        <h3>
-          Holidays & Events
-        </h3>
-
-        <span>
-          Explore
-          <i class="fa-solid fa-arrow-right"></i>
-        </span>
-
-      </a>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     IMPORTANT NOTICE
-===================================================== -->
-
-<section class="notice-section">
-
-  <div class="container">
-
-    <div class="notice-card">
-
-
-      <div class="notice-icon">
-
-        <i class="fa-solid fa-circle-info"></i>
-
-      </div>
-
-
-      <div>
-
-        <h3>
-          Important Information
-        </h3>
-
-        <p>
-          KSA GUIDE is an independent information
-          platform. It does not issue visas, Iqamas,
-          licences or government documents and is not
-          affiliated with or endorsed by the Saudi
-          Arabian government.
-        </p>
-
-        <p>
-          Requirements, fees, procedures and regulations
-          can change. Always verify important information
-          with the relevant official Saudi authority before
-          taking action.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     LATEST POSTS
-===================================================== -->
-
-<section class="section articles-section">
-
-  <div class="container">
-
-
-    <div class="section-heading split-heading">
-
-      <div>
-
-        <span class="eyebrow">
-          LATEST KNOWLEDGE
-        </span>
-
-        <h2>
-          Saudi Guide Articles
-        </h2>
-
-      </div>
-
-
-      <a href="/blog.html"
-         class="text-link">
-
-        View All Articles
-
-        <i class="fa-solid fa-arrow-right"></i>
-
-      </a>
 
     </div>
 
@@ -1318,140 +567,198 @@ permalink: /saudi-guide.html
     <div class="article-grid">
 
 
-      {% if site.posts and site.posts.size > 0 %}
+      <!-- IQAMA -->
 
+      <a
+        href="#iqama"
+        class="article-card"
+        id="iqama"
+      >
 
-        {% for post in site.posts limit:3 %}
+        <div class="article-number">
+          01
+        </div>
 
+        <span class="article-category">
+          RESIDENCY
+        </span>
 
-        <article class="article-card">
+        <h3>
+          Iqama & Residency
+        </h3>
 
+        <p>
+          Learn the basics of Saudi residency,
+          Iqama-related information, renewals and
+          everyday considerations.
+        </p>
 
-          <a href="{{ post.url | relative_url }}"
-             class="article-image">
+        <span class="read-more">
+          Explore Iqama →
+        </span>
 
+      </a>
 
-            {% if post.image %}
 
-              <img
-                src="{{ post.image }}"
-                alt="{{ post.title }}"
-                loading="lazy">
+      <!-- VISA -->
 
-            {% else %}
+      <a
+        href="#visa"
+        class="article-card"
+        id="visa"
+      >
 
-              <div class="article-placeholder">
+        <div class="article-number">
+          02
+        </div>
 
-                <i class="fa-solid fa-book-open"></i>
+        <span class="article-category">
+          TRAVEL & ENTRY
+        </span>
 
-              </div>
+        <h3>
+          Saudi Visas
+        </h3>
 
-            {% endif %}
+        <p>
+          Understand common Saudi visa categories,
+          entry information and important planning points.
+        </p>
 
+        <span class="read-more">
+          Explore Visa Guide →
+        </span>
 
-          </a>
+      </a>
 
 
-          <div class="article-content">
+      <!-- AB​SHER -->
 
+      <a
+        href="#absher"
+        class="article-card"
+        id="absher"
+      >
 
-            <div class="article-meta">
+        <div class="article-number">
+          03
+        </div>
 
-              <span>
-                {{ post.category | default: "Saudi Guide" }}
-              </span>
+        <span class="article-category">
+          DIGITAL GOVERNMENT
+        </span>
 
-              <span>
-                {{ post.date | date: "%d %b %Y" }}
-              </span>
+        <h3>
+          Absher
+        </h3>
 
-            </div>
+        <p>
+          Learn about Saudi Arabia's major digital
+          government platform and the types of services
+          it provides.
+        </p>
 
+        <span class="read-more">
+          Explore Absher →
+        </span>
 
-            <h3>
+      </a>
 
-              <a href="{{ post.url | relative_url }}">
 
-                {{ post.title }}
+      <!-- DRIVING -->
 
-              </a>
+      <a
+        href="#driving"
+        class="article-card"
+        id="driving"
+      >
 
-            </h3>
+        <div class="article-number">
+          04
+        </div>
 
+        <span class="article-category">
+          TRANSPORT
+        </span>
 
-            <p>
+        <h3>
+          Driving in Saudi Arabia
+        </h3>
 
-              {{ post.excerpt
-                 | strip_html
-                 | truncate: 130 }}
+        <p>
+          Practical information about driving,
+          licences, roads, traffic and everyday mobility.
+        </p>
 
-            </p>
+        <span class="read-more">
+          Explore Driving →
+        </span>
 
+      </a>
 
-            <a href="{{ post.url | relative_url }}"
-               class="read-more">
 
-              Read Article
+      <!-- APPS -->
 
-              <i class="fa-solid fa-arrow-right"></i>
+      <a
+        href="#apps"
+        class="article-card"
+        id="apps"
+      >
 
-            </a>
+        <div class="article-number">
+          05
+        </div>
 
+        <span class="article-category">
+          TECHNOLOGY
+        </span>
 
-          </div>
+        <h3>
+          Essential Saudi Apps
+        </h3>
 
+        <p>
+          Discover useful digital tools for government,
+          transport, payments, communication and daily life.
+        </p>
 
-        </article>
+        <span class="read-more">
+          Explore Apps →
+        </span>
 
+      </a>
 
-        {% endfor %}
 
+      <!-- DAILY LIFE -->
 
-      {% else %}
+      <a
+        href="#daily-life"
+        class="article-card"
+        id="daily-life"
+      >
 
+        <div class="article-number">
+          06
+        </div>
 
-        <article class="article-card">
+        <span class="article-category">
+          EVERYDAY LIFE
+        </span>
 
+        <h3>
+          Daily Life in Saudi Arabia
+        </h3>
 
-          <div class="article-placeholder">
+        <p>
+          Useful information about everyday routines,
+          shopping, payments, communication and settling in.
+        </p>
 
-            <i class="fa-solid fa-pen-to-square"></i>
+        <span class="read-more">
+          Explore Daily Life →
+        </span>
 
-          </div>
-
-
-          <div class="article-content">
-
-            <span class="article-label">
-              KSA GUIDE
-            </span>
-
-            <h3>
-              Saudi Guides Coming Soon
-            </h3>
-
-            <p>
-              New practical Saudi articles
-              will appear here.
-            </p>
-
-            <a href="/blog.html"
-               class="read-more">
-
-              Visit Blog
-
-              <i class="fa-solid fa-arrow-right"></i>
-
-            </a>
-
-          </div>
-
-
-        </article>
-
-
-      {% endif %}
-
+      </a>
 
     </div>
 
@@ -1460,61 +767,119 @@ permalink: /saudi-guide.html
 </section>
 
 
-<!-- =====================================================
-     CTA
-===================================================== -->
 
-<section class="final-cta">
+<!-- =========================================================
+     IQAMA DETAIL
+========================================================= -->
 
-  <div class="final-cta-bg"></div>
+<section
+  class="section why-section"
+  id="iqama-details"
+>
 
+  <div class="container split-section">
 
-  <div class="container">
-
-    <div class="final-cta-content">
-
+    <div class="split-content">
 
       <span class="eyebrow">
-        EXPLORE THE KINGDOM
+        <span></span>
+        01 / RESIDENCY
       </span>
 
 
       <h2>
-        Need More Than
-        <br>
-        a Guide?
+        Iqama &
+        <em>Residency</em>
       </h2>
 
 
       <p>
-        Explore Saudi destinations or discover
-        professional digital services from KSA GUIDE.
+        The Iqama is a central part of everyday life for many
+        foreign residents in Saudi Arabia. Understanding the
+        terminology and related processes can make life easier.
       </p>
 
 
-      <div class="cta-buttons">
+      <div class="feature-list">
+
+        <div class="feature-item">
+
+          <span>01</span>
+
+          <div>
+
+            <h3>
+              What is an Iqama?
+            </h3>
+
+            <p>
+              General information about Saudi residency identification.
+            </p>
+
+          </div>
+
+        </div>
 
 
-        <a href="/destinations.html"
-           class="btn btn-gold btn-large">
+        <div class="feature-item">
 
-          Explore Destinations
+          <span>02</span>
 
-          <i class="fa-solid fa-arrow-right"></i>
+          <div>
 
-        </a>
+            <h3>
+              Important information
+            </h3>
+
+            <p>
+              Keep your personal documents and official information current.
+            </p>
+
+          </div>
+
+        </div>
 
 
-        <a href="/digital-services.html"
-           class="btn btn-outline btn-large">
+        <div class="feature-item">
 
-          Digital Services
+          <span>03</span>
 
-        </a>
+          <div>
 
+            <h3>
+              Official sources
+            </h3>
+
+            <p>
+              Always verify current requirements with the relevant Saudi authorities.
+            </p>
+
+          </div>
+
+        </div>
 
       </div>
 
+    </div>
+
+
+    <div class="split-visual">
+
+      <div class="glass-panel">
+
+        <span class="panel-label">
+          RESIDENCY
+        </span>
+
+        <strong>
+          IQAMA
+        </strong>
+
+        <p>
+          A key document for many residents in Saudi Arabia.
+        </p>
+
+      </div>
 
     </div>
 
@@ -1523,270 +888,909 @@ permalink: /saudi-guide.html
 </section>
 
 
-</main>
 
+<!-- =========================================================
+     VISA
+========================================================= -->
 
-<!-- =====================================================
-     FOOTER
-===================================================== -->
-
-<footer class="site-footer">
+<section
+  class="section"
+  id="visa-details"
+>
 
   <div class="container">
 
+    <div class="section-heading">
 
-    <div class="footer-main">
+      <span class="eyebrow">
+        <span></span>
+        02 / VISAS
+      </span>
 
 
-      <div class="footer-brand">
+      <h2>
+        Saudi Visa
+        <em>information</em>
+      </h2>
 
 
-        <a href="/"
-           class="brand">
+      <p>
+        Visa requirements vary depending on nationality,
+        purpose of travel and visa category. Always check
+        current official requirements before travelling.
+      </p>
 
-          <span class="brand-mark">
-            <span class="brand-map">◆</span>
-          </span>
+    </div>
 
-          <span class="brand-text">
 
-            <strong>KSA</strong>
+    <div class="article-grid">
 
-            <span>GUIDE</span>
+      <article class="article-card">
 
-          </span>
+        <span class="article-category">
+          TOURISM
+        </span>
 
-        </a>
-
+        <h3>
+          Tourist Travel
+        </h3>
 
         <p>
-          Your complete independent guide
-          to Saudi Arabia.
+          General information for people planning a visit
+          to Saudi Arabia for tourism.
         </p>
 
-
-        <div class="social-links">
-
-
-          <a href="#"
-             aria-label="Instagram">
-
-            <i class="fa-brands fa-instagram"></i>
-
-          </a>
+      </article>
 
 
-          <a href="#"
-             aria-label="YouTube">
+      <article class="article-card">
 
-            <i class="fa-brands fa-youtube"></i>
+        <span class="article-category">
+          BUSINESS
+        </span>
 
-          </a>
+        <h3>
+          Business Travel
+        </h3>
+
+        <p>
+          Understand that business-related travel can have
+          different requirements from tourism.
+        </p>
+
+      </article>
 
 
-          <a href="#"
-             aria-label="TikTok">
+      <article class="article-card">
 
-            <i class="fa-brands fa-tiktok"></i>
+        <span class="article-category">
+          VISITOR
+        </span>
 
-          </a>
+        <h3>
+          Visiting Saudi Arabia
+        </h3>
+
+        <p>
+          Prepare your documents, accommodation details
+          and travel plans before departure.
+        </p>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
 
 
-          <a href="#"
-             aria-label="Facebook">
 
-            <i class="fa-brands fa-facebook-f"></i>
+<!-- =========================================================
+     AB​SHER
+========================================================= -->
 
-          </a>
+<section
+  class="section why-section"
+  id="absher-details"
+>
 
+  <div class="container split-section">
+
+    <div class="split-content">
+
+      <span class="eyebrow">
+        <span></span>
+        03 / DIGITAL GOVERNMENT
+      </span>
+
+
+      <h2>
+        Understanding
+        <em>Absher</em>
+      </h2>
+
+
+      <p>
+        Absher is a major Saudi digital government platform.
+        It brings a range of government services into digital
+        channels for eligible users.
+      </p>
+
+
+      <div class="feature-list">
+
+        <div class="feature-item">
+
+          <span>01</span>
+
+          <div>
+
+            <h3>
+              Digital services
+            </h3>
+
+            <p>
+              Access a range of government-related services online.
+            </p>
+
+          </div>
 
         </div>
 
 
-      </div>
+        <div class="feature-item">
+
+          <span>02</span>
+
+          <div>
+
+            <h3>
+              Account information
+            </h3>
+
+            <p>
+              Keep your account details secure and up to date.
+            </p>
+
+          </div>
+
+        </div>
 
 
-      <div class="footer-column">
+        <div class="feature-item">
 
-        <h4>
-          Saudi Guide
-        </h4>
+          <span>03</span>
 
-        <a href="/saudi-guide.html">
-          Iqama
-        </a>
+          <div>
 
-        <a href="/saudi-guide.html">
-          Visa
-        </a>
+            <h3>
+              Verify current procedures
+            </h3>
 
-        <a href="/saudi-guide.html">
-          Absher
-        </a>
+            <p>
+              Digital services and requirements can change,
+              so use official sources for current instructions.
+            </p>
 
-        <a href="/saudi-guide.html">
-          Driving
-        </a>
+          </div>
 
-        <a href="/saudi-guide.html">
-          Saudi Apps
-        </a>
-
-      </div>
-
-
-      <div class="footer-column">
-
-        <h4>
-          Travel
-        </h4>
-
-        <a href="/travel.html">
-          Travel Guide
-        </a>
-
-        <a href="/destinations.html">
-          Riyadh
-        </a>
-
-        <a href="/destinations.html">
-          AlUla
-        </a>
-
-        <a href="/destinations.html">
-          Jeddah
-        </a>
-
-        <a href="/destinations.html">
-          Red Sea
-        </a>
+        </div>
 
       </div>
-
-
-      <div class="footer-column">
-
-        <h4>
-          Digital Services
-        </h4>
-
-        <a href="/digital-services.html">
-          Data Entry
-        </a>
-
-        <a href="/digital-services.html">
-          WordPress
-        </a>
-
-        <a href="/digital-services.html">
-          AI Services
-        </a>
-
-        <a href="/digital-services.html">
-          CV & Resume
-        </a>
-
-      </div>
-
-
-      <div class="footer-column">
-
-        <h4>
-          Company
-        </h4>
-
-        <a href="/about.html">
-          About
-        </a>
-
-        <a href="/blog.html">
-          Blog
-        </a>
-
-        <a href="/contact.html">
-          Contact
-        </a>
-
-        <a href="/privacy-policy.html">
-          Privacy
-        </a>
-
-        <a href="/disclaimer.html">
-          Disclaimer
-        </a>
-
-      </div>
-
 
     </div>
 
 
-    <div class="footer-disclaimer">
+    <div class="split-visual">
 
-      <strong>
-        Important:
-      </strong>
+      <div class="glass-panel">
 
-      KSA GUIDE is an independent information
-      and digital services platform. It is not affiliated
-      with, endorsed by, or operated by the Saudi
-      Arabian government. Information is provided
-      for general guidance and should be verified
-      with official sources where appropriate.
+        <span class="panel-label">
+          DIGITAL SERVICES
+        </span>
+
+        <strong>
+          ABSHER
+        </strong>
+
+        <p>
+          One of the key digital government platforms in Saudi Arabia.
+        </p>
+
+      </div>
 
     </div>
 
+  </div>
 
-    <div class="footer-bottom">
+</section>
+
+
+
+<!-- =========================================================
+     DRIVING
+========================================================= -->
+
+<section
+  class="section"
+  id="driving-details"
+>
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <span class="eyebrow">
+        <span></span>
+        04 / TRANSPORT
+      </span>
+
+
+      <h2>
+        Driving in
+        <em>Saudi Arabia</em>
+      </h2>
 
 
       <p>
-        © 2026 KSA GUIDE. All rights reserved.
+        Whether you're a new driver or recently arrived in Saudi Arabia,
+        understanding local driving requirements and road culture is useful.
       </p>
 
+    </div>
 
-      <div>
 
-        <a href="/privacy-policy.html">
-          Privacy Policy
-        </a>
+    <div class="article-grid">
 
-        <a href="/terms.html">
-          Terms
-        </a>
+      <article class="article-card">
 
-        <a href="/cookie-policy.html">
-          Cookies
+        <span class="article-category">
+          LICENCE
+        </span>
+
+        <h3>
+          Driving Licence
+        </h3>
+
+        <p>
+          Learn about the general process and requirements
+          that may apply to obtaining or using a driving licence.
+        </p>
+
+      </article>
+
+
+      <article class="article-card">
+
+        <span class="article-category">
+          ROAD SAFETY
+        </span>
+
+        <h3>
+          Road Rules
+        </h3>
+
+        <p>
+          Follow posted signs, speed limits and traffic rules.
+          Always drive according to current Saudi regulations.
+        </p>
+
+      </article>
+
+
+      <article class="article-card">
+
+        <span class="article-category">
+          EVERYDAY
+        </span>
+
+        <h3>
+          Getting Around
+        </h3>
+
+        <p>
+          Explore driving, ride-hailing and public transport
+          options depending on your city.
+        </p>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     SAUDI APPS
+========================================================= -->
+
+<section
+  class="section experiences-section"
+  id="apps-details"
+>
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <span class="eyebrow">
+        <span></span>
+        05 / TECHNOLOGY
+      </span>
+
+
+      <h2>
+        Essential
+        <em>Saudi Apps</em>
+      </h2>
+
+
+      <p>
+        Digital services are an important part of everyday life
+        in the Kingdom.
+      </p>
+
+    </div>
+
+
+    <div class="experience-grid">
+
+      <article class="experience-card">
+
+        <span class="experience-icon">
+          ◈
+        </span>
+
+        <h3>
+          Government
+        </h3>
+
+        <p>
+          Government platforms can help users access official
+          services and information digitally.
+        </p>
+
+      </article>
+
+
+      <article class="experience-card">
+
+        <span class="experience-icon">
+          ≋
+        </span>
+
+        <h3>
+          Transportation
+        </h3>
+
+        <p>
+          Ride-hailing, navigation and transport apps can
+          simplify movement around Saudi cities.
+        </p>
+
+      </article>
+
+
+      <article class="experience-card">
+
+        <span class="experience-icon">
+          ◇
+        </span>
+
+        <h3>
+          Payments
+        </h3>
+
+        <p>
+          Digital payment tools are widely used for everyday
+          purchases and services.
+        </p>
+
+      </article>
+
+
+      <article class="experience-card">
+
+        <span class="experience-icon">
+          ✦
+        </span>
+
+        <h3>
+          Everyday Tools
+        </h3>
+
+        <p>
+          Food delivery, shopping, communication and other
+          apps can make daily routines easier.
+        </p>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     DAILY LIFE
+========================================================= -->
+
+<section
+  class="section"
+  id="daily-life-details"
+>
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <span class="eyebrow">
+        <span></span>
+        06 / EVERYDAY LIFE
+      </span>
+
+
+      <h2>
+        Everyday life
+        <em>in Saudi Arabia</em>
+      </h2>
+
+
+      <p>
+        Small practical things can make a big difference
+        when you're settling into life in a new country.
+      </p>
+
+    </div>
+
+
+    <div class="article-grid">
+
+      <article class="article-card">
+
+        <div class="article-number">
+          01
+        </div>
+
+        <span class="article-category">
+          MONEY
+        </span>
+
+        <h3>
+          Payments & Banking
+        </h3>
+
+        <p>
+          Understand common digital payment methods,
+          cards and everyday financial services.
+        </p>
+
+      </article>
+
+
+      <article class="article-card">
+
+        <div class="article-number">
+          02
+        </div>
+
+        <span class="article-category">
+          SHOPPING
+        </span>
+
+        <h3>
+          Shopping
+        </h3>
+
+        <p>
+          Explore supermarkets, malls, online shopping
+          and everyday services available in Saudi cities.
+        </p>
+
+      </article>
+
+
+      <article class="article-card">
+
+        <div class="article-number">
+          03
+        </div>
+
+        <span class="article-category">
+          COMMUNICATION
+        </span>
+
+        <h3>
+          Mobile & Internet
+        </h3>
+
+        <p>
+          Learn about staying connected through mobile
+          networks, internet services and digital tools.
+        </p>
+
+      </article>
+
+
+      <article class="article-card">
+
+        <div class="article-number">
+          04
+        </div>
+
+        <span class="article-category">
+          LIFESTYLE
+        </span>
+
+        <h3>
+          Saudi Lifestyle
+        </h3>
+
+        <p>
+          Discover everyday customs, city life, food,
+          social spaces and useful local habits.
+        </p>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     IMPORTANT NOTE
+========================================================= -->
+
+<section class="section">
+
+  <div class="container">
+
+    <div class="services-panel">
+
+      <div class="services-copy">
+
+        <span class="eyebrow">
+          <span></span>
+          IMPORTANT
+        </span>
+
+
+        <h2>
+          Check official information
+          before taking action.
+        </h2>
+
+
+        <p>
+          Saudi regulations, government procedures, visa requirements,
+          fees and digital services can change. KSA GUIDE provides
+          general informational content and is not a government authority.
+          For a current official requirement, always verify the information
+          with the relevant Saudi authority.
+        </p>
+
+
+        <a
+          href="/disclaimer.html"
+          class="btn btn-outline"
+        >
+          Read Our Disclaimer →
         </a>
 
       </div>
 
 
+      <div class="services-list">
+
+        <div>
+          <span>01</span>
+          <strong>Check dates</strong>
+        </div>
+
+        <div>
+          <span>02</span>
+          <strong>Check requirements</strong>
+        </div>
+
+        <div>
+          <span>03</span>
+          <strong>Use official sources</strong>
+        </div>
+
+        <div>
+          <span>04</span>
+          <strong>Keep documents updated</strong>
+        </div>
+
+      </div>
+
     </div>
 
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CTA
+========================================================= -->
+
+<section class="section final-cta-section">
+
+  <div class="container">
+
+    <div class="final-cta">
+
+      <span class="eyebrow">
+        <span></span>
+        KSA GUIDE
+      </span>
+
+
+      <h2>
+        Need more than
+        <em>information?</em>
+      </h2>
+
+
+      <p>
+        Explore Saudi destinations, read the latest articles,
+        or contact us about digital services.
+      </p>
+
+
+      <div class="cta-actions">
+
+        <a
+          href="/travel.html"
+          class="btn btn-primary btn-large"
+        >
+          Explore Travel
+        </a>
+
+
+        <a
+          href="/digital-services.html"
+          class="btn btn-outline btn-large"
+        >
+          Digital Services
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+  <div class="container footer-grid">
+
+
+    <div class="footer-brand">
+
+      <a
+        href="/"
+        class="brand"
+      >
+
+        <span class="brand-mark">
+          K
+        </span>
+
+        <span class="brand-text">
+
+          <strong>
+            KSA GUIDE
+          </strong>
+
+          <small>
+            Your Complete Guide to Saudi Arabia
+          </small>
+
+        </span>
+
+      </a>
+
+
+      <p>
+        Independent Saudi information, travel inspiration
+        and practical digital services.
+      </p>
+
+    </div>
+
+
+    <div class="footer-column">
+
+      <h3>
+        Explore
+      </h3>
+
+      <a href="/saudi-guide.html">
+        Saudi Guide
+      </a>
+
+      <a href="/travel.html">
+        Travel
+      </a>
+
+      <a href="/destinations.html">
+        Destinations
+      </a>
+
+      <a href="/blog.html">
+        Blog
+      </a>
+
+    </div>
+
+
+    <div class="footer-column">
+
+      <h3>
+        Services
+      </h3>
+
+      <a href="/digital-services.html">
+        Digital Services
+      </a>
+
+      <a href="/contact.html">
+        Contact
+      </a>
+
+      <a href="/about.html">
+        About
+      </a>
+
+    </div>
+
+
+    <div class="footer-column">
+
+      <h3>
+        Information
+      </h3>
+
+      <a href="/privacy-policy.html">
+        Privacy Policy
+      </a>
+
+      <a href="/terms.html">
+        Terms
+      </a>
+
+      <a href="/cookie-policy.html">
+        Cookie Policy
+      </a>
+
+      <a href="/disclaimer.html">
+        Disclaimer
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <div class="container footer-bottom">
+
+    <p>
+      © 2026 KSA GUIDE. All rights reserved.
+    </p>
+
+    <p>
+      KSA GUIDE is an independent information platform
+      and is not affiliated with the Saudi government.
+    </p>
 
   </div>
 
 </footer>
 
 
-<!-- =====================================================
-     COOKIE BANNER
-===================================================== -->
 
-<div class="cookie-banner"
-     id="cookieBanner">
+<!-- =========================================================
+     SEARCH OVERLAY
+========================================================= -->
 
+<div
+  class="search-overlay"
+  id="searchOverlay"
+  aria-hidden="true"
+>
+
+  <div class="search-overlay-inner">
+
+    <button
+      id="searchClose"
+      class="search-close"
+      type="button"
+      aria-label="Close search"
+    >
+      ×
+    </button>
+
+
+    <span class="eyebrow">
+      <span></span>
+      SEARCH KSA GUIDE
+    </span>
+
+
+    <h2>
+      What can we help you find?
+    </h2>
+
+
+    <div class="overlay-search">
+
+      <input
+        type="search"
+        id="overlaySearchInput"
+        placeholder="Search Saudi Arabia..."
+        autocomplete="off"
+      >
+
+      <button
+        class="btn btn-primary"
+        type="button"
+        onclick="document.getElementById('searchButton')?.click()"
+      >
+        Search
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<!-- =========================================================
+     COOKIE
+========================================================= -->
+
+<div
+  class="cookie-banner"
+  id="cookieBanner"
+  role="dialog"
+  aria-label="Cookie notice"
+>
 
   <div>
 
     <strong>
-      Your Privacy Matters
+      We use cookies
     </strong>
 
     <p>
-      We use essential cookies to make this website
-      work and optional cookies to understand usage.
+      KSA GUIDE uses essential cookies to help the website
+      work properly and improve your experience.
     </p>
 
   </div>
@@ -1794,33 +1798,32 @@ permalink: /saudi-guide.html
 
   <div class="cookie-actions">
 
-
     <button
-      class="btn btn-small btn-outline-light"
-      id="rejectCookies">
-
-      Reject Non-Essential
-
+      type="button"
+      class="btn btn-primary"
+      data-cookie-accept
+    >
+      Accept
     </button>
 
-
     <button
-      class="btn btn-small btn-gold"
-      id="acceptCookies">
-
-      Accept All
-
+      type="button"
+      class="btn btn-outline"
+      data-cookie-reject
+    >
+      Reject
     </button>
-
 
   </div>
 
 </div>
 
 
-<!-- JAVASCRIPT -->
 
-<script src="/assets/js/app.js"></script>
+<script
+  src="/assets/js/app.js"
+  defer
+></script>
 
 
 </body>
