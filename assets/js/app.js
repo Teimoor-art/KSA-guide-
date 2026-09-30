@@ -1,1386 +1,678 @@
 /* =========================================================
-   KSA GUIDE — FINAL PREMIUM GLOBAL JAVASCRIPT
-   Mobile Menu + Search + Language + Location + Cookies
-   ========================================================= */
+   KSA GUIDE — GLOBAL JAVASCRIPT
+   Version: 2026
+========================================================= */
 
 (function () {
   "use strict";
 
-  /* =======================================================
-     BASIC HELPERS
-     ======================================================= */
+  /* ---------------------------------------------------------
+     HELPERS
+  --------------------------------------------------------- */
 
-  const $ = (selector, parent = document) => {
-    return parent.querySelector(selector);
+  const $ = (selector, parent = document) =>
+    parent.querySelector(selector);
+
+  const $$ = (selector, parent = document) =>
+    Array.from(parent.querySelectorAll(selector));
+
+
+  /* ---------------------------------------------------------
+     SAFE STORAGE
+  --------------------------------------------------------- */
+
+  function storageGet(key) {
+    try {
+      return localStorage.getItem(key);
+    } catch (error) {
+      return null;
+    }
+  }
+
+  function storageSet(key, value) {
+    try {
+      localStorage.setItem(key, value);
+    } catch (error) {
+      /* Ignore storage errors */
+    }
+  }
+
+
+  /* ---------------------------------------------------------
+     LANGUAGE / RTL
+  --------------------------------------------------------- */
+
+  const translations = {
+    en: {
+      Home: "Home",
+      "Saudi Guide": "Saudi Guide",
+      Travel: "Travel",
+      Destinations: "Destinations",
+      "Digital Services": "Digital Services",
+      Blog: "Blog",
+      About: "About",
+      Contact: "Contact"
+    },
+
+    ar: {
+      Home: "الرئيسية",
+      "Saudi Guide": "دليل السعودية",
+      Travel: "السفر",
+      Destinations: "الوجهات",
+      "Digital Services": "الخدمات الرقمية",
+      Blog: "المدونة",
+      About: "من نحن",
+      Contact: "تواصل معنا"
+    },
+
+    ur: {
+      Home: "ہوم",
+      "Saudi Guide": "سعودی گائیڈ",
+      Travel: "سفر",
+      Destinations: "مقامات",
+      "Digital Services": "ڈیجیٹل سروسز",
+      Blog: "بلاگ",
+      About: "ہمارے بارے میں",
+      Contact: "رابطہ"
+    }
   };
 
-  const $$ = (selector, parent = document) => {
-    return Array.from(parent.querySelectorAll(selector));
-  };
-
-  const html = document.documentElement;
-  const body = document.body;
-
-
-  /* =======================================================
-     HEADER SCROLL EFFECT
-     ======================================================= */
-
-  const header = $(".site-header");
-
-  function updateHeader() {
-    if (!header) return;
-
-    if (window.scrollY > 35) {
-      header.classList.add("scrolled");
-    } else {
-      header.classList.remove("scrolled");
-    }
-  }
-
-  window.addEventListener(
-    "scroll",
-    updateHeader,
-    { passive: true }
-  );
-
-  updateHeader();
-
-
-  /* =======================================================
-     MOBILE NAVIGATION
-     ======================================================= */
-
-  const mobileNav = $(".mobile-nav");
-  const menuToggle = $(".menu-toggle");
-  const mobileClose = $(".mobile-close");
-
-  function openMobileMenu() {
-    if (!mobileNav) return;
-
-    mobileNav.classList.add("open");
-
-    body.style.overflow = "hidden";
-
-    if (menuToggle) {
-      menuToggle.setAttribute(
-        "aria-expanded",
-        "true"
-      );
-    }
-  }
-
-  function closeMobileMenu() {
-    if (!mobileNav) return;
-
-    mobileNav.classList.remove("open");
-
-    if (
-      !searchOverlay ||
-      !searchOverlay.classList.contains("open")
-    ) {
-      body.style.overflow = "";
-    }
-
-    if (menuToggle) {
-      menuToggle.setAttribute(
-        "aria-expanded",
-        "false"
-      );
-    }
-  }
-
-  if (menuToggle) {
-    menuToggle.addEventListener(
-      "click",
-      function (event) {
-        event.preventDefault();
-
-        if (
-          mobileNav &&
-          mobileNav.classList.contains("open")
-        ) {
-          closeMobileMenu();
-        } else {
-          openMobileMenu();
-        }
-      }
-    );
-  }
-
-  if (mobileClose) {
-    mobileClose.addEventListener(
-      "click",
-      function (event) {
-        event.preventDefault();
-        closeMobileMenu();
-      }
-    );
-  }
-
-  $$(".mobile-nav a").forEach(
-    function (link) {
-
-      link.addEventListener(
-        "click",
-        function () {
-          closeMobileMenu();
-        }
-      );
-
-    }
-  );
-
-
-  /* =======================================================
-     SEARCH OVERLAY
-     ======================================================= */
-
-  const searchOverlay =
-    $("#searchOverlay");
-
-  const searchInput =
-    searchOverlay
-      ? $("input", searchOverlay)
-      : null;
-
-  function openSearch() {
-    if (!searchOverlay) return;
-
-    searchOverlay.classList.add("open");
-
-    body.style.overflow = "hidden";
-
-    window.setTimeout(
-      function () {
-
-        if (searchInput) {
-          searchInput.focus();
-        }
-
-      },
-      120
-    );
-  }
-
-  function closeSearch() {
-    if (!searchOverlay) return;
-
-    searchOverlay.classList.remove("open");
-
-    if (
-      !mobileNav ||
-      !mobileNav.classList.contains("open")
-    ) {
-      body.style.overflow = "";
-    }
-  }
-
-  $$("[data-open-search]").forEach(
-    function (button) {
-
-      button.addEventListener(
-        "click",
-        function (event) {
-
-          event.preventDefault();
-          event.stopPropagation();
-
-          openSearch();
-
-        }
-      );
-
-    }
-  );
-
-  $$("[data-close-search]").forEach(
-    function (button) {
-
-      button.addEventListener(
-        "click",
-        function (event) {
-
-          event.preventDefault();
-          event.stopPropagation();
-
-          closeSearch();
-
-        }
-      );
-
-    }
-  );
-
-  if (searchOverlay) {
-
-    searchOverlay.addEventListener(
-      "click",
-      function (event) {
-
-        if (event.target === searchOverlay) {
-          closeSearch();
-        }
-
-      }
-    );
-
-  }
-
-
-  /* =======================================================
-     KEYBOARD CONTROLS
-     ======================================================= */
-
-  document.addEventListener(
-    "keydown",
-    function (event) {
-
-      if (event.key === "Escape") {
-
-        closeMobileMenu();
-        closeSearch();
-
-      }
-
-    }
-  );
-
-
-  /* =======================================================
-     SEARCH FORM
-     ======================================================= */
-
-  $$("form[data-search-form]").forEach(
-    function (form) {
-
-      form.addEventListener(
-        "submit",
-        function (event) {
-
-          event.preventDefault();
-
-          const input =
-            $("input[type='search']", form) ||
-            $("input", form);
-
-          if (!input) return;
-
-          const query =
-            input.value.trim();
-
-          if (!query) {
-
-            input.focus();
-            return;
-
-          }
-
-          const blogUrl =
-            form.getAttribute("action") ||
-            "/blog.html";
-
-          window.location.href =
-            blogUrl +
-            "?q=" +
-            encodeURIComponent(query);
-
-        }
-      );
-
-    }
-  );
-
-
-  /* =======================================================
-     LANGUAGE SYSTEM
-     ENGLISH / ARABIC / URDU
-     ======================================================= */
-
-  const languageSelectors =
-    $$("select#language");
-
-  const savedLanguage =
-    localStorage.getItem("ksa_lang") ||
-    "en";
 
   function setLanguage(language) {
-
-    let lang = language;
-
-    if (
-      !["en", "ar", "ur"].includes(lang)
-    ) {
-      lang = "en";
+    if (!["en", "ar", "ur"].includes(language)) {
+      language = "en";
     }
 
-    localStorage.setItem(
-      "ksa_lang",
-      lang
-    );
+    storageSet("ksa_lang", language);
 
+    document.documentElement.lang = language;
 
-    languageSelectors.forEach(
-      function (select) {
-        select.value = lang;
-      }
-    );
-
-
-    /* RTL */
-
-    if (
-      lang === "ar" ||
-      lang === "ur"
-    ) {
-
-      html.setAttribute(
-        "dir",
-        "rtl"
-      );
-
-      html.setAttribute(
-        "lang",
-        lang
-      );
-
-      body.classList.add(
-        "rtl-mode"
-      );
-
+    if (language === "ar" || language === "ur") {
+      document.documentElement.dir = "rtl";
+      document.body.classList.add("rtl");
     } else {
-
-      html.setAttribute(
-        "dir",
-        "ltr"
-      );
-
-      html.setAttribute(
-        "lang",
-        "en"
-      );
-
-      body.classList.remove(
-        "rtl-mode"
-      );
-
+      document.documentElement.dir = "ltr";
+      document.body.classList.remove("rtl");
     }
 
+    /* Sync all language selectors */
+    $$("select#language").forEach((select) => {
+      select.value = language;
+    });
 
-    /* Optional text translations */
+    /*
+      Optional translation support.
+      Any future element with data-i18n="Home",
+      data-i18n="Travel", etc. will translate automatically.
+    */
+    $$("[data-i18n]").forEach((element) => {
+      const key = element.dataset.i18n;
 
-    $$(
-      "[data-en], [data-ar], [data-ur]"
-    ).forEach(
-      function (element) {
-
-        const translation =
-          element.getAttribute(
-            "data-" + lang
-          );
-
-        if (!translation) return;
-
-
-        if (
-          element.tagName === "INPUT" ||
-          element.tagName === "TEXTAREA"
-        ) {
-
-          element.placeholder =
-            translation;
-
-        } else {
-
-          element.textContent =
-            translation;
-
-        }
-
+      if (
+        translations[language] &&
+        translations[language][key]
+      ) {
+        element.textContent = translations[language][key];
       }
-    );
-
-
-    /* Optional title translations */
-
-    $$(
-      "[data-title-en], [data-title-ar], [data-title-ur]"
-    ).forEach(
-      function (element) {
-
-        const title =
-          element.getAttribute(
-            "data-title-" + lang
-          );
-
-        if (title) {
-          element.setAttribute(
-            "title",
-            title
-          );
-        }
-
-      }
-    );
-
+    });
   }
 
-  setLanguage(savedLanguage);
+
+  function initLanguage() {
+    const savedLanguage = storageGet("ksa_lang") || "en";
+
+    setLanguage(savedLanguage);
+
+    $$("select#language").forEach((select) => {
+      select.addEventListener("change", function () {
+        setLanguage(this.value);
+      });
+    });
+  }
 
 
-  languageSelectors.forEach(
-    function (select) {
+  /* ---------------------------------------------------------
+     MOBILE MENU
+  --------------------------------------------------------- */
 
-      select.addEventListener(
-        "change",
-        function (event) {
+  function initMobileMenu() {
+    const menuToggle = $("#menuToggle");
+    const mobileMenu = $("#mobileMenu");
+    const mobileMenuClose = $("#mobileMenuClose");
 
-          setLanguage(
-            event.target.value
-          );
+    if (!menuToggle || !mobileMenu) return;
 
-        }
-      );
+    function openMenu() {
+      mobileMenu.classList.add("open");
+      mobileMenu.setAttribute("aria-hidden", "false");
+      menuToggle.setAttribute("aria-expanded", "true");
 
+      document.body.classList.add("menu-open");
     }
-  );
 
+    function closeMenu() {
+      mobileMenu.classList.remove("open");
+      mobileMenu.setAttribute("aria-hidden", "true");
+      menuToggle.setAttribute("aria-expanded", "false");
 
-  /* =======================================================
-     LOCATION
-     Permission ONLY after button click
-     ======================================================= */
+      document.body.classList.remove("menu-open");
+    }
 
-  const locationButtons =
-    $$(
-      "[data-location], #locationButton, .location-button"
-    );
-
-
-  function saveCity(city) {
-
-    const cleanCity =
-      String(city || "").trim();
-
-    if (!cleanCity) return;
-
-    localStorage.setItem(
-      "ksa_city",
-      cleanCity
-    );
-
-
-    locationButtons.forEach(
-      function (button) {
-
-        button.classList.add(
-          "location-active"
-        );
-
-        const label =
-          $("span", button);
-
-        if (label) {
-          label.textContent =
-            cleanCity;
-        } else {
-          button.textContent =
-            cleanCity;
-        }
-
+    menuToggle.addEventListener("click", function () {
+      if (mobileMenu.classList.contains("open")) {
+        closeMenu();
+      } else {
+        openMenu();
       }
-    );
+    });
 
+    mobileMenuClose?.addEventListener("click", closeMenu);
+
+    $$(".mobile-nav a, .mobile-menu-cta", mobileMenu)
+      .forEach((link) => {
+        link.addEventListener("click", closeMenu);
+      });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        closeMenu();
+      }
+    });
   }
 
 
-  function locationSuccess(position) {
+  /* ---------------------------------------------------------
+     HEADER SCROLL EFFECT
+  --------------------------------------------------------- */
 
-    const latitude =
-      position.coords.latitude;
+  function initHeaderScroll() {
+    const header = $("#siteHeader");
 
-    const longitude =
-      position.coords.longitude;
+    if (!header) return;
 
-
-    localStorage.setItem(
-      "ksa_location",
-      JSON.stringify({
-        latitude: latitude,
-        longitude: longitude,
-        savedAt: Date.now()
-      })
-    );
-
-
-    locationButtons.forEach(
-      function (button) {
-
-        button.classList.add(
-          "location-active"
-        );
-
-        const successText =
-          button.getAttribute(
-            "data-location-success"
-          );
-
-        const label =
-          $("span", button);
-
-        if (successText) {
-
-          if (label) {
-            label.textContent =
-              successText;
-          } else {
-            button.textContent =
-              successText;
-          }
-
-        } else {
-
-          if (label) {
-            label.textContent =
-              "Location enabled";
-          }
-
-        }
-
+    function updateHeader() {
+      if (window.scrollY > 30) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
       }
-    );
+    }
 
+    updateHeader();
+
+    window.addEventListener(
+      "scroll",
+      updateHeader,
+      { passive: true }
+    );
   }
 
 
-  function locationError() {
+  /* ---------------------------------------------------------
+     SEARCH OVERLAY
+  --------------------------------------------------------- */
 
-    const city =
-      window.prompt(
-        "Enter your Saudi city (for example Riyadh, Jeddah or AlUla):"
+  function initSearchOverlay() {
+    const searchOpen = $("#searchOpen");
+    const searchOverlay = $("#searchOverlay");
+    const searchClose = $("#searchClose");
+    const overlayInput = $("#overlaySearchInput");
+
+    if (!searchOverlay) return;
+
+    function openSearch() {
+      searchOverlay.classList.add("open");
+      searchOverlay.setAttribute("aria-hidden", "false");
+
+      document.body.classList.add("search-open");
+
+      setTimeout(() => {
+        overlayInput?.focus();
+      }, 150);
+    }
+
+    function closeSearch() {
+      searchOverlay.classList.remove("open");
+      searchOverlay.setAttribute("aria-hidden", "true");
+
+      document.body.classList.remove("search-open");
+    }
+
+    searchOpen?.addEventListener("click", openSearch);
+
+    searchClose?.addEventListener("click", closeSearch);
+
+    /* Close when clicking outside search content */
+    searchOverlay.addEventListener("click", function (event) {
+      if (event.target === searchOverlay) {
+        closeSearch();
+      }
+    });
+
+    /* ESC closes search */
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        closeSearch();
+      }
+    });
+
+    /* Search from overlay with Enter */
+    overlayInput?.addEventListener("keydown", function (event) {
+      if (event.key === "Enter") {
+        event.preventDefault();
+
+        const query = this.value.trim();
+
+        if (query) {
+          performSearch(query, "all");
+        }
+      }
+    });
+  }
+
+
+  /* ---------------------------------------------------------
+     SMART SEARCH
+  --------------------------------------------------------- */
+
+  function initSmartSearch() {
+    const input = $("#globalSearch");
+    const button = $("#searchButton");
+    const category = $("#searchCategory");
+
+    if (!input) return;
+
+    function submitSearch() {
+      const query = input.value.trim();
+
+      if (!query) {
+        showToast("Please enter something to search.");
+        input.focus();
+        return;
+      }
+
+      performSearch(
+        query,
+        category ? category.value : "all"
+      );
+    }
+
+    button?.addEventListener("click", submitSearch);
+
+    input.addEventListener("keydown", function (event) {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        submitSearch();
+      }
+    });
+  }
+
+
+  function performSearch(query, category) {
+    const encodedQuery = encodeURIComponent(query);
+
+    /*
+      Category-based routing keeps the search useful
+      even before a full search-index system is added.
+    */
+
+    let destination = "/blog.html";
+
+    if (category === "guides") {
+      destination = "/saudi-guide.html";
+    }
+
+    if (category === "travel") {
+      destination = "/travel.html";
+    }
+
+    if (category === "destinations") {
+      destination = "/destinations.html";
+    }
+
+    if (category === "services") {
+      destination = "/digital-services.html";
+    }
+
+    if (category === "articles") {
+      destination = "/blog.html";
+    }
+
+    window.location.href =
+      destination + "?q=" + encodedQuery;
+  }
+
+
+  /* ---------------------------------------------------------
+     COOKIE CONSENT
+  --------------------------------------------------------- */
+
+  function initCookies() {
+    const banner = $("#cookieBanner");
+
+    if (!banner) return;
+
+    const savedConsent = storageGet("ksa_cookie_consent");
+
+    if (savedConsent) {
+      banner.classList.remove("show");
+      banner.classList.add("hidden");
+    } else {
+      banner.classList.add("show");
+    }
+
+    $$("[data-cookie-accept]").forEach((button) => {
+      button.addEventListener("click", function () {
+        storageSet("ksa_cookie_consent", "accepted");
+
+        banner.classList.remove("show");
+        banner.classList.add("hidden");
+
+        showToast("Cookie preferences saved.");
+      });
+    });
+
+    $$("[data-cookie-reject]").forEach((button) => {
+      button.addEventListener("click", function () {
+        storageSet("ksa_cookie_consent", "essential");
+
+        banner.classList.remove("show");
+        banner.classList.add("hidden");
+
+        showToast("Only essential cookies will be used.");
+      });
+    });
+  }
+
+
+  /* ---------------------------------------------------------
+     NEWSLETTER
+  --------------------------------------------------------- */
+
+  function initNewsletter() {
+    const form = $("#newsletterForm");
+
+    if (!form) return;
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const emailInput = form.querySelector(
+        'input[type="email"]'
       );
 
-    if (!city) return;
+      if (!emailInput) return;
 
-    saveCity(city);
+      const email = emailInput.value.trim();
 
+      if (!email) {
+        showToast("Please enter your email address.");
+        return;
+      }
+
+      if (!emailInput.checkValidity()) {
+        showToast("Please enter a valid email address.");
+        return;
+      }
+
+      /*
+        No fake subscription is claimed here.
+        The form is ready for a newsletter provider/backend.
+      */
+
+      showToast(
+        "Thank you. Newsletter signup is ready to connect."
+      );
+
+      form.reset();
+    });
   }
 
 
-  function requestLocation() {
+  /* ---------------------------------------------------------
+     LOCATION BUTTON
+     --------------------------------------------------------- */
 
+  function initLocation() {
+    const locationButtons = $$(
+      "#locBtn, [data-location-button]"
+    );
+
+    if (!locationButtons.length) return;
+
+    locationButtons.forEach((button) => {
+      button.addEventListener("click", function () {
+
+        if (!navigator.geolocation) {
+          showToast(
+            "Location is not supported. Please choose a city manually."
+          );
+          return;
+        }
+
+        showToast("Requesting your location permission...");
+
+        navigator.geolocation.getCurrentPosition(
+          function () {
+            showToast(
+              "Location permission granted."
+            );
+          },
+
+          function () {
+            showToast(
+              "Location was not shared. You can choose a city manually."
+            );
+          },
+
+          {
+            enableHighAccuracy: false,
+            timeout: 8000,
+            maximumAge: 300000
+          }
+        );
+      });
+    });
+  }
+
+
+  /* ---------------------------------------------------------
+     REVEAL ANIMATIONS
+  --------------------------------------------------------- */
+
+  function initRevealAnimations() {
+    const elements = $$(".reveal");
+
+    if (!elements.length) return;
+
+    /*
+      Respect reduced-motion preference.
+    */
     if (
-      !navigator.geolocation
+      window.matchMedia &&
+      window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+      ).matches
     ) {
-
-      const city =
-        window.prompt(
-          "Location is not supported. Enter your Saudi city:"
-        );
-
-      if (city) {
-        saveCity(city);
-      }
+      elements.forEach((element) => {
+        element.classList.add("show");
+      });
 
       return;
     }
 
-
-    navigator.geolocation.getCurrentPosition(
-      locationSuccess,
-      locationError,
-      {
-        enableHighAccuracy: false,
-        timeout: 10000,
-        maximumAge: 300000
-      }
-    );
-
-  }
-
-
-  locationButtons.forEach(
-    function (button) {
-
-      button.addEventListener(
-        "click",
-        function (event) {
-
-          event.preventDefault();
-          event.stopPropagation();
-
-          requestLocation();
-
-        }
-      );
-
-    }
-  );
-
-
-  /* =======================================================
-     COOKIE CONSENT
-     ======================================================= */
-
-  const cookieBanner =
-    $("#cookieBanner");
-
-  const cookieAccept =
-    $("[data-cookie-accept]");
-
-  const cookieReject =
-    $("[data-cookie-reject]");
-
-  const COOKIE_KEY =
-    "ksa_cookie_consent";
-
-
-  function hideCookieBanner() {
-
-    if (!cookieBanner) return;
-
-    cookieBanner.classList.add(
-      "hidden"
-    );
-
-
-    window.setTimeout(
-      function () {
-
-        if (cookieBanner) {
-          cookieBanner.style.display =
-            "none";
-        }
-
-      },
-      350
-    );
-
-  }
-
-
-  function saveCookieConsent(type) {
-
-    try {
-
-      localStorage.setItem(
-        COOKIE_KEY,
-        JSON.stringify({
-          type: type,
-          date: new Date().toISOString()
-        })
-      );
-
-    } catch (error) {
-
-      console.log(
-        "Cookie preference could not be saved.",
-        error
-      );
-
-    }
-
-
-    hideCookieBanner();
-
-  }
-
-
-  if (cookieAccept) {
-
-    cookieAccept.addEventListener(
-      "click",
-      function (event) {
-
-        event.preventDefault();
-        event.stopPropagation();
-
-        saveCookieConsent("all");
-
-      }
-    );
-
-  }
-
-
-  if (cookieReject) {
-
-    cookieReject.addEventListener(
-      "click",
-      function (event) {
-
-        event.preventDefault();
-        event.stopPropagation();
-
-        saveCookieConsent(
-          "essential"
-        );
-
-      }
-    );
-
-  }
-
-
-  /* Show cookie banner only when no choice exists */
-
-  let cookieChoice = null;
-
-  try {
-
-    cookieChoice =
-      localStorage.getItem(
-        COOKIE_KEY
-      );
-
-  } catch (error) {
-
-    cookieChoice = null;
-
-  }
-
-
-  if (
-    cookieBanner &&
-    cookieChoice
-  ) {
-
-    cookieBanner.classList.add(
-      "hidden"
-    );
-
-    cookieBanner.style.display =
-      "none";
-
-  }
-
-
-  /* =======================================================
-     NEWSLETTER
-     ======================================================= */
-
-  $$("form[data-newsletter]").forEach(
-    function (form) {
-
-      form.addEventListener(
-        "submit",
-        function (event) {
-
-          event.preventDefault();
-
-          const emailInput =
-            $("input[type='email']", form);
-
-          if (!emailInput) return;
-
-          const email =
-            emailInput.value.trim();
-
-
-          if (!email) {
-
-            emailInput.focus();
-            return;
-
-          }
-
-
-          let message =
-            $(".newsletter-message", form);
-
-
-          if (!message) {
-
-            message =
-              document.createElement(
-                "div"
-              );
-
-            message.className =
-              "newsletter-message";
-
-            form.appendChild(
-              message
-            );
-
-          }
-
-
-          message.textContent =
-            "Thank you! You're on the KSA GUIDE list.";
-
-
-          emailInput.value = "";
-
-        }
-      );
-
-    }
-  );
-
-
-  /* =======================================================
-     CONTACT FORM
-     ======================================================= */
-
-  $$("form[data-contact-form]").forEach(
-    function (form) {
-
-      form.addEventListener(
-        "submit",
-        function (event) {
-
-          const action =
-            form.getAttribute(
-              "action"
-            );
-
-
-          /*
-            If a real action exists,
-            allow normal submission.
-          */
-
-          if (
-            action &&
-            action.trim() !== ""
-          ) {
-            return;
-          }
-
-
-          event.preventDefault();
-
-
-          let message =
-            $(".form-message", form);
-
-
-          if (!message) {
-
-            message =
-              document.createElement(
-                "div"
-              );
-
-            message.className =
-              "form-message notice notice-success";
-
-            form.appendChild(
-              message
-            );
-
-          }
-
-
-          message.textContent =
-            "Thank you. Your message has been received.";
-
-        }
-      );
-
-    }
-  );
-
-
-  /* =======================================================
-     SCROLL REVEAL
-     ======================================================= */
-
-  const revealElements =
-    $$(".reveal");
-
-
-  if (
-    "IntersectionObserver" in window
-  ) {
-
-    const revealObserver =
-      new IntersectionObserver(
-        function (
-          entries,
-          observer
-        ) {
-
-          entries.forEach(
-            function (entry) {
-
-              if (
-                !entry.isIntersecting
-              ) {
-                return;
-              }
-
-
-              entry.target.classList.add(
-                "visible"
-              );
-
-
-              observer.unobserve(
-                entry.target
-              );
-
-            }
-          );
-
-        },
-        {
-          threshold: 0.12,
-          rootMargin:
-            "0px 0px -40px 0px"
-        }
-      );
-
-
-    revealElements.forEach(
-      function (element) {
-
-        revealObserver.observe(
-          element
-        );
-
-      }
-    );
-
-
-  } else {
-
-    revealElements.forEach(
-      function (element) {
-
-        element.classList.add(
-          "visible"
-        );
-
-      }
-    );
-
-  }
-
-
-  /* =======================================================
-     ACTIVE NAVIGATION
-     ======================================================= */
-
-  const currentPath =
-    window.location.pathname
-      .replace(/\/+$/, "") ||
-    "/";
-
-
-  $$(
-    ".main-nav a, .desktop-nav a, .mobile-nav a"
-  ).forEach(
-    function (link) {
-
-      const href =
-        link.getAttribute(
-          "href"
-        );
-
-      if (!href) return;
-
-
-      if (
-        href.startsWith("#") ||
-        href.startsWith("http") ||
-        href.startsWith("mailto:") ||
-        href.startsWith("tel:")
-      ) {
-        return;
-      }
-
-
-      let linkPath =
-        href
-          .split("?")[0]
-          .split("#")[0]
-          .replace(/\/+$/, "");
-
-
-      if (linkPath === "") {
-        linkPath = "/";
-      }
-
-
-      if (
-        linkPath === currentPath
-      ) {
-
-        link.classList.add(
-          "active"
-        );
-
-      }
-
-    }
-  );
-
-
-  /* =======================================================
-     BACK TO TOP
-     ======================================================= */
-
-  let backToTop =
-    $(".back-to-top");
-
-
-  if (!backToTop) {
-
-    backToTop =
-      document.createElement(
-        "button"
-      );
-
-    backToTop.className =
-      "back-to-top";
-
-    backToTop.type =
-      "button";
-
-    backToTop.setAttribute(
-      "aria-label",
-      "Back to top"
-    );
-
-    backToTop.innerHTML =
-      "↑";
-
-    body.appendChild(
-      backToTop
-    );
-
-  }
-
-
-  function updateBackToTop() {
-
-    if (
-      window.scrollY > 500
-    ) {
-
-      backToTop.classList.add(
-        "visible"
-      );
-
-    } else {
-
-      backToTop.classList.remove(
-        "visible"
-      );
-
-    }
-
-  }
-
-
-  window.addEventListener(
-    "scroll",
-    updateBackToTop,
-    { passive: true }
-  );
-
-
-  updateBackToTop();
-
-
-  backToTop.addEventListener(
-    "click",
-    function (event) {
-
-      event.preventDefault();
-
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
+    if (!("IntersectionObserver" in window)) {
+      elements.forEach((element) => {
+        element.classList.add("show");
       });
 
+      return;
     }
-  );
 
-
-  /* =======================================================
-     SMOOTH ANCHOR LINKS
-     ======================================================= */
-
-  $$(
-    "a[href^='#']"
-  ).forEach(
-    function (link) {
-
-      link.addEventListener(
-        "click",
-        function (event) {
-
-          const id =
-            link.getAttribute(
-              "href"
-            );
-
-
-          if (
-            !id ||
-            id === "#"
-          ) {
-            return;
+    const observer = new IntersectionObserver(
+      function (entries, obs) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            obs.unobserve(entry.target);
           }
-
-
-          let target = null;
-
-          try {
-
-            target =
-              document.querySelector(
-                id
-              );
-
-          } catch (error) {
-
-            return;
-
-          }
-
-
-          if (!target) {
-            return;
-          }
-
-
-          event.preventDefault();
-
-
-          const headerHeight =
-            header
-              ? header.offsetHeight
-              : 0;
-
-
-          const targetTop =
-            target.getBoundingClientRect()
-              .top +
-            window.scrollY -
-            headerHeight -
-            20;
-
-
-          window.scrollTo({
-            top: targetTop,
-            behavior: "smooth"
-          });
-
-        }
-      );
-
-    }
-  );
-
-
-  /* =======================================================
-     HERO 3D DEPTH EFFECT
-     DESKTOP / MOUSE ONLY
-     ======================================================= */
-
-  const hero =
-    $(".hero");
-
-  const heroMap =
-    $(".hero-map");
-
-
-  if (
-    hero &&
-    heroMap &&
-    window.matchMedia(
-      "(pointer:fine)"
-    ).matches
-  ) {
-
-
-    hero.addEventListener(
-      "mousemove",
-      function (event) {
-
-        const rect =
-          hero.getBoundingClientRect();
-
-
-        const x =
-          (
-            event.clientX -
-            rect.left
-          ) /
-          rect.width;
-
-
-        const y =
-          (
-            event.clientY -
-            rect.top
-          ) /
-          rect.height;
-
-
-        const rotateY =
-          (x - 0.5) * 8;
-
-
-        const rotateX =
-          (0.5 - y) * 5;
-
-
-        heroMap.style.transform =
-          "rotateY(" +
-          rotateY +
-          "deg) rotateX(" +
-          rotateX +
-          "deg)";
-
+        });
+      },
+      {
+        threshold: 0.08
       }
     );
 
-
-    hero.addEventListener(
-      "mouseleave",
-      function () {
-
-        heroMap.style.transform =
-          "rotateY(-9deg) rotateX(3deg)";
-
-      }
-    );
-
+    elements.forEach((element) => {
+      observer.observe(element);
+    });
   }
 
 
-  /* =======================================================
-     IMAGE LAZY LOADING
-     ======================================================= */
+  /* ---------------------------------------------------------
+     BLOG SEARCH
+  --------------------------------------------------------- */
 
-  $$("img").forEach(
-    function (image) {
+  function initBlogSearch() {
+    const blogSearch = $("#blogSearch");
 
-      if (
-        !image.hasAttribute(
-          "loading"
-        ) &&
-        !image.hasAttribute(
-          "fetchpriority"
-        )
-      ) {
+    if (!blogSearch) return;
 
-        image.setAttribute(
-          "loading",
-          "lazy"
-        );
+    const params = new URLSearchParams(
+      window.location.search
+    );
 
-      }
+    const query = params.get("q") || "";
 
+    if (query) {
+      blogSearch.value = query;
+      filterPosts(query);
     }
-  );
+
+    blogSearch.addEventListener("input", function () {
+      filterPosts(this.value);
+    });
+  }
 
 
-  /* =======================================================
-     EXTERNAL LINKS
-     Do NOT change internal KSA GUIDE links.
-     ======================================================= */
+  function filterPosts(query) {
+    const searchTerm = query
+      .toLowerCase()
+      .trim();
 
-  $$(
-    "a[href^='http://'], a[href^='https://']"
-  ).forEach(
-    function (link) {
+    $$("[data-post]").forEach((post) => {
+      const text =
+        post.textContent.toLowerCase();
 
-      const url =
-        link.getAttribute(
-          "href"
+      post.style.display =
+        !searchTerm || text.includes(searchTerm)
+          ? ""
+          : "none";
+    });
+  }
+
+
+  /* ---------------------------------------------------------
+     GENERIC FORM SUPPORT
+  --------------------------------------------------------- */
+
+  function initGenericForms() {
+    $$(".fake-submit").forEach((form) => {
+      form.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        showToast(
+          "Thanks. Your request is ready to connect."
         );
-
-      if (!url) return;
-
-
-      let isExternal = false;
+      });
+    });
+  }
 
 
-      try {
+  /* ---------------------------------------------------------
+     TOAST
+  --------------------------------------------------------- */
 
-        const linkUrl =
-          new URL(
-            url,
-            window.location.href
-          );
+  function showToast(message) {
+    let toast = $("#toast");
 
+    if (!toast) {
+      toast = document.createElement("div");
 
-        isExternal =
-          linkUrl.hostname !==
-          window.location.hostname;
+      toast.id = "toast";
+      toast.className = "toast";
 
-      } catch (error) {
-
-        return;
-
-      }
-
-
-      if (isExternal) {
-
-        link.setAttribute(
-          "target",
-          "_blank"
-        );
-
-        link.setAttribute(
-          "rel",
-          "noopener noreferrer"
-        );
-
-      }
-
-    }
-  );
-
-
-  /* =======================================================
-     PREVENT DOUBLE SUBMISSION
-     ======================================================= */
-
-  $$(
-    "form"
-  ).forEach(
-    function (form) {
-
-      form.addEventListener(
-        "submit",
-        function () {
-
-          /*
-            Only add a small visual state.
-            We don't disable buttons because
-            some forms are handled by other scripts.
-          */
-
-          form.classList.add(
-            "form-submitted"
-          );
-
-        }
+      toast.setAttribute(
+        "role",
+        "status"
       );
 
+      toast.setAttribute(
+        "aria-live",
+        "polite"
+      );
+
+      document.body.appendChild(toast);
     }
-  );
+
+    toast.textContent = message;
+
+    toast.classList.add("show");
+
+    clearTimeout(
+      window.__ksaToastTimer
+    );
+
+    window.__ksaToastTimer =
+      setTimeout(function () {
+        toast.classList.remove("show");
+      }, 3200);
+  }
 
 
-  /* =======================================================
-     PAGE READY
-     ======================================================= */
+  /* ---------------------------------------------------------
+     EXTERNAL / NORMAL LINKS
+     --------------------------------------------------------- */
 
-  html.classList.add(
-    "js-enabled"
-  );
+  /*
+    IMPORTANT:
+    We intentionally do NOT intercept normal links.
+
+    This prevents links from opening unexpectedly
+    or being redirected by JavaScript.
+  */
 
 
-  console.log(
-    "KSA GUIDE — Final JavaScript loaded successfully."
-  );
+  /* ---------------------------------------------------------
+     INITIALIZE EVERYTHING
+  --------------------------------------------------------- */
+
+  function init() {
+    initLanguage();
+    initMobileMenu();
+    initHeaderScroll();
+    initSearchOverlay();
+    initSmartSearch();
+    initCookies();
+    initNewsletter();
+    initLocation();
+    initRevealAnimations();
+    initBlogSearch();
+    initGenericForms();
+  }
+
+
+  /* ---------------------------------------------------------
+     DOM READY
+  --------------------------------------------------------- */
+
+  if (document.readyState === "loading") {
+    document.addEventListener(
+      "DOMContentLoaded",
+      init
+    );
+  } else {
+    init();
+  }
 
 })();
